@@ -396,7 +396,21 @@ class Transaction extends Base {
   }
   private function createDebitRecord($account_id, $coin_address, $amount, $type) {
     // Calculate and deduct txfee from amount
-    $type == 'Debit_MP' ? $txfee = $this->config['txfee_manual'] : $txfee = $this->config['txfee_auto'];
+    $txfee = $this->config['txfee_auto'];
+    if( $type == 'Debit_MP' ) {
+      $txfee = $this->config['txfee_manual'];
+      if( isset($this->config['txfee_manual_dynamic']['enabled']) && $this->config['txfee_manual_dynamic']['enabled'] ) {
+        if( isset($this->config['txfee_manual_dynamic']['coefficient']) && $this->config['txfee_manual_dynamic']['coefficient'] * $amount > $this->config['txfee_manual'] ) {
+          $txfee = round($this->config['txfee_manual_dynamic']['coefficient'] * $amount, 1, PHP_ROUND_HALF_UP);
+        }
+      }
+    } else {
+      if( isset($this->config['txfee_auto_dynamic']['enabled']) && $this->config['txfee_auto_dynamic']['enabled'] ) {
+        if( isset($this->config['txfee_auto_dynamic']['coefficient']) && $this->config['txfee_auto_dynamic']['coefficient'] * $amount > $this->config['txfee_auto'] ) {
+          $txfee = round($this->config['txfee_auto_dynamic']['coefficient'] * $amount, 1, PHP_ROUND_HALF_UP);
+        }
+      }
+    }
     $amount = $amount - $txfee;
     // Add Debit record
     if (!$this->addTransaction($account_id, $amount, $type, NULL, $coin_address, NULL)) {
@@ -435,6 +449,53 @@ class Transaction extends Base {
       $this->setErrorMessage('Failed to send notification email to users address: ' . $aMailData['email'] . 'ERROR: ' . $this->notification->getCronError());
     }
     return $transaction_id;
+  }
+
+  /**
+   * Change Last TXFee Value of an account
+   * @param id integer Transaction ID
+   * @param amount float New TxFee value
+   **/
+  public function changeTXFeeAmount($transaction_id, $amount) {
+    $stmt = $this->mysqli->prepare("
+      SELECT 
+      t.id,
+      t.account_id,
+      t.amount
+      FROM $this->table AS t
+      WHERE t.id = ?
+      LIMIT 1
+    ");
+    if ($this->checkStmt($stmt) && $stmt->bind_param('i', $transaction_id) && $stmt->execute() && $result = $stmt->get_result()) {
+      if ($result->num_rows < 1) {
+        return false;
+      } else {
+        $account_id = $result->fetch_object()->account_id;
+        $stmt = $this->mysqli->prepare("
+          SELECT 
+          t.id,
+          t.amount
+          FROM $this->table AS t
+          WHERE t.account_id = ?
+                AND t.id > ?
+                AND t.type = 'TXFee'
+          ORDER BY t.id ASC
+          LIMIT 1
+        ");
+        if ($this->checkStmt($stmt) && $stmt->bind_param('ii', $account_id, $transaction_id) && $stmt->execute() && $result = $stmt->get_result()) {
+          if ($result->num_rows < 1) {
+            return false;
+          } else {
+            $txfee_id = $result->fetch_object()->id;
+            $stmt = $this->mysqli->prepare("UPDATE $this->table SET amount = ? WHERE id = ?");
+            if ($this->checkStmt($stmt) && $stmt->bind_param('si', $amount, $txfee_id) && $stmt->execute())
+              return true;
+            return false;
+          }
+        }
+      }
+    }
+    return false;
   }
 
   /**

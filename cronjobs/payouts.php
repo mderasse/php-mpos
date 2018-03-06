@@ -85,13 +85,19 @@ if ($setting->getValue('disable_manual_payouts') != 1 && $aManualPayouts) {
       $monitoring->endCronjob($cron_name, 'E0010', 1, true);
     }
     if ($bitcoin->validateaddress($aUserData['coin_address'])) {
+      $txfee_manual = $config['txfee_manual'];
+      if( isset($config['txfee_manual_dynamic']['enabled']) && $config['txfee_manual_dynamic']['enabled'] ) {
+        if( isset($config['txfee_manual_dynamic']['coefficient']) && $config['txfee_manual_dynamic']['coefficient'] * $aUserData['confirmed'] > $config['txfee_manual'] ) {
+          $txfee_manual = round($config['txfee_manual_dynamic']['coefficient'] * $aUserData['confirmed'], 1, PHP_ROUND_HALF_UP);
+        }
+      }
       if (!$transaction_id = $transaction->createDebitMPRecord($aUserData['id'], $aUserData['coin_address'], $aUserData['confirmed'])) {
         $log->logFatal('    failed to fullt debit user ' . $aUserData['username'] . ': ' . $transaction->getCronError());
         $monitoring->endCronjob($cron_name, 'E0064', 1, true);
       } else if (!$config['sendmany']['enabled'] || !$sendmanyAvailable) {
         // Run the payouts from RPC now that the user is fully debited
         try {
-          $rpc_txid = $bitcoin->sendtoaddress($aUserData['coin_address'], $aUserData['confirmed'] - $config['txfee_manual']);
+          $rpc_txid = $bitcoin->sendtoaddress($aUserData['coin_address'], $aUserData['confirmed'] - $txfee_manual);
         } catch (Exception $e) {
           $log->logError('E0078: RPC method did not return 200 OK: Address: ' . $aUserData['coin_address'] . ' ERROR: ' . $e->getMessage());
           // Remove this line below if RPC calls are failing but transactions are still added to it
@@ -99,11 +105,29 @@ if ($setting->getValue('disable_manual_payouts') != 1 && $aManualPayouts) {
           $monitoring->endCronjob($cron_name, 'E0078', 1, true);
         }
         // Update our transaction and add the RPC Transaction ID
-        if (empty($rpc_txid) || !$transaction->setRPCTxId($transaction_id, $rpc_txid))
+        if (empty($rpc_txid) || !$transaction->setRPCTxId($transaction_id, $rpc_txid)) {
           $log->logError('Unable to add RPC transaction ID ' . $rpc_txid . ' to transaction record ' . $transaction_id . ': ' . $transaction->getCronError());
+        } else {
+          //Apply Fee Difference
+          $txfee_amount = NULL;
+          try {
+            $rpc_tx = $bitcoin->gettransaction($rpc_txid);
+            $txfee_amount = $rpc_tx['details'][0]['fee']);
+          } catch (Exception $e) {
+            $log->logError('E0080: RPC gettransaction method did not return 200 OK: Transaction ID: ' . $rpc_txid . ' ERROR: ' . $e->getMessage());
+            // Remove this line below if RPC calls are failing but transactions are still added to it
+            // Don't blame MPOS if you run into issues after commenting this out!
+            $monitoring->endCronjob($cron_name, 'E0080', 1, true);
+          }
+         
+          if( $txfee_manual != $txfee_amount ) {
+            if( !$txfee_amount || !$transaction->changeTXFeeAmount($transaction_id, $txfee_amount))
+              $log->logError('Unable to change TXFee amount of RPC Transaction ' . $rpc_txid . ' and transaction record ' . $transaction_id . ': ' . $transaction->getCronError());
+          }
+        }
       } else {
         // We don't run sendtoaddress but run sendmany later
-        $aSendMany[$aUserData['coin_address']] = $aUserData['confirmed'] - $config['txfee_manual'];
+        $aSendMany[$aUserData['coin_address']] = $aUserData['confirmed'] - $txfee_manual;
         $aTransactions[] = $transaction_id;
       }
     } else {
@@ -168,13 +192,19 @@ if ($setting->getValue('disable_auto_payouts') != 1 && $aAutoPayouts) {
     $rpc_txid = NULL;
     $log->logInfo(sprintf($mask, $aUserData['id'], $aUserData['username'], $aUserData['confirmed'], $aUserData['coin_address'], $aUserData['ap_threshold']));
     if ($bitcoin->validateaddress($aUserData['coin_address'])) {
+      $txfee_auto = $config['txfee_auto'];
+      if( isset($config['txfee_auto_dynamic']['enabled']) && $config['txfee_auto_dynamic']['enabled'] ) {
+        if( isset($config['txfee_auto_dynamic']['coefficient']) && $config['txfee_auto_dynamic']['coefficient'] * $aUserData['confirmed'] > $config['txfee_auto'] ) {
+          $txfee_auto = round($config['txfee_auto_dynamic']['coefficient'] * $aUserData['confirmed'], 1, PHP_ROUND_HALF_UP);
+        }
+      }
       if (!$transaction_id = $transaction->createDebitAPRecord($aUserData['id'], $aUserData['coin_address'], $aUserData['confirmed'])) {
         $log->logFatal('    failed to fully debit user ' . $aUserData['username'] . ': ' . $transaction->getCronError());
         $monitoring->endCronjob($cron_name, 'E0064', 1, true);
       } else if (!$config['sendmany']['enabled'] || !$sendmanyAvailable) {
         // Run the payouts from RPC now that the user is fully debited
         try {
-          $rpc_txid = $bitcoin->sendtoaddress($aUserData['coin_address'], $aUserData['confirmed'] - $config['txfee_auto']);
+          $rpc_txid = $bitcoin->sendtoaddress($aUserData['coin_address'], $aUserData['confirmed'] - $txfee_auto);
         } catch (Exception $e) {
           $log->logError('E0078: RPC method did not return 200 OK: Address: ' . $aUserData['coin_address'] . ' ERROR: ' . $e->getMessage());
           // Remove this line below if RPC calls are failing but transactions are still added to it
@@ -182,11 +212,29 @@ if ($setting->getValue('disable_auto_payouts') != 1 && $aAutoPayouts) {
           $monitoring->endCronjob($cron_name, 'E0078', 1, true);
         }
         // Update our transaction and add the RPC Transaction ID
-        if (empty($rpc_txid) || !$transaction->setRPCTxId($transaction_id, $rpc_txid))
+        if (empty($rpc_txid) || !$transaction->setRPCTxId($transaction_id, $rpc_txid)) {
           $log->logError('Unable to add RPC transaction ID ' . $rpc_txid . ' to transaction record ' . $transaction_id . ': ' . $transaction->getCronError());
+        } else {
+          //Apply Fee Difference
+          $txfee_amount = NULL;
+          try {
+            $rpc_tx = $bitcoin->gettransaction($rpc_txid);
+            $txfee_amount = $rpc_tx['details'][0]['fee']);
+          } catch (Exception $e) {
+            $log->logError('E0080: RPC gettransaction method did not return 200 OK: Transaction ID: ' . $rpc_txid . ' ERROR: ' . $e->getMessage());
+            // Remove this line below if RPC calls are failing but transactions are still added to it
+            // Don't blame MPOS if you run into issues after commenting this out!
+            $monitoring->endCronjob($cron_name, 'E0080', 1, true);
+          }
+         
+          if( $txfee_auto != $txfee_amount ) {
+            if( !$txfee_amount || !$transaction->changeTXFeeAmount($transaction_id, $txfee_amount))
+              $log->logError('Unable to change TXFee amount of RPC Transaction ' . $rpc_txid . ' and transaction record ' . $transaction_id . ': ' . $transaction->getCronError());
+          }
+        }
       } else {
         // We don't run sendtoaddress but run sendmany later
-        $aSendMany[$aUserData['coin_address']] = $aUserData['confirmed'] - $config['txfee_auto'];
+        $aSendMany[$aUserData['coin_address']] = $aUserData['confirmed'] - $txfee_auto;
         $aTransactions[] = $transaction_id;
       }
     } else {
