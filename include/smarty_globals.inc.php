@@ -97,6 +97,14 @@ $aGlobal = array(
     'exchangeurl' => $config['price']['url'],
     'txfee_manual' => $config['txfee_manual'],
     'txfee_auto' => $config['txfee_auto'],
+    'txfee_auto_dynamic' => array(
+        'enabled' => $config['txfee_auto_dynamic']['enabled'],
+        'coefficient' => $config['txfee_auto_dynamic']['coefficient'],
+    ),
+    'txfee_manual_dynamic' => array(
+        'enabled' => $config['txfee_manual_dynamic']['enabled'],
+        'coefficient' => $config['txfee_manual_dynamic']['coefficient'],
+    ),
     'payout_system' => $config['payout_system'],
     'mp_threshold' => $config['mp_threshold'],
     'ap_threshold' => array(

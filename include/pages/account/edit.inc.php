@@ -108,7 +108,13 @@ if ($user->isAuthenticated()) {
             $_SESSION['POPUP'][] = array('CONTENT' => 'You have no payout address set.', 'TYPE' => 'alert alert-danger');
         	} else {
         	  $user->log->log("info", $_SESSION['USERDATA']['username']." requesting manual payout");
-        	  if ($dBalance > $config['txfee_manual']) {
+              $txfee_manual = $config['txfee_manual'];
+              if( isset($config['txfee_manual_dynamic']['enabled']) && $config['txfee_manual_dynamic']['enabled'] ) {
+                if( isset($config['txfee_manual_dynamic']['coefficient']) && $config['txfee_manual_dynamic']['coefficient'] * $dBalance > $config['txfee_manual'] ) {
+                  $txfee_manual = round($config['txfee_manual_dynamic']['coefficient'] * $dBalance, 1, PHP_ROUND_HALF_UP);
+                }
+              }
+        	  if ($dBalance > $txfee_manual) {
         	    if (!$oPayout->isPayoutActive($_SESSION['USERDATA']['id'])) {
         	      if (!$config['csrf']['enabled'] || $config['csrf']['enabled'] && $csrftoken->valid) {
         	        if ($iPayoutId = $oPayout->createPayout($_SESSION['USERDATA']['id'], $oldtoken_wf)) {
@@ -123,7 +129,7 @@ if ($user->isAuthenticated()) {
         	      $_SESSION['POPUP'][] = array('CONTENT' => 'You already have one active manual payout request.', 'TYPE' => 'alert alert-danger');
         	    }
         	  } else {
-        	    $_SESSION['POPUP'][] = array('CONTENT' => 'Insufficient funds, you need more than ' . $config['txfee_manual'] . ' ' . $config['currency'] . ' to cover transaction fees', 'TYPE' => 'alert alert-danger');
+                $_SESSION['POPUP'][] = array('CONTENT' => 'Insufficient funds, you need more than ' . $txfee_manual . ' ' . $config['currency'] . ' to cover transaction fees', 'TYPE' => 'alert alert-danger');
         	  }
         	}
         	break;
