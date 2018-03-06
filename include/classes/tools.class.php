@@ -101,6 +101,8 @@ class Tools extends Base {
       return 'mercatox';
     } else if (preg_match('/tradeogre.com/', $url)) {
       return 'tradeogre';
+    } else if (preg_match('/api.coinmarketcap.com/', $url)) {
+      return 'coinmarketcap';
     }
     $this->setErrorMessage("API URL unknown");
     return false;
@@ -162,6 +164,9 @@ class Tools extends Base {
           break;
         case 'tradeogre':
           return @$aData['price'];
+          break;
+        case 'coinmarketcap':
+          return $aData[0]['price_usd'];
           break;
       }
     } else {
