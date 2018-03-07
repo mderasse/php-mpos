@@ -1,3 +1,13 @@
+{if $GLOBAL.config.txfee_auto}
+    {if $GLOBAL.config.txfee_auto_dynamic.enabled }
+        {math assign="txfee_auto" equation="ceil((x * y)*10)/10" x=$GLOBAL.config.txfee_auto_dynamic.coefficient y=$GLOBAL.userdata.ap_threshold}
+        {if $txfee_auto <= $GLOBAL.config.txfee_auto}
+            {assign var="txfee_auto" value=$GLOBAL.config.txfee_auto}
+        {/if}
+    {else}
+        {assign var="txfee_auto" value=$GLOBAL.config.txfee_auto}
+    {/if}
+{/if}
 <form action="{$smarty.server.SCRIPT_NAME}" method="post" role="form">
   <input type="hidden" name="page" value="{$smarty.request.page|escape}">
   <input type="hidden" name="action" value="{$smarty.request.action|escape}">
@@ -50,7 +60,7 @@
             <div class="form-group">
               <label>Automatic Payout Threshold</label>
               </br>
-              <font size="1">{if $GLOBAL.config.ap_threshold.min < 0.0001}{$GLOBAL.config.ap_threshold.min|number_format:"8"}{else}{$GLOBAL.config.ap_threshold.min}{/if} - {if $GLOBAL.config.ap_threshold.max < 0.0001}{$GLOBAL.config.ap_threshold.max|number_format:"8"}{else}{$GLOBAL.config.ap_threshold.max}{/if} {$GLOBAL.config.currency}. Set to '0' for no auto payout.{if $GLOBAL.config.txfee_auto > 0} A {if $GLOBAL.config.txfee_auto > 0.00001}{$GLOBAL.config.txfee_auto}{else}{$GLOBAL.config.txfee_auto|number_format:"8"}{/if} {$GLOBAL.config.currency} TX fee will apply <span id="tt"><img width="15px" height="15px" title="This {if $GLOBAL.config.txfee_auto > 0.00001}{$GLOBAL.config.txfee_auto}{else}{$GLOBAL.config.txfee_auto|number_format:"8"}{/if} automatic payment transaction fee is a network fee and goes back into the network not the pool." src="site_assets/bootstrap/images/questionmark.png"></span>{/if}</font>
+              <font size="1">{if $GLOBAL.config.ap_threshold.min < 0.0001}{$GLOBAL.config.ap_threshold.min|number_format:"8"}{else}{$GLOBAL.config.ap_threshold.min}{/if} - {if $GLOBAL.config.ap_threshold.max < 0.0001}{$GLOBAL.config.ap_threshold.max|number_format:"8"}{else}{$GLOBAL.config.ap_threshold.max}{/if} {$GLOBAL.config.currency}. Set to '0' for no auto payout.{if $txfee_auto > 0} A {if $txfee_auto > 0.00001}{$txfee_auto}{else}{$txfee_auto|number_format:"8"}{/if} {$GLOBAL.config.currency} TX fee will apply {if $GLOBAL.config.txfee_auto_dynamic.enabled} (High Estimation){/if}<span id="tt"><img width="15px" height="15px" title="This {if $txfee_auto > 0.00001}{$txfee_auto}{else}{$txfee_auto|number_format:"8"}{/if} automatic payment transaction fee is a network fee and goes back into the network not the pool." src="site_assets/bootstrap/images/questionmark.png"></span>{/if}</font>
               </br>
               <input class="form-control" type="text" name="payoutThreshold" value="{nocache}{$smarty.request.payoutThreshold|default:$GLOBAL.userdata.ap_threshold|escape}{/nocache}" size="{$GLOBAL.config.ap_threshold.max|strlen+4}" maxlength="{if $GLOBAL.config.ap_threshold.max < 1}10{else}{$GLOBAL.config.ap_threshold.max|strlen}{/if}" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>
             </div>

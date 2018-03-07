@@ -172,8 +172,14 @@ $config['coindiffchangetarget'] = 2016;
  *  Fees applied to transactions
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-tx-fees
  **/
-$config['txfee_auto'] = 0.1;
-$config['txfee_manual'] = 0.1;
+$config['txfee_auto'] = 0.2;
+$config['txfee_manual'] = 0.2;
+
+$config['txfee_auto_dynamic']['enabled'] = true;
+$config['txfee_auto_dynamic']['coefficient'] = 0.000869565;
+
+$config['txfee_manual_dynamic']['enabled'] = false;
+$config['txfee_manual_dynamic']['coefficient'] = 0.000869565;
 
 /**
  * Block & Pool Bonus
