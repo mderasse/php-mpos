@@ -47,7 +47,7 @@ class Tools extends Base {
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
       curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; PHP client; '.php_uname('s').'; PHP/'.phpversion().')');
     }
-    
+
     $url = rtrim($url, '/');
     $target = ltrim($target, '/');
     curl_setopt($ch, CURLOPT_URL, $url . '/' . $target);
@@ -80,7 +80,7 @@ class Tools extends Base {
     } else if (preg_match('/btc-e.nz/', $url)) {
       return 'btce';
     } else if (preg_match('/cryptopia.co.nz/', $url)) {
-     return 'cryptopia';
+      return 'cryptopia';
     } else if (preg_match('/cryptorush.in/', $url)) {
       return 'cryptorush';
     } else if (preg_match('/mintpal.com/', $url)) {
@@ -103,6 +103,18 @@ class Tools extends Base {
       return 'tradeogre';
     } else if (preg_match('/api.coinmarketcap.com/', $url)) {
       return 'coinmarketcap';
+    } else if (preg_match('/crypto-bridge.org/', $url)) {
+      return 'cryptobridge';
+    } else if (preg_match('/yobit.net/', $url)) {
+      return 'yobit';
+    } else if (preg_match('/binance.com/', $url)) {
+      return 'binance';
+    } else if (preg_match('/southxchange.com/', $url)) {
+      return 'southxchange';
+    } else if (preg_match('/mercatox.com/', $url)) {
+      return 'mercatox';
+    } else if (preg_match('/tradeogre.com/', $url)) {
+      return 'tradeogre';
     }
     $this->setErrorMessage("API URL unknown");
     return false;
@@ -167,6 +179,26 @@ class Tools extends Base {
           break;
         case 'coinmarketcap':
           return $aData[0]['price_usd'];
+          break;
+        case 'cryptobridge':
+          foreach ($aData as $aItem) {
+            if("{$strBase}_{$strQuote}" == $aItem['id'])
+              return $aItem['last'];
+          }
+        case 'yobit':
+          return @$aData[strtolower($strBase) . "_" . strtolower($strQuote)]['last'];
+          break;
+        case 'binance':
+          return @$aData['price'];
+          break;
+        case 'southxchange':
+          return @$aData['Last'];
+          break;
+        case 'mercatox':
+          return @$aData['pairs']["{$strBase}_{$strQuote}"]['last'];
+          break;
+        case 'tradeogre':
+          return @$aData['price'];
           break;
       }
     } else {
