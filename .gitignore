@@ -43,4 +43,7 @@ tests/_output/*
 /nbproject/*
 
 # No need for composer.lock
+/composer.lock 
+
+# No need for composer.lock
 /composer.lock

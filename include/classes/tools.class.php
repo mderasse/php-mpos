@@ -47,7 +47,10 @@ class Tools extends Base {
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
       curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; PHP client; '.php_uname('s').'; PHP/'.phpversion().')');
     }
-    curl_setopt($ch, CURLOPT_URL, $url . $target);
+
+    $url = rtrim($url, '/');
+    $target = ltrim($target, '/');
+    curl_setopt($ch, CURLOPT_URL, $url . '/' . $target);
     // curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
 
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
@@ -73,13 +76,11 @@ class Tools extends Base {
    **/
   private function getApiType($url) {
     if (preg_match('/coinchoose.com/', $url)) {
-      return 'coinchose';
-    } else if (preg_match('/btc-e.com/', $url)) {
+      return 'coinchoose';
+    } else if (preg_match('/btc-e.nz/', $url)) {
       return 'btce';
-    } else if (preg_match('/cryptsy.com/', $url)) {
-      return 'cryptsy';
     } else if (preg_match('/cryptopia.co.nz/', $url)) {
-     return 'cryptopia';
+      return 'cryptopia';
     } else if (preg_match('/cryptorush.in/', $url)) {
       return 'cryptorush';
     } else if (preg_match('/mintpal.com/', $url)) {
@@ -90,6 +91,18 @@ class Tools extends Base {
       return 'bittrex';
     } else if (preg_match('/api.coinmarketcap.com/', $url)) {
       return 'coinmarketcap';
+    } else if (preg_match('/crypto-bridge.org/', $url)) {
+      return 'cryptobridge';
+    } else if (preg_match('/yobit.net/', $url)) {
+      return 'yobit';
+    } else if (preg_match('/binance.com/', $url)) {
+      return 'binance';
+    } else if (preg_match('/southxchange.com/', $url)) {
+      return 'southxchange';
+    } else if (preg_match('/mercatox.com/', $url)) {
+      return 'mercatox';
+    } else if (preg_match('/tradeogre.com/', $url)) {
+      return 'tradeogre';
     }
     $this->setErrorMessage("API URL unknown");
     return false;
@@ -100,30 +113,28 @@ class Tools extends Base {
    **/
   public function getPrice() {
     $aData = $this->getApi($this->config['price']['url'], $this->config['price']['target']);
-    $strCurrency = $this->config['currency'];
+    $strBase = $this->config['currency'];
+    $strQuote = $this->config['price']['currency'];
     // Check the API type for configured URL
     if (!$strApiType = $this->getApiType($this->config['price']['url']))
       return false;
     // if api data is valid, extract price depending on API type
     if (is_array($aData)) {
       switch ($strApiType) {
-      	case 'coinchose':
+      	case 'coinchoose':
       	  foreach ($aData as $aItem) {
-      	    if($strCurrency == $aItem[0])
+      	    if($strBase == $aItem[0])
       	      return $aItem['price'];
       	  }
       	  break;
       	case 'btce':
       	  return $aData['ticker']['last'];
       	  break;
-      	case 'cryptsy':
-      	  return @$aData['return']['markets'][$strCurrency]['lasttradeprice'];
-      	  break;
         case 'cryptopia':
       	  return @$aData['Data']['LastPrice'];
       	  break;
       	case 'cryptorush':
-      	  return @$aData["$strCurrency/" . $this->config['price']['currency']]['last_trade'];
+          return @$aData["{$strBase}/{$strQuote}"]['last_trade'];
       	  break;
       	case 'mintpal':
       	  return @$aData['0']['last_price'];
@@ -136,6 +147,26 @@ class Tools extends Base {
           break;
         case 'coinmarketcap':
           return $aData[0]['price_usd'];
+          break;
+        case 'cryptobridge':
+          foreach ($aData as $aItem) {
+            if("{$strBase}_{$strQuote}" == $aItem['id'])
+              return $aItem['last'];
+          }
+        case 'yobit':
+          return @$aData[strtolower($strBase) . "_" . strtolower($strQuote)]['last'];
+          break;
+        case 'binance':
+          return @$aData['price'];
+          break;
+        case 'southxchange':
+          return @$aData['Last'];
+          break;
+        case 'mercatox':
+          return @$aData['pairs']["{$strBase}_{$strQuote}"]['last'];
+          break;
+        case 'tradeogre':
+          return @$aData['price'];
           break;
       }
     } else {
