@@ -43,7 +43,7 @@
                   <th class="smallwidth">Worker Password</th>
                   <th class="text-center">Active</th>
                   {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}<th class="text-center">Monitor</th>{/if}
-                  <th class="text-right">Khash/s</th>
+                  <th class="text-right">Hash/m</th>
                   <th class="text-right">Difficulty</th>
                   <th class="text-center">Action</th>
                 </tr>
@@ -67,7 +67,7 @@
                    <input type="checkbox" class="switch" data-size="mini"  name="data[{$WORKERS[worker].id}][monitor]" id="data[{$WORKERS[worker].id}][monitor]" value="1" {if $WORKERS[worker].monitor}checked{/if}/>
                  </td>
                  {/if}
-                 <td class="text-right">{$WORKERS[worker].hashrate|number_format}</td>
+                 <td class="text-right">{$WORKERS[worker].hashrate|number_format:"3"}</td>
                  <td class="text-right">{$WORKERS[worker].difficulty|number_format:"2"}</td>
                  <td class="text-center"><a href="{$smarty.server.SCRIPT_NAME}?page={$smarty.request.page|escape}&action={$smarty.request.action|escape}&do=delete&id={$WORKERS[worker].id|escape}&ctoken={$CTOKEN|escape|default:""}"><i class="fa fa-trash-o fa-fw"></i></a></td>
                </tr>
