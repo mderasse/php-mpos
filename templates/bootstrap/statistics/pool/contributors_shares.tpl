@@ -21,7 +21,7 @@
               <td>{$rank++}</td>
               <td>{if $CONTRIBSHARES[shares].donate_percent|default:"0" >= 2}<i class="fa fa-trophy fa-fw"></i>{else if $CONTRIBSHARES[shares].donate_percent|default:"0" < 2 AND $CONTRIBSHARES[shares].donate_percent|default:"0" > 0}<i class="fa fa-star-o fa-fw"></i>{else}<i class="fa fa-ban fa-fw"></i>{/if}</td>
               <td>{if $CONTRIBSHARES[shares].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}anonymous{else}{$CONTRIBSHARES[shares].account|escape}{/if}</td>
-              <td class="text-right">{$CONTRIBSHARES[shares].shares|number_format:"3"}</td>
+              <td class="text-right">{$CONTRIBSHARES[shares].shares|number_format}</td>
             </tr>
 {/section}
 {if $listed != 1 && $GLOBAL.userdata.username|default:"" && $GLOBAL.userdata.shares.valid|default:"0" > 0}
@@ -29,7 +29,7 @@
               <td>n/a</td>
               <td>{if $GLOBAL.userdata.donate_percent|default:"0" >= 2}<i class="fa fa-trophy fa-fw"></i>{elseif $GLOBAL.userdata.donate_percent|default:"0" < 2 AND $GLOBAL.userdata.donate_percent|default:"0" > 0}<i class="fa fa-star-o fa-fw"></i>{else}<i class="fa fa-ban fa-fw"></i>{/if}</td>
               <td>{$GLOBAL.userdata.username|escape}</td>
-              <td class="text-right">{$GLOBAL.userdata.shares.valid|number_format:"3"}</td>
+              <td class="text-right">{$GLOBAL.userdata.shares.valid|number_format}</td>
             </tr>
 {/if}
           </tbody>
