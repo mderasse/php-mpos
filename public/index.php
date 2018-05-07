@@ -86,6 +86,28 @@ if ($config['memcache']['enabled'] && $config['mc_antidos']['enabled']) {
 }
 
 // Got past rate limiter and session manager
+// Set User Language
+if ( !$userLanguage && (!isset($_REQUEST['lang']) or (isset($_REQUEST['lang']) && !in_array(substr($_REQUEST['lang'], 0, 2), array_keys($languages))))) {
+  // Try to find a compatible one
+  $userLanguages = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
+   
+  foreach($userLanguages as $lang) {
+    if ( in_array(substr($lang, 0, 2), array_keys($languages)) ) {
+      $userLanguage = substr($lang, 0, 2);
+      break;
+    } else {
+      $userLanguage = 'en';
+    }
+  }
+}
+else if(isset($_REQUEST['lang']) && in_array(substr($_REQUEST['lang'], 0, 2), array_keys($languages)))
+{
+  $userLanguage = substr($_REQUEST['lang'], 0, 2);
+}
+$_SESSION['USERDATA']['language'] = $userLanguage;
+putenv("LC_ALL=" . $languages[$userLanguage]);
+setlocale(LC_ALL, $languages[$userLanguage], $languages[$userLanguage] . '.UTF-8');
+
 // show last logged in popup if it's still set
 if (@$_GET['clp'] == 1 && @$_SESSION['last_ip_pop']) unset($_SESSION['last_ip_pop']);
 if (count(@$_SESSION['last_ip_pop']) == 2) {
