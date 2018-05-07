@@ -17,7 +17,7 @@ $config['protect_session_state'] = false;
  *  Info      = 6, Debug     = 7,  Nothing   = 8
  */
 $config['logging']['enabled'] = true;
-$config['logging']['level'] = 6;
+$config['logging']['level'] = 4;
 $config['logging']['path'] = realpath(BASEPATH.'../logs');
 
 /**
@@ -48,8 +48,8 @@ $config['csrf']['enabled'] = true;
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-e-mail-confirmations
  */
 $config['twofactor']['enabled'] = true;
-$config['twofactor']['options']['details'] = true;
-$config['twofactor']['options']['withdraw'] = true;
+$config['twofactor']['options']['details'] = false;
+$config['twofactor']['options']['withdraw'] = false;
 $config['twofactor']['options']['changepw'] = true;
 
 /**

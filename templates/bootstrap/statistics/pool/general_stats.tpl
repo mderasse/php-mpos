@@ -8,43 +8,48 @@
           <tbody>
             <tr>
               <th width="50%">{t}Pool Hash Rate{/t}</th>
-              <td width="70%"><span id="b-hashrate">{$GLOBAL.hashrate|number_format:"3"}</span> {$GLOBAL.hashunits.pool}</td>
+              <td width="25%">
+                    <span id="b-hashrate">{math equation="hashrate * 60" hashrate=$GLOBAL.hashrate|number_format:"3"}</span> KH/m
+              </td>
+              <td width="25%">
+                    <span id="b-hashrate">{$GLOBAL.hashrate|number_format:"3"}</span> {$GLOBAL.hashunits.pool}
+              </td>
             </tr>
             <tr>
               <th>{t}Pool Efficiency{/t}</th>
-              <td>{if $GLOBAL.roundshares.valid > 0}{($GLOBAL.roundshares.valid / ($GLOBAL.roundshares.valid + $GLOBAL.roundshares.invalid) * 100)|number_format:"2"}%{else}0%{/if}</td>
+              <td colspan="2">{if $GLOBAL.roundshares.valid > 0}{($GLOBAL.roundshares.valid / ($GLOBAL.roundshares.valid + $GLOBAL.roundshares.invalid) * 100)|number_format:"2"}%{else}0%{/if}</td>
             </tr>
             <tr>
               <th>{t}Current Active Workers{/t}</th>
-              <td id="b-workers">{$GLOBAL.workers|number_format}</td>
+              <td id="b-workers" colspan="2">{$GLOBAL.workers|number_format}</td>
             </tr>
             <tr>
               <th>{t}Current Difficulty{/t}</th>
               {if ! $GLOBAL.website.chaininfo.disabled}
-              <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><span id="b-diff">{$NETWORK.difficulty|number_format:"8"}</span></a></td>
+              <td colspan="2"><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><span id="b-diff">{$NETWORK.difficulty|number_format:"8"}</span></a></td>
               {else}
-              <td><span id="b-diff">{$NETWORK.difficulty|number_format:"8"}</span></td>
+              <td colspan="2"><span id="b-diff">{$NETWORK.difficulty|number_format:"8"}</span></td>
               {/if}
             </tr>
             <tr>
               <th>{t}Est. Next Difficulty{/t}</th>
               {if ! $GLOBAL.website.chaininfo.disabled}
-              <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new">{$NETWORK.EstNextDifficulty|number_format:"8"} ({t block_until_diff_change=$NETWORK.BlocksUntilDiffChange}Change in %1 Blocks{/t})</a></td>
+              <td colspan="2"><a href="{$GLOBAL.website.chaininfo.url}" target="_new">{$NETWORK.EstNextDifficulty|number_format:"8"} ({t block_until_diff_change=$NETWORK.BlocksUntilDiffChange}Change in %1 Blocks{/t})</a></td>
               {else}
-              <td>{$NETWORK.EstNextDifficulty|number_format:"8"} ({t block_until_diff_change=$NETWORK.BlocksUntilDiffChange}Change in %1 Blocks{/t})</td>
+              <td colspan="2">{$NETWORK.EstNextDifficulty|number_format:"8"} ({t block_until_diff_change=$NETWORK.BlocksUntilDiffChange}Change in %1 Blocks{/t})</td>
               {/if}
             </tr>
             <tr>
               <th>{t}Est. Avg. Time per Round (Network){/t}</th>
-              <td>{$NETWORK.EstTimePerBlock|seconds_to_words}</td>
+              <td colspan="2">{$NETWORK.EstTimePerBlock|seconds_to_words}</td>
             </tr>
             <tr>
               <th>{t}Est. Avg. Time per Round (Pool){/t}</th>
-              <td>{$ESTTIME|seconds_to_words}</td>
+              <td colspan="2">{$ESTTIME|seconds_to_words}</td>
             </tr>
             <tr>
               <th>{t}Est. Shares this Round{/t}</th>
-              <td id="b-target">{$ESTIMATES.shares|number_format} ({t}done{/t}: {$ESTIMATES.percent}%)</td>
+              <td id="b-target" colspan="2">{$ESTIMATES.shares|number_format} ({t}done{/t}: {$ESTIMATES.percent}%)</td>
             </tr>
             {if ! $GLOBAL.website.blockexplorer.disabled}
             <tr>
