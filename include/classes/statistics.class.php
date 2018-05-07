@@ -705,9 +705,9 @@ class Statistics extends Base {
       SELECT
         timestamp,
         FROM_UNIXTIME(timestamp, '%Y-%m-%d %H:%i') AS time,
-        AVG(hashrate) *1000 *60 AS hashrate,
+        AVG(hashrate) AS hashrate,
         AVG(workers) AS workers,
-        AVG(sharerate) *60 AS sharerate
+        AVG(sharerate) AS sharerate
       FROM " . $this->getUserStatsTableName() . "
       WHERE FROM_UNIXTIME(timestamp) >= DATE_SUB(NOW(), INTERVAL $days DAY)
         AND account_id = ?
