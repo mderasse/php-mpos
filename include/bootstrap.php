@@ -10,6 +10,16 @@ define('TEMPLATE_DIR', BASEPATH . '../templates');
 
 $quickstartlink = "<a href='https://github.com/MPOS/php-mpos/wiki/Quick-Start-Guide' title='MPOS Quick Start Guide'>Quick Start Guide</a>";
 
+// Available Languages
+$languages = array(
+  'fr' => 'fr_FR',
+  'en' => 'en_US',
+  'es' => 'es_ES',
+  'de' => 'de_DE',
+  'it' => 'it_IT',
+  'ru' => 'ru_RU',
+  'zh' => 'zh_CN',
+);
 // Include our configuration (holding defines for the requires)
 if (!include_once(INCLUDE_DIR . '/config/global.inc.dist.php')) die('Unable to load base global config from ['.INCLUDE_DIR. '/config/global.inc.dist.php' . '] - '.$quickstartlink);
 if (!@include_once(INCLUDE_DIR . '/config/global.inc.php')) die('Unable to load your global config from ['.INCLUDE_DIR. '/config/global.inc.php' . '] - '.$quickstartlink);
@@ -44,6 +54,11 @@ if (isset($_SESSION['USERDATA']['timezone'])) {
   date_default_timezone_set($aTimezones[$_SESSION['USERDATA']['timezone']]);
 } else {
   date_default_timezone_set('UTC');
+}
+
+$userLanguage = NULL;
+if (isset($_SESSION['USERDATA']['language']) && isset($languages[$_SESSION['USERDATA']['language']])) {
+  $userLanguage = $_SESSION['USERDATA']['language'];
 }
 
 // Our default template to load, pages can overwrite this later
