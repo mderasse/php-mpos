@@ -8,7 +8,7 @@
                   <p class="h5 up-more">My Hashrate</p>
                   <div class="circle-tile-number text-faded up">
                     <span class="overview" id="b-hashrate">{$GLOBAL.userdata.hashrate|number_format:"2"}</span>
-                    <span class="overview-mhs"> H/m</span>
+                    <span class="overview-mhs"> {$GLOBAL.hashunits.personal}</span>
                     <br>
                     <span class="personal-hashrate-bar spark-18"></span>
                   </div>
