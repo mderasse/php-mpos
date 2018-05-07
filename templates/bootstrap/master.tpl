@@ -1,3 +1,4 @@
+{locale path="../../locale" domain="frontend"}
 <!doctype html>
 <html lang="en">
 <head>
