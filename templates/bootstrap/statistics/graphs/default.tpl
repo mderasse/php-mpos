@@ -51,7 +51,7 @@ $(function () {
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-signal fa-fw"></i> Average Hashrate past 24h
+        <i class="fa fa-signal fa-fw"></i> Average Hashrate past 24h (in H/m)
       </div>
       <div class="panel-body">
         <div id="hashrate-area-chart"></div>
@@ -83,7 +83,7 @@ $(function () {
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-signal fa-fw"></i> Average Sharerate past 24h
+        <i class="fa fa-signal fa-fw"></i> Average Sharerate past 24h (in S/min)
       </div>
       <div class="panel-body">
         <div id="sharerate-area-chart"></div>

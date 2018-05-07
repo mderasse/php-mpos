@@ -26,7 +26,7 @@
               <td>{$rank++}</td>
               <td>{if $CONTRIBHASHES[contrib].donate_percent|default:"0" >= 2}<i class="fa fa-trophy fa-fw"></i>{elseif $CONTRIBHASHES[contrib].donate_percent|default:"0" < 2 AND $CONTRIBHASHES[contrib].donate_percent|default:"0" > 0}<i class="fa fa-star-o fa-fw"></i>{else}<i class="fa fa-ban fa-fw"></i>{/if}</td>
               <td>{if $CONTRIBHASHES[contrib].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}anonymous{else}{$CONTRIBHASHES[contrib].account|escape}{/if}</td>
-              <td class="text-right">{$CONTRIBHASHES[contrib].hashrate|number_format}</td>
+              <td class="text-right">{$CONTRIBHASHES[contrib].hashrate|number_format:"3"}</td>
               <td class="text-right">{$estday|number_format:"3"}</td>
               {if $GLOBAL.config.price.enabled}
               {if $GLOBAL.config.price.currency}<td class="text-right">{($estday * $GLOBAL.price)|default:"n/a"|number_format:"4"}</td>{/if}
@@ -39,7 +39,7 @@
               <td>n/a</td>
               <td>{if $GLOBAL.userdata.donate_percent|default:"0" >= 2}<i class="fa fa-trophy fa-fw"></i>{elseif $GLOBAL.userdata.donate_percent|default:"0" < 2 AND $GLOBAL.userdata.donate_percent|default:"0" > 0}<i class="fa fa-star-o fa-fw"></i>{else}<i class="fa fa-ban fa-fw"></i>{/if}</td>
               <td>{$GLOBAL.userdata.username|escape}</td>
-              <td class="text-right">{$GLOBAL.userdata.rawhashrate|number_format}</td>
+              <td class="text-right">{$GLOBAL.userdata.rawhashrate|number_format:"3"}</td>
               <td class="text-right">{$myestday|number_format:"3"|default:"n/a"}</td>
               {if $GLOBAL.config.price.enabled}
               {if $GLOBAL.config.price.currency}<td class="text-right">{($myestday * $GLOBAL.price)|default:"n/a"|number_format:"4"}</td>{/if}
