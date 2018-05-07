@@ -58,6 +58,7 @@ $aGlobal = array(
   'sharerate' => $iCurrentPoolShareRate,
   'workers' => $iCurrentActiveWorkers,
   'roundshares' => $aRoundShares,
+  'languages' => array_keys($languages),
   'fees' => $config['fees'],
   'confirmations' => $config['confirmations'],
   'reward' => $config['reward_type'] == 'fixed' ? $config['reward'] : $block->getAverageAmount(),

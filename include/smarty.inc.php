@@ -29,3 +29,5 @@ if ($config['smarty']['cache']) {
 
 // Load custom smarty plugins
 require_once(INCLUDE_DIR . '/lib/smarty_plugins/function.acl.php');
+require_once(INCLUDE_DIR . '/lib/smarty_plugins/function.locale.php');
+require_once(INCLUDE_DIR . '/lib/smarty_plugins/block.t.php');
