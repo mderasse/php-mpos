@@ -13,7 +13,7 @@ class CoinBase extends Base {
   protected $target_bits = NULL;
 
   // Our coins share difficulty precision
-  protected $share_difficulty_precision = 0;
+  protected $share_difficulty_precision = 3;
 
   // Our coin value precision, mostly used on frontend
   protected $coin_value_precision = 8;

@@ -115,7 +115,7 @@ $(document).ready(function(){
     $('#b-price').html((number_format(parseFloat(data.getdashboarddata.data.pool.price).toFixed(8), 3)));
   {/literal}{/if}{literal}
     $('#b-poolworkers').html(number_format(data.getdashboarddata.data.pool.workers));
-    $('#b-hashrate').html((number_format(data.getdashboarddata.data.personal.hashrate, 2)));
+    $('#b-hashrate').html((number_format(data.getdashboarddata.data.personal.hashrate*1000*60, 0)));
     $('#b-poolhashrate').html(number_format(data.getdashboarddata.data.pool.hashrate, 2));
     if (data.getdashboarddata.data.network.hashrate > 0) {
       $('#b-nethashrate').html(number_format(data.getdashboarddata.data.network.hashrate, 2));
