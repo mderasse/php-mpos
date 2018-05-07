@@ -9,7 +9,7 @@
          <thead>
           <tr>
             <th>Worker</th>
-            <th>Hashrate (H/m)</th>
+            <th>Hashrate</th>
             <th>Difficulty</th>
           </tr>
           </thead>
