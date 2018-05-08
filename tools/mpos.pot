@@ -36,10 +36,13 @@ msgid "Guest"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:80
+#: ../templates/bootstrap//global/navigation.tpl:9
+#: ../templates/bootstrap//global/navigation.tpl:34
 msgid "Dashboard"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:81
+#: ../templates/bootstrap//global/navigation.tpl:36
 msgid "Settings"
 msgstr ""
 
@@ -48,15 +51,176 @@ msgid "Workers"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:85
+#: ../templates/bootstrap//global/navigation.tpl:108
 msgid "Logout"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:88
+#: ../templates/bootstrap//global/navigation.tpl:110
 msgid "Login"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:89
+#: ../templates/bootstrap//global/navigation.tpl:111
 msgid "Sign Up"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:5
+msgid "Home"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:13
+msgid "My Account"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:15
+msgid "Edit Account"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:16
+msgid "My Workers"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:17
+#: ../templates/bootstrap//global/navigation.tpl:43
+msgid "Transactions"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:18
+msgid "Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:19
+msgid "Notifications"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:20
+#: ../templates/bootstrap//global/navigation.tpl:59
+msgid "Invitations"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:21
+msgid "QR Codes"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:28
+msgid "Admin Panel"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:31
+msgid "System"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:33
+msgid "Setup"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:35
+msgid "Monitoring"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:40
+msgid "Funds"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:42
+msgid "Wallet Info"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:47
+msgid "News"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:49
+msgid "Site News"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:50
+msgid "Newsletter"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:54
+msgid "Users"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:56
+msgid "User Info"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:57
+msgid "Reports"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:58
+msgid "Registrations"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:60
+msgid "Pool Workers"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:69
+msgid "Statistics"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:71
+msgid "Pool"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:72
+msgid "Blocks"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:73
+msgid "Round"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:74
+msgid "Blockfinder"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:75
+msgid "Uptime"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:76
+msgid "Graphs"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:77
+msgid "Donors"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:91
+msgid "Help"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:93
+msgid "Getting Started"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:94
+msgid "About"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:95
+msgid "Web Chat"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:96
+msgid "Forum"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:105
+msgid "Other"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:113
+msgid "Contact"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:115
+msgid "Terms and Conditions"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:70
