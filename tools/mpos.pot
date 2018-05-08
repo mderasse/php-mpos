@@ -1,0 +1,88 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+#: ../templates/bootstrap//global/footer.tpl:5
+msgid ""
+"Powered by <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank"
+"\">MPOS</a>"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:4
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:43
+msgid "New Block"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:44
+msgid "Payout"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:45
+msgid "IDLE Worker"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:46
+msgid "Successful Login"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:57
+msgid "See All Notifications"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:76
+msgid "Guest"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:80
+msgid "Dashboard"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:81
+msgid "Settings"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:82
+msgid "Workers"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:85
+msgid "Logout"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:88
+msgid "Login"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:89
+msgid "Sign Up"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "en"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "fr"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "es"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "de"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "it"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "ru"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "zh"
+msgstr ""
