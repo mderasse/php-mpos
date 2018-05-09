@@ -6,7 +6,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h4 class="panel-title"><i class="fa fa-align-left fa-fw"></i> Overview</h4>
+        <h4 class="panel-title"><i class="fa fa-align-left fa-fw"></i> {t}Overview{/t}</h4>
       </div>
       <div class="panel-body text-center">
         <div class="row">
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <h6>Refresh interval: {$GLOBAL.config.statistics_ajax_refresh_interval|default:"10"} seconds, worker and account {$GLOBAL.config.statistics_ajax_long_refresh_interval|default:"10"} seconds. Hashrate based on shares submitted in the past {$INTERVAL|default:"5"} minutes.</h6>
+        <h6>{t refresh_time=$GLOBAL.config.statistics_ajax_refresh_interval|default:"10" refresh_long_time=$GLOBAL.config.statistics_ajax_long_refresh_interval|default:"10" refresh_interval=$INTERVAL|default:"5"}Refresh interval: %1 seconds, worker and account %2 seconds. Hashrate based on shares submitted in the past %3 minutes.{/t}</h6>
       </div>
     </div>
   </div>

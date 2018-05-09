@@ -120,7 +120,7 @@ $(document).ready(function(){
     if (data.getdashboarddata.data.network.hashrate > 0) {
       $('#b-nethashrate').html(number_format(data.getdashboarddata.data.network.hashrate, 2));
     } else {
-      $('#b-nethashrate').html('n/a');
+      $('#b-nethashrate').html('{/literal}{t}n/a{/t}{literal}');
     }
     $('#b-sharerate').html((parseFloat(data.getdashboarddata.data.personal.sharerate).toFixed({/literal}{$GLOBAL.config.sharediffprecision}{literal})));
     $('#b-yvalid').html(number_format(data.getdashboarddata.data.personal.shares.valid, {/literal}{$GLOBAL.config.sharediffprecision}{literal}));
@@ -140,10 +140,10 @@ $(document).ready(function(){
     $('#b-diff').html(number_format(data.getdashboarddata.data.network.difficulty, 8));
     if (data.getdashboarddata.data.network.hashrate > 0) {
       $('#b-nextdiff').html(number_format(data.getdashboarddata.data.network.nextdifficulty, 8));
-      $('#b-nextdiffc').html(" Change in " + data.getdashboarddata.data.network.blocksuntildiffchange + " Blocks");
+      $('#b-nextdiffc').html(" {/literal}{t}Change in{/t}{literal} " + data.getdashboarddata.data.network.blocksuntildiffchange + " {/literal}{t}Blocks{/t}{literal}");
     } else {
-      $('#b-nextdiff').html('n/a');
-      $('#b-nextdiffc').html(' No Estimates');
+      $('#b-nextdiff').html('{/literal}{t}n/a{/t}{literal}');
+      $('#b-nextdiffc').html(' {/literal}{t}No Estimates{/t}{literal}');
     }
     $('#b-esttimeperblock').html(data.getdashboarddata.data.pool.esttimeperblock.toHHMMSS());
     $('#b-nblock').html(data.getdashboarddata.data.network.block);
@@ -180,8 +180,8 @@ $(document).ready(function(){
         $('#b-workers').append('<tr><td class="text-left">' + workers[i].username + '</td><td class="text-right">' + number_format(workers[i].hashrate, 2) + '</td><td class="text-right">' + workers[i].difficulty + '</td></tr>');
       }
     }
-    if (j == 0) { $('#b-workers').html('<tr><td colspan="3" class="text-center">No active workers</td></tr>'); }
-    if (totalHashrate > 0) { $('#b-workers').append('<tr><td class="text-left"><b>Total</b></td><td class="text-right">' + number_format(totalHashrate, 2) + '</td><td></td></tr>'); }
+    if (j == 0) { $('#b-workers').html('<tr><td colspan="3" class="text-center">{/literal}{t}No active workers{/t}{literal}</td></tr>'); }
+    if (totalHashrate > 0) { $('#b-workers').append('<tr><td class="text-left"><b>{/literal}{t}Total{/t}{literal}</b></td><td class="text-right">' + number_format(totalHashrate, 2) + '</td><td></td></tr>'); }
   }
 
   function refreshBlockData(data) {
