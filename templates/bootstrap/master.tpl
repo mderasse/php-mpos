@@ -5,6 +5,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{$GLOBAL.website.title} - {$smarty.request.page|escape|default:"home"|capitalize}</title>
+  <meta name="description" content="Verium Mining Pool - Join now and come mining Verium - ASIC and GPU resistant Cryptocurrency - Verium & Vericoin the only Binary Chain Cryptocurrency">
+  <meta name="keywords" content="verium, vericoin, pool, mining, cpu, binary, chain, blockchain, bitcoin, vrm, vrc, cryptocurrency">
   
   <!--[if lt IE 9]>
   <link rel="stylesheet" href="{$PATH}/css/ie.css" type="text/css" media="screen" />
