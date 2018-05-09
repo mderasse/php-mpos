@@ -16,29 +16,30 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-money fa-fw"></i> Cash Out
+        <i class="fa fa-money fa-fw"></i> {t}Cash Out{/t}
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12">
             <div class="form-group">
               <p style="padding-left:3px; padding-redight:30px; font-size:10px;">
-                {if $GLOBAL.config.txfee_manual > 0}Please note: a {if $txfee_manual > 0.00001}{$txfee_manual}{else}{$txfee_manual|number_format:"8"}{/if} {$GLOBAL.config.currency} transaction fee will apply when processing "On-Demand" manual payments{if $GLOBAL.config.txfee_manual_dynamic.enabled} (High Estimation){/if} <span id="tt"><img width="15px" height="15px" title="This {if $txfee_manual > 0.00001}{$txfee_manual}{else}{$txfee_manual|number_format:"8"}{/if} manual payment transaction fee is a network fee and goes back into the network not the pool." src="site_assets/bootstrap/images/questionmark.png"></span>{/if}
+                {capture assign=txfee_manual_formatted}{if $txfee_manual > 0.00001}{$txfee_manual}{else}{$txfee_manual|number_format:"8"}{/if}{/capture}
+                {if $GLOBAL.config.txfee_manual > 0}{t txfee_manual_formatted=$txfee_manual_formatted currency=$GLOBAL.config.currency}Please note: a %1 %2 transaction fee will apply when processing "On-Demand" manual payments{/t}{if $GLOBAL.config.txfee_manual_dynamic.enabled} ({t}High Estimation{/t}){/if} <span id="tt"><img width="15px" height="15px" title="{t txfee_manual_formatted=$txfee_manual_formatted}This %1 manual payment transaction fee is a network fee and goes back into the network not the pool.{/t}" src="site_assets/bootstrap/images/questionmark.png"></span>{/if}
               </p>
               <p style="padding-left:3px; padding-redight:30px; font-size:10px;">
-                Minimum Cashout: {$GLOBAL.config.mp_threshold} {$GLOBAL.config.currency}
+                {t mp_threshold=$GLOBAL.config.mp_threshold currency=$GLOBAL.config.currency}Minimum Cashout: %1 %2{/t}
               </p>
             </div>
             <div class="form-group">
-              <label>Account Balance</label>
+              <label>{t}Account Balance{/t}</label>
               {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.balance.confirmed|escape}" {$GLOBAL.config.currency} disabled />{/nocache}
             </div>
             <div class="form-group">
-              <label>Payout to</label>
+              <label>{t}Payout to{/t}</label>
               {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.coin_address|escape}" disabled />{/nocache}
             </div>
             <div class="form-group">
-              <label>4 Digit PIN</label>
+              <label>{t}4 Digit PIN{/t}</label>
               <input class="form-control" type="password" name="authPin" size="4" maxlength="4" />
             </div>
           </div>
@@ -51,16 +52,16 @@
       <input type="hidden" name="utype" value="withdraw_funds">
       {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.withdraw}
       {if $GLOBAL.userdata.balance.confirmed|escape < $GLOBAL.config.mp_threshold}
-      <input type="submit" value="Unlock" class="btn btn-warning btn-sm" name="unlock"  disabled="disabled">
+      <input type="submit" value="{t}Unlock{/t}" class="btn btn-warning btn-sm" name="unlock"  disabled="disabled">
       {elseif $WITHDRAWSENT == 1 && $WITHDRAWUNLOCKED == 1}
-      <input type="submit" value="Cash Out" class="btn btn-success btn-sm">
+      <input type="submit" value="{t}Cash Out{/t}" class="btn btn-success btn-sm">
       {elseif $WITHDRAWSENT == 0 && $WITHDRAWUNLOCKED == 1 || $WITHDRAWSENT == 1 && $WITHDRAWUNLOCKED == 0}
-      <input type="submit" value="Cash Out" class="btn btn-danger btn-sm" disabled="disabled">
+      <input type="submit" value="{t}Cash Out{/t}" class="btn btn-danger btn-sm" disabled="disabled">
       {elseif $WITHDRAWSENT == 0 && $WITHDRAWUNLOCKED == 0}
-      <input type="submit" value="Unlock" class="btn btn-warning btn-sm" name="unlock">
+      <input type="submit" value="{t}Unlock{/t}" class="btn btn-warning btn-sm" name="unlock">
       {/if}
       {else}
-      <input type="submit" value="Cash Out" class="btn btn-success btn-sm">
+      <input type="submit" value="{t}Cash Out{/t}" class="btn btn-success btn-sm">
       {/if}
       {/nocache}
       </div>
