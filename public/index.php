@@ -107,6 +107,9 @@ else if(isset($_REQUEST['lang']) && in_array(substr($_REQUEST['lang'], 0, 2), ar
 $_SESSION['USERDATA']['language'] = $userLanguage;
 putenv("LC_ALL=" . $languages[$userLanguage]);
 setlocale(LC_ALL, $languages[$userLanguage], $languages[$userLanguage] . '.UTF-8');
+// Numeric should stay en_US. If you change that, be ready to have everything broken (JS and math don't really like 1,528.3 or 123,8)
+setlocale(LC_MONETARY, 'en_US', 'en_US.UTF-8');
+setlocale(LC_NUMERIC, 'en_US', 'en_US.UTF-8');
 
 // show last logged in popup if it's still set
 if (@$_GET['clp'] == 1 && @$_SESSION['last_ip_pop']) unset($_SESSION['last_ip_pop']);
