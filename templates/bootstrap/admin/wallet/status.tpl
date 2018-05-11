@@ -1,7 +1,7 @@
 	<div class="col-lg-8">
 		<div class="panel panel-info">
 			<div class="panel-heading">
-				<i class="fa fa-info fa-fw"></i> Wallet Status
+				<i class="fa fa-info fa-fw"></i> {t}Wallet Status{/t}
 			</div>
 			<div class="panel-body no-padding">
 				<div class="table-responsive">
@@ -15,9 +15,9 @@
 								<th>Status</th>
 								<th>Blocks</th>
 								{if $LABELSCOMMAND}
-									<th>Labels</th>
+									<th>{t}Labels{/t}</th>
 								{else}
-									<th>Accounts</th>
+									<th>{t}Accounts{/t}</th>
 								{/if}
 							</tr>
 						</thead>

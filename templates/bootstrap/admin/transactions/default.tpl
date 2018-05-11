@@ -3,7 +3,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-money fa-fw"></i> Transaction Summary
+        <i class="fa fa-money fa-fw"></i> {t}Transaction Summary{/t}
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
@@ -11,7 +11,7 @@
             <thead>
               <tr>
               {foreach $SUMMARY as $type=>$total}
-                <th>{$type}</th>
+                <th>{t type=$type}%1{/t}</th>
               {/foreach}
               </tr>
             </thead>
