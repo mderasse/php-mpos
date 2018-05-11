@@ -12,10 +12,13 @@ msgid "Toggle navigation"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:43
+#: ../templates/bootstrap//account/notifications/default.tpl:160
 msgid "New Block"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:44
+#: ../templates/bootstrap//account/notifications/default.tpl:89
+#: ../templates/bootstrap//account/notifications/default.tpl:161
 msgid "Payout"
 msgstr ""
 
@@ -24,6 +27,8 @@ msgid "IDLE Worker"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:46
+#: ../templates/bootstrap//account/notifications/default.tpl:102
+#: ../templates/bootstrap//account/notifications/default.tpl:163
 msgid "Successful Login"
 msgstr ""
 
@@ -43,10 +48,12 @@ msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:81
 #: ../templates/bootstrap//global/navigation.tpl:36
+#: ../templates/bootstrap//admin/settings/default.tpl:5
 msgid "Settings"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:82
+#: ../templates/bootstrap//statistics/graphs/default.tpl:23
 msgid "Workers"
 msgstr ""
 
@@ -57,6 +64,7 @@ msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:88
 #: ../templates/bootstrap//global/navigation.tpl:110
+#: ../templates/bootstrap//login/default.tpl:29
 msgid "Login"
 msgstr ""
 
@@ -96,6 +104,7 @@ msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:20
 #: ../templates/bootstrap//global/navigation.tpl:59
+#: ../templates/bootstrap//admin/dashboard/invitation.tpl:4
 msgid "Invitations"
 msgstr ""
 
@@ -116,6 +125,7 @@ msgid "Setup"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:35
+#: ../templates/bootstrap//admin/monitoring/default.tpl:5
 msgid "Monitoring"
 msgstr ""
 
@@ -140,6 +150,7 @@ msgid "Newsletter"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:54
+#: ../templates/bootstrap//admin/dashboard/user.tpl:5
 msgid "Users"
 msgstr ""
 
@@ -152,10 +163,13 @@ msgid "Reports"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:58
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:4
 msgid "Registrations"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:60
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:62
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:62
 msgid "Pool Workers"
 msgstr ""
 
@@ -164,10 +178,17 @@ msgid "Statistics"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:71
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:6
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:6
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:6
 msgid "Pool"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:72
+#: ../templates/bootstrap//dashboard/js/api.tpl:143
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:12
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:12
+#: ../templates/bootstrap//admin/wallet/status.tpl:16
 msgid "Blocks"
 msgstr ""
 
@@ -204,6 +225,7 @@ msgid "About"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:95
+#: ../templates/bootstrap//about/chat/default.tpl:5
 msgid "Web Chat"
 msgstr ""
 
@@ -221,6 +243,2182 @@ msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:115
 msgid "Terms and Conditions"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:9
+#: ../templates/bootstrap//contactform/default.tpl:9
+msgid "Contact Us"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:15
+#: ../templates/bootstrap//contactform/default.tpl:15
+msgid "Your Name"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:16
+#: ../templates/bootstrap//contactform/default.tpl:16
+msgid "Please type your name"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:19
+#: ../templates/bootstrap//contactform/default.tpl:19
+msgid "Your Email Address"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:20
+#: ../templates/bootstrap//contactform/default.tpl:20
+msgid "Please type your email"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:23
+#: ../templates/bootstrap//contactform/default.tpl:23
+msgid "Your Subject"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:24
+#: ../templates/bootstrap//contactform/default.tpl:24
+msgid "Please type your subject"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:32
+#: ../templates/bootstrap//contactform/default.tpl:32
+msgid "Your Message"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:39
+#: ../templates/bootstrap//contactform/default.tpl:39
+msgid "Send Email"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:40
+#: ../templates/bootstrap//contactform/default.tpl:40
+msgid "Reset Values"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/disabled.tpl:5
+msgid "Contact & Support"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/disabled.tpl:10
+msgid ""
+"This product comes 'as-is' without any warranty. Please check the Apache "
+"License, Version 2.0, for details."
+msgstr ""
+
+#: ../templates/bootstrap//home/news_all.tpl:8
+#: ../templates/bootstrap//home/news_accordion.tpl:14
+#: ../templates/bootstrap//admin/news/default.tpl:51
+msgid "posted %1"
+msgstr ""
+
+#: ../templates/bootstrap//home/news_all.tpl:8
+#: ../templates/bootstrap//home/news_accordion.tpl:14
+#: ../templates/bootstrap//admin/news/default.tpl:51
+msgid "by <b>%1</b>"
+msgstr ""
+
+#: ../templates/bootstrap//home/news_accordion.tpl:5
+msgid "latest News"
+msgstr ""
+
+#: ../templates/bootstrap//password/change/default.tpl:11
+#: ../templates/bootstrap//password/default.tpl:8
+msgid "Password reset"
+msgstr ""
+
+#: ../templates/bootstrap//password/change/default.tpl:16
+#: ../templates/bootstrap//account/edit/password.tpl:24
+msgid "New Password"
+msgstr ""
+
+#: ../templates/bootstrap//password/change/default.tpl:22
+#: ../templates/bootstrap//account/edit/password.tpl:29
+msgid "Repeat New Password"
+msgstr ""
+
+#: ../templates/bootstrap//password/change/default.tpl:33
+#: ../templates/bootstrap//password/change/default.tpl:35
+#: ../templates/bootstrap//password/change/default.tpl:40
+#: ../templates/bootstrap//account/edit/password.tpl:9
+#: ../templates/bootstrap//account/edit/password.tpl:48
+#: ../templates/bootstrap//account/edit/password.tpl:50
+#: ../templates/bootstrap//account/edit/password.tpl:55
+msgid "Change Password"
+msgstr ""
+
+#: ../templates/bootstrap//password/change/default.tpl:37
+#: ../templates/bootstrap//account/edit/password.tpl:52
+#: ../templates/bootstrap//account/edit/detail.tpl:96
+#: ../templates/bootstrap//account/edit/cashout.tpl:55
+#: ../templates/bootstrap//account/edit/cashout.tpl:61
+msgid "Unlock"
+msgstr ""
+
+#: ../templates/bootstrap//password/default.tpl:12
+msgid ""
+"If you have an email set for your account, enter your username to get your "
+"password reset"
+msgstr ""
+
+#: ../templates/bootstrap//password/default.tpl:15
+msgid "Username or E-mail"
+msgstr ""
+
+#: ../templates/bootstrap//password/default.tpl:20
+msgid "Reset"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:16
+msgid "Register new account"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:20
+#: ../templates/bootstrap//register/default.tpl:23
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:11
+#: ../templates/bootstrap//admin/invitations/default.tpl:12
+#: ../templates/bootstrap//admin/registrations/default.tpl:14
+#: ../templates/bootstrap//admin/user/default.tpl:90
+#: ../templates/bootstrap//account/edit/detail.tpl:25
+msgid "Username"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:26
+#: ../templates/bootstrap//register/default.tpl:29
+msgid "Coin Address"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:32
+#: ../templates/bootstrap//register/default.tpl:35
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:13
+#: ../templates/bootstrap//login/default.tpl:16
+msgid "Password"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:32
+msgid "Strength"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:40
+msgid "Repeat Password"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:42
+#: ../templates/bootstrap//register/default.tpl:45
+#: ../templates/bootstrap//account/notifications/default.tpl:52
+msgid "Email"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:49
+msgid "Repeat Email"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:51
+#: ../templates/bootstrap//register/default.tpl:55
+msgid "PIN"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:52
+msgid "Four digit number."
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:52
+msgid "Remember this pin!"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:59
+msgid ""
+"I Accept The <a data-toggle=\"modal\" data-target=\"#TAC\">Terms and "
+"Conditions</a>"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:73
+msgid "Register"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:90
+msgid "Close"
+msgstr ""
+
+#: ../templates/bootstrap//register/disabled.tpl:1
+msgid "We are currently not accepting new user registrations."
+msgstr ""
+
+#: ../templates/bootstrap//about/api/default.tpl:5
+msgid "API Reference"
+msgstr ""
+
+#: ../templates/bootstrap//about/api/default.tpl:8
+msgid ""
+"Please head over to the <a href=\"https://github.com/TheSerapher/php-mpos/"
+"wiki/API-Reference\">official documentation</a> to learn about the API "
+"featured in <b>MPOS</b>."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:5
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:9
+msgid "Q: When will I get paid?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:10
+msgid "<b>A:</b> This pool uses the following payout system."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:13
+msgid "Proportional (Prop)"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:13
+msgid ""
+"The block reward is distributed among miners in proportion to the number of "
+"shares they submitted in a round. The expected reward per share depends on "
+"the number of shares already submitted in the round."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:17
+msgid "Pay Per Last N Shares (PPLNS)"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:17
+msgid ""
+"Block rewards are distributed among the last shares, disregarding round "
+"boundaries. In the accurate implementation, the number of shares is "
+"determined so that their total will be a specified quantity of score (where "
+"the score of a share is the inverse of the difficulty). Most pools use a "
+"naive implementation based on a fixed number of shares or a fixed multiple "
+"of the difficulty. The share-variance can be reduced at the cost of "
+"increased maturity time, but there is no way to decrease the long-term pool-"
+"variance."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:21
+msgid "Pay Per Share (PPS)"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:21
+msgid ""
+"Each share receives a fixed reward known in advance. This is the ultimate "
+"low-variance, low-maturity simple method, but has the highest risk for the "
+"operator, and hence lower expected returns than other methods and risk of "
+"collapse if not managed properly."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:24
+msgid "Q: What is a orphan block?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:25
+msgid ""
+"<b>A:</b> Coins generated by a block will not be available to you right "
+"away. They will take some time to be confirmed by the entire network before "
+"you are allowed to transfer them out of the pool. Usually coins have a "
+"confirmation set to 120. What that actually means: the network (not the "
+"pool) has to discover 120 additional blocks on top of the one found by the "
+"pool to confirm it."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:27
+msgid "Q: What is estimated payout?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:28
+msgid ""
+"<b>A:</b> Estimated payout is your estimated payout if a block is found at "
+"that time. This is an estimate according to your amount of shares submitted "
+"for the round(s)."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:31
+msgid "Q: What is pool-variance?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:32
+msgid ""
+"<b>A:</b> This is the variance caused by the pool being too small. Using a "
+"method with high pool-variance does no harm to large pools."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:35
+msgid "Q: What is a share?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:36
+msgid ""
+"<b>A:</b> Finding blocks is not an easy task. Since it would take a really "
+"long time on some coins, finding a block is broken down into shares. "
+"Depending on the server side setting, each share can be a certain "
+"difficulty. The more difficult each share is to find by miners, the fewer "
+"total shares are required to eventually find a block."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:38
+msgid ""
+"On the server side, each share is checked against the coin daemon (a server "
+"side wallet with more features) if it is indeed a valid block solution. "
+"Every share computed has the potential to be a block solution. I will not go "
+"into details why this is, but rest assured that share estimates for blocks "
+"can sometimes be exceeded. In the long run though, shorter round with less "
+"shares than required will make up for those taking very long."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:40
+msgid ""
+"Keep in mind: shares are not blocks! Shares are part of a block and will "
+"count towards the block payout!"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:42
+msgid ""
+"At times, you will see shares being rejected by the pool. This can happen if "
+"you try to send an outdated share right after a block was found. Stratum, a "
+"protocol used by a miner to request work from a server, is used for share "
+"submission and getting new work. It is very solid when it comes to avoiding "
+"rejects but they can still happen once in a while."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:44
+msgid ""
+"If you are seeing reject all the time, then something isn’t working right on "
+"your end. You may also notice that your hashrate on the pool website is not "
+"increasing while your invalid share count keeps climbing up. In that case "
+"turn off your miner and check your settings!"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:46
+msgid "Q: I am having problems connecting to the pool."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:47
+msgid ""
+"<b>A:</b> Double check your settings against our <a href=\"%1?"
+"page=gettingstarted\">getting started page.</a>"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:51
+msgid ""
+"This Pool is running <a href=\"https://github.com/TheSerapher/php-mpos"
+"\">MPOS</a> project code. This frontend was created by <a href=\"https://"
+"github.com/MPOS/php-mpos\">TheSerapher aka Sebastian Grewe</a>. The "
+"operation of the pool is soley at the hand of your trusted pool operator."
+msgstr ""
+
+#: ../templates/bootstrap//about/moot/default.tpl:5
+msgid "Moot Forum"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:123
+#: ../templates/bootstrap//dashboard/js/api.tpl:145
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:130
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:70
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:81
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:81
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:39
+msgid "n/a"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:143
+msgid "Change in"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:146
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
+msgid "No Estimates"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:183
+msgid "No active workers"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:184
+#: ../templates/bootstrap//admin/dashboard/user.tpl:11
+#: ../templates/bootstrap//admin/dashboard/invitation.tpl:10
+msgid "Total"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:5
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:11
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:11
+msgid "Worker"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:6
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:12
+#: ../templates/bootstrap//statistics/graphs/default.tpl:8
+#: ../templates/bootstrap//admin/user/default.tpl:93
+msgid "Hashrate"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:7
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:14
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:13
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:118
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:58
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:58
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:57
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:56
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:39
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:17
+#: ../templates/bootstrap//account/workers/default.tpl:47
+msgid "Difficulty"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:11
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:17
+msgid "No worker information available"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:4
+msgid "Account Information"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:11
+msgid "You are mining without any pool fees applied and"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:14
+msgid "You are mining at <font color=\"orange\">%1%</font> pool fee and"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:16
+msgid "This pool does not apply fees and"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:19
+msgid "you donate <font color=\"green\">%1%</font>."
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:21
+msgid "you are not <a href=\"%1?page=account&action=edit\">donating</a>."
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:28
+msgid "%1 Account Balance"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:32
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:41
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:45
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:42
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:29
+#: ../templates/bootstrap//account/transactions/default.tpl:69
+msgid "Confirmed"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:38
+#: ../templates/bootstrap//admin/wallet/balance.tpl:17
+#: ../templates/bootstrap//account/transactions/default.tpl:73
+msgid "Unconfirmed"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:5
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:4
+msgid "Last Found Blocks"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:11
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:24
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:26
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:19
+msgid "Height"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:12
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:11
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:14
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:75
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:68
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:45
+msgid "Finder"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:13
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:12
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:63
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:58
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:41
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:18
+#: ../templates/bootstrap//account/notifications/default.tpl:149
+msgid "Time"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:15
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:17
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:22
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:22
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:18
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:34
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:38
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:25
+#: ../templates/bootstrap//admin/invitations/default.tpl:14
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:15
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:26
+#: ../templates/bootstrap//account/transactions/default.tpl:51
+msgid "Amount"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:16
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:18
+msgid "Expected Shares"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:17
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:13
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:20
+msgid "Actual Shares"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:18
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:21
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:21
+msgid "Percentage"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:27
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:22
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:26
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:50
+#: ../templates/bootstrap//statistics/donors/default.tpl:19
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:23
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:28
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:29
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:26
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:25
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:22
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:24
+msgid "anonymous"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:29
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:19
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:25
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:49
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:28
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:25
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:23
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:76
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:21
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:69
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:46
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:23
+msgid "unknown"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/default.tpl:9
+msgid "Overview"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/default.tpl:27
+msgid ""
+"Refresh interval: %1 seconds, worker and account %2 seconds. Hashrate based "
+"on shares submitted in the past %3 minutes."
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:5
+msgid "Worker Information"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:13
+msgid "%1 1 Hour Estimated Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:28
+msgid "%1 24 Hour Estimated Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:43
+msgid "%1 7 Days Estimated Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:58
+msgid "%1 14 Days Estimated Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:73
+msgid "%1 30 Days Estimated Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:88
+msgid "PPS"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:88
+msgid "Value"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:103
+msgid "Unpaid"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:103
+msgid "difficulty shares"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:30
+msgid "Est. Next Difficulty"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:32
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:34
+msgid "Change in %1 Blocks"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:148
+msgid "Estimated Average"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:148
+msgid "Time per Block"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:5
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:5
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:5
+msgid "Own"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:9
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:9
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:9
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:15
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:13
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:13
+msgid "Valid"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:22
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:22
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:22
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:14
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:18
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:14
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:14
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:15
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:21
+msgid "Invalid"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:35
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:35
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:35
+msgid "Efficiency"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/default.tpl:5
+#: ../templates/bootstrap//dashboard/round_statistics/prop/default.tpl:5
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/default.tpl:5
+msgid "Round Information"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/default.tpl:16
+#: ../templates/bootstrap//dashboard/round_statistics/prop/default.tpl:16
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/default.tpl:16
+msgid "Share Information"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:13
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:13
+#: ../templates/bootstrap//statistics/default.tpl:18
+msgid "Current Block"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:28
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:28
+msgid "Of Expected Shares"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:43
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:43
+msgid "%1 Est. Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:88
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:88
+msgid "Est. Avg. Time per Block"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:8
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:8
+msgid "My Hashrate"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:26
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:26
+msgid "Pool Hashrate"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:44
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:44
+msgid "My Sharerate"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:79
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:79
+msgid "Net Hashrate"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/overview/default.tpl:5
+msgid "Pool Information"
+msgstr ""
+
+#: ../templates/bootstrap//error/ratelimit/default.tpl:2
+msgid "Request rate limit exceeded"
+msgstr ""
+
+#: ../templates/bootstrap//error/ratelimit/default.tpl:4
+msgid "You're sending too many requests too fast!"
+msgstr ""
+
+#: ../templates/bootstrap//error/default.tpl:4
+#: ../templates/bootstrap//error/404/default.tpl:4
+msgid "The page you requested was not found."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:4
+msgid "Blocks found by own Workers"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:10
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:10
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:10
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:10
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:11
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:11
+msgid "Rank"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:13
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:13
+msgid "Coins Generated"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:19
+msgid "unknown/deleted"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:4
+msgid "Top 25 Blockfinder"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
+msgid "Average Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:19
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:20
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:32
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:19
+msgid "PPLNS Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:41
+msgid "Block Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:10
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:12
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:12
+msgid "Block"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:36
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:82
+msgid ""
+"Round Earnings are not credited until <font class=\"confirmations\">%1</"
+"font> confirms."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:5
+msgid "Last %1 Blocks Found"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:13
+msgid "Validity"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:43
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:47
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:44
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:31
+msgid "Orphan"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:46
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:51
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:48
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:35
+msgid "%1 left"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:69
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:78
+msgid "Totals"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:5
+msgid "Block Overview"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:13
+msgid "Gen. Est."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:14
+msgid "Found"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:17
+msgid "Orphan %"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:18
+msgid "Avg. Diff"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:19
+msgid "Shares Est."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:20
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:13
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:69
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:66
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:43
+#: ../templates/bootstrap//admin/user/default.tpl:92
+msgid "Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:23
+msgid "Rate Est."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:28
+#: ../templates/bootstrap//statistics/uptime/default.tpl:16
+#: ../templates/bootstrap//account/earnings/default.tpl:28
+msgid "All Time"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:54
+#: ../templates/bootstrap//admin/userdetails/default.tpl:61
+#: ../templates/bootstrap//account/earnings/default.tpl:66
+msgid "Last Hour"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:80
+msgid "Last 24 Hours"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:106
+#: ../templates/bootstrap//account/earnings/default.tpl:136
+msgid "Last 7 Days"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:132
+msgid "Last 4 Weeks"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:158
+msgid "The Past 12 Months"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:188
+msgid ""
+"Round earnings are not credited until <font class=\"confirmations\">%1</"
+"font> confirms."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/donors/default.tpl:5
+msgid "Pool Donors"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/donors/default.tpl:11
+msgid "Name"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/donors/default.tpl:13
+msgid "%1 Total"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/donors/default.tpl:25
+msgid "No confirmed donations yet, please be patient!"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:4
+msgid "UptimeRobot Status"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:9
+msgid "Location"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:10
+msgid "Service"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:11
+#: ../templates/bootstrap//admin/wallet/status.tpl:15
+#: ../templates/bootstrap//account/transactions/default.tpl:24
+#: ../templates/bootstrap//account/transactions/default.tpl:47
+msgid "Status"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:12
+msgid "Status Since"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:13
+msgid "Day"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:14
+msgid "Week"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:15
+msgid "Month"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:61
+msgid "Last update"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:4
+msgid "Contributor Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:11
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:11
+msgid "Donor"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:12
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:12
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:12
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:12
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:12
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:11
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:12
+msgid "User Name"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:40
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:54
+msgid "no Donation"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:41
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:55
+msgid "0%-2% Donation"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:42
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:56
+msgid "2% or more Donation"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:4
+#: ../templates/bootstrap//statistics/default.tpl:4
+msgid "General Statistics"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:10
+#: ../templates/bootstrap//statistics/default.tpl:10
+msgid "Pool Hash Rate"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:14
+msgid "Pool Efficiency"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:18
+msgid "Current Active Workers"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:22
+#: ../templates/bootstrap//statistics/default.tpl:22
+msgid "Current Difficulty"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:38
+msgid "Est. Avg. Time per Round (Network)"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:42
+msgid "Est. Avg. Time per Round (Pool)"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:46
+msgid "Est. Shares this Round"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:47
+msgid "done"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:51
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:56
+msgid "Next Network Block"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:57
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:12
+msgid "Current"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:61
+msgid "Last Block Found"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:65
+msgid "Time Since Last Block"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:72
+msgid ""
+"These stats are also available in JSON format <a href=\"%1?"
+"page=api&action=getpoolstatus&api_key=%2\">HERE</a>"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:4
+msgid "Contributor Hashrates"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:14
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:16
+msgid "%1/Day"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/default.tpl:14
+msgid "Current Total Miners"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/default.tpl:29
+msgid ""
+"These stats are also available in JSON format <a href=\"%1?"
+"page=api&action=public\" target=\"_api\">HERE</a>"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:38
+msgid "Sharerate"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:54
+msgid "Average Hashrate past 24h"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:60
+msgid "Your average hashrate per hour, updated every backend cron run."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:70
+msgid "Average Workers past 24h"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:76
+msgid "Your average active workers per hour, updated every backend cron run."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:86
+msgid "Average Sharerate past 24h"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:92
+msgid "Your share rate per hour, updated every backend cron run."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:5
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:5
+msgid "Round Statistics"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:13
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:14
+msgid "Round Valid"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:19
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:15
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:16
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:22
+msgid "Invalid %"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:14
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:14
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:17
+msgid "Round %"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:17
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:20
+msgid "PPLNS Valid"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:20
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:16
+msgid "PPLNS Round %"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:21
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:17
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:24
+msgid "Variance"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:5
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:4
+msgid "Round Transactions"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:13
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:4
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:13
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:13
+msgid "Round Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:12
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:5
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:18
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:5
+msgid "Block Statistics"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:13
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:19
+msgid "PPLNS Round Statistics"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:18
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:24
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:17
+#: ../templates/bootstrap//admin/registrations/default.tpl:13
+#: ../templates/bootstrap//admin/user/default.tpl:89
+#: ../templates/bootstrap//account/notifications/default.tpl:148
+#: ../templates/bootstrap//account/transactions/default.tpl:44
+msgid "ID"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:30
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:34
+msgid "Estimated Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:36
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:62
+msgid "Target Variance"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:43
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:40
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:27
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:16
+msgid "Confirmations"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:53
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:50
+msgid "Block Average"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:59
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:52
+msgid "Average Efficiency"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:65
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:60
+msgid "Target Rounds"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:71
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:71
+msgid "Seconds This Round"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:78
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:73
+msgid "Round Variance"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:98
+msgid "Search Block Height"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:101
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:86
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:58
+#: ../templates/bootstrap//admin/user/default.tpl:71
+msgid "Search"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:12
+#: ../templates/bootstrap//account/notifications/default.tpl:150
+#: ../templates/bootstrap//account/transactions/default.tpl:20
+msgid "Type"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:9
+#: ../templates/bootstrap//admin/invitations/default.tpl:35
+#: ../templates/bootstrap//admin/registrations/default.tpl:39
+#: ../templates/bootstrap//admin/user/default.tpl:39
+#: ../templates/bootstrap//admin/user/default.tpl:42
+#: ../templates/bootstrap//account/transactions/default.tpl:13
+msgid "Prev"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:12
+#: ../templates/bootstrap//admin/invitations/default.tpl:38
+#: ../templates/bootstrap//admin/registrations/default.tpl:42
+#: ../templates/bootstrap//admin/user/default.tpl:46
+#: ../templates/bootstrap//account/transactions/default.tpl:16
+msgid "Next"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:4
+msgid "PPLNS Round Shares"
+msgstr ""
+
+#: ../templates/bootstrap//admin/invitations/default.tpl:6
+msgid "Top Inviters"
+msgstr ""
+
+#: ../templates/bootstrap//admin/invitations/default.tpl:13
+#: ../templates/bootstrap//admin/registrations/default.tpl:15
+#: ../templates/bootstrap//admin/user/default.tpl:91
+msgid "eMail"
+msgstr ""
+
+#: ../templates/bootstrap//admin/invitations/default.tpl:15
+#: ../templates/bootstrap//admin/dashboard/invitation.tpl:12
+msgid "Outstanding"
+msgstr ""
+
+#: ../templates/bootstrap//admin/invitations/default.tpl:16
+#: ../templates/bootstrap//admin/dashboard/invitation.tpl:11
+#: ../templates/bootstrap//account/invitations/default.tpl:41
+msgid "Activated"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:12
+msgid "Edit news entry #%1"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:24
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:14
+#: ../templates/bootstrap//admin/dashboard/user.tpl:12
+#: ../templates/bootstrap//admin/news/default.tpl:22
+#: ../templates/bootstrap//admin/monitoring/default.tpl:13
+#: ../templates/bootstrap//account/workers/default.tpl:44
+#: ../templates/bootstrap//account/notifications/default.tpl:151
+msgid "Active"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:31
+#: ../templates/bootstrap//admin/news/default.tpl:26
+msgid "Header"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:35
+#: ../templates/bootstrap//admin/newsletter/default.tpl:26
+#: ../templates/bootstrap//admin/news/default.tpl:30
+msgid "Content"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:42
+#: ../templates/bootstrap//admin/settings/default.tpl:43
+msgid "Save"
+msgstr ""
+
+#: ../templates/bootstrap//admin/registrations/default.tpl:6
+msgid "Last Registered Users"
+msgstr ""
+
+#: ../templates/bootstrap//admin/registrations/default.tpl:16
+#: ../templates/bootstrap//admin/user/default.tpl:101
+msgid "Reg. Date"
+msgstr ""
+
+#: ../templates/bootstrap//admin/registrations/default.tpl:17
+#: ../templates/bootstrap//account/invitations/default.tpl:23
+msgid "Invite"
+msgstr ""
+
+#: ../templates/bootstrap//admin/registrations/default.tpl:18
+msgid "Invited From"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:6
+msgid "%1 Account Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:13
+msgid "All Time Transaction Totals"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:20
+#: ../templates/bootstrap//admin/monitoring/default.tpl:22
+#: ../templates/bootstrap//admin/transactions/default.tpl:14
+msgid "%1"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:41
+msgid "Transactions over time"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:48
+#: ../templates/bootstrap//account/earnings/default.tpl:53
+#: ../templates/bootstrap//account/earnings/default.tpl:144
+msgid "Credit"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:49
+#: ../templates/bootstrap//account/earnings/default.tpl:54
+#: ../templates/bootstrap//account/earnings/default.tpl:145
+msgid "Bonus"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:50
+#: ../templates/bootstrap//account/earnings/default.tpl:55
+#: ../templates/bootstrap//account/earnings/default.tpl:146
+msgid "Debit AP"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:51
+#: ../templates/bootstrap//account/earnings/default.tpl:56
+#: ../templates/bootstrap//account/earnings/default.tpl:147
+msgid "Debit MP"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:52
+#: ../templates/bootstrap//account/earnings/default.tpl:57
+#: ../templates/bootstrap//account/earnings/default.tpl:148
+msgid "Donation"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:54
+#: ../templates/bootstrap//account/earnings/default.tpl:59
+#: ../templates/bootstrap//account/earnings/default.tpl:150
+msgid "Fee"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:56
+#: ../templates/bootstrap//account/earnings/default.tpl:61
+#: ../templates/bootstrap//account/earnings/default.tpl:152
+msgid "TXFee"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:73
+#: ../templates/bootstrap//account/earnings/default.tpl:78
+msgid "Last Day"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:85
+#: ../templates/bootstrap//account/earnings/default.tpl:90
+msgid "Last Week"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:97
+#: ../templates/bootstrap//account/earnings/default.tpl:102
+msgid "Last Month"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:109
+#: ../templates/bootstrap//account/earnings/default.tpl:114
+msgid "Last Year"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:5
+msgid "%1 Current Active Pool Workers"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:12
+#: ../templates/bootstrap//account/workers/default.tpl:13
+msgid "Worker Name"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:15
+#: ../templates/bootstrap//account/workers/default.tpl:45
+msgid "Monitor"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:16
+#: ../templates/bootstrap//account/workers/default.tpl:46
+msgid "Khash/s"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:18
+msgid "Avg Difficulty"
+msgstr ""
+
+#: ../templates/bootstrap//admin/newsletter/default.tpl:10
+msgid "Write Newsletter"
+msgstr ""
+
+#: ../templates/bootstrap//admin/newsletter/default.tpl:12
+msgid "Newsletters support the Markdown syntax"
+msgstr ""
+
+#: ../templates/bootstrap//admin/newsletter/default.tpl:22
+msgid "Subject"
+msgstr ""
+
+#: ../templates/bootstrap//admin/newsletter/default.tpl:33
+msgid "Send"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:13
+#: ../templates/bootstrap//admin/user/default.tpl:104
+msgid "Locked"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:14
+msgid "Admins"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:15
+#: ../templates/bootstrap//admin/user/default.tpl:66
+#: ../templates/bootstrap//admin/user/default.tpl:105
+msgid "No Fees"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:35
+msgid "Logins"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:41
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:11
+msgid "24 hours"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:42
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:12
+msgid "7 days"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:43
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:13
+msgid "1 month"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:44
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:14
+msgid "6 months"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:45
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:15
+msgid "1 year"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:5
+msgid "MPOS Version Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:11
+msgid "Component"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:13
+msgid "Installed"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:14
+msgid "Online"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:29
+msgid "Config"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:39
+msgid "Database"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:57
+msgid "MPOS Status"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:63
+msgid "Cronjobs"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:64
+msgid "Wallet"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:67
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:69
+msgid "Errors"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:68
+#: ../templates/bootstrap//admin/monitoring/default.tpl:11
+#: ../templates/bootstrap//account/notifications/default.tpl:22
+msgid "Disabled"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:75
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:78
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:81
+msgid "None - OK"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:33
+msgid "User Search"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:50
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:12
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:13
+msgid "Account"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:54
+#: ../templates/bootstrap//account/invitations/default.tpl:13
+#: ../templates/bootstrap//account/invitations/default.tpl:39
+#: ../templates/bootstrap//account/edit/detail.tpl:40
+msgid "E-Mail"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:58
+msgid "Is Admin"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:62
+msgid "Is Locked"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:82
+msgid "User Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:95
+msgid "Est. Donation"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:96
+msgid "Est. Payout"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:98
+msgid "Est. 24 Hours"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:100
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:24
+msgid "Balance"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:102
+msgid "Last Login"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:103
+msgid "Admin"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:5
+msgid "Peer Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:12
+msgid "Host"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:13
+msgid "Protocol"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:14
+msgid "Identity"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:15
+msgid "Connected"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:16
+msgid "Traffic"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:4
+msgid "Balance Summary"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:9
+msgid "Wallet Balance"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:13
+msgid "Locked for users"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:22
+#: ../templates/bootstrap//admin/wallet/balance.tpl:35
+msgid "Liquid Assets"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:30
+msgid "PoS New Mint"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:4
+msgid "Wallet Status"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:11
+msgid "Version"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:12
+msgid "Protocol Version"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:13
+msgid "Wallet Version"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:14
+msgid "Peers"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:17
+msgid "Accounts"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:5
+msgid "Last %1 transactions"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:13
+msgid "Address"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:14
+msgid "Category"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:17
+msgid "Transaction ID"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:23
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:2
+msgid "Default"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:6
+msgid "Wallet Accounts"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:19
+msgid "Balance Info"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:38
+msgid "Addresses assigned to Account %1"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news/default.tpl:10
+msgid "Write News"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news/default.tpl:12
+msgid "News posts support the Markdown syntax"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news/default.tpl:37
+msgid "Add"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:5
+msgid "Earnings Report Last %1 Blocks For User: %2"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:23
+msgid "PPLNS %"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:9
+msgid "Earnings Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:26
+msgid "Select User"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:32
+msgid "Block Limit"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:38
+msgid "Starting block height"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:44
+msgid "Show empty rounds"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:58
+msgid "Submit"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:10
+msgid "Cronjob"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:12
+msgid "Exit Code"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:14
+msgid "Runtime"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:15
+msgid "Start Time"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:16
+msgid "End Time"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:17
+#: ../templates/bootstrap//account/invitations/default.tpl:17
+msgid "Message"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:27
+msgid "OK"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:29
+msgid "WARN"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:31
+msgid "ERROR"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:45
+msgid "%1 seconds"
+msgstr ""
+
+#: ../templates/bootstrap//admin/setup/default.tpl:5
+msgid "Setup Checks"
+msgstr ""
+
+#: ../templates/bootstrap//admin/setup/default.tpl:33
+msgid ""
+"To disable these checks, set skip_config_tests to true in global.inc.php"
+msgstr ""
+
+#: ../templates/bootstrap//admin/transactions/default.tpl:6
+msgid "Transaction Summary"
+msgstr ""
+
+#: ../templates/bootstrap//login/default.tpl:6
+msgid "Login with existing account"
+msgstr ""
+
+#: ../templates/bootstrap//login/default.tpl:12
+msgid "E-mail"
+msgstr ""
+
+#: ../templates/bootstrap//login/default.tpl:30
+msgid "Forgot your password?"
+msgstr ""
+
+#: ../templates/bootstrap//tac/default.tpl:5
+msgid "Terms & Conditions"
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:1
+msgid "This Agreement governs your use of %1."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:3
+msgid ""
+"By using any of the Pools or registering an account on the website, you "
+"agree to be bound by the terms and conditions below. If you do not agree "
+"with the terms and conditions in this Agreement you may not use the Pool."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:4
+msgid ""
+"The %1 staff may modify this Agreement and any policies affecting the Site "
+"at any point of time. Such modification is effective immediately upon "
+"posting to the website and will be distribution via email, forum post and a "
+"link in chat. Your continued use of the Pool following any modification to "
+"this Agreement shall be deemed an acceptance of all modifications."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:5
+msgid ""
+"The Pool rewards miners according to a <strong>%1</strong> system with "
+"<strong>%2%</strong> fee. The fee may change at any time, but notice will be "
+"given before doing so. Any fee change will be communicated through the pools "
+"news page."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:6
+msgid ""
+"The Pool is not an e-wallet or a bank for your coins. The Pool and it's "
+"operators are not responsible for any loss of coins which are stored on the "
+"Pool. It is your responsibility to configure your account so that the coins "
+"you mine are regularly transferred to your own secured offline wallet."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:7
+msgid ""
+"The uptime of the pool or website is not guaranteed, maintenance and "
+"downtime may be required at times. Users are responsible for configuring "
+"their miners so that they will automatically reconnect, switch to all the "
+"pools we offer or a backup pool in the case of downtime."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:8
+msgid ""
+"Botnets are not welcome. Accounts with a large amount of miners connecting "
+"from different IPs may be suspended without prior notice. If we are "
+"uncertian then an investigation will be opened and the user will be notified "
+"via their configured e-mail address. If we do not receive a response your "
+"account may be suspended."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:9
+msgid ""
+"Multiple accounts controlled by one person may be considered as a botnet and "
+"an investigation will be opened, see above point."
+msgstr ""
+
+#: ../templates/bootstrap//account/invitations/default.tpl:5
+msgid "Invitation"
+msgstr ""
+
+#: ../templates/bootstrap//account/invitations/default.tpl:18
+msgid "Please accept my invitation to this awesome pool."
+msgstr ""
+
+#: ../templates/bootstrap//account/invitations/default.tpl:31
+msgid "Past Invitations"
+msgstr ""
+
+#: ../templates/bootstrap//account/invitations/default.tpl:40
+msgid "Sent"
+msgstr ""
+
+#: ../templates/bootstrap//account/workers/default.tpl:9
+#: ../templates/bootstrap//account/workers/default.tpl:22
+msgid "Add New Worker"
+msgstr ""
+
+#: ../templates/bootstrap//account/workers/default.tpl:14
+msgid "user"
+msgstr ""
+
+#: ../templates/bootstrap//account/workers/default.tpl:17
+#: ../templates/bootstrap//account/workers/default.tpl:43
+msgid "Worker Password"
+msgstr ""
+
+#: ../templates/bootstrap//account/workers/default.tpl:18
+msgid "password"
+msgstr ""
+
+#: ../templates/bootstrap//account/workers/default.tpl:30
+msgid "Worker Configuration"
+msgstr ""
+
+#: ../templates/bootstrap//account/workers/default.tpl:42
+msgid "Worker Login"
+msgstr ""
+
+#: ../templates/bootstrap//account/workers/default.tpl:48
+msgid "Action"
+msgstr ""
+
+#: ../templates/bootstrap//account/workers/default.tpl:80
+msgid "Update Workers"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:11
+msgid "Push Notification Settings"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:18
+msgid "Push Notifications"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:45
+msgid "Notification Settings"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:51
+msgid "[Event"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:53
+msgid "Push"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:60
+#: ../templates/bootstrap//account/notifications/default.tpl:162
+msgid "Idle Worker"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:75
+msgid "New Blocks"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:116
+msgid "Pool Newsletter"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:132
+msgid "Update"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:141
+msgid "Notification History"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:6
+msgid "Total %1 Earning Reports"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:13
+msgid "Summary"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:45
+msgid "Sorted by Time"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:157
+msgid "Today"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:169
+msgid "Yesterday"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:181
+msgid "3 Day ago"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:193
+msgid "4 Day ago"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:205
+msgid "5 Day ago"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:217
+msgid "6 Day ago"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:229
+msgid "7 Day ago"
+msgstr ""
+
+#: ../templates/bootstrap//account/default.tpl:1
+msgid "No action specified"
+msgstr ""
+
+#: ../templates/bootstrap//account/qrcode/default.tpl:21
+msgid "API String"
+msgstr ""
+
+#: ../templates/bootstrap//account/qrcode/default.tpl:24
+msgid ""
+"This code will allow you to import the full API string into your mobile "
+"application."
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:8
+msgid "Transaction Filter"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:29
+msgid "Filter"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:37
+msgid "Transaction History"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:45
+msgid "Date"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:46
+msgid "TX Type"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:48
+#: ../templates/bootstrap//account/edit/detail.tpl:52
+msgid "Payment Address"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:49
+msgid "TX #"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:50
+msgid "Block #"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:71
+msgid "Orphaned"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:91
+msgid ""
+"<b>Debit_AP</b> = Auto Threshold Payment, <b>Debit_MP</b> = Manual Payment, "
+"<b>Donation</b> = Donation, <b>Fee</b> = Pool Fees (if applicable)"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/password.tpl:16
+msgid ""
+"Note: You will be redirected to login on successful completion of a password "
+"change"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/password.tpl:20
+#: ../templates/bootstrap//account/edit/resetpin.tpl:15
+msgid "Current Password"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/password.tpl:34
+#: ../templates/bootstrap//account/edit/detail.tpl:78
+#: ../templates/bootstrap//account/edit/cashout.tpl:42
+msgid "4 Digit PIN"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:19
+msgid "Account Details"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:29
+msgid "User Id"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:34
+msgid "API Key"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:44
+msgid "Timezone"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:56
+msgid "Donation Percentage"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:57
+msgid "Donation amount in percent (%1 - 100%)"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:61
+msgid "Automatic Payout Threshold"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:66
+msgid "%1 - %2 %3. Set to '0' for no auto payout."
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:66
+msgid "%1 %2 TX fee will apply "
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:66
+#: ../templates/bootstrap//account/edit/cashout.tpl:27
+msgid "High Estimation"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:66
+msgid ""
+"This %1 automatic payment transaction fee is a network fee and goes back "
+"into the network not the pool."
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:71
+msgid "Anonymous Account"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:75
+msgid ""
+"Hide username on website from others. Admins can still get your user "
+"information."
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:79
+msgid "The 4 digit PIN you chose when registering"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:92
+#: ../templates/bootstrap//account/edit/detail.tpl:94
+#: ../templates/bootstrap//account/edit/detail.tpl:99
+msgid "Update Account"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:19
+#: ../templates/bootstrap//account/edit/cashout.tpl:57
+#: ../templates/bootstrap//account/edit/cashout.tpl:59
+#: ../templates/bootstrap//account/edit/cashout.tpl:64
+msgid "Cash Out"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:27
+msgid ""
+"Please note: a %1 %2 transaction fee will apply when processing \"On-Demand"
+"\" manual payments"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:27
+msgid ""
+"This %1 manual payment transaction fee is a network fee and goes back into "
+"the network not the pool."
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:30
+msgid "Minimum Cashout: %1 %2"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:34
+msgid "Account Balance"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:38
+msgid "Payout to"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/resetpin.tpl:9
+#: ../templates/bootstrap//account/edit/resetpin.tpl:22
+msgid "Reset PIN"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:70

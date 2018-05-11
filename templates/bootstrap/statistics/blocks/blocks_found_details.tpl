@@ -2,23 +2,23 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-tasks fa-fw"></i> Last {$BLOCKLIMIT} Blocks Found
+        <i class="fa fa-tasks fa-fw"></i> {t blocklimit=$BLOCKLIMIT}Last %1 Blocks Found{/t}
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
           <table class="table table-striped table-bordered table-hover">
             <thead>
               <tr>
-                <th class="text-center">Block</th>
-                <th class="text-center">Validity</th>
-                <th class="text-left">Finder</th>
-                <th class="text-right">Time</th>
-                <th class="text-right">Difficulty</th>
-                <th class="text-right">Amount</th>
-                <th class="text-right">Expected Shares</th>
-                {if $GLOBAL.config.payout_system == 'pplns'}<th class="text-right">PPLNS Shares</th>{/if}
-                <th class="text-right">Actual Shares</th>
-                <th  class="text-right">Percentage</th>
+                <th class="text-center">{t}Block{/t}</th>
+                <th class="text-center">{t}Validity{/t}</th>
+                <th class="text-left">{t}Finder{/t}</th>
+                <th class="text-right">{t}Time{/t}</th>
+                <th class="text-right">{t}Difficulty{/t}</th>
+                <th class="text-right">{t}Amount{/t}</th>
+                <th class="text-right">{t}Expected Shares{/t}</th>
+                {if $GLOBAL.config.payout_system == 'pplns'}<th class="text-right">{t}PPLNS Shares{/t}</th>{/if}
+                <th class="text-right">{t}Actual Shares{/t}</th>
+                <th  class="text-right">{t}Percentage{/t}</th>
               </tr>
             </thead>
             <tbody>
@@ -38,14 +38,16 @@
               {/if}
               <td class="text-center">
               {if $BLOCKSFOUND[block].confirmations >= $GLOBAL.confirmations}
-                <span class="label label-success">Confirmed</span>
+                <span class="label label-success">{t}Confirmed{/t}</span>
               {else if $BLOCKSFOUND[block].confirmations == -1}
-                <span class="label label-danger">Orphan</span>
+                <span class="label label-danger">{t}Orphan{/t}</span>
               {else}
-                <span class="label label-warning">{$GLOBAL.confirmations - $BLOCKSFOUND[block].confirmations} left</span>
+                {math assign="confirmation_left" equation="confirmations - block_confirmation" confirmations=$GLOBAL.confirmations block_confirmation=$BLOCKSFOUND[block].confirmations}
+                <span class="label label-warning">{t confirmation_left=$confirmation_left}%1 left{/t}</span>
               {/if}
               </td>
-                <td>{if $BLOCKSFOUND[block].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}anonymous{else}{$BLOCKSFOUND[block].finder|default:"unknown"|escape}{/if}</td>
+                {capture assign=default_account}{t}unknown{/t}{/capture}
+                <td>{if $BLOCKSFOUND[block].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}{t}anonymous{/t}{else}{$BLOCKSFOUND[block].finder|default:$default_account|escape}{/if}</td>
                 <td class="text-right">{$BLOCKSFOUND[block].time|date_format:$GLOBAL.config.date}</td>
                 <td class="text-right">{$BLOCKSFOUND[block].difficulty|number_format:"4"}</td>
                 <td class="text-right">{$BLOCKSFOUND[block].amount|number_format:"2"}</td>
@@ -64,7 +66,7 @@
               </tr>
               {/section}
               <tr>
-                <td colspan="6"><b>Totals</b></td>
+                <td colspan="6"><b>{t}Totals{/t}</b></td>
                 <td class="text-right">{$totalexpectedshares|number_format:$GLOBAL.config.sharediffprecision}</td>
                 {if $GLOBAL.config.payout_system == 'pplns'}
                 <td class="text-right">{$pplnsshares|number_format:$GLOBAL.config.sharediffprecision}</td>
@@ -78,7 +80,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <h6>{if $GLOBAL.config.payout_system != 'pps'}Round Earnings are not credited until <font class="confirmations">{$GLOBAL.confirmations}</font> confirms.{/if}</h6>
+        <h6>{if $GLOBAL.config.payout_system != 'pps'}{t escape=no confirmations=$GLOBAL.confirmations}Round Earnings are not credited until <font class="confirmations">%1</font> confirms.{/t}{/if}</h6>
       </div>
     </div>
   </div>
