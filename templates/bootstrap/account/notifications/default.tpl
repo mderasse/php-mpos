@@ -48,7 +48,7 @@
 	        <table class="table table-striped table-bordered table-hover">
 	          <thread>
 	        	<tr>
-	        	  <th>{t}[Event{/t}</th>
+	        	  <th>{t}Event{/t}</th>
 	        	  <th>{t}Email{/t}</th>
 	        	  <th class="push-notifications">{t}Push{/t}</th>
 	        	</tr>
