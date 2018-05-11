@@ -1,19 +1,19 @@
 
 <div class="col-lg-12">
     <div class="panel panel-info">
-      <div class="panel-heading"><i class="fa fa-clock-o fa-fw"></i> UptimeRobot Status</div>
+      <div class="panel-heading"><i class="fa fa-clock-o fa-fw"></i> {t}UptimeRobot Status{/t}</div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-striped table-bordered table-hover">
           <thead>
             <tr>
-              <th class="text-center">Location</th>
-              <th class="text-center">Service</th>
-              <th class="text-center">Status</th>
-              <th class="text-center">Status Since</th>
-              <th class="text-center col-sm-2">Day</th>
-              <th class="text-center col-sm-2">Week</th>
-              <th class="text-center col-sm-2">Month</th>
-              <th class="text-center col-sm-2">All Time</th>
+              <th class="text-center">{t}Location{/t}</th>
+              <th class="text-center">{t}Service{/t}</th>
+              <th class="text-center">{t}Status{/t}</th>
+              <th class="text-center">{t}Status Since{/t}</th>
+              <th class="text-center col-sm-2">{t}Day{/t}</th>
+              <th class="text-center col-sm-2">{t}Week{/t}</th>
+              <th class="text-center col-sm-2">{t}Month{/t}</th>
+              <th class="text-center col-sm-2">{t}All Time{/t}</th>
             </tr>
           </thead>
           <tbody>
@@ -58,7 +58,7 @@
         </table>
       </div>
       <div class="panel-footer">
-        <h6>Last update {$UPDATED|date_format:$GLOBAL.config.date}</h6>
+        <h6>{t}Last update{/t} {$UPDATED|date_format:$GLOBAL.config.date}</h6>
       </div>
     </div>
   </div>
