@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-gear fa-fw"></i> Settings
+        <i class="fa fa-gear fa-fw"></i> {t}Settings{/t}
       </div>           
       <form method="POST" role="form">
         <input type="hidden" name="page" value="{$smarty.request.page|escape}" />
@@ -40,7 +40,7 @@
           
         </div>
         <div class="panel-footer">
-          <input type="submit" value="Save" class="btn btn-success btn-sm">
+          <input type="submit" value="{t}Save{/t}" class="btn btn-success btn-sm">
         </div>
       </form>
     </div>

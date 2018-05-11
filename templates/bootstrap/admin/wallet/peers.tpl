@@ -2,18 +2,18 @@
 		<div class="col-lg-12">
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<i class="fa fa-connectdevelop fa-fw"></i> Peer Information
+					<i class="fa fa-connectdevelop fa-fw"></i> {t}Peer Information{/t}
 				</div>
 				<div class="panel-body no-padding">
 					<div class="table-responsive">
 						<table class="table table-striped table-bordered table-hover">
 							<thead>
 							  <tr>
-								<th>Host</th>
-								<th>Protocol</th>
-								<th>Identity</th>
-								<th>Connected</th>
-								<th>Traffic</th>
+								<th>{t}Host{/t}</th>
+								<th>{t}Protocol{/t}</th>
+								<th>{t}Identity{/t}</th>
+								<th>{t}Connected{/t}</th>
+								<th>{t}Traffic{/t}</th>
 							  </tr>
 							</thead>
 							<tbody>

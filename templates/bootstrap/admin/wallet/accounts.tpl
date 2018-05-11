@@ -1,11 +1,12 @@
   <div class="row">
+    {capture assign=default_account}{t}Default{/t}{/capture}
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
           {if $LABELSCOMMAND}
-            <i class="fa fa-users fa-fw"></i> Wallet Labels
+          <i class="fa fa-users fa-fw"></i> {t}Wallet Labels{/t}
           {else}
-            <i class="fa fa-users fa-fw"></i> Wallet Accounts
+          <i class="fa fa-users fa-fw"></i> {t}Wallet Accounts{/t}
           {/if}
         </div>
         <div class="panel-body ">
@@ -14,9 +15,9 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 {if $LABELSCOMMAND}
-                  <i class="fa fa-user fa-fw"></i> Label: {$VALUE|default:"Default"}
+                  <i class="fa fa-user fa-fw"></i> {t}Label{/t}: {$NAME|default:$default_account}
                 {else}
-                  <i class="fa fa-user fa-fw"></i> Account: {$NAME|default:"Default"}
+                  <i class="fa fa-user fa-fw"></i> {t}Account{/t}: {$NAME|default:$default_account}
                 {/if}
               </div>
               <div class="panel-body">
@@ -24,13 +25,13 @@
                   <div class="col-lg-4">
                     <div class="panel panel-info">
                       <div class="panel-heading">
-                        <i class="fa fa-money fa-fw"></i> Balance Info
+                        <i class="fa fa-money fa-fw"></i> {t}Balance Info{/t}
                       </div>
                       <div class="table-responsive panel-body no-padding">
                         <table class="table table-striped table-bordered table-hover">
                           <tr>
-                            <td class="col-lg-4">Balance</td>
-                            <td class="col-lg-12">{$VALUE|number_format:"8"}</td>
+                          <td class="col-lg-4">{t}Balance{/t}</td>
+                          <td class="col-lg-12">{$VALUE|number_format:"8"}</td>
                           </tr>
                         </table>
                       </div>
@@ -48,9 +49,9 @@
                   <div class="panel panel-info">
                     <div class="panel-heading">
                       {if $LABELSCOMMAND}
-                        <i class="fa fa-book fa-fw"></i> Addresses assigned to Label {$VALUE|default:"Default"}
+                        <i class="fa fa-book fa-fw"></i> {t account=$ACCOUNT|default:$default_account}Addresses assigned to Label %1{/t}
                       {else}
-                        <i class="fa fa-book fa-fw"></i> Addresses assigned to Account {$ACCOUNT|default:"Default"}
+                        <i class="fa fa-book fa-fw"></i> {t account=$ACCOUNT|default:$default_account}Addresses assigned to Account %1{/t}
                       {/if}
                     </div>
                     <div class="table-responsive panel-body no-padding">

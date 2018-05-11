@@ -9,7 +9,7 @@
   <form class="col-lg-12" method="POST" action="{$smarty.server.SCRIPT_NAME}" role="form">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-edit fa-fw"></i> Edit news entry #{$NEWS.id}
+        <i class="fa fa-edit fa-fw"></i> {t news_id=$NEWS.id}Edit news entry #%1{/t}
       </div>
       <div class="panel-body">
         <div class="row">
@@ -21,25 +21,25 @@
               <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}" />
               
               <div class="form-group">
-                <th>Active</th>
+                <th>{t}Active{/t}</th>
                 <td>
                   <input type="hidden" name="active" value="0" />
                   <input type="checkbox" class="switch" data-size="mini" name="active" value="1" id="active" {nocache}{if $NEWS.active}checked{/if}{/nocache}>
                 </td>
               </div>
               <div class="form-group">
-                  <th>Header</th>
+                  <th>{t}Header{/t}</th>
                   <td><input class="form-control" name="header" type="text" size="30" value="{nocache}{$NEWS.header}{/nocache}" required /></td>
               </div>
               <div class="form-group">
-                  <th>Content</th>
+                  <th>{t}Content{/t}</th>
                   <td><textarea class="cleditor form-control" name="content" rows="15" cols="150" type="text" required>{nocache}{$NEWS.content nofilter}{/nocache}</textarea></td>
               </div>
           </div>
         </div>  
       </div>
       <div class="panel-footer">
-        <input type="submit" value="Save" class="btn btn-success btn-sm">
+        <input type="submit" value="{t}Save{/t}" class="btn btn-success btn-sm">
       </div>
     </div>
   </form>
