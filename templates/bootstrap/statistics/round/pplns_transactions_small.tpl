@@ -2,30 +2,31 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-refresh fa-fw"></i> Round Statistics
+        <i class="fa fa-refresh fa-fw"></i> {t}Round Statistics{/t}
       </div>
       <div class="panel-body">
         <div class="table-responsive">
           <table class="table table-striped table-bordered table-hover {if $ROUNDTRANSACTIONS}datatable{/if}">
             <thead>
               <tr>
-                <th >User Name</th>
-                <th>Round Valid</th>
-                <th>Invalid</th>
-                <th>Invalid %</th>
-                <th>Round %</th>
-                <th>PPLNS Valid</th>
-                <th>Invalid</th>
-                <th>Invalid %</th>
-                <th>PPLNS Round %</th>
-                <th>Variance</th>
-                <th>Amount</th>
+                <th>{t}User Name{/t}</th>
+                <th>{t}Round Valid{/t}</th>
+                <th>{t}Invalid{/t}</th>
+                <th>{t}Invalid %{/t}</th>
+                <th>{t}Round %{/t}</th>
+                <th>{t}PPLNS Valid{/t}</th>
+                <th>{t}Invalid{/t}</th>
+                <th>{t}Invalid %{/t}</th>
+                <th>{t}PPLNS Round %{/t}</th>
+                <th>{t}Variance{/t}</th>
+                <th>{t}Amount{/t}</th>
               </tr>
             </thead>
             <tbody>
 {section txs $ROUNDTRANSACTIONS}
               <tr{if $GLOBAL.userdata.username|default:"" == $ROUNDTRANSACTIONS[txs].username}{assign var=listed value=1} style="background-color:#99EB99;"{else}{/if}>
-                <td>{if $ROUNDTRANSACTIONS[txs].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}anonymous{else}{$ROUNDTRANSACTIONS[txs].username|default:"unknown"|escape}{/if}</td>
+                {capture assign=default_user}{t}unknown{/t}{/capture}
+                <td>{if $ROUNDTRANSACTIONS[txs].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}{t}anonymous{/t}{else}{$ROUNDTRANSACTIONS[txs].username|default:$default_user|escape}{/if}</td>
                 <td>{$SHARESDATA[$ROUNDTRANSACTIONS[txs].username].valid|number_format:$GLOBAL.config.sharediffprecision}</td>
                 <td>{$SHARESDATA[$ROUNDTRANSACTIONS[txs].username].invalid|number_format:$GLOBAL.config.sharediffprecision}</td>
                 <td>{if $SHARESDATA[$ROUNDTRANSACTIONS[txs].username].invalid > 0 }{($SHARESDATA[$ROUNDTRANSACTIONS[txs].username].invalid / $SHARESDATA[$ROUNDTRANSACTIONS[txs].username].valid * 100)|number_format:"2"|default:"0"}{else}0.00{/if}</td>

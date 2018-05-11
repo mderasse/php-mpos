@@ -6,7 +6,7 @@ $(function () {
     data: miningstats,
     xkey: 'time',
     ykeys: ['hashrate'],
-    labels: ['Hashrate'],
+    labels: ['{t}Hashrate{/t}'],
     pointSize: 1,
     hideHover: 'auto',
     resize: true,
@@ -21,7 +21,7 @@ $(function () {
     data: miningstats,
     xkey: 'time',
     ykeys: ['workers'],
-    labels: ['Workers'],
+    labels: ['{t}Workers{/t}'],
     pointSize: 1,
     hideHover: 'auto',
     resize: true,
@@ -36,7 +36,7 @@ $(function () {
     data: miningstats,
     xkey: 'time',
     ykeys: ['sharerate'],
-    labels: ['Sharerate'],
+    labels: ['{t}Sharerate{/t}'],
     pointSize: 1,
     hideHover: 'auto',
     resize: true,
@@ -52,13 +52,13 @@ $(function () {
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-signal fa-fw"></i> Average Hashrate past 24h
+        <i class="fa fa-signal fa-fw"></i> {t}Average Hashrate past 24h{/t}
       </div>
       <div class="panel-body">
         <div id="hashrate-area-chart"></div>
       </div>
       <div class="panel-footer">
-        Your average hashrate per hour, updated every backend cron run.
+        {t}Your average hashrate per hour, updated every backend cron run.{/t}
       </div>
     </div>
   </div>
@@ -68,13 +68,13 @@ $(function () {
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-signal fa-fw"></i> Average Workers past 24h
+        <i class="fa fa-signal fa-fw"></i> {t}Average Workers past 24h{/t}
       </div>
       <div class="panel-body">
         <div id="workers-area-chart"></div>
       </div>
       <div class="panel-footer">
-        Your average active workers per hour, updated every backend cron run.
+        {t}Your average active workers per hour, updated every backend cron run.{/t}
       </div>
     </div>
   </div>
@@ -84,13 +84,13 @@ $(function () {
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-signal fa-fw"></i> Average Sharerate past 24h
+        <i class="fa fa-signal fa-fw"></i> {t}Average Sharerate past 24h{/t}
       </div>
       <div class="panel-body">
         <div id="sharerate-area-chart"></div>
       </div>
       <div class="panel-footer">
-        Your share rate per hour, updated every backend cron run.
+        {t}Your share rate per hour, updated every backend cron run.{/t}
       </div>
     </div>
   </div>
