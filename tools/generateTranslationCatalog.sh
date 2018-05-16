@@ -35,3 +35,8 @@ echo "" >> mpos.pot
 echo "#: ../templates/bootstrap//global/header.tpl:70" >> mpos.pot
 echo "msgid \"zh\"" >> mpos.pot
 echo "msgstr \"\"" >> mpos.pot
+
+
+find ../include -iname "*.php" | xargs xgettext --from-code=UTF-8 -k_e -k_x -k__ -j -o mpos.pot
+xgettext --from-code=UTF-8 -k_e -k_x -k__ -j -o mpos.pot ../public/index.php
+
