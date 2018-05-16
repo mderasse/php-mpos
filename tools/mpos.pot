@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-16 22:56+0200\n"
+"POT-Creation-Date: 2018-05-16 23:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2797,7 +2797,8 @@ msgid "Failed to send e-mail to "
 msgstr ""
 
 #: ../include/pages/account/unlock.inc.php:6
-msgid "Missing token)"
+#: ../include/pages/account/confirm.inc.php:6
+msgid "Missing token"
 msgstr ""
 
 #: ../include/pages/account/unlock.inc.php:8
@@ -2837,10 +2838,6 @@ msgstr ""
 
 #: ../include/pages/account/workers.inc.php:52
 msgid "You have no workers configured"
-msgstr ""
-
-#: ../include/pages/account/confirm.inc.php:6
-msgid "Missing token"
 msgstr ""
 
 #: ../include/pages/account/confirm.inc.php:8
