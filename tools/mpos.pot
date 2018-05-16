@@ -1,5 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8\n"
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-16 22:56+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:5
+msgid "Getting Started Guide"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:15
+msgid "Download a miner."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:18
+#: ../templates/bootstrap//gettingstarted/default.tpl:22
+#: ../templates/bootstrap//gettingstarted/default.tpl:24
+#: ../templates/bootstrap//gettingstarted/default.tpl:26
+#: ../templates/bootstrap//gettingstarted/default.tpl:27
+#: ../templates/bootstrap//gettingstarted/default.tpl:28
+msgid "Download here"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:19
+#: ../templates/bootstrap//gettingstarted/default.tpl:23
+msgid "Download Here"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:31
+msgid "Configure your miner."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:33
+msgid "If your using Linux, Then type the following into the console:"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:39
+msgid ""
+"If you want to mine on a <strong> Windows Operating System</strong>, then "
+"you'll need to create a batch file to start your miner."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:39
+msgid "Simply open notepad and then copy and paste the following:"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:51
+msgid ""
+"You then need to change \"-u Weblogin.Worker -p Worker password\" to reflect "
+"your own account. Eg, \"-u Steve.StevesWorker -p StevesWorkerPassword\" then "
+"go to \"File > Save as\" and save the file as \"RunMe.bat\" in the same "
+"folder containing your miners application files. You are now ready to mine, "
+"double click on \"RunMe.bat\" to start mining. If you want, you can create "
+"additional workers with usernames and passwords of your choice <a href=\"%1?"
+"page=account&action=workers\">here</a>"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:53
+msgid "Create a %1 address to receive payments."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:56
+msgid ""
+"Generate a new address and input it on your account page to receive payments."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:61
+msgid "Advanced CGMiner settings / FAQ"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:63
+msgid "Scrypt readme"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:64
+msgid ""
+"Don't set <b>intensity</b> too high, I=11 is standard and safest. Higher "
+"intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner "
+"(HW). HW=0 is good, otherwise lower intensity."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:65
+msgid ""
+"Set shaders according to the readme (or look at your graphic cards "
+"specifications). CGMiner uses this value at first run to calculate <b>thread-"
+"concurrency</b>. Easiest way to get this optimized is to use same settings "
+"as others have used here: <a href=\"http://litecoin.info/"
+"Mining_Hardware_Comparison\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:66
+msgid ""
+"There's also an interesting project which gives you a GUI for CGMiner. "
+"Windows only it seems."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:67
+msgid ""
+"Here's a great <a href=\"https://docs.google.com/document/"
+"d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
+"\"_blank\">guide</a> how to get up and running with Xubuntu."
+msgstr ""
 
 #: ../templates/bootstrap//global/footer.tpl:5
 msgid ""
@@ -706,12 +819,16 @@ msgstr ""
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:42
 #: ../templates/bootstrap//statistics/round/block_stats.tpl:29
 #: ../templates/bootstrap//account/transactions/default.tpl:69
+#: ../include/pages/admin/transactions.inc.php:24
+#: ../include/pages/account/transactions.inc.php:14
 msgid "Confirmed"
 msgstr ""
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:38
 #: ../templates/bootstrap//admin/wallet/balance.tpl:17
 #: ../templates/bootstrap//account/transactions/default.tpl:73
+#: ../include/pages/admin/transactions.inc.php:24
+#: ../include/pages/account/transactions.inc.php:14
 msgid "Unconfirmed"
 msgstr ""
 
@@ -1057,6 +1174,8 @@ msgstr ""
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:47
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:44
 #: ../templates/bootstrap//statistics/round/block_stats.tpl:31
+#: ../include/pages/admin/transactions.inc.php:24
+#: ../include/pages/account/transactions.inc.php:14
 msgid "Orphan"
 msgstr ""
 
@@ -2176,7 +2295,7 @@ msgid "Notification Settings"
 msgstr ""
 
 #: ../templates/bootstrap//account/notifications/default.tpl:51
-msgid "[Event"
+msgid "Event"
 msgstr ""
 
 #: ../templates/bootstrap//account/notifications/default.tpl:53
@@ -2447,4 +2566,431 @@ msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:70
 msgid "zh"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:200
+msgid "You have exceeded the pools configured "
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:200
+msgid " warning threshold. Please initiate a transfer!"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:202
+msgid "You have "
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:202
+msgid ""
+" failed login attempts! <a href=\"?page=account&action=reset_failed\">Reset "
+"Counter</a>"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:206
+msgid "This pool is currently in maintenance mode."
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:234
+msgid "You are using an old Theme that will not be maintained in the future."
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:246
+msgid ""
+"We are investigating issues in the backend. Your shares and hashrate are "
+"safe and we will fix things ASAP."
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:252
+msgid ""
+"Payouts disabled, you will not receive any coins to your offline wallet for "
+"the time being"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:255
+msgid ""
+"Findblocks disabled, new blocks will currently not show up in the frontend"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:258
+msgid "Blockupdate disabled, blocks and transactions confirmations are delayed"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:261
+msgid "PPLNS payout disabled, round credit transactions are delayed"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:264
+msgid "Proportional payout disabled, round credit transactions are delayed"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:267
+msgid "PPS payout disabled, share credit transactions are delayed"
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:15
+#: ../include/pages/register/register.inc.php:21
+#: ../include/pages/login.inc.php:48
+msgid "Invalid Captcha, please try again."
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:19
+#: ../include/pages/contactform.inc.php:5
+msgid "Contactform is currently disabled. Please try again later."
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:21
+#: ../include/pages/contactform.inc.php:8
+msgid "Contactform is disabled for guests."
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:26
+msgid "Thanks for sending your message! We will get back to you shortly"
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:28
+msgid ""
+"There was a problem sending your message. Check following error and please "
+"try again: "
+msgstr ""
+
+#: ../include/pages/password/reset.inc.php:7
+msgid "Please check your mail account to finish your password reset"
+msgstr ""
+
+#: ../include/pages/password/change.inc.php:7
+msgid "Password reset complete! Please login."
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:25
+msgid "Account registration is currently disabled. Please try again later."
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:27
+msgid "Only invited users are allowed to register."
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:36
+msgid "Please enter a valid Wallet Address"
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:39
+msgid "Please check your mailbox to activate this account"
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:39
+msgid "Account created, please login"
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:41
+msgid "Unable to create account: "
+msgstr ""
+
+#: ../include/pages/about/moot.inc.php:17
+#: ../include/pages/about/pool.inc.php:15
+#: ../include/pages/about/chat.inc.php:17
+#: ../include/pages/statistics/blocks.inc.php:104
+#: ../include/pages/statistics/donors.inc.php:19
+#: ../include/pages/statistics/uptime.inc.php:35
+#: ../include/pages/statistics/pool.inc.php:94
+#: ../include/pages/statistics/round.inc.php:61
+#: ../include/pages/statistics/graphs.inc.php:24
+#: ../include/pages/account/qrcode.inc.php:11
+msgid "Page currently disabled. Please try again later."
+msgstr ""
+
+#: ../include/pages/login.inc.php:28
+msgid "You are not allowed to login during maintenace."
+msgstr ""
+
+#: ../include/pages/login.inc.php:42
+msgid "Unable to login: "
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:10
+msgid "Paused"
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:11
+msgid "Unchecked"
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:12
+msgid "Up"
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:13
+#: ../include/pages/statistics/uptime.inc.php:14
+msgid "Down"
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:18
+msgid "UptimeRobot API Key not configured or no data available."
+msgstr ""
+
+#: ../include/pages/statistics/pool.inc.php:14
+#: ../include/pages/admin/wallet.inc.php:44
+#: ../include/pages/admin/dashboard.inc.php:14
+msgid "Unable to connect to wallet RPC service: "
+msgstr ""
+
+#: ../include/pages/admin/wallet.inc.php:39
+#: ../include/pages/admin/dashboard.inc.php:13
+msgid "Unable to connect"
+msgstr ""
+
+#: ../include/pages/admin/transactions.inc.php:16
+#: ../include/pages/account/transactions.inc.php:9
+msgid "Could not find any transaction"
+msgstr ""
+
+#: ../include/pages/admin/news_edit.inc.php:16
+msgid "News updated"
+msgstr ""
+
+#: ../include/pages/admin/news_edit.inc.php:18
+msgid "News update failed: "
+msgstr ""
+
+#: ../include/pages/admin/user.inc.php:79
+msgid "Could not find any users"
+msgstr ""
+
+#: ../include/pages/admin/settings.inc.php:16
+msgid "Settings updated"
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:16
+msgid "News entry changed"
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:24
+msgid "News entry added"
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:26
+msgid "Failed to add new entry: "
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:34
+msgid "Succesfully removed news entry"
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:36
+msgid "Failed to delete entry: "
+msgstr ""
+
+#: ../include/pages/admin/newsletter.inc.php:14
+msgid "Pool newsletters are disabled."
+msgstr ""
+
+#: ../include/pages/admin/newsletter.inc.php:32
+msgid "Newsletter sent to "
+msgstr ""
+
+#: ../include/pages/admin/newsletter.inc.php:32
+#: ../include/pages/admin/newsletter.inc.php:34
+msgid " users."
+msgstr ""
+
+#: ../include/pages/admin/newsletter.inc.php:34
+msgid "Failed to send e-mail to "
+msgstr ""
+
+#: ../include/pages/account/unlock.inc.php:6
+msgid "Missing token)"
+msgstr ""
+
+#: ../include/pages/account/unlock.inc.php:8
+msgid "Unable to re-activate your account. Invalid token."
+msgstr ""
+
+#: ../include/pages/account/unlock.inc.php:12
+msgid "Account re-activated. Please login."
+msgstr ""
+
+#: ../include/pages/account/unlock.inc.php:14
+msgid "Failed to re-activate account. Contact site support."
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:8
+#: ../include/pages/account/edit.inc.php:108
+msgid "You have no payout address set."
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:9
+msgid ""
+"You can not add workers unless a valid Payout Address is set in your User "
+"Settings."
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:16
+msgid "Worker removed"
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:28
+msgid "Worker added"
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:40
+msgid "Worker updated"
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:52
+msgid "You have no workers configured"
+msgstr ""
+
+#: ../include/pages/account/confirm.inc.php:6
+msgid "Missing token"
+msgstr ""
+
+#: ../include/pages/account/confirm.inc.php:8
+msgid "Unable to activate your account. Invalid token."
+msgstr ""
+
+#: ../include/pages/account/confirm.inc.php:12
+msgid "Account activated. Please login."
+msgstr ""
+
+#: ../include/pages/account/invitations.inc.php:7
+msgid "You have exceeded the allowed invitations of "
+msgstr ""
+
+#: ../include/pages/account/invitations.inc.php:11
+msgid "Invitation sent"
+msgstr ""
+
+#: ../include/pages/account/invitations.inc.php:13
+msgid "Unable to send invitation to recipient: "
+msgstr ""
+
+#: ../include/pages/account/invitations.inc.php:23
+msgid "Invitations are disabled"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:16
+msgid "E-mail confirmations are required for "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:19
+msgid "editing your details"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:24
+msgid "changing your password"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:29
+msgid "withdrawals"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:35
+msgid "A token was sent to your e-mail that will allow you to "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:36
+msgid "You can currently "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:38
+msgid "edit your account details"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:39
+msgid "withdraw funds"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:40
+msgid "change your password"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:56
+msgid "and "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:68
+msgid "Your PIN # has been sent to your email."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:78
+msgid "Invalid PIN."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:78
+msgid " attempts remaining."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:88
+msgid "A confirmation was sent to your e-mail, follow that link to continue"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:102
+msgid "Manual payouts are disabled."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:104
+msgid "You have not yet unlocked account withdrawls."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:106
+msgid "Account balance must be >= "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:106
+msgid " to do a Manual Payout."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:121
+msgid "Created new manual payout request with ID #"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:129
+msgid "You already have one active manual payout request."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:132
+msgid "Insufficient funds, you need more than "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:132
+msgid " to cover transaction fees"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:139
+msgid "You have not yet unlocked account updates."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:143
+msgid "Account details updated"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:145
+msgid "Failed to update your account: "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:154
+msgid "You have not yet unlocked password updates."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:157
+msgid "Password updated"
+msgstr ""
+
+#: ../include/pages/account/notifications.inc.php:6
+msgid "Notification system disabled by admin."
+msgstr ""
+
+#: ../include/pages/account/notifications.inc.php:30
+msgid "Updated notification settings"
+msgstr ""
+
+#: ../include/pages/account/notifications.inc.php:41
+msgid "Could not find any notifications"
+msgstr ""
+
+#: ../public/index.php:121 ../public/index.php:123
+msgid "You last logged in from"
+msgstr ""
+
+#: ../public/index.php:121 ../public/index.php:123
+msgid "on"
 msgstr ""
