@@ -54,12 +54,12 @@ if (!$smarty->isCached('master.tpl', $smarty_cache_key)) {
     $dWalletAccounts = array();
     $dAddressCount = 0;
     $dAccountAddresses = array();
-    $aGetInfo = array('errors' => 'Unable to connect');
+    $aGetInfo = array('errors' => _('Unable to connect'));
     $aGetPeerInfo = array();
     $aGetTransactions = array();
     $dBalance = 0;
     $dNewmint = -1;
-    $_SESSION['POPUP'][] = array('CONTENT' => 'Unable to connect to wallet RPC service: ' . $bitcoin->can_connect(), 'TYPE' => 'alert alert-danger');
+    $_SESSION['POPUP'][] = array('CONTENT' => _('Unable to connect to wallet RPC service: ') . $bitcoin->can_connect(), 'TYPE' => 'alert alert-danger');
   }
   // Fetch unconfirmed amount from blocks table
   empty($config['network_confirmations']) ? $confirmations = 120 : $confirmations = $config['network_confirmations'];

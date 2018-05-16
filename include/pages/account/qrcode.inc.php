@@ -8,7 +8,7 @@ case '0':
   }
   break;
 case '1':
-  $_SESSION['POPUP'][] = array('CONTENT' => 'Page currently disabled. Please try again later.', 'TYPE' => 'alert alert-danger');
+  $_SESSION['POPUP'][] = array('CONTENT' => _('Page currently disabled. Please try again later.'), 'TYPE' => 'alert alert-danger');
   $smarty->assign("CONTENT", "");
   break;
 }

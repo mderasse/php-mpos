@@ -13,7 +13,7 @@ if (!$smarty->isCached('master.tpl', $smarty_cache_key)) {
   empty($_REQUEST['start']) ? $start = 0 : $start = $_REQUEST['start'];
   $aTransactions = $transaction->getTransactions($start, @$_REQUEST['filter'], $iLimit);
   $aTransactionTypes = $transaction->getTypes();
-  if (!$aTransactions) $_SESSION['POPUP'][] = array('CONTENT' => 'Could not find any transaction', 'TYPE' => 'alert alert-danger');
+  if (!$aTransactions) $_SESSION['POPUP'][] = array('CONTENT' => _('Could not find any transaction'), 'TYPE' => 'alert alert-danger');
   if (!$setting->getValue('disable_transactionsummary')) {
     $aTransactionSummary = $transaction->getTransactionSummary();
     $smarty->assign('SUMMARY', $aTransactionSummary);
@@ -21,7 +21,7 @@ if (!$smarty->isCached('master.tpl', $smarty_cache_key)) {
   $smarty->assign('LIMIT', $iLimit);
   $smarty->assign('TRANSACTIONS', $aTransactions);
   $smarty->assign('TRANSACTIONTYPES', $aTransactionTypes);
-  $smarty->assign('TXSTATUS', array('' => '', 'Confirmed' => 'Confirmed', 'Unconfirmed' => 'Unconfirmed', 'Orphan' => 'Orphan'));
+  $smarty->assign('TXSTATUS', array('' => '', 'Confirmed' => _('Confirmed'), 'Unconfirmed' => _('Unconfirmed'), 'Orphan' => _('Orphan')));
   $smarty->assign('DISABLE_TRANSACTIONSUMMARY', $setting->getValue('disable_transactionsummary'));
 } else {
   $debug->append('Using cached page', 3);
