@@ -3,7 +3,7 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
 
 // Confirm an account by token
 if (!isset($_GET['token']) || empty($_GET['token'])) {
-  $_SESSION['POPUP'][] = array('CONTENT' => _('Missing token)', 'TYPE' => 'alert alert-danger');
+  $_SESSION['POPUP'][] = array('CONTENT' => _('Missing token'), 'TYPE' => 'alert alert-danger');
 } else if (!$aToken = $oToken->getToken($_GET['token'], 'account_unlock')) {
   $_SESSION['POPUP'][] = array('CONTENT' => _('Unable to re-activate your account. Invalid token.'), 'TYPE' => 'alert alert-danger');
 } else {
