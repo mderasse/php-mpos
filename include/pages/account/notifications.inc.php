@@ -3,7 +3,7 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
 
 if ($user->isAuthenticated()) {
   if ($setting->getValue('disable_notifications') == 1) {
-    $_SESSION['POPUP'][] = array('CONTENT' => 'Notification system disabled by admin.', 'TYPE' => 'alert alert-warning');
+    $_SESSION['POPUP'][] = array('CONTENT' => _('Notification system disabled by admin.'), 'TYPE' => 'alert alert-warning');
     $smarty->assign('CONTENT', 'empty');
   } else {
     if (@$_REQUEST['do'] == 'save') {
@@ -27,7 +27,7 @@ if ($user->isAuthenticated()) {
       	if (!$pushnotification->updateSettings($_SESSION['USERDATA']['id'], $pushSettings)){
       		$_SESSION['POPUP'][] = array('CONTENT' => $pushnotification->getError(), 'TYPE' => 'alert alert-danger');
       	}elseif ($notification->updateSettings($_SESSION['USERDATA']['id'], $_REQUEST['data'])) {
-          $_SESSION['POPUP'][] = array('CONTENT' => 'Updated notification settings', 'TYPE' => 'alert alert-success');
+          $_SESSION['POPUP'][] = array('CONTENT' => _('Updated notification settings'), 'TYPE' => 'alert alert-success');
         } else {
           $_SESSION['POPUP'][] = array('CONTENT' => $notification->getError(), 'TYPE' => 'alert alert-danger');
         }
@@ -38,7 +38,7 @@ if ($user->isAuthenticated()) {
 
     // Fetch notifications
     $aNotifications = $notification->getNotifications($_SESSION['USERDATA']['id']);
-    if (!$aNotifications) $_SESSION['POPUP'][] = array('CONTENT' => 'Could not find any notifications', 'TYPE' => 'alert alert-danger');
+    if (!$aNotifications) $_SESSION['POPUP'][] = array('CONTENT' => _('Could not find any notifications'), 'TYPE' => 'alert alert-danger');
 
     // Fetch global settings
     $smarty->assign('DISABLE_BLOCKNOTIFICATIONS', $setting->getValue('notifications_disable_block'));
