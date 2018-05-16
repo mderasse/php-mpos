@@ -11,7 +11,7 @@ if (!$user->isAuthenticated() || !$user->isAdmin($_SESSION['USERDATA']['id'])) {
 use \Michelf\Markdown;
 
 if ($setting->getValue('notifications_disable_pool_newsletter', 0) == 1) {
-  $_SESSION['POPUP'][] = array('CONTENT' => 'Pool newsletters are disabled.', 'TYPE' => 'alert alert-info');
+  $_SESSION['POPUP'][] = array('CONTENT' => _('Pool newsletters are disabled.'), 'TYPE' => 'alert alert-info');
   $smarty->assign("CONTENT", "");
 } else {
   if (@$_REQUEST['do'] == 'send') {
@@ -29,9 +29,9 @@ if ($setting->getValue('notifications_disable_pool_newsletter', 0) == 1) {
           $iSuccess++;
         }
       }
-      $_SESSION['POPUP'][] = array('CONTENT' => 'Newsletter sent to ' . $iSuccess . ' users.', 'TYPE' => 'alert alert-success');
+      $_SESSION['POPUP'][] = array('CONTENT' => _('Newsletter sent to ') . $iSuccess . _(' users.'), 'TYPE' => 'alert alert-success');
       if ($iFailed > 0)
-        $_SESSION['POPUP'][] = array('CONTENT' => 'Failed to send e-mail to ' . $iFailed . ' users. ', 'TYPE' => 'alert alert-info');
+        $_SESSION['POPUP'][] = array('CONTENT' => _('Failed to send e-mail to ') . $iFailed . _(' users.'), 'TYPE' => 'alert alert-info');
     } else {
       $_SESSION['POPUP'][] = array('CONTENT' => $csrftoken->getErrorWithDescriptionHTML(), 'TYPE' => 'alert alert-warning');
     }

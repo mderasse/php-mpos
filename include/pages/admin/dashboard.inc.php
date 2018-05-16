@@ -10,8 +10,8 @@ if (!$user->isAuthenticated() || !$user->isAdmin($_SESSION['USERDATA']['id'])) {
 if ($bitcoin->can_connect() === true){
   $aGetInfo = $bitcoin->getinfo();
 } else {
-  $aGetInfo = array('errors' => 'Unable to connect');
-  $_SESSION['POPUP'][] = array('CONTENT' => 'Unable to connect to wallet RPC service: ' . $bitcoin->can_connect(), 'TYPE' => 'alert alert-danger');
+  $aGetInfo = array('errors' => _('Unable to connect'));
+  $_SESSION['POPUP'][] = array('CONTENT' => _('Unable to connect to wallet RPC service: ') . $bitcoin->can_connect(), 'TYPE' => 'alert alert-danger');
 }
 
 // Grab versions from Online source
