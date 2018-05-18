@@ -2,7 +2,7 @@
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <i class="fa fa-question fa-fw"></i> Setup Checks<br />
+          <i class="fa fa-question fa-fw"></i> {t}Setup Checks{/t}<br />
         </div>
         <div class="panel-body">
         {if $ERRORS|@count > 0}
@@ -30,7 +30,7 @@
         {/if}
         </div>
         <div class="panel-footer">
-		<li>To disable these checks, set skip_config_tests to true in global.inc.php</li>
+		<li>{t}To disable these checks, set skip_config_tests to true in global.inc.php{/t}</li>
 	</div>
       </div>
     </div>

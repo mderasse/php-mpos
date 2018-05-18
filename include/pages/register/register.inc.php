@@ -18,13 +18,13 @@ if ($recaptcha_enabled) {
   $recaptcha_response = (isset($_POST["g-recaptcha-response"]) ? $_POST["g-recaptcha-response"] : null);
   $rsp = $recaptcha->verify($recaptcha_response, $_SERVER["REMOTE_ADDRESS"]);
 
-  if (!$rsp->isSuccess()) $_SESSION['POPUP'][] = array('CONTENT' => 'Invalid Captcha, please try again.', 'TYPE' => 'alert alert-danger');
+  if (!$rsp->isSuccess()) $_SESSION['POPUP'][] = array('CONTENT' => _('Invalid Captcha, please try again.'), 'TYPE' => 'alert alert-danger');
 }
 
 if ($setting->getValue('disable_invitations') && $setting->getValue('lock_registration')) {
-  $_SESSION['POPUP'][] = array('CONTENT' => 'Account registration is currently disabled. Please try again later.', 'TYPE' => 'alert alert-danger');
+  $_SESSION['POPUP'][] = array('CONTENT' => _('Account registration is currently disabled. Please try again later.'), 'TYPE' => 'alert alert-danger');
 } else if ($setting->getValue('lock_registration') && !$setting->getValue('disable_invitations') && !isset($_POST['token'])) {
-  $_SESSION['POPUP'][] = array('CONTENT' => 'Only invited users are allowed to register.', 'TYPE' => 'alert alert-danger');
+  $_SESSION['POPUP'][] = array('CONTENT' => _('Only invited users are allowed to register.'), 'TYPE' => 'alert alert-danger');
 } else {
   // Check if csrf is enabled and fail if token is invalid
   if (!$config['csrf']['enabled'] || $config['csrf']['enabled'] && $csrftoken->valid) {
@@ -33,12 +33,12 @@ if ($setting->getValue('disable_invitations') && $setting->getValue('lock_regist
       isset($_POST['token']) ? $token = $_POST['token'] : $token = '';
       isset($_POST['coinaddress']) ? $validcoinaddress = $_POST['coinaddress'] : $validcoinaddress = NULL;
       if ($config['check_valid_coinaddress'] AND empty($validcoinaddress)) {
-        $_SESSION['POPUP'][] = array('CONTENT' => 'Please enter a valid Wallet Address', 'TYPE' => 'alert alert-danger');
+        $_SESSION['POPUP'][] = array('CONTENT' => _('Please enter a valid Wallet Address'), 'TYPE' => 'alert alert-danger');
       } else {
         if ($user->register(@$_POST['username'], $validcoinaddress, @$_POST['password1'], @$_POST['password2'], @$_POST['pin'], @$_POST['email1'], @$_POST['email2'], @$_POST['tac'], $token)) {
-          (!$setting->getValue('accounts_confirm_email_disabled')) ? $_SESSION['POPUP'][] = array('CONTENT' => 'Please check your mailbox to activate this account') : $_SESSION['POPUP'][] = array('CONTENT' => 'Account created, please login');
+          (!$setting->getValue('accounts_confirm_email_disabled')) ? $_SESSION['POPUP'][] = array('CONTENT' => _('Please check your mailbox to activate this account')) : $_SESSION['POPUP'][] = array('CONTENT' => _('Account created, please login'));
         } else {
-          $_SESSION['POPUP'][] = array('CONTENT' => 'Unable to create account: ' . $user->getError(), 'TYPE' => 'alert alert-danger');
+          $_SESSION['POPUP'][] = array('CONTENT' => _('Unable to create account: ') . $user->getError(), 'TYPE' => 'alert alert-danger');
         }
       }
     }

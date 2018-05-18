@@ -58,6 +58,7 @@ $aGlobal = array(
   'sharerate' => $iCurrentPoolShareRate,
   'workers' => $iCurrentActiveWorkers,
   'roundshares' => $aRoundShares,
+  'languages' => array_keys($languages),
   'fees' => $config['fees'],
   'confirmations' => $config['confirmations'],
   'reward' => $config['reward_type'] == 'fixed' ? $config['reward'] : $block->getAverageAmount(),
@@ -196,13 +197,13 @@ if (@$_SESSION['USERDATA']['id']) {
 
   // Site-wide notifications, based on user events
   if ($aGlobal['userdata']['balance']['confirmed'] >= $config['ap_threshold']['max'])
-    $_SESSION['POPUP'][] = array('CONTENT' => 'You have exceeded the pools configured ' . $config['currency'] . ' warning threshold. Please initiate a transfer!', 'TYPE' => 'alert alert-danger');
+    $_SESSION['POPUP'][] = array('CONTENT' => _('You have exceeded the pools configured ') . $config['currency'] . _(' warning threshold. Please initiate a transfer!'), 'TYPE' => 'alert alert-danger');
   if ($user->getUserFailed($_SESSION['USERDATA']['id']) > 0)
-    $_SESSION['POPUP'][] = array('CONTENT' => 'You have ' . $user->getUserFailed($_SESSION['USERDATA']['id']) . ' failed login attempts! <a href="?page=account&action=reset_failed">Reset Counter</a>', 'TYPE' => 'alert alert-danger');
+    $_SESSION['POPUP'][] = array('CONTENT' => _('You have ') . $user->getUserFailed($_SESSION['USERDATA']['id']) . _(' failed login attempts! <a href="?page=account&action=reset_failed">Reset Counter</a>'), 'TYPE' => 'alert alert-danger');
 }
 
 if ($setting->getValue('maintenance'))
-  $_SESSION['POPUP'][] = array('CONTENT' => 'This pool is currently in maintenance mode.', 'TYPE' => 'alert alert-warning');
+  $_SESSION['POPUP'][] = array('CONTENT' => _('This pool is currently in maintenance mode.'), 'TYPE' => 'alert alert-warning');
 if ($motd = $setting->getValue('system_motd')) {
   if ($setting->getValue('system_motd_dismiss')) {
     $motd_dismiss = "yes";
@@ -230,7 +231,7 @@ if ($motd = $setting->getValue('system_motd')) {
 
 // check for deprecated theme
 if ($setting->getValue('website_theme') == "mpos")
-  $_SESSION['POPUP'][] = array('CONTENT' => 'You are using an old Theme that will not be maintained in the future.', 'TYPE' => 'alert alert-warning');
+  $_SESSION['POPUP'][] = array('CONTENT' => _('You are using an old Theme that will not be maintained in the future.'), 'TYPE' => 'alert alert-warning');
 
 // Check we can load the theme at all
 if ( !in_array($setting->getValue('website_theme', 'bootstrap'), $template->getThemes()))
@@ -242,28 +243,28 @@ $smarty->assign('DEBUG', $config['DEBUG']);
 // Lets check for our cron status and render a message
 require_once(INCLUDE_DIR . '/config/monitor_crons.inc.php');
 $bMessage = false;
-$aCronMessage[] = 'We are investigating issues in the backend. Your shares and hashrate are safe and we will fix things ASAP.</br><br/>';
+$aCronMessage[] = _('We are investigating issues in the backend. Your shares and hashrate are safe and we will fix things ASAP.') . '</br><br/>';
 foreach ($aMonitorCrons as $strCron) {
   if ($monitoring->isDisabled($strCron) == 1) {
     $bMessage = true;
     switch ($strCron) {
     case 'payouts':
-      $aCronMessage[] = '<li> Payouts disabled, you will not receive any coins to your offline wallet for the time being</li>';
+      $aCronMessage[] = '<li> ' . _('Payouts disabled, you will not receive any coins to your offline wallet for the time being') . '</li>';
       break;
     case 'findblock':
-      $aCronMessage[] = '<li> Findblocks disabled, new blocks will currently not show up in the frontend</li>';
+      $aCronMessage[] = '<li>' . _('Findblocks disabled, new blocks will currently not show up in the frontend') . '</li>';
       break;
     case 'blockupdate':
-      $aCronMessage[] = '<li> Blockupdate disabled, blocks and transactions confirmations are delayed</li>';
+      $aCronMessage[] = '<li>' . _('Blockupdate disabled, blocks and transactions confirmations are delayed') . '</li>';
       break;
     case 'pplns_payout':
-      $aCronMessage[] = '<li> PPLNS payout disabled, round credit transactions are delayed</li>';
+      $aCronMessage[] = '<li>' . _('PPLNS payout disabled, round credit transactions are delayed') . '</li>';
       break;
     case 'prop_payout':
-      $aCronMessage[] = '<li> Proportional payout disabled, round credit transactions are delayed</li>';
+      $aCronMessage[] = '<li> '. _('Proportional payout disabled, round credit transactions are delayed') . '</li>';
       break;
     case 'pps_payout':
-      $aCronMessage[] = '<li> PPS payout disabled, share credit transactions are delayed</li>';
+      $aCronMessage[] = '<li>' . _('PPS payout disabled, share credit transactions are delayed') . '</li>';
       break;
     }
   }
