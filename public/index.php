@@ -110,13 +110,19 @@ setlocale(LC_ALL, $languages[$userLanguage], $languages[$userLanguage] . '.UTF-8
 // Numeric should stay en_US. If you change that, be ready to have everything broken (JS and math don't really like 1,528.3 or 123,8)
 setlocale(LC_MONETARY, 'en_US', 'en_US.UTF-8');
 setlocale(LC_NUMERIC, 'en_US', 'en_US.UTF-8');
+$domain = 'frontend';
+$path = '../locale';
+bind_textdomain_codeset($domain, 'UTF-8');
+bindtextdomain($domain, $path);
+textdomain($domain);
+
 
 // show last logged in popup if it's still set
 if (@$_GET['clp'] == 1 && @$_SESSION['last_ip_pop']) unset($_SESSION['last_ip_pop']);
 if (count(@$_SESSION['last_ip_pop']) == 2) {
   $data = $_SESSION['last_ip_pop'];
   $ip = filter_var($data[0], FILTER_VALIDATE_IP);
-  $time = date("l, F jS \a\\t g:i a", $data[1]);
+  $time = strftime("%c", $data[1]);
   if (@$_SESSION['AUTHENTICATED'] && $_SESSION['last_ip_pop'][0] !== $user->getCurrentIP()) {
     $_SESSION['POPUP'][] = array('CONTENT' => _('You last logged in from') . " <b>$ip</b> " . _('on') . " $time", 'DISMISS' => 'yes', 'ID' => 'lastlogin', 'TYPE' => 'alert alert-warning');
   } else {
