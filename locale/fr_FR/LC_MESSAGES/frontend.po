@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mpos-vrm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-20 15:44+0200\n"
-"PO-Revision-Date: 2018-05-20 15:46+0200\n"
+"POT-Creation-Date: 2018-05-20 16:06+0200\n"
+"PO-Revision-Date: 2018-05-20 16:07+0200\n"
 "Last-Translator: Matthieu Derasse <it@derasse.fr>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -201,18 +201,23 @@ msgstr "Préférences"
 msgid "Workers"
 msgstr "Mineurs"
 
-#: ../templates/bootstrap//global/header.tpl:85
+#: ../templates/bootstrap//global/header.tpl:83
+#: ../templates/bootstrap//global/navigation.tpl:21
+msgid "Earnings"
+msgstr "Gains"
+
+#: ../templates/bootstrap//global/header.tpl:86
 #: ../templates/bootstrap//global/navigation.tpl:111
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: ../templates/bootstrap//global/header.tpl:88
+#: ../templates/bootstrap//global/header.tpl:89
 #: ../templates/bootstrap//global/navigation.tpl:113
 #: ../templates/bootstrap//login/default.tpl:29
 msgid "Login"
 msgstr "Connexion"
 
-#: ../templates/bootstrap//global/header.tpl:89
+#: ../templates/bootstrap//global/header.tpl:90
 #: ../templates/bootstrap//global/navigation.tpl:114
 msgid "Sign Up"
 msgstr "S'inscrire"
@@ -241,10 +246,6 @@ msgstr "Mes Mineurs"
 #: ../templates/bootstrap//global/navigation.tpl:46
 msgid "Transactions"
 msgstr "Transactions"
-
-#: ../templates/bootstrap//global/navigation.tpl:21
-msgid "Earnings"
-msgstr "Gains"
 
 #: ../templates/bootstrap//global/navigation.tpl:22
 msgid "Notifications"
@@ -2827,19 +2828,19 @@ msgstr "Pусский"
 msgid "zh"
 msgstr "中文"
 
-#: ../include/smarty_globals.inc.php:200
+#: ../include/smarty_globals.inc.php:201
 msgid "You have exceeded the pools configured "
 msgstr "Vous avez dépassé  "
 
-#: ../include/smarty_globals.inc.php:200
+#: ../include/smarty_globals.inc.php:201
 msgid " warning threshold. Please initiate a transfer!"
 msgstr " seuil d'avertissement. S'il vous plaît lancer un transfert!"
 
-#: ../include/smarty_globals.inc.php:202
+#: ../include/smarty_globals.inc.php:203
 msgid "You have "
 msgstr "Vous avez "
 
-#: ../include/smarty_globals.inc.php:202
+#: ../include/smarty_globals.inc.php:203
 msgid ""
 " failed login attempts! <a href=\"?page=account&action=reset_failed\">Reset "
 "Counter</a>"
@@ -2847,15 +2848,15 @@ msgstr ""
 " échecs tentatives de connexion! <a href=\"?page=account&action=reset_failed"
 "\">Remettre à zéro le compteur</a>"
 
-#: ../include/smarty_globals.inc.php:206
+#: ../include/smarty_globals.inc.php:207
 msgid "This pool is currently in maintenance mode."
 msgstr "Ce pool est actuellement en mode maintenance."
 
-#: ../include/smarty_globals.inc.php:234
+#: ../include/smarty_globals.inc.php:235
 msgid "You are using an old Theme that will not be maintained in the future."
 msgstr "Vous utilisez un vieux thème qui ne sera pas maintenu à l'avenir."
 
-#: ../include/smarty_globals.inc.php:246
+#: ../include/smarty_globals.inc.php:247
 msgid ""
 "We are investigating issues in the backend. Your shares and hashrate are "
 "safe and we will fix things ASAP."
@@ -2863,7 +2864,7 @@ msgstr ""
 "Nous enquêtons sur des problèmes serveurs. Vos actions et hashrate sont en "
 "sécurité et nous faisons notre maximum pour régler ce problème rapidement."
 
-#: ../include/smarty_globals.inc.php:252
+#: ../include/smarty_globals.inc.php:253
 msgid ""
 "Payouts disabled, you will not receive any coins to your offline wallet for "
 "the time being"
@@ -2871,28 +2872,28 @@ msgstr ""
 "Paiement désactivé. Vous ne recevrez aucun coin dans votre wallet le temps "
 "de la résolution de cet incident"
 
-#: ../include/smarty_globals.inc.php:255
+#: ../include/smarty_globals.inc.php:256
 msgid ""
 "Findblocks disabled, new blocks will currently not show up in the frontend"
 msgstr ""
 "La détection de nouveau bloc est désactivé. L'affichage et la prise en "
 "compte des bloc est retardé"
 
-#: ../include/smarty_globals.inc.php:258
+#: ../include/smarty_globals.inc.php:259
 msgid "Blockupdate disabled, blocks and transactions confirmations are delayed"
 msgstr ""
 "Blockupdate désactivé, les confirmations de blocs et de transactions sont "
 "retardées"
 
-#: ../include/smarty_globals.inc.php:261
+#: ../include/smarty_globals.inc.php:262
 msgid "PPLNS payout disabled, round credit transactions are delayed"
 msgstr "PPS paiement désactivé. le versement des transactions est retardé"
 
-#: ../include/smarty_globals.inc.php:264
+#: ../include/smarty_globals.inc.php:265
 msgid "Proportional payout disabled, round credit transactions are delayed"
 msgstr "Prop paiement désactivé. le versement des transactions est retardé"
 
-#: ../include/smarty_globals.inc.php:267
+#: ../include/smarty_globals.inc.php:268
 msgid "PPS payout disabled, share credit transactions are delayed"
 msgstr "PPS paiement désactivé. le versement des transactions est retardé"
 

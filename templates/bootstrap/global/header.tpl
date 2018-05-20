@@ -80,6 +80,7 @@
                         <li><a href="{$smarty.server.SCRIPT_NAME}?page=dashboard"><i class="fa fa-dashboard fa-fw"></i> {t}Dashboard{/t}</a>
                         <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit"><i class="fa fa-gear fa-fw"></i> {t}Settings{/t}</a>
                         <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers"><i class="fa fa-desktop fa-fw"></i> {t}Workers{/t}</a>
+                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=earnings"><i class="fa fa-money fa-fw"></i> {t}Earnings{/t}</a>
                         </li>
                         <li class="divider"></li>
                         <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> {t}Logout{/t}</a>
