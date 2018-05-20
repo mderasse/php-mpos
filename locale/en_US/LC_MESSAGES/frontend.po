@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mpos-vrm\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-16 22:56+0200\n"
+"PO-Revision-Date: 2018-05-18 08:43+0200\n"
+"Last-Translator: Matthieu Derasse <it@derasse.fr>\n"
+"Language-Team: French\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Crowdin-Project: mpos-vrm\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: mpos.pot\n"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "en"
+msgstr "English"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "fr"
+msgstr "Français"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "es"
+msgstr "Español"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "de"
+msgstr "Deutsche"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "it"
+msgstr "Italiano"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "ru"
+msgstr "Pусский"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "zh"
+msgstr "中文"
