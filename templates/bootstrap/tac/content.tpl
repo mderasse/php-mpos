@@ -7,4 +7,5 @@
   <li>{t}The uptime of the pool or website is not guaranteed, maintenance and downtime may be required at times. Users are responsible for configuring their miners so that they will automatically reconnect, switch to all the pools we offer or a backup pool in the case of downtime.{/t}</li>
   <li>{t}Botnets are not welcome. Accounts with a large amount of miners connecting from different IPs may be suspended without prior notice. If we are uncertian then an investigation will be opened and the user will be notified via their configured e-mail address. If we do not receive a response your account may be suspended.{/t}</li>
   <li>{t}Multiple accounts controlled by one person may be considered as a botnet and an investigation will be opened, see above point.{/t}</li>
+  <li>{t}Account with a high hashrate (> 40kh/s) are not welcome on the pool. Account will be suspended and share will be ignored (Work will be distributed to the current miners). You can contact the support in order to find a more appropriate way to mine.{/t}</li>
 </ul>
