@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mpos-vrm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-20 20:42+0200\n"
-"PO-Revision-Date: 2018-05-21 16:48+0200\n"
+"POT-Creation-Date: 2018-05-21 17:15+0200\n"
+"PO-Revision-Date: 2018-05-21 18:00+0200\n"
 "Last-Translator: Matthieu Derasse <it@derasse.fr>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -719,6 +719,26 @@ msgstr "Fermer"
 #: ../templates/bootstrap//register/disabled.tpl:1
 msgid "We are currently not accepting new user registrations."
 msgstr "Nous n'acceptons actuellement pas de nouvelles inscriptions."
+
+#: ../templates/bootstrap//register/disabled.tpl:4
+msgid ""
+"As a pool, we are responsible of the evolution of the coin and the block "
+"chain."
+msgstr ""
+"En tant que pool, nous sommes responsables de l'évolution du coin  et de la "
+"blockchain."
+
+#: ../templates/bootstrap//register/disabled.tpl:4
+msgid ""
+"For that reason we are closing temporarily registration in order to split "
+"the network hash."
+msgstr ""
+"Pour cette raison, nous fermons temporairement l'enregistrement afin de "
+"partager la vitesse de minage entre les pools."
+
+#: ../templates/bootstrap//register/disabled.tpl:6
+msgid "Verium Pools:"
+msgstr "Pool Verium:"
 
 #: ../templates/bootstrap//about/api/default.tpl:5
 msgid "API Reference"
