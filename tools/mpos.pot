@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-16 23:28+0200\n"
+"POT-Creation-Date: 2018-05-21 18:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2662,10 +2662,12 @@ msgid "Password reset complete! Please login."
 msgstr ""
 
 #: ../include/pages/register/register.inc.php:25
+#: ../include/pages/register.inc.php:5
 msgid "Account registration is currently disabled. Please try again later."
 msgstr ""
 
 #: ../include/pages/register/register.inc.php:27
+#: ../include/pages/register.inc.php:8
 msgid "Only invited users are allowed to register."
 msgstr ""
 
@@ -2984,10 +2986,10 @@ msgstr ""
 msgid "Could not find any notifications"
 msgstr ""
 
-#: ../public/index.php:121 ../public/index.php:123
+#: ../public/index.php:127 ../public/index.php:129
 msgid "You last logged in from"
 msgstr ""
 
-#: ../public/index.php:121 ../public/index.php:123
+#: ../public/index.php:127 ../public/index.php:129
 msgid "on"
 msgstr ""
