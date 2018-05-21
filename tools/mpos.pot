@@ -677,6 +677,22 @@ msgstr ""
 msgid "We are currently not accepting new user registrations."
 msgstr ""
 
+#: ../templates/bootstrap//register/disabled.tpl:4
+msgid ""
+"As a pool, we are responsible of the evolution of the coin and the block "
+"chain."
+msgstr ""
+
+#: ../templates/bootstrap//register/disabled.tpl:4
+msgid ""
+"For that reason we are closing temporarily registration in order to split "
+"the network hash."
+msgstr ""
+
+#: ../templates/bootstrap//register/disabled.tpl:6
+msgid "Verium Pools:"
+msgstr ""
+
 #: ../templates/bootstrap//about/api/default.tpl:5
 msgid "API Reference"
 msgstr ""
