@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mpos-vrm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-21 17:15+0200\n"
-"PO-Revision-Date: 2018-05-21 18:00+0200\n"
+"POT-Creation-Date: 2018-05-22 20:13+0200\n"
+"PO-Revision-Date: 2018-05-22 20:26+0200\n"
 "Last-Translator: Matthieu Derasse <it@derasse.fr>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -20,51 +20,140 @@ msgstr ""
 msgid "Getting Started Guide"
 msgstr "Guide De Démarrage"
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:15
+#: ../templates/bootstrap//gettingstarted/default.tpl:8
+msgid "Create a %1 address to receive payments."
+msgstr "Créez une adresse %1 pour recevoir les paiements."
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:10
+msgid ""
+"Downloading the client & block chain: \tDownload the %1 client from <a href="
+"\"https://portal.vericoin.info/verium/#verium-vaults\" target=\"_blank"
+"\">here</a>."
+msgstr ""
+"Téléchargez le client & la Blockchain:\tTéléchargez le client %1 <a href="
+"\"https://portal.vericoin.info/verium/#verium-vaults\" target=\"_blank"
+"\">ici</a>."
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:11
+msgid ""
+"Generate a new address and input it on your account page to receive payments."
+msgstr ""
+"Générez une nouvelle adresse et saisissez-la dans vos paramètres de compte "
+"pour recevoir les paiements."
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:14
+msgid "Create account."
+msgstr "Créez un compte."
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:16
+msgid ""
+"Register <a href=\"%1?page=register\">here</a>, or login if you already have "
+"account"
+msgstr ""
+"Inscrivez-vous <a href=\"%1?page=register\">ici</a>, ou connectez vous si "
+"vous avez déjà un compte"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:17
+msgid ""
+"Create a <a href=\"%1?page=account&action=workers\">worker</a> that will be "
+"used by the miner to login"
+msgstr ""
+"Créez un <a href=\"%1?page=account&action=workers\">mineur</a> qui sera "
+"utilisé par l'application de mining pour vous authentifier"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:19
 msgid "Download a miner."
 msgstr "Télécharger un mineur."
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:18
 #: ../templates/bootstrap//gettingstarted/default.tpl:22
+msgid "VeriumMiner Windows Binaries"
+msgstr "Binaire Windows de VeriumMiner"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:22
+#: ../templates/bootstrap//gettingstarted/default.tpl:23
 #: ../templates/bootstrap//gettingstarted/default.tpl:24
-#: ../templates/bootstrap//gettingstarted/default.tpl:26
-#: ../templates/bootstrap//gettingstarted/default.tpl:27
-#: ../templates/bootstrap//gettingstarted/default.tpl:28
+#: ../templates/bootstrap//gettingstarted/default.tpl:25
 msgid "Download here"
 msgstr "Télécharger ici"
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:19
 #: ../templates/bootstrap//gettingstarted/default.tpl:23
-msgid "Download Here"
-msgstr "Télécharger ici"
+msgid "VeriumMiner Linux Binaries"
+msgstr "Binaire Linux de VeriumMiner"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:24
+msgid "VeriumMiner Other Binaries"
+msgstr "Autres binaire de VeriumMiner"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:25
+msgid "VeriumMiner Linux/Windows/MacOs Sources"
+msgstr "Source Linux/Windows/MacOs de VeriumMiner"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:27
+msgid "Build your miner."
+msgstr "Compiler les sources."
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:29
+msgid "If you downloaded the Binaries, you can skip this step !"
+msgstr "Si vous avez téléchargé les Binaires, vous pouvez passer cette étape !"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:31
+msgid ""
+"Build on Linux: <a href=\"https://github.com/phiten/veriumMinerInstaller\" "
+"target=\"_blank\">Installer</a> or <a href=\"https://github.com/fireworm71/"
+"veriumMiner/blob/main/README.md\" target=\"_blank\">Building Guide</a>"
+msgstr ""
+"Compiler sous Linux: <a href=\"https://github.com/phiten/veriumMinerInstaller"
+"\" target=\"_blank\">Auto Builder</a> or <a href=\"https://github.com/"
+"fireworm71/veriumMiner/blob/main/README.md\" target=\"_blank\">Guide de "
+"compilation</a>"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:33
+msgid ""
+"Build on MacOs: <a href=\"https://github.com/Roykk/veriumMinerDocker/blob/"
+"master/OSXwithoutDocker/README.md\" target=\"_blank\">Building Guide</a>"
+msgstr ""
+"Compiler sous MacOs: <a href=\"https://github.com/Roykk/veriumMinerDocker/"
+"blob/master/OSXwithoutDocker/README.md\" target=\"_blank\">Guide de "
+"Compilation</a>"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:35
+msgid ""
+"Build on Other Systems: <a href=\"https://github.com/fireworm71/veriumMiner/"
+"blob/main/README.md\" target=\"_blank\">Building Guide</a>"
+msgstr ""
+"Compiler pour d'autres systèmes d'exploitation: <a href=\"https://github.com/"
+"fireworm71/veriumMiner/blob/main/README.md\" target=\"_blank\">Guide de "
+"compilation</a>"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:38
 msgid "Configure your miner."
 msgstr "Configurez votre mineur."
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:33
-msgid "If your using Linux, Then type the following into the console:"
+#: ../templates/bootstrap//gettingstarted/default.tpl:40
+msgid ""
+"If your using <strong> Linux/MacOs</strong>, Then type the following into "
+"the console:"
 msgstr ""
-"Si vous utilisez Linux, Veuillez tapper la commande suivante dans votre "
+"Si vous utilisez Linux/MacOs, Veuillez taper la commande suivante dans votre "
 "console:"
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:39
+#: ../templates/bootstrap//gettingstarted/default.tpl:43
 msgid ""
 "If you want to mine on a <strong> Windows Operating System</strong>, then "
-"you'll need to create a batch file to start your miner."
+"you'll need to create/edit a batch file to start your miner."
 msgstr ""
 "Si vous voulez miner sur un <strong>Système d'Exploitation Windows</strong>, "
 "vous allez devoir créer un fichier batch pour pouvoir démarrer votre mineur."
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:39
+#: ../templates/bootstrap//gettingstarted/default.tpl:43
 msgid "Simply open notepad and then copy and paste the following:"
 msgstr ""
 "Ouvrez simplement votre bloc-note et copier-coller y les lignes suivante:"
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:51
+#: ../templates/bootstrap//gettingstarted/default.tpl:46
 msgid ""
 "You then need to change \"-u Weblogin.Worker -p Worker password\" to reflect "
-"your own account. Eg, \"-u Steve.StevesWorker -p StevesWorkerPassword\" then "
+"your own account. Eg, \"-u Kevin.KevinWorker -p KevinWorkerPassword\" then "
 "go to \"File > Save as\" and save the file as \"RunMe.bat\" in the same "
 "folder containing your miners application files. You are now ready to mine, "
 "double click on \"RunMe.bat\" to start mining. If you want, you can create "
@@ -76,72 +165,170 @@ msgstr ""
 "StevesWorker -p StevesWorkerPassword\" puis aller dans \"Fichier > "
 "Sauvegarder sous\" et sauvegardé le fichier sous le nom \"RunMe.bat\" dans "
 "le dossier contenant l'application de mining. Vous êtes maintenant prêt à "
-"miner, double cliquer sur \"RunMe.bat\" pour lancer le mining. Vous pouvez "
+"miner, double cliqué sur \"RunMe.bat\" pour lancer le mining. Vous pouvez "
 "également créer d'autre Mineur via la page suivante: <a href=\"%1?"
 "page=account&action=workers\">Créer un mineur</a>"
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:53
-msgid "Create a %1 address to receive payments."
-msgstr "Créez une adresse %1 pour recevoir les paiements."
+#: ../templates/bootstrap//gettingstarted/default.tpl:57
+msgid "Choose the best Stratum"
+msgstr "Choisir le meilleur serveur de Stratum"
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:56
+#: ../templates/bootstrap//gettingstarted/default.tpl:60
 msgid ""
-"Generate a new address and input it on your account page to receive payments."
+"Mining-Pool is opening stratum servers around the world to be next to every "
+"miner."
 msgstr ""
-"Générez une nouvelle adresse et saisissez-la dans vos paramètres de compte "
-"pour recevoir les paiements."
+"Mining-Pool s'efforce à ouvrir des serveurs de stratum partout dans le monde "
+"pour être le plus proche de vos mineurs."
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:61
-msgid "Advanced CGMiner settings / FAQ"
-msgstr "Paramétrage avancé de  CGMiner / FAQ"
-
-#: ../templates/bootstrap//gettingstarted/default.tpl:63
-msgid "Scrypt readme"
-msgstr "Lisez Moi Scrypt"
-
-#: ../templates/bootstrap//gettingstarted/default.tpl:64
+#: ../templates/bootstrap//gettingstarted/default.tpl:62
 msgid ""
-"Don't set <b>intensity</b> too high, I=11 is standard and safest. Higher "
-"intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner "
-"(HW). HW=0 is good, otherwise lower intensity."
+"By selecting the nearest server you will improve your gain thanks to a lower "
+"latency."
 msgstr ""
-"Ne définissez pas <b>l'intensité</b> trop haute, l=11 est la valeur par "
-"défaut et la sûr. Une intensité plus haute utilisera plus de RAM de votre "
-"GPU. Vérifier vos <b>erreur d'hardware</b> dans CGMiner (HW). HW=0 est "
-"normal, sinon baissé l'intensité."
+"En choisisant le serveur le plus proche de votre mineur, vous allez réduire "
+"votre latence et donc augmenter vos gains."
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:65
-msgid ""
-"Set shaders according to the readme (or look at your graphic cards "
-"specifications). CGMiner uses this value at first run to calculate <b>thread-"
-"concurrency</b>. Easiest way to get this optimized is to use same settings "
-"as others have used here: <a href=\"http://litecoin.info/"
-"Mining_Hardware_Comparison\" target=\"_blank\">here</a>."
-msgstr ""
-"Définissez vos Shaders en vous basant sur le fichier lisez-moi (Ou en "
-"regardant les spécifications de votre carte graphique). CGMiner utilise "
-"cette valeur au premier démarrage afin de calculer <b>la concurrence des "
-"threads</b>. La façon la plus simple d'optimiser votre minage est d'utiliser "
-"la même configuration que d'autres mineurs disponilbe <a href=\"http://"
-"litecoin.info/Mining_Hardware_Comparison\" target=\"_blank\">ici</a>."
+msgid "Stratum Servers:"
+msgstr "Serveur de Stratum:"
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:66
-msgid ""
-"There's also an interesting project which gives you a GUI for CGMiner. "
-"Windows only it seems."
-msgstr ""
-"Il y a aussi un projet intéressant qui vous donne une interface graphique "
-"pour CGMiner. Celle ci est disponible uniquement sous Windows."
+#: ../templates/bootstrap//gettingstarted/default.tpl:69
+#: ../templates/bootstrap//home/default.tpl:32
+msgid "Localization"
+msgstr "Localisation"
 
-#: ../templates/bootstrap//gettingstarted/default.tpl:67
+#: ../templates/bootstrap//gettingstarted/default.tpl:70
+#: ../templates/bootstrap//home/default.tpl:33
+msgid "Network Speed"
+msgstr "Vitesse du réseau"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:71
+#: ../templates/bootstrap//gettingstarted/default.tpl:116
+#: ../templates/bootstrap//home/default.tpl:34
+#: ../templates/bootstrap//home/default.tpl:62
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:13
+msgid "Address"
+msgstr "Adresse"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:72
+#: ../templates/bootstrap//home/default.tpl:35
+#: ../templates/bootstrap//statistics/uptime/default.tpl:11
+#: ../templates/bootstrap//admin/wallet/status.tpl:15
+#: ../templates/bootstrap//account/transactions/default.tpl:24
+#: ../templates/bootstrap//account/transactions/default.tpl:47
+msgid "Status"
+msgstr "Statut"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:75
+msgid "Nortd America - USA - Virginia"
+msgstr "Amérique du Nord - Etats-Unis - Virginie"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:76
+#: ../templates/bootstrap//gettingstarted/default.tpl:88
+#: ../templates/bootstrap//home/default.tpl:39
+#: ../templates/bootstrap//home/default.tpl:51
+msgid "1Gbps - DDos Protection"
+msgstr "1Gbps - Protection contre le DDoS"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:78
+#: ../templates/bootstrap//gettingstarted/default.tpl:84
+#: ../templates/bootstrap//gettingstarted/default.tpl:90
+#: ../templates/bootstrap//home/default.tpl:41
+#: ../templates/bootstrap//home/default.tpl:47
+#: ../templates/bootstrap//home/default.tpl:53
+msgid "UP"
+msgstr "OK"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:81
+#: ../templates/bootstrap//home/default.tpl:44
+msgid "Europe - France - Strasbourg"
+msgstr "Europe - France - Strasbourg"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:82
+#: ../templates/bootstrap//home/default.tpl:45
+msgid "10Gbps - DDos Protection"
+msgstr "10Gbps - Protection contre le DDoS"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:87
+#: ../templates/bootstrap//home/default.tpl:50
+msgid "Asia - Singapore"
+msgstr "Asie - Singapour"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:102
+msgid "Choose the best Port"
+msgstr "Choisir le meilleur port"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:105
 msgid ""
-"Here's a great <a href=\"https://docs.google.com/document/"
-"d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
-"\"_blank\">guide</a> how to get up and running with Xubuntu."
+"To improve your gain performance, It's better to choose well the best mining "
+"port depending on your hashrate."
 msgstr ""
-"Vous pouvez suivre ce <a href=\"https://docs.google.com/document/"
-"d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
-"\"_blank\">guide</a pour configurer et miner sur Xubuntu."
+"Pour augmenter vos gains, il est préférable de choisir le port de mining le "
+"plus adapté au hashrate de votre mineur."
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:108
+msgid ""
+"<strong>Each computer/servers will have to be a worker</strong> to permit "
+"the difficulty to be well adjusted for your worker."
+msgstr ""
+"<strong>Chaque Ordinateur/Serveurs doit être déclaré en temps que mineurr</"
+"strong> afin d'adapter au mieux la difficulté et d'optimiser vos gains."
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:111
+msgid ""
+"Port have to be set for each of your worker and not for your total hashrate"
+msgstr ""
+"Le port de mining doit être calculé par mineur et non pas selon votre "
+"hashrate total"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:115
+#: ../templates/bootstrap//home/default.tpl:61
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:6
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:12
+#: ../templates/bootstrap//statistics/graphs/default.tpl:8
+#: ../templates/bootstrap//admin/user/default.tpl:93
+msgid "Hashrate"
+msgstr "Hashrate"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:117
+#: ../templates/bootstrap//home/default.tpl:63
+msgid "Port"
+msgstr "Port"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:118
+#: ../templates/bootstrap//home/default.tpl:64
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:7
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:14
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:13
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:118
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:58
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:58
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:57
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:56
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:39
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:17
+#: ../templates/bootstrap//account/workers/default.tpl:47
+msgid "Difficulty"
+msgstr "Difficulté"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:124
+#: ../templates/bootstrap//gettingstarted/default.tpl:154
+#: ../templates/bootstrap//home/default.tpl:70
+#: ../templates/bootstrap//home/default.tpl:100
+msgid "to"
+msgstr "à"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:151
+#: ../templates/bootstrap//home/default.tpl:97
+msgid "Special SBC"
+msgstr "Spécial SBC"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:152
+#: ../templates/bootstrap//home/default.tpl:98
+msgid "Europe Only"
+msgstr "Europe uniquement"
 
 #: ../templates/bootstrap//global/footer.tpl:5
 msgid ""
@@ -496,99 +683,13 @@ msgstr ""
 msgid "Stratum Servers :"
 msgstr "Serveur de Stratum:"
 
-#: ../templates/bootstrap//home/default.tpl:32
-msgid "Localization"
-msgstr "Localisation"
-
-#: ../templates/bootstrap//home/default.tpl:33
-msgid "Network Speed"
-msgstr "Vitesse du réseau"
-
-#: ../templates/bootstrap//home/default.tpl:34
-#: ../templates/bootstrap//home/default.tpl:62
-#: ../templates/bootstrap//admin/wallet/transactions.tpl:13
-msgid "Address"
-msgstr "Adresse"
-
-#: ../templates/bootstrap//home/default.tpl:35
-#: ../templates/bootstrap//statistics/uptime/default.tpl:11
-#: ../templates/bootstrap//admin/wallet/status.tpl:15
-#: ../templates/bootstrap//account/transactions/default.tpl:24
-#: ../templates/bootstrap//account/transactions/default.tpl:47
-msgid "Status"
-msgstr "Statut"
-
 #: ../templates/bootstrap//home/default.tpl:38
 msgid "North America - USA - Virginia"
 msgstr "Amérique du Nord - Etats-Unis - Virginie"
 
-#: ../templates/bootstrap//home/default.tpl:39
-#: ../templates/bootstrap//home/default.tpl:51
-msgid "1Gbps - DDos Protection"
-msgstr "1Gbps - Protection contre le DDoS"
-
-#: ../templates/bootstrap//home/default.tpl:41
-#: ../templates/bootstrap//home/default.tpl:47
-#: ../templates/bootstrap//home/default.tpl:53
-msgid "UP"
-msgstr "OK"
-
-#: ../templates/bootstrap//home/default.tpl:44
-msgid "Europe - France - Strasbourg"
-msgstr "Europe - France - Strasbourg"
-
-#: ../templates/bootstrap//home/default.tpl:45
-msgid "10Gbps - DDos Protection"
-msgstr "10Gbps - Protection contre le DDoS"
-
-#: ../templates/bootstrap//home/default.tpl:50
-msgid "Asia - Singapore"
-msgstr "Asie - Singapour"
-
 #: ../templates/bootstrap//home/default.tpl:57
 msgid "Pool Vardiff :"
 msgstr "Vardiff du Pool:"
-
-#: ../templates/bootstrap//home/default.tpl:61
-#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:6
-#: ../templates/bootstrap//dashboard/worker_information/default.tpl:12
-#: ../templates/bootstrap//statistics/graphs/default.tpl:8
-#: ../templates/bootstrap//admin/user/default.tpl:93
-msgid "Hashrate"
-msgstr "Hashrate"
-
-#: ../templates/bootstrap//home/default.tpl:63
-msgid "Port"
-msgstr "Port"
-
-#: ../templates/bootstrap//home/default.tpl:64
-#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:7
-#: ../templates/bootstrap//dashboard/blocks/default.tpl:14
-#: ../templates/bootstrap//dashboard/worker_information/default.tpl:13
-#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:118
-#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:58
-#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:58
-#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:16
-#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:57
-#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:56
-#: ../templates/bootstrap//statistics/round/block_stats.tpl:39
-#: ../templates/bootstrap//admin/poolworkers/default.tpl:17
-#: ../templates/bootstrap//account/workers/default.tpl:47
-msgid "Difficulty"
-msgstr "Difficulté"
-
-#: ../templates/bootstrap//home/default.tpl:70
-#: ../templates/bootstrap//home/default.tpl:100
-msgid "to"
-msgstr "à"
-
-#: ../templates/bootstrap//home/default.tpl:97
-msgid "Special SBC"
-msgstr "Spécial SBC"
-
-#: ../templates/bootstrap//home/default.tpl:98
-msgid "Europe Only"
-msgstr "Europe uniquement"
 
 #: ../templates/bootstrap//home/default.tpl:103
 msgid "Regards"
@@ -3097,11 +3198,13 @@ msgid "Password reset complete! Please login."
 msgstr "Réinitialisation du mot de passe effectuée, Veuillez vous identifie."
 
 #: ../include/pages/register/register.inc.php:25
+#: ../include/pages/register.inc.php:5
 msgid "Account registration is currently disabled. Please try again later."
 msgstr ""
 "L’inscription est actuellement désactivée. Veuillez réessayer plus tard."
 
 #: ../include/pages/register/register.inc.php:27
+#: ../include/pages/register.inc.php:8
 msgid "Only invited users are allowed to register."
 msgstr "Seuls les utilisateurs invités sont autorisés à s'inscrire."
 
@@ -3431,6 +3534,56 @@ msgstr "Vous vous êtes connecté pour la dernière fois avec l'IP"
 #: ../public/index.php:127 ../public/index.php:129
 msgid "on"
 msgstr "le"
+
+#~ msgid "Download Here"
+#~ msgstr "Télécharger ici"
+
+#~ msgid "Advanced CGMiner settings / FAQ"
+#~ msgstr "Paramétrage avancé de  CGMiner / FAQ"
+
+#~ msgid "Scrypt readme"
+#~ msgstr "Lisez Moi Scrypt"
+
+#~ msgid ""
+#~ "Don't set <b>intensity</b> too high, I=11 is standard and safest. Higher "
+#~ "intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner "
+#~ "(HW). HW=0 is good, otherwise lower intensity."
+#~ msgstr ""
+#~ "Ne définissez pas <b>l'intensité</b> trop haute, l=11 est la valeur par "
+#~ "défaut et la sûr. Une intensité plus haute utilisera plus de RAM de votre "
+#~ "GPU. Vérifier vos <b>erreur d'hardware</b> dans CGMiner (HW). HW=0 est "
+#~ "normal, sinon baissé l'intensité."
+
+#~ msgid ""
+#~ "Set shaders according to the readme (or look at your graphic cards "
+#~ "specifications). CGMiner uses this value at first run to calculate "
+#~ "<b>thread-concurrency</b>. Easiest way to get this optimized is to use "
+#~ "same settings as others have used here: <a href=\"http://litecoin.info/"
+#~ "Mining_Hardware_Comparison\" target=\"_blank\">here</a>."
+#~ msgstr ""
+#~ "Définissez vos Shaders en vous basant sur le fichier lisez-moi (Ou en "
+#~ "regardant les spécifications de votre carte graphique). CGMiner utilise "
+#~ "cette valeur au premier démarrage afin de calculer <b>la concurrence des "
+#~ "threads</b>. La façon la plus simple d'optimiser votre minage est "
+#~ "d'utiliser la même configuration que d'autres mineurs disponilbe <a href="
+#~ "\"http://litecoin.info/Mining_Hardware_Comparison\" target=\"_blank"
+#~ "\">ici</a>."
+
+#~ msgid ""
+#~ "There's also an interesting project which gives you a GUI for CGMiner. "
+#~ "Windows only it seems."
+#~ msgstr ""
+#~ "Il y a aussi un projet intéressant qui vous donne une interface graphique "
+#~ "pour CGMiner. Celle ci est disponible uniquement sous Windows."
+
+#~ msgid ""
+#~ "Here's a great <a href=\"https://docs.google.com/document/"
+#~ "d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
+#~ "\"_blank\">guide</a> how to get up and running with Xubuntu."
+#~ msgstr ""
+#~ "Vous pouvez suivre ce <a href=\"https://docs.google.com/document/"
+#~ "d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
+#~ "\"_blank\">guide</a pour configurer et miner sur Xubuntu."
 
 #~ msgid "latest News"
 #~ msgstr "dernières Actualités"
