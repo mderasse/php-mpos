@@ -112,7 +112,7 @@ if ($setting->getValue('disable_manual_payouts') != 1 && $aManualPayouts) {
           $txfee_amount = NULL;
           try {
             $rpc_tx = $bitcoin->gettransaction($rpc_txid);
-            $txfee_amount = $rpc_tx['details'][0]['fee']);
+            $txfee_amount = $rpc_tx['details'][0]['fee'];
           } catch (Exception $e) {
             $log->logError('E0080: RPC gettransaction method did not return 200 OK: Transaction ID: ' . $rpc_txid . ' ERROR: ' . $e->getMessage());
             // Remove this line below if RPC calls are failing but transactions are still added to it
@@ -219,7 +219,7 @@ if ($setting->getValue('disable_auto_payouts') != 1 && $aAutoPayouts) {
           $txfee_amount = NULL;
           try {
             $rpc_tx = $bitcoin->gettransaction($rpc_txid);
-            $txfee_amount = $rpc_tx['details'][0]['fee']);
+            $txfee_amount = $rpc_tx['details'][0]['fee'];
           } catch (Exception $e) {
             $log->logError('E0080: RPC gettransaction method did not return 200 OK: Transaction ID: ' . $rpc_txid . ' ERROR: ' . $e->getMessage());
             // Remove this line below if RPC calls are failing but transactions are still added to it
