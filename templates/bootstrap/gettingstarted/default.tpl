@@ -5,69 +5,155 @@
           <i class="fa fa-question fa-fw"></i> {t}Getting Started Guide{/t}
         </div>
         <div class="panel-body">
-        
-    <p>1. <strong>Create account.</strong></p>
-      <ul>
-        <li>{t escape=no}Register <a href="{$smarty.server.SCRIPT_NAME}?page=register">here</a>, or login if you already have accoun{/t}t</li>
-        <li>{t escape=no}Create a <a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers">worker</a> that will be used by the miner to login{/t}</li>
-      </ul>
-    </li>
-    <p>2. <strong>{t}Download a miner.{/t}</strong></p>
-      <ul>
-        {if $GLOBAL.config.algorithm == 'sha256d'}
-        <li><em>Intel/ATI/AMD CGMiner Windows:</em> <a href="http://ck.kolivas.org/apps/cgminer/cgminer-4.2.2-windows.zip" target="_blank">{t}Download here{/t}</a></li>
-        <li><em>Intel/ATI/AMD CGMiner Linux:</em> <a href="http://ck.kolivas.org/apps/cgminer/cgminer-4.2.2.tar.bz2" target="_blank">{t}Download Here{/t}</a></li>
-	{/if}
-	{if $GLOBAL.config.algorithm == 'scrypt'}
-	<li><em>Intel/ATI/AMD CGMiner (3.7.2) Windows:</em> <a href="https://mega.co.nz/#!iQhlGIxa!mzKOfLY6TpOfvPvWE6JFlWdRgHEoshzm99f1hd3ZdRw" target="_blank">{t}Download here{/t}</a></li>	
-	<li><em>Intel/ATI/AMD CGMiner (3.7.2) Linux:</em> <a href="http://ck.kolivas.org/apps/cgminer/3.7/cgminer-3.7.0.tar.bz2" target="_blank">{t}Download Here{/t}</a></li>	
-	<li><em>NVIDIA Cudaminer:</em> <a href="https://bitcointalk.org/index.php?topic=167229.0" target="_blank">{t}Download here{/t}</a></li>
-	{/if}
-	<li><em>Intel/ATI/AMD BFGMiner Linux/Windows:</em> <a href="http://bfgminer.org" target="_blank">{t}Download here{/t}</a></li>
-        <li><em>Fabulous Panda Miner Mac OS X:</em> <a href="http://fabulouspanda.co.uk/macminer/" target="_blank">{t}Download here{/t}</a></li>
-        <li><em>Minerd CPU Miner Mac/Linux/Windows:</em> <a href="https://bitcointalk.org/index.php?topic=55038.msg654850#msg654850" target="_blank">{t}Download here{/t}</a>.</li>
-      </ul>
-    </li>
-    <p>3. <strong>{t}Configure your miner.{/t}</strong></p>
-    <ul>
-      <p>{t}If your using Linux, Then type the following into the console:{/t}</p>
-      <li>CGMiner</li>
-      <pre>./cgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      <li>BFGMiner</li>
-      <pre>./bfgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      <br />
-	  <p> {t escape=no}If you want to mine on a <strong> Windows Operating System</strong>, then you'll need to create a batch file to start your miner.{/t} </p><p> {t}Simply open notepad and then copy and paste the following:{/t}</p>
-      <li>CGMiner</li>
-      <pre>cgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      <li>BFGMiner</li>
-      <pre>bfgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      <li>MinerD</li>
-      <pre>minerd -a {if $GLOBAL.config.algorithm == 'scrypt'}scrypt {/if}-t 6 -s 4 -o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      {if $GLOBAL.config.algorithm == 'scrypt'}
-      <li>Cudaminer For NVIDIA Cards</li>
-	  <pre>cudaminer -o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      {/if}
-	  <br />
-	  <p> {t escape=no server_name=$smarty.server.SCRIPT_NAME}You then need to change "-u Weblogin.Worker -p Worker password" to reflect your own account. Eg, "-u Steve.StevesWorker -p StevesWorkerPassword" then go to "File > Save as" and save the file as "RunMe.bat" in the same folder containing your miners application files. You are now ready to mine, double click on "RunMe.bat" to start mining. If you want, you can create additional workers with usernames and passwords of your choice <a href="%1?page=account&action=workers">here</a>{/t}</p>
-    </ul>
-    <p>4. <strong>{t sitecoin=$SITECOINNAME|default:"Litecoin"}Create a %1 address to receive payments.{/t}</strong></p>
-      <ul>
-        <li> {t escape=no}Downloading the client & block chain: 	Download the {$SITECOINNAME|default:"Litecoin"} client from <a href="{$SITECOINURL|default:"http://www.litecoin.org"}" target="_blank">here</a>.{/t}
-          <p>{t}Generate a new address and input it on your account page to receive payments.{/t}</p>
-        </li>
-      </ul>
-    </li>
-    {if $GLOBAL.config.algorithm == 'scrypt'}
-    <p>5. <strong>{t}Advanced CGMiner settings / FAQ{/t}</strong></p>
-      <ul>
-        <li><a href="https://raw.github.com/ckolivas/cgminer/v3.7.2/SCRYPT-README" target="_blank">{t}Scrypt readme{/t}</a></li>
-        <li>{t escape=no}Don't set <b>intensity</b> too high, I=11 is standard and safest. Higher intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner (HW). HW=0 is good, otherwise lower intensity.{/t}</li>
-        <li>{t escape=no}Set shaders according to the readme (or look at your graphic cards specifications). CGMiner uses this value at first run to calculate <b>thread-concurrency</b>. Easiest way to get this optimized is to use same settings as others have used here: <a href="http://litecoin.info/Mining_Hardware_Comparison" target="_blank">here</a>.{/t}</li>
-        <li>{t}There's also an interesting project which gives you a GUI for CGMiner. Windows only it seems.{/t}</li>
-        <li>{t escape=no}Here's a great <a href="https://docs.google.com/document/d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true" target="_blank">guide</a> how to get up and running with Xubuntu.{/t}</li>
-      </ul>
-    </li>
-    {/if}
+            <p>1. <strong>{t site_coin=$SITECOINNAME|default:"Litecoin"}Create a %1 address to receive payments.{/t}</strong></p>
+              <ul>
+                <li> {t escape=no site_coin=$SITECOINNAME|default:"Litecoin"}Downloading the client & block chain: 	Download the %1 client from <a href="https://portal.vericoin.info/verium/#verium-vaults" target="_blank">here</a>.{/t}
+                  <p>{t}Generate a new address and input it on your account page to receive payments.{/t}</p>
+                </li>
+              </ul>
+            <p>2. <strong>{t}Create account.{/t}</strong></p>
+              <ul>
+                <li>{t escape=no server_url=$smarty.server.SCRIPT_NAME }Register <a href="%1?page=register">here</a>, or login if you already have account{/t}</li>
+                <li>{t escape=no server_url=$smarty.server.SCRIPT_NAME }Create a <a href="%1?page=account&action=workers">worker</a> that will be used by the miner to login{/t}</li>
+              </ul>
+            <p>3. <strong>{t}Download a miner.{/t}</strong></p>
+
+              <ul>
+                <li><em>{t}VeriumMiner Windows Binaries{/t}</em> <a href="https://github.com/fireworm71/veriumMiner/releases/download/v1.4/cpuminer_1.4_windows_x64_O2_GCC7.zip" target="_blank">{t}Download here{/t}</a></li>
+                <li><em>{t}VeriumMiner Linux Binaries{/t}</em> <a href="https://github.com/fireworm71/veriumMiner/releases/download/v1.4/cpuminer_1.4_linux_x64_O2_GCC7.zip" target="_blank">{t}Download here{/t}</a></li>
+                <li><em>{t}VeriumMiner Other Binaries{/t}</em> <a href="https://github.com/fireworm71/veriumMiner/releases/tag/v1.4" target="_blank">{t}Download here{/t}</a></li>
+                <li><em>{t}VeriumMiner Linux/Windows/MacOs Sources{/t}</em> <a href="https://github.com/fireworm71/veriumMiner" target="_blank">{t}Download here{/t}</a></li>
+              </ul>
+            <p>4. <strong>{t}Build your miner.{/t}</strong></p>
+            <ul>
+                <p><b>{t}If you downloaded the Binaries, you can skip this step !{/t}</b></p>
+                <p>
+                    {t escape=no}Build on Linux: <a href="https://github.com/phiten/veriumMinerInstaller" target="_blank">Installer</a> or <a href="https://github.com/fireworm71/veriumMiner/blob/main/README.md" target="_blank">Building Guide</a>{/t}
+                    <br />
+                    {t escape=no}Build on MacOs: <a href="https://github.com/Roykk/veriumMinerDocker/blob/master/OSXwithoutDocker/README.md" target="_blank">Building Guide</a>{/t}
+                    <br />
+                    {t escape=no}Build on Other Systems: <a href="https://github.com/fireworm71/veriumMiner/blob/main/README.md" target="_blank">Building Guide</a>{/t}
+                </p>
+            </ul>
+            <p>5. <strong>{t}Configure your miner.{/t}</strong></p>
+            <ul>
+              <p>{t escape=no}If your using <strong> Linux/MacOs</strong>, Then type the following into the console:{/t}</p>
+              <pre>./cpuminer -o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
+              <br />
+              <p> {t escape=no}If you want to mine on a <strong> Windows Operating System</strong>, then you'll need to create/edit a batch file to start your miner.{/t} </p><p> {t}Simply open notepad and then copy and paste the following:{/t}</p>
+              <pre>cpuminer.exe -o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
+              <br />
+              <p> {t escape=no server_url=$smarty.server.SCRIPT_NAME}You then need to change "-u Weblogin.Worker -p Worker password" to reflect your own account. Eg, "-u Kevin.KevinWorker -p KevinWorkerPassword" then go to "File > Save as" and save the file as "RunMe.bat" in the same folder containing your miners application files. You are now ready to mine, double click on "RunMe.bat" to start mining. If you want, you can create additional workers with usernames and passwords of your choice <a href="%1?page=account&action=workers">here</a>{/t}</p>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+ <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <i class="fa fa-question fa-fw"></i> {t}Choose the best Stratum{/t}
+        </div>
+        <div class="panel-body">
+            {t}Mining-Pool is opening stratum servers around the world to be next to every miner.{/t}
+            <br/>
+            {t}By selecting the nearest server you will improve your gain thanks to a lower latency.{/t}
+            <br />
+            <br />
+            <strong>{t}Stratum Servers:{/t} </strong>.
+
+            <table style="width:100%; margin-top: 15px;">
+                <tr style="border: 1px #bce8f1 solid;">
+                    <th style="padding: 10px;">{t}Localization{/t}</th>
+                    <th style="padding: 10px;">{t}Network Speed{/t}</th>
+                    <th style="padding: 10px;">{t}Address{/t}</th>
+                    <th style="padding: 10px;">{t}Status{/t}</th>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">{t}Nortd America - USA - Virginia{/t}</td>
+                    <td style="padding: 10px;">{t}1Gbps - DDos Protection{/t}</td>
+                    <td style="padding: 10px;">stratum+tcp://us.vrm.mining-pool.ovh:PORT</td>
+                    <td style="padding: 10px;color: green; font-weight: bold;">{t}UP{/t}</td>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">{t}Europe - France - Strasbourg{/t}</td>
+                    <td style="padding: 10px;">{t}10Gbps - DDos Protection{/t}</td>
+                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:PORT</td>
+                    <td style="padding: 10px;color: green; font-weight: bold;">{t}UP{/t}</td>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">{t}Asia - Singapore{/t}</td>
+                    <td style="padding: 10px;">{t}1Gbps - DDos Protection{/t}</td>
+                    <td style="padding: 10px;">stratum+tcp://sgp.vrm.mining-pool.ovh:PORT</td>
+                    <td style="padding: 10px;color: green; font-weight: bold;">{t}UP{/t}</td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    <!-- /.col-lg-12 -->
+  </div>
+ <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <i class="fa fa-question fa-fw"></i> {t}Choose the best Port{/t}
+        </div>
+        <div class="panel-body">
+            {t}To improve your gain performance, It's better to choose well the best mining port depending on your hashrate.{/t}
+            <br />
+            <br />
+            {t escape=no}<strong>Each computer/servers will have to be a worker</strong> to permit the difficulty to be well adjusted for your worker.{/t}
+            <br />
+            <br />
+            <strong>{t}Port have to be set for each of your worker and not for your total hashrate{/t}</strong>.
+
+            <table style="width:100%; margin-top: 15px;">
+                <tr style="border: 1px #bce8f1 solid;">
+                    <th style="padding: 10px;">{t}Hashrate{/t}</th>
+                    <th style="padding: 10px;">{t}Address{/t}</th>
+                    <th style="padding: 10px;">{t}Port{/t}</th>
+                    <th style="padding: 10px;">{t}Difficulty{/t}</th>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">0 -&gt; 2000 H/m</th>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3032</th>
+                    <td style="padding: 10px;">3032</th>
+                    <td style="padding: 10px;">0.0007 {t}to{/t} 0.04</th>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">2000 -&gt; 2500 H/m</th>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3033</th>
+                    <td style="padding: 10px;">3033</th>
+                    <td style="padding: 10px;">0.05</th>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">2500 -&gt; 5500 H/m</th>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3034</th>
+                    <td style="padding: 10px;">3034</th>
+                    <td style="padding: 10px;">0.1</th>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">5500 -&gt; 11000 H/m</th>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3035</th>
+                    <td style="padding: 10px;">3035</th>
+                    <td style="padding: 10px;">0.2</th>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">11000 -&gt; &infin; H/m</th>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3036</th>
+                    <td style="padding: 10px;">3036</th>
+                    <td style="padding: 10px;">0.3</th>
+                </tr>
+                <tr style="border: 1px #bce8f1 solid;">
+                    <td style="padding: 10px;">{t}Special SBC{/t}</td>
+                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:3037 ({t}Europe Only{/t})</th>
+                    <td style="padding: 10px;">3037</td>
+                    <td style="padding: 10px;">0.002 {t}to{/t} 0.006</td>
+                </tr>
+            </table>
         </div>
       </div>
     </div>
