@@ -44,7 +44,7 @@
             </tr>
             <tr>
               <th>{t}Est. Shares this Round{/t}</th>
-              <td id="b-target">{$ESTIMATES.shares|number_format} ({t}done{/t}: {$ESTIMATES.percent}%)</td>
+              <td id="b-target">{$ESTIMATES.shares|number_format:$GLOBAL.config.sharediffprecision} ({t}done{/t}: {$ESTIMATES.percent}%)</td>
             </tr>
             {if ! $GLOBAL.website.blockexplorer.disabled}
             <tr>
