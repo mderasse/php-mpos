@@ -30,9 +30,9 @@
             <td>{$BLOCKDETAILS.height|number_format:"0"|default:"0"}</td>
             {/if}
             <td>{t}PPLNS Shares{/t}</td>
-            <td>{$PPLNSSHARES|number_format:"0"|default:"0"}</td>
+            <td>{$PPLNSSHARES|number_format:$GLOBAL.config.sharediffprecision|default:"0"}</td>
             <td>{t}Estimated Shares{/t}</td>
-            <td>{$BLOCKDETAILS.estshares|number_format|default:"0"}</td>
+            <td>{$BLOCKDETAILS.estshares|number_format:$GLOBAL.config.sharediffprecision|default:"0"}</td>
           </tr>
           <tr class="odd">
             <td>{t}Amount{/t}</td>
@@ -64,7 +64,7 @@
           </tr>
           <tr class="odd">
             <td>{t}Shares{/t}</td>
-            <td>{$BLOCKDETAILS.shares|number_format:"0"|default:"0"}</td>
+            <td>{$BLOCKDETAILS.shares|number_format:$GLOBAL.config.sharediffprecision|default:"0"}</td>
             <td>{t}Finder{/t}</td>
             {capture assign=default_user}{t}unknown{/t}{/capture}
             <td>{$BLOCKDETAILS.finder|default:$default_user}</td>

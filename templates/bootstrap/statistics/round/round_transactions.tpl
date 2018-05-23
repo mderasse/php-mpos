@@ -21,7 +21,7 @@
                 {capture assign=default_user}{t}unknown{/t}{/capture}
                 <td>{if $ROUNDTRANSACTIONS[txs].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}{t}anonymous{/t}{else}{$ROUNDTRANSACTIONS[txs].username|default:$default_user|escape}{/if}</td>
                 <td>{$ROUNDTRANSACTIONS[txs].type|default:""}</td>
-                <td>{$ROUNDSHARES[$ROUNDTRANSACTIONS[txs].uid].valid|number_format}</td>
+                <td>{$ROUNDSHARES[$ROUNDTRANSACTIONS[txs].uid].valid|number_format:$GLOBAL.config.sharediffprecision|default:0}</td>
                 <td>{(( 100 / $BLOCKDETAILS.shares) * $ROUNDSHARES[$ROUNDTRANSACTIONS[txs].uid].valid)|default:"0"|number_format:"2"}</td>
                 <td>{$ROUNDTRANSACTIONS[txs].amount|default:"0"|number_format:"8"}</td>
               </tr>
