@@ -79,7 +79,7 @@
                   <p class="h5 up-more">{t}Net Hashrate{/t}</p>
                   <div class="circle-tile-number text-faded up">
                     <span class="overview" id="b-nethashrate">{if $GLOBAL.nethashrate > 0}{$GLOBAL.nethashrate|number_format:"2"}{else}{t}n/a{/t}{/if}</span>
-                    <span class="overview-mhs"> {$GLOBAL.hashunits.network}</span>
+                    <span class="overview-mhs"> KH/m</span>
                     <br>
                     <span class="pool-nethashrate-bar spark-18"></span>
                   </div>
