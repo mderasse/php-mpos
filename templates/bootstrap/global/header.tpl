@@ -63,7 +63,7 @@
                 {/if}
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <img class="lang-flag" src="{$GLOBALASSETS}/images/flags/{$smarty.session.USERDATA.language}.png"/>{t}{$smarty.session.USERDATA.language}{/t} <i class="fa fa-caret-down"></i>
+                        <img class="lang-flag" src="{$GLOBALASSETS}/images/flags/{$smarty.session.USERDATA.language}.png"/> {t}{$smarty.session.USERDATA.language}{/t} <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         {foreach from=$GLOBAL.languages item=lang}
