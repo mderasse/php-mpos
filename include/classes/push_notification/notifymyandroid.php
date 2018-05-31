@@ -27,6 +27,7 @@ class Notifications_NotifyMyAndroid implements IPushNotification {
             CURLOPT_URL => "https://www.notifymyandroid.com/publicapi/notify",
             CURLOPT_POST => true,
             CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 300,
             CURLOPT_POSTFIELDS => http_build_query($data = array(
                 "apikey" => $this->apiKey,
                 "application" => $setting->getValue('website_title')?:"PHP-MPOS",

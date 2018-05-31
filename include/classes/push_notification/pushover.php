@@ -30,6 +30,7 @@
 				CURLOPT_URL => "https://api.pushover.net/1/messages.json",
 				CURLOPT_POST => true,
 				CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_TIMEOUT => 300,
 				CURLOPT_POSTFIELDS => http_build_query($data = array(
 					"token" => $this->token,
 					"user" => $this->user,
