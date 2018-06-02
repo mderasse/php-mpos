@@ -5,8 +5,6 @@
 <br /><br />
     {t}Verium Pools:{/t}
 <br />
-     - <a href="https://vrm.n3rd3d.com">N3RD3D</a>
-<br />
      - <a href="https://beertendr.com">Beertendr</a>
 <br />
      - <a href="https://vrm.poolsloth.com">PoolSloth</a>
