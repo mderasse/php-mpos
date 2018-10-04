@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mpos-vrm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-16 22:56+0200\n"
-"PO-Revision-Date: 2018-05-18 08:43+0200\n"
+"POT-Creation-Date: 2018-05-20 15:44+0200\n"
+"PO-Revision-Date: 2018-05-20 15:46+0200\n"
 "Last-Translator: Matthieu Derasse <it@derasse.fr>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -44,27 +44,52 @@ msgstr "Configurez votre mineur."
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:33
 msgid "If your using Linux, Then type the following into the console:"
-msgstr "Si vous utilisez Linux, Veuillez tapper la commande suivante dans votre console:"
+msgstr ""
+"Si vous utilisez Linux, Veuillez tapper la commande suivante dans votre "
+"console:"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:39
-msgid "If you want to mine on a <strong> Windows Operating System</strong>, then you'll need to create a batch file to start your miner."
-msgstr "Si vous voulez miner sur un <strong>Système d'Exploitation Windows</strong>, vous allez devoir créer un fichier batch pour pouvoir démarrer votre mineur."
+msgid ""
+"If you want to mine on a <strong> Windows Operating System</strong>, then "
+"you'll need to create a batch file to start your miner."
+msgstr ""
+"Si vous voulez miner sur un <strong>Système d'Exploitation Windows</strong>, "
+"vous allez devoir créer un fichier batch pour pouvoir démarrer votre mineur."
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:39
 msgid "Simply open notepad and then copy and paste the following:"
-msgstr "Ouvrez simplement votre bloc-note et copier-coller y les lignes suivante:"
+msgstr ""
+"Ouvrez simplement votre bloc-note et copier-coller y les lignes suivante:"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:51
-msgid "You then need to change \"-u Weblogin.Worker -p Worker password\" to reflect your own account. Eg, \"-u Steve.StevesWorker -p StevesWorkerPassword\" then go to \"File > Save as\" and save the file as \"RunMe.bat\" in the same folder containing your miners application files. You are now ready to mine, double click on \"RunMe.bat\" to start mining. If you want, you can create additional workers with usernames and passwords of your choice <a href=\"%1?page=account&action=workers\">here</a>"
-msgstr "Vous devez alors changer \"-u Weblogin.Worker -p Worker password\" afin qu'elle corresponde au information de votre compte. Exemple: \"-u Steve.StevesWorker -p StevesWorkerPassword\" puis aller dans \"Fichier > Sauvegarder sous\" et sauvegardé le fichier sous le nom \"RunMe.bat\" dans le dossier contenant l'application de mining. Vous êtes maintenant prêt à miner, double cliquer sur \"RunMe.bat\" pour lancer le mining. Vous pouvez également créer d'autre Mineur via la page suivante: <a href=\"%1?page=account&action=workers\">Créer un mineur</a>"
+msgid ""
+"You then need to change \"-u Weblogin.Worker -p Worker password\" to reflect "
+"your own account. Eg, \"-u Steve.StevesWorker -p StevesWorkerPassword\" then "
+"go to \"File > Save as\" and save the file as \"RunMe.bat\" in the same "
+"folder containing your miners application files. You are now ready to mine, "
+"double click on \"RunMe.bat\" to start mining. If you want, you can create "
+"additional workers with usernames and passwords of your choice <a href=\"%1?"
+"page=account&action=workers\">here</a>"
+msgstr ""
+"Vous devez alors changer \"-u Weblogin.Worker -p Worker password\" afin "
+"qu'elle corresponde au information de votre compte. Exemple: \"-u Steve."
+"StevesWorker -p StevesWorkerPassword\" puis aller dans \"Fichier > "
+"Sauvegarder sous\" et sauvegardé le fichier sous le nom \"RunMe.bat\" dans "
+"le dossier contenant l'application de mining. Vous êtes maintenant prêt à "
+"miner, double cliquer sur \"RunMe.bat\" pour lancer le mining. Vous pouvez "
+"également créer d'autre Mineur via la page suivante: <a href=\"%1?"
+"page=account&action=workers\">Créer un mineur</a>"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:53
 msgid "Create a %1 address to receive payments."
 msgstr "Créez une adresse %1 pour recevoir les paiements."
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:56
-msgid "Generate a new address and input it on your account page to receive payments."
-msgstr "Générez une nouvelle adresse et saisissez-la dans vos paramètres de compte pour recevoir les paiements."
+msgid ""
+"Generate a new address and input it on your account page to receive payments."
+msgstr ""
+"Générez une nouvelle adresse et saisissez-la dans vos paramètres de compte "
+"pour recevoir les paiements."
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:61
 msgid "Advanced CGMiner settings / FAQ"
@@ -75,24 +100,56 @@ msgid "Scrypt readme"
 msgstr "Lisez Moi Scrypt"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:64
-msgid "Don't set <b>intensity</b> too high, I=11 is standard and safest. Higher intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner (HW). HW=0 is good, otherwise lower intensity."
-msgstr "Ne définissez pas <b>l'intensité</b> trop haute, l=11 est la valeur par défaut et la sûr. Une intensité plus haute utilisera plus de RAM de votre GPU. Vérifier vos <b>erreur d'hardware</b> dans CGMiner (HW). HW=0 est normal, sinon baissé l'intensité."
+msgid ""
+"Don't set <b>intensity</b> too high, I=11 is standard and safest. Higher "
+"intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner "
+"(HW). HW=0 is good, otherwise lower intensity."
+msgstr ""
+"Ne définissez pas <b>l'intensité</b> trop haute, l=11 est la valeur par "
+"défaut et la sûr. Une intensité plus haute utilisera plus de RAM de votre "
+"GPU. Vérifier vos <b>erreur d'hardware</b> dans CGMiner (HW). HW=0 est "
+"normal, sinon baissé l'intensité."
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:65
-msgid "Set shaders according to the readme (or look at your graphic cards specifications). CGMiner uses this value at first run to calculate <b>thread-concurrency</b>. Easiest way to get this optimized is to use same settings as others have used here: <a href=\"http://litecoin.info/Mining_Hardware_Comparison\" target=\"_blank\">here</a>."
-msgstr "Définissez vos Shaders en vous basant sur le fichier lisez-moi (Ou en regardant les spécifications de votre carte graphique). CGMiner utilise cette valeur au premier démarrage afin de calculer <b>la concurrence des threads</b>. La façon la plus simple d'optimiser votre minage est d'utiliser la même configuration que d'autres mineurs disponilbe <a href=\"http://litecoin.info/Mining_Hardware_Comparison\" target=\"_blank\">ici</a>."
+msgid ""
+"Set shaders according to the readme (or look at your graphic cards "
+"specifications). CGMiner uses this value at first run to calculate <b>thread-"
+"concurrency</b>. Easiest way to get this optimized is to use same settings "
+"as others have used here: <a href=\"http://litecoin.info/"
+"Mining_Hardware_Comparison\" target=\"_blank\">here</a>."
+msgstr ""
+"Définissez vos Shaders en vous basant sur le fichier lisez-moi (Ou en "
+"regardant les spécifications de votre carte graphique). CGMiner utilise "
+"cette valeur au premier démarrage afin de calculer <b>la concurrence des "
+"threads</b>. La façon la plus simple d'optimiser votre minage est d'utiliser "
+"la même configuration que d'autres mineurs disponilbe <a href=\"http://"
+"litecoin.info/Mining_Hardware_Comparison\" target=\"_blank\">ici</a>."
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:66
-msgid "There's also an interesting project which gives you a GUI for CGMiner. Windows only it seems."
-msgstr "Il y a aussi un projet intéressant qui vous donne une interface graphique pour CGMiner. Celle ci est disponible uniquement sous Windows."
+msgid ""
+"There's also an interesting project which gives you a GUI for CGMiner. "
+"Windows only it seems."
+msgstr ""
+"Il y a aussi un projet intéressant qui vous donne une interface graphique "
+"pour CGMiner. Celle ci est disponible uniquement sous Windows."
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:67
-msgid "Here's a great <a href=\"https://docs.google.com/document/d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target=\"_blank\">guide</a> how to get up and running with Xubuntu."
-msgstr "Vous pouvez suivre ce <a href=\"https://docs.google.com/document/d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target=\"_blank\">guide</a pour configurer et miner sur Xubuntu."
+msgid ""
+"Here's a great <a href=\"https://docs.google.com/document/"
+"d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
+"\"_blank\">guide</a> how to get up and running with Xubuntu."
+msgstr ""
+"Vous pouvez suivre ce <a href=\"https://docs.google.com/document/"
+"d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
+"\"_blank\">guide</a pour configurer et miner sur Xubuntu."
 
 #: ../templates/bootstrap//global/footer.tpl:5
-msgid "Powered by <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank\">MPOS</a>"
-msgstr "Propulsé par <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank\">MPOS</a>"
+msgid ""
+"Powered by <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank"
+"\">MPOS</a>"
+msgstr ""
+"Propulsé par <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank"
+"\">MPOS</a>"
 
 #: ../templates/bootstrap//global/header.tpl:4
 msgid "Toggle navigation"
@@ -128,13 +185,13 @@ msgid "Guest"
 msgstr "Visiteur"
 
 #: ../templates/bootstrap//global/header.tpl:80
-#: ../templates/bootstrap//global/navigation.tpl:9
-#: ../templates/bootstrap//global/navigation.tpl:34
+#: ../templates/bootstrap//global/navigation.tpl:12
+#: ../templates/bootstrap//global/navigation.tpl:37
 msgid "Dashboard"
 msgstr "Tableau de bord"
 
 #: ../templates/bootstrap//global/header.tpl:81
-#: ../templates/bootstrap//global/navigation.tpl:36
+#: ../templates/bootstrap//global/navigation.tpl:39
 #: ../templates/bootstrap//admin/settings/default.tpl:5
 msgid "Settings"
 msgstr "Préférences"
@@ -145,18 +202,18 @@ msgid "Workers"
 msgstr "Mineurs"
 
 #: ../templates/bootstrap//global/header.tpl:85
-#: ../templates/bootstrap//global/navigation.tpl:108
+#: ../templates/bootstrap//global/navigation.tpl:111
 msgid "Logout"
 msgstr "Déconnexion"
 
 #: ../templates/bootstrap//global/header.tpl:88
-#: ../templates/bootstrap//global/navigation.tpl:110
+#: ../templates/bootstrap//global/navigation.tpl:113
 #: ../templates/bootstrap//login/default.tpl:29
 msgid "Login"
 msgstr "Connexion"
 
 #: ../templates/bootstrap//global/header.tpl:89
-#: ../templates/bootstrap//global/navigation.tpl:111
+#: ../templates/bootstrap//global/navigation.tpl:114
 msgid "Sign Up"
 msgstr "S'inscrire"
 
@@ -164,114 +221,118 @@ msgstr "S'inscrire"
 msgid "Home"
 msgstr "Accueil"
 
-#: ../templates/bootstrap//global/navigation.tpl:13
+#: ../templates/bootstrap//global/navigation.tpl:8
+msgid "What's new"
+msgstr "Actualités"
+
+#: ../templates/bootstrap//global/navigation.tpl:16
 msgid "My Account"
 msgstr "Mon compte"
 
-#: ../templates/bootstrap//global/navigation.tpl:15
+#: ../templates/bootstrap//global/navigation.tpl:18
 msgid "Edit Account"
 msgstr "Modifier mon compte"
 
-#: ../templates/bootstrap//global/navigation.tpl:16
+#: ../templates/bootstrap//global/navigation.tpl:19
 msgid "My Workers"
 msgstr "Mes Mineurs"
 
-#: ../templates/bootstrap//global/navigation.tpl:17
-#: ../templates/bootstrap//global/navigation.tpl:43
+#: ../templates/bootstrap//global/navigation.tpl:20
+#: ../templates/bootstrap//global/navigation.tpl:46
 msgid "Transactions"
 msgstr "Transactions"
 
-#: ../templates/bootstrap//global/navigation.tpl:18
+#: ../templates/bootstrap//global/navigation.tpl:21
 msgid "Earnings"
 msgstr "Gains"
 
-#: ../templates/bootstrap//global/navigation.tpl:19
+#: ../templates/bootstrap//global/navigation.tpl:22
 msgid "Notifications"
 msgstr "Notifications"
 
-#: ../templates/bootstrap//global/navigation.tpl:20
-#: ../templates/bootstrap//global/navigation.tpl:59
+#: ../templates/bootstrap//global/navigation.tpl:23
+#: ../templates/bootstrap//global/navigation.tpl:62
 #: ../templates/bootstrap//admin/dashboard/invitation.tpl:4
 msgid "Invitations"
 msgstr "Invitations"
 
-#: ../templates/bootstrap//global/navigation.tpl:21
+#: ../templates/bootstrap//global/navigation.tpl:24
 msgid "QR Codes"
 msgstr "QR Codes"
 
-#: ../templates/bootstrap//global/navigation.tpl:28
+#: ../templates/bootstrap//global/navigation.tpl:31
 msgid "Admin Panel"
 msgstr "Administration"
 
-#: ../templates/bootstrap//global/navigation.tpl:31
+#: ../templates/bootstrap//global/navigation.tpl:34
 msgid "System"
 msgstr "Système"
 
-#: ../templates/bootstrap//global/navigation.tpl:33
+#: ../templates/bootstrap//global/navigation.tpl:36
 msgid "Setup"
 msgstr "Installation"
 
-#: ../templates/bootstrap//global/navigation.tpl:35
+#: ../templates/bootstrap//global/navigation.tpl:38
 #: ../templates/bootstrap//admin/monitoring/default.tpl:5
 msgid "Monitoring"
 msgstr "Statut serveur"
 
-#: ../templates/bootstrap//global/navigation.tpl:40
+#: ../templates/bootstrap//global/navigation.tpl:43
 msgid "Funds"
 msgstr "Fonds"
 
-#: ../templates/bootstrap//global/navigation.tpl:42
+#: ../templates/bootstrap//global/navigation.tpl:45
 msgid "Wallet Info"
 msgstr "Portefeuille"
 
-#: ../templates/bootstrap//global/navigation.tpl:47
+#: ../templates/bootstrap//global/navigation.tpl:50
 msgid "News"
 msgstr "Actualités"
 
-#: ../templates/bootstrap//global/navigation.tpl:49
+#: ../templates/bootstrap//global/navigation.tpl:52
 msgid "Site News"
 msgstr "Nouvelles du site"
 
-#: ../templates/bootstrap//global/navigation.tpl:50
+#: ../templates/bootstrap//global/navigation.tpl:53
 msgid "Newsletter"
 msgstr "Newsletter"
 
-#: ../templates/bootstrap//global/navigation.tpl:54
+#: ../templates/bootstrap//global/navigation.tpl:57
 #: ../templates/bootstrap//admin/dashboard/user.tpl:5
 msgid "Users"
 msgstr "Utilisateurs"
 
-#: ../templates/bootstrap//global/navigation.tpl:56
+#: ../templates/bootstrap//global/navigation.tpl:59
 msgid "User Info"
 msgstr "Informations Utilisateur"
 
-#: ../templates/bootstrap//global/navigation.tpl:57
+#: ../templates/bootstrap//global/navigation.tpl:60
 msgid "Reports"
 msgstr "Rapports"
 
-#: ../templates/bootstrap//global/navigation.tpl:58
+#: ../templates/bootstrap//global/navigation.tpl:61
 #: ../templates/bootstrap//admin/dashboard/registrations.tpl:4
 msgid "Registrations"
 msgstr "Inscriptions"
 
-#: ../templates/bootstrap//global/navigation.tpl:60
+#: ../templates/bootstrap//global/navigation.tpl:63
 #: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:62
 #: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:62
 msgid "Pool Workers"
 msgstr "Mineurs du Pool"
 
-#: ../templates/bootstrap//global/navigation.tpl:69
+#: ../templates/bootstrap//global/navigation.tpl:72
 msgid "Statistics"
 msgstr "Statistiques"
 
-#: ../templates/bootstrap//global/navigation.tpl:71
+#: ../templates/bootstrap//global/navigation.tpl:74
 #: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:6
 #: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:6
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:6
 msgid "Pool"
 msgstr "Pool"
 
-#: ../templates/bootstrap//global/navigation.tpl:72
+#: ../templates/bootstrap//global/navigation.tpl:75
 #: ../templates/bootstrap//dashboard/js/api.tpl:143
 #: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:12
 #: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:12
@@ -279,56 +340,56 @@ msgstr "Pool"
 msgid "Blocks"
 msgstr "Blocs"
 
-#: ../templates/bootstrap//global/navigation.tpl:73
+#: ../templates/bootstrap//global/navigation.tpl:76
 msgid "Round"
 msgstr "Round"
 
-#: ../templates/bootstrap//global/navigation.tpl:74
+#: ../templates/bootstrap//global/navigation.tpl:77
 msgid "Blockfinder"
 msgstr "Blockfinder"
 
-#: ../templates/bootstrap//global/navigation.tpl:75
+#: ../templates/bootstrap//global/navigation.tpl:78
 msgid "Uptime"
 msgstr "Uptime"
 
-#: ../templates/bootstrap//global/navigation.tpl:76
+#: ../templates/bootstrap//global/navigation.tpl:79
 msgid "Graphs"
 msgstr "Graphiques"
 
-#: ../templates/bootstrap//global/navigation.tpl:77
+#: ../templates/bootstrap//global/navigation.tpl:80
 msgid "Donors"
 msgstr "Donateurs"
 
-#: ../templates/bootstrap//global/navigation.tpl:91
+#: ../templates/bootstrap//global/navigation.tpl:94
 msgid "Help"
 msgstr "Aide"
 
-#: ../templates/bootstrap//global/navigation.tpl:93
+#: ../templates/bootstrap//global/navigation.tpl:96
 msgid "Getting Started"
 msgstr "Commencer à Miner"
 
-#: ../templates/bootstrap//global/navigation.tpl:94
+#: ../templates/bootstrap//global/navigation.tpl:97
 msgid "About"
 msgstr "À propos"
 
-#: ../templates/bootstrap//global/navigation.tpl:95
+#: ../templates/bootstrap//global/navigation.tpl:98
 #: ../templates/bootstrap//about/chat/default.tpl:5
 msgid "Web Chat"
 msgstr "Chat"
 
-#: ../templates/bootstrap//global/navigation.tpl:96
+#: ../templates/bootstrap//global/navigation.tpl:99
 msgid "Forum"
 msgstr "Forum"
 
-#: ../templates/bootstrap//global/navigation.tpl:105
+#: ../templates/bootstrap//global/navigation.tpl:108
 msgid "Other"
 msgstr "Autre"
 
-#: ../templates/bootstrap//global/navigation.tpl:113
+#: ../templates/bootstrap//global/navigation.tpl:116
 msgid "Contact"
 msgstr "Contact"
 
-#: ../templates/bootstrap//global/navigation.tpl:115
+#: ../templates/bootstrap//global/navigation.tpl:118
 msgid "Terms and Conditions"
 msgstr "Termes et Conditions"
 
@@ -387,24 +448,150 @@ msgid "Contact & Support"
 msgstr "Contact et Support"
 
 #: ../templates/bootstrap//contactform/disabled.tpl:10
-msgid "This product comes 'as-is' without any warranty. Please check the Apache License, Version 2.0, for details."
-msgstr "Ce produit vient «tel quel» sans aucune garantie. Veuillez vérifier la licence Apache, version 2.0, pour plus de détails."
+msgid ""
+"This product comes 'as-is' without any warranty. Please check the Apache "
+"License, Version 2.0, for details."
+msgstr ""
+"Ce produit vient «tel quel» sans aucune garantie. Veuillez vérifier la "
+"licence Apache, version 2.0, pour plus de détails."
 
-#: ../templates/bootstrap//home/news_all.tpl:8
-#: ../templates/bootstrap//home/news_accordion.tpl:14
-#: ../templates/bootstrap//admin/news/default.tpl:51
-msgid "posted %1"
-msgstr "posté le %1"
+#: ../templates/bootstrap//home/default.tpl:5
+msgid "Welcome to VRM - Mining-Pool"
+msgstr "Bienvenue sur VRM - Mining-pool"
 
-#: ../templates/bootstrap//home/news_all.tpl:8
-#: ../templates/bootstrap//home/news_accordion.tpl:14
-#: ../templates/bootstrap//admin/news/default.tpl:51
-msgid "by <b>%1</b>"
-msgstr "par <b>%1</b>"
+#: ../templates/bootstrap//home/default.tpl:10
+msgid ""
+"To join the pool you can follow the <a href=\"%1?page=gettingstarted"
+"\">Getting Started Guide</a>."
+msgstr ""
+"Pour rejoindre le pool et commencer à miner vous pouvez suivre le <a href="
+"\"%1?page=gettingstarted\">guide de démarrage</a>."
 
-#: ../templates/bootstrap//home/news_accordion.tpl:5
-msgid "latest News"
-msgstr "dernières Actualités"
+#: ../templates/bootstrap//home/default.tpl:10
+msgid "Feel free to click on the right-bottom Button if you have any question."
+msgstr ""
+"N'hésitez pas à cliquer sur le bouton en bas à droite de la page si vous "
+"avez des questions."
+
+#: ../templates/bootstrap//home/default.tpl:13
+msgid "Pool Features :"
+msgstr "Caractéristiques du Pool:"
+
+#: ../templates/bootstrap//home/default.tpl:17
+msgid "Normal Fees : 0.9%"
+msgstr "Frais normaux: 0,9%"
+
+#: ../templates/bootstrap//home/default.tpl:20
+msgid "Fully Redundant Infrastructure"
+msgstr "Infrastructure entièrement redondante"
+
+#: ../templates/bootstrap//home/default.tpl:23
+msgid "Servers in professional Datacenters in Europe, North America and Asia"
+msgstr ""
+"Serveurs dans des datacentres professionnel en Europe, Amérique du Nord et "
+"Asie"
+
+#: ../templates/bootstrap//home/default.tpl:28
+msgid "Stratum Servers :"
+msgstr "Serveur de Stratum:"
+
+#: ../templates/bootstrap//home/default.tpl:32
+msgid "Localization"
+msgstr "Localisation"
+
+#: ../templates/bootstrap//home/default.tpl:33
+msgid "Network Speed"
+msgstr "Vitesse du réseau"
+
+#: ../templates/bootstrap//home/default.tpl:34
+#: ../templates/bootstrap//home/default.tpl:62
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:13
+msgid "Address"
+msgstr "Adresse"
+
+#: ../templates/bootstrap//home/default.tpl:35
+#: ../templates/bootstrap//statistics/uptime/default.tpl:11
+#: ../templates/bootstrap//admin/wallet/status.tpl:15
+#: ../templates/bootstrap//account/transactions/default.tpl:24
+#: ../templates/bootstrap//account/transactions/default.tpl:47
+msgid "Status"
+msgstr "Statut"
+
+#: ../templates/bootstrap//home/default.tpl:38
+msgid "North America - USA - Virginia"
+msgstr "Amérique du Nord - Etats-Unis - Virginie"
+
+#: ../templates/bootstrap//home/default.tpl:39
+#: ../templates/bootstrap//home/default.tpl:51
+msgid "1Gbps - DDos Protection"
+msgstr "1Gbps - Protection contre le DDoS"
+
+#: ../templates/bootstrap//home/default.tpl:41
+#: ../templates/bootstrap//home/default.tpl:47
+#: ../templates/bootstrap//home/default.tpl:53
+msgid "UP"
+msgstr "OK"
+
+#: ../templates/bootstrap//home/default.tpl:44
+msgid "Europe - France - Strasbourg"
+msgstr "Europe - France - Strasbourg"
+
+#: ../templates/bootstrap//home/default.tpl:45
+msgid "10Gbps - DDos Protection"
+msgstr "10Gbps - Protection contre le DDoS"
+
+#: ../templates/bootstrap//home/default.tpl:50
+msgid "Asia - Singapore"
+msgstr "Asie - Singapour"
+
+#: ../templates/bootstrap//home/default.tpl:57
+msgid "Pool Vardiff :"
+msgstr "Vardiff du Pool:"
+
+#: ../templates/bootstrap//home/default.tpl:61
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:6
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:12
+#: ../templates/bootstrap//statistics/graphs/default.tpl:8
+#: ../templates/bootstrap//admin/user/default.tpl:93
+msgid "Hashrate"
+msgstr "Hashrate"
+
+#: ../templates/bootstrap//home/default.tpl:63
+msgid "Port"
+msgstr "Port"
+
+#: ../templates/bootstrap//home/default.tpl:64
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:7
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:14
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:13
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:118
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:58
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:58
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:57
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:56
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:39
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:17
+#: ../templates/bootstrap//account/workers/default.tpl:47
+msgid "Difficulty"
+msgstr "Difficulté"
+
+#: ../templates/bootstrap//home/default.tpl:70
+#: ../templates/bootstrap//home/default.tpl:100
+msgid "to"
+msgstr "à"
+
+#: ../templates/bootstrap//home/default.tpl:97
+msgid "Special SBC"
+msgstr "Spécial SBC"
+
+#: ../templates/bootstrap//home/default.tpl:98
+msgid "Europe Only"
+msgstr "Europe uniquement"
+
+#: ../templates/bootstrap//home/default.tpl:103
+msgid "Regards"
+msgstr "Cordialement"
 
 #: ../templates/bootstrap//password/change/default.tpl:11
 #: ../templates/bootstrap//password/default.tpl:8
@@ -440,8 +627,12 @@ msgid "Unlock"
 msgstr "Déverrouiller"
 
 #: ../templates/bootstrap//password/default.tpl:12
-msgid "If you have an email set for your account, enter your username to get your password reset"
-msgstr "Si vous avez défini un e-mail pour votre compte, entrez votre nom d'utilisateur pour réinitialiser votre mot de passe"
+msgid ""
+"If you have an email set for your account, enter your username to get your "
+"password reset"
+msgstr ""
+"Si vous avez défini un e-mail pour votre compte, entrez votre nom "
+"d'utilisateur pour réinitialiser votre mot de passe"
 
 #: ../templates/bootstrap//password/default.tpl:15
 msgid "Username or E-mail"
@@ -509,8 +700,12 @@ msgid "Remember this pin!"
 msgstr "Souvenez-vous de votre PIN !"
 
 #: ../templates/bootstrap//register/default.tpl:59
-msgid "I Accept The <a data-toggle=\"modal\" data-target=\"#TAC\">Terms and Conditions</a>"
-msgstr "J’accepte les <a data-toggle=\"modal\" data-target=\"#TAC\">Termes et Conditions d'utilisation</a>"
+msgid ""
+"I Accept The <a data-toggle=\"modal\" data-target=\"#TAC\">Terms and "
+"Conditions</a>"
+msgstr ""
+"J’accepte les <a data-toggle=\"modal\" data-target=\"#TAC\">Termes et "
+"Conditions d'utilisation</a>"
 
 #: ../templates/bootstrap//register/default.tpl:73
 msgid "Register"
@@ -529,8 +724,14 @@ msgid "API Reference"
 msgstr "Documentation de l'API"
 
 #: ../templates/bootstrap//about/api/default.tpl:8
-msgid "Please head over to the <a href=\"https://github.com/TheSerapher/php-mpos/wiki/API-Reference\">official documentation</a> to learn about the API featured in <b>MPOS</b>."
-msgstr "Veuillez suivre la <a href=\"https://github.com/TheSerapher/php-mpos/wiki/API-Reference\">documentation officielle</a> afin de découvrir toutes les fonctionnalités de l'API <b>MPOS</b>."
+msgid ""
+"Please head over to the <a href=\"https://github.com/TheSerapher/php-mpos/"
+"wiki/API-Reference\">official documentation</a> to learn about the API "
+"featured in <b>MPOS</b>."
+msgstr ""
+"Veuillez suivre la <a href=\"https://github.com/TheSerapher/php-mpos/wiki/"
+"API-Reference\">documentation officielle</a> afin de découvrir toutes les "
+"fonctionnalités de l'API <b>MPOS</b>."
 
 #: ../templates/bootstrap//about/pool/default.tpl:5
 msgid "Frequently Asked Questions"
@@ -549,84 +750,196 @@ msgid "Proportional (Prop)"
 msgstr "Proportionnelle (Prop)"
 
 #: ../templates/bootstrap//about/pool/default.tpl:13
-msgid "The block reward is distributed among miners in proportion to the number of shares they submitted in a round. The expected reward per share depends on the number of shares already submitted in the round."
-msgstr "La récompense du bloc est distribuée parmi les mineurs proportionnellement au nombre de shares qu'ils ont présentées dans un round. La récompense prévue par share dépend du nombre de share déjà envoyé dans le round."
+msgid ""
+"The block reward is distributed among miners in proportion to the number of "
+"shares they submitted in a round. The expected reward per share depends on "
+"the number of shares already submitted in the round."
+msgstr ""
+"La récompense du bloc est distribuée parmi les mineurs proportionnellement "
+"au nombre de shares qu'ils ont présentées dans un round. La récompense "
+"prévue par share dépend du nombre de share déjà envoyé dans le round."
 
 #: ../templates/bootstrap//about/pool/default.tpl:17
 msgid "Pay Per Last N Shares (PPLNS)"
 msgstr "Pay Per Last N Shares (PPLNS)"
 
 #: ../templates/bootstrap//about/pool/default.tpl:17
-msgid "Block rewards are distributed among the last shares, disregarding round boundaries. In the accurate implementation, the number of shares is determined so that their total will be a specified quantity of score (where the score of a share is the inverse of the difficulty). Most pools use a naive implementation based on a fixed number of shares or a fixed multiple of the difficulty. The share-variance can be reduced at the cost of increased maturity time, but there is no way to decrease the long-term pool-variance."
-msgstr "Les récompenses de bloc sont réparties en fonction des derniers shares peut importe les limites du round. Dans une implémentation parfaite de ce système, le nombres de shares serait déterminé afin que leur total corresponde à une quantité de score définie (ou le score d'un share is l'inverse de sa difficulté). Une grande partie des pools utilisent une implémentation naïve basé sur un nombre fix de shares ou un multiple de la difficulté."
+msgid ""
+"Block rewards are distributed among the last shares, disregarding round "
+"boundaries. In the accurate implementation, the number of shares is "
+"determined so that their total will be a specified quantity of score (where "
+"the score of a share is the inverse of the difficulty). Most pools use a "
+"naive implementation based on a fixed number of shares or a fixed multiple "
+"of the difficulty. The share-variance can be reduced at the cost of "
+"increased maturity time, but there is no way to decrease the long-term pool-"
+"variance."
+msgstr ""
+"Les récompenses de bloc sont réparties en fonction des derniers shares peut "
+"importe les limites du round. Dans une implémentation parfaite de ce "
+"système, le nombres de shares serait déterminé afin que leur total "
+"corresponde à une quantité de score définie (ou le score d'un share is "
+"l'inverse de sa difficulté). Une grande partie des pools utilisent une "
+"implémentation naïve basé sur un nombre fix de shares ou un multiple de la "
+"difficulté."
 
 #: ../templates/bootstrap//about/pool/default.tpl:21
 msgid "Pay Per Share (PPS)"
 msgstr "Pay Per Share (PPS)"
 
 #: ../templates/bootstrap//about/pool/default.tpl:21
-msgid "Each share receives a fixed reward known in advance. This is the ultimate low-variance, low-maturity simple method, but has the highest risk for the operator, and hence lower expected returns than other methods and risk of collapse if not managed properly."
-msgstr "Chaque share  reçoit une récompense fixe connue à l'avance. Il s'agit de la méthode simple à faible variation et à faible maturité. Celle-ci présente le risque le plus élevé pour l'administrateur et, par conséquent, un gain inférieur comparé aux autres méthodes."
+msgid ""
+"Each share receives a fixed reward known in advance. This is the ultimate "
+"low-variance, low-maturity simple method, but has the highest risk for the "
+"operator, and hence lower expected returns than other methods and risk of "
+"collapse if not managed properly."
+msgstr ""
+"Chaque share  reçoit une récompense fixe connue à l'avance. Il s'agit de la "
+"méthode simple à faible variation et à faible maturité. Celle-ci présente le "
+"risque le plus élevé pour l'administrateur et, par conséquent, un gain "
+"inférieur comparé aux autres méthodes."
 
 #: ../templates/bootstrap//about/pool/default.tpl:24
 msgid "Q: What is a orphan block?"
 msgstr "Q: Qu'est-ce qu'un bloc orphelin?"
 
 #: ../templates/bootstrap//about/pool/default.tpl:25
-msgid "<b>A:</b> Coins generated by a block will not be available to you right away. They will take some time to be confirmed by the entire network before you are allowed to transfer them out of the pool. Usually coins have a confirmation set to 120. What that actually means: the network (not the pool) has to discover 120 additional blocks on top of the one found by the pool to confirm it."
-msgstr "<b>R:</b> Les coins générées par un bloc ne seront pas mis à votre disposition tout de suite. Ils vont prendre du temps pour être confirmée par l’ensemble du réseau et par conséquent ils ne seront pas transférable en dehors du pool avant celle-ci. Les coins ont généralement besoin de 120 confirmations. Cela signifie en réalité que le réseau (pas le pool) doit découvrir 120 blocs supplémentaires pour pouvoir être déclaré comme confirmé."
+msgid ""
+"<b>A:</b> Coins generated by a block will not be available to you right "
+"away. They will take some time to be confirmed by the entire network before "
+"you are allowed to transfer them out of the pool. Usually coins have a "
+"confirmation set to 120. What that actually means: the network (not the "
+"pool) has to discover 120 additional blocks on top of the one found by the "
+"pool to confirm it."
+msgstr ""
+"<b>R:</b> Les coins générées par un bloc ne seront pas mis à votre "
+"disposition tout de suite. Ils vont prendre du temps pour être confirmée par "
+"l’ensemble du réseau et par conséquent ils ne seront pas transférable en "
+"dehors du pool avant celle-ci. Les coins ont généralement besoin de 120 "
+"confirmations. Cela signifie en réalité que le réseau (pas le pool) doit "
+"découvrir 120 blocs supplémentaires pour pouvoir être déclaré comme confirmé."
 
 #: ../templates/bootstrap//about/pool/default.tpl:27
 msgid "Q: What is estimated payout?"
 msgstr "Q: Que signifie l'estimation de paiement ?"
 
 #: ../templates/bootstrap//about/pool/default.tpl:28
-msgid "<b>A:</b> Estimated payout is your estimated payout if a block is found at that time. This is an estimate according to your amount of shares submitted for the round(s)."
-msgstr "<b>R:</b>L'estimation de paiement est l'estimation du nombre de coin que vous allez recevoir si un bloc est trouvé à cet instant. Cette estimation ce base sur le nombre de shares envoyé sur le round."
+msgid ""
+"<b>A:</b> Estimated payout is your estimated payout if a block is found at "
+"that time. This is an estimate according to your amount of shares submitted "
+"for the round(s)."
+msgstr ""
+"<b>R:</b>L'estimation de paiement est l'estimation du nombre de coin que "
+"vous allez recevoir si un bloc est trouvé à cet instant. Cette estimation ce "
+"base sur le nombre de shares envoyé sur le round."
 
 #: ../templates/bootstrap//about/pool/default.tpl:31
 msgid "Q: What is pool-variance?"
 msgstr "Q: Qu'Est-ce que la variation du pool ?"
 
 #: ../templates/bootstrap//about/pool/default.tpl:32
-msgid "<b>A:</b> This is the variance caused by the pool being too small. Using a method with high pool-variance does no harm to large pools."
-msgstr "<b>R:</b> La variation d'un pool est causé par le fait que le pool n'est pas assez important (Hashrate trop faible). L'utilisation d'une méthode avec haute variation sur un pool important n'a aucune influence sur celui-ci."
+msgid ""
+"<b>A:</b> This is the variance caused by the pool being too small. Using a "
+"method with high pool-variance does no harm to large pools."
+msgstr ""
+"<b>R:</b> La variation d'un pool est causé par le fait que le pool n'est pas "
+"assez important (Hashrate trop faible). L'utilisation d'une méthode avec "
+"haute variation sur un pool important n'a aucune influence sur celui-ci."
 
 #: ../templates/bootstrap//about/pool/default.tpl:35
 msgid "Q: What is a share?"
 msgstr "Q: Qu'est-ce qu'un share?"
 
 #: ../templates/bootstrap//about/pool/default.tpl:36
-msgid "<b>A:</b> Finding blocks is not an easy task. Since it would take a really long time on some coins, finding a block is broken down into shares. Depending on the server side setting, each share can be a certain difficulty. The more difficult each share is to find by miners, the fewer total shares are required to eventually find a block."
-msgstr "<b>R:</b> Trouver des blocs n'est pas une tâche facile. Comme il faudrait un temps très long sur certaines coin, c'est pourquoi trouver un bloc est divisé en share. Selon le réglage du serveur, chaque share peut avoir une difficulté différente. Plus la difficulté d'un share est elevé pour un mineur, moins le nombre nécéssaire de share pour trouver un bloc sera important ."
+msgid ""
+"<b>A:</b> Finding blocks is not an easy task. Since it would take a really "
+"long time on some coins, finding a block is broken down into shares. "
+"Depending on the server side setting, each share can be a certain "
+"difficulty. The more difficult each share is to find by miners, the fewer "
+"total shares are required to eventually find a block."
+msgstr ""
+"<b>R:</b> Trouver des blocs n'est pas une tâche facile. Comme il faudrait un "
+"temps très long sur certaines coin, c'est pourquoi trouver un bloc est "
+"divisé en share. Selon le réglage du serveur, chaque share peut avoir une "
+"difficulté différente. Plus la difficulté d'un share est elevé pour un "
+"mineur, moins le nombre nécéssaire de share pour trouver un bloc sera "
+"important ."
 
 #: ../templates/bootstrap//about/pool/default.tpl:38
-msgid "On the server side, each share is checked against the coin daemon (a server side wallet with more features) if it is indeed a valid block solution. Every share computed has the potential to be a block solution. I will not go into details why this is, but rest assured that share estimates for blocks can sometimes be exceeded. In the long run though, shorter round with less shares than required will make up for those taking very long."
-msgstr "Sur le serveur, chaque share est vérifié via le daemon du coin (Un portefeuille hébergeait sur le serveur avec des fonctionnalités supplémentaire) afin de vérifier si le share est une solution valide pour le bloc. Tous les share vérifiait peuvent être la solution pour le bloc. Nous n'irons pas dans les détails mais il est possible que le nombre de share pour un bloc soit au dessus de l'estimation. Vous verrez au final que certain round à l'inverse moins de share rétablissant un équilibre."
+msgid ""
+"On the server side, each share is checked against the coin daemon (a server "
+"side wallet with more features) if it is indeed a valid block solution. "
+"Every share computed has the potential to be a block solution. I will not go "
+"into details why this is, but rest assured that share estimates for blocks "
+"can sometimes be exceeded. In the long run though, shorter round with less "
+"shares than required will make up for those taking very long."
+msgstr ""
+"Sur le serveur, chaque share est vérifié via le daemon du coin (Un "
+"portefeuille hébergeait sur le serveur avec des fonctionnalités "
+"supplémentaire) afin de vérifier si le share est une solution valide pour le "
+"bloc. Tous les share vérifiait peuvent être la solution pour le bloc. Nous "
+"n'irons pas dans les détails mais il est possible que le nombre de share "
+"pour un bloc soit au dessus de l'estimation. Vous verrez au final que "
+"certain round à l'inverse moins de share rétablissant un équilibre."
 
 #: ../templates/bootstrap//about/pool/default.tpl:40
-msgid "Keep in mind: shares are not blocks! Shares are part of a block and will count towards the block payout!"
-msgstr "Souvenez-vous: un share n'est pas un bloc !! Les shares sont une partie d'un bloc et seront comptabilisé lors du partage de la récompense!"
+msgid ""
+"Keep in mind: shares are not blocks! Shares are part of a block and will "
+"count towards the block payout!"
+msgstr ""
+"Souvenez-vous: un share n'est pas un bloc !! Les shares sont une partie d'un "
+"bloc et seront comptabilisé lors du partage de la récompense!"
 
 #: ../templates/bootstrap//about/pool/default.tpl:42
-msgid "At times, you will see shares being rejected by the pool. This can happen if you try to send an outdated share right after a block was found. Stratum, a protocol used by a miner to request work from a server, is used for share submission and getting new work. It is very solid when it comes to avoiding rejects but they can still happen once in a while."
-msgstr "Parfois, vous verrez certain share rejeté par le pool. Cela peut se produire si vous envoyez un share pour un bloc qui n'est plus d'actualité suite à la découverte très récente de ce bloc. Le stratum est un protocole utilisé par les mineurs afin de demander et envoyer des shares au serveur. Ce protocol est très performant quand il s'agit d'éviter les shares invalide mais cela peut quand même se produire de temps en temps."
+msgid ""
+"At times, you will see shares being rejected by the pool. This can happen if "
+"you try to send an outdated share right after a block was found. Stratum, a "
+"protocol used by a miner to request work from a server, is used for share "
+"submission and getting new work. It is very solid when it comes to avoiding "
+"rejects but they can still happen once in a while."
+msgstr ""
+"Parfois, vous verrez certain share rejeté par le pool. Cela peut se produire "
+"si vous envoyez un share pour un bloc qui n'est plus d'actualité suite à la "
+"découverte très récente de ce bloc. Le stratum est un protocole utilisé par "
+"les mineurs afin de demander et envoyer des shares au serveur. Ce protocol "
+"est très performant quand il s'agit d'éviter les shares invalide mais cela "
+"peut quand même se produire de temps en temps."
 
 #: ../templates/bootstrap//about/pool/default.tpl:44
-msgid "If you are seeing reject all the time, then something isn’t working right on your end. You may also notice that your hashrate on the pool website is not increasing while your invalid share count keeps climbing up. In that case turn off your miner and check your settings!"
-msgstr "Si vous voyez tous vos shares rejetez, alors il est possible qu'il y ai une erreur de configuration de votre mineur. Vous pouvez également voir sur le site du pool que votre hashrate n'augmente pas et que votre nombre de share invalide ne cesse d'augmenter. Dans ce cas arrêtez votre mineur et vérifiez ces paramètres !"
+msgid ""
+"If you are seeing reject all the time, then something isn’t working right on "
+"your end. You may also notice that your hashrate on the pool website is not "
+"increasing while your invalid share count keeps climbing up. In that case "
+"turn off your miner and check your settings!"
+msgstr ""
+"Si vous voyez tous vos shares rejetez, alors il est possible qu'il y ai une "
+"erreur de configuration de votre mineur. Vous pouvez également voir sur le "
+"site du pool que votre hashrate n'augmente pas et que votre nombre de share "
+"invalide ne cesse d'augmenter. Dans ce cas arrêtez votre mineur et vérifiez "
+"ces paramètres !"
 
 #: ../templates/bootstrap//about/pool/default.tpl:46
 msgid "Q: I am having problems connecting to the pool."
 msgstr "Q: J'ai des problèmes de connexion au Pool."
 
 #: ../templates/bootstrap//about/pool/default.tpl:47
-msgid "<b>A:</b> Double check your settings against our <a href=\"%1?page=gettingstarted\">getting started page.</a>"
-msgstr "<b>A:</b> Revérifiez vos paramètres en suivant le <a href=\"%1?page=gettingstarted\">guide de démarrage.</a>"
+msgid ""
+"<b>A:</b> Double check your settings against our <a href=\"%1?"
+"page=gettingstarted\">getting started page.</a>"
+msgstr ""
+"<b>A:</b> Revérifiez vos paramètres en suivant le <a href=\"%1?"
+"page=gettingstarted\">guide de démarrage.</a>"
 
 #: ../templates/bootstrap//about/pool/default.tpl:51
-msgid "This Pool is running <a href=\"https://github.com/TheSerapher/php-mpos\">MPOS</a> project code. This frontend was created by <a href=\"https://github.com/MPOS/php-mpos\">TheSerapher aka Sebastian Grewe</a>. The operation of the pool is soley at the hand of your trusted pool operator."
-msgstr "Ce pool utilise le projet <a href=\"https://github.com/TheSerapher/php-mpos\">MPOS</a>. Le Site web a été crée par <a href=\"https://github.com/MPOS/php-mpos\">TheSerapher aka Sebastian Grewe</a>. Le fonctionnement du pool est complétement géré par l'administrateur de celui-ci."
+msgid ""
+"This Pool is running <a href=\"https://github.com/TheSerapher/php-mpos"
+"\">MPOS</a> project code. This frontend was created by <a href=\"https://"
+"github.com/MPOS/php-mpos\">TheSerapher aka Sebastian Grewe</a>. The "
+"operation of the pool is soley at the hand of your trusted pool operator."
+msgstr ""
+"Ce pool utilise le projet <a href=\"https://github.com/TheSerapher/php-mpos"
+"\">MPOS</a>. Le Site web a été crée par <a href=\"https://github.com/MPOS/"
+"php-mpos\">TheSerapher aka Sebastian Grewe</a>. Le fonctionnement du pool "
+"est complétement géré par l'administrateur de celui-ci."
 
 #: ../templates/bootstrap//about/moot/default.tpl:5
 msgid "Moot Forum"
@@ -669,28 +982,6 @@ msgstr "Total"
 msgid "Worker"
 msgstr "Mineur"
 
-#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:6
-#: ../templates/bootstrap//dashboard/worker_information/default.tpl:12
-#: ../templates/bootstrap//statistics/graphs/default.tpl:8
-#: ../templates/bootstrap//admin/user/default.tpl:93
-msgid "Hashrate"
-msgstr "Hashrate"
-
-#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:7
-#: ../templates/bootstrap//dashboard/blocks/default.tpl:14
-#: ../templates/bootstrap//dashboard/worker_information/default.tpl:13
-#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:118
-#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:58
-#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:58
-#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:16
-#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:57
-#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:56
-#: ../templates/bootstrap//statistics/round/block_stats.tpl:39
-#: ../templates/bootstrap//admin/poolworkers/default.tpl:17
-#: ../templates/bootstrap//account/workers/default.tpl:47
-msgid "Difficulty"
-msgstr "Difficulté"
-
 #: ../templates/bootstrap//dashboard/account_data/_workers.tpl:11
 #: ../templates/bootstrap//dashboard/worker_information/default.tpl:17
 msgid "No worker information available"
@@ -718,7 +1009,8 @@ msgstr "vous faites un don de <font color=\"green\">%1%</font>."
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:21
 msgid "you are not <a href=\"%1?page=account&action=edit\">donating</a>."
-msgstr "vous ne faites aucune <a href=\"%1?page=account&action=edit\">donation</a>."
+msgstr ""
+"vous ne faites aucune <a href=\"%1?page=account&action=edit\">donation</a>."
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:28
 msgid "%1 Account Balance"
@@ -845,8 +1137,12 @@ msgid "Overview"
 msgstr "Vue d'ensemble"
 
 #: ../templates/bootstrap//dashboard/default.tpl:27
-msgid "Refresh interval: %1 seconds, worker and account %2 seconds. Hashrate based on shares submitted in the past %3 minutes."
-msgstr "Intervalle d’actualisation : %1 secondes, mineur  et compte %2 secondes. Hashrate basée sur les shares envoyés dans les dernières %3 minutes."
+msgid ""
+"Refresh interval: %1 seconds, worker and account %2 seconds. Hashrate based "
+"on shares submitted in the past %3 minutes."
+msgstr ""
+"Intervalle d’actualisation : %1 secondes, mineur  et compte %2 secondes. "
+"Hashrate basée sur les shares envoyés dans les dernières %3 minutes."
 
 #: ../templates/bootstrap//dashboard/worker_information/default.tpl:5
 msgid "Worker Information"
@@ -891,15 +1187,15 @@ msgstr "difficulté des Shares"
 #: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:30
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:35
 msgid "Est. Next Difficulty"
 msgstr "Prochain Difficulté Est."
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:32
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:34
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:37
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:39
 msgid "Change in %1 Blocks"
 msgstr "Changement dans %1 blocs"
 
@@ -1065,8 +1361,12 @@ msgstr "Bloc"
 
 #: ../templates/bootstrap//statistics/blocks/small_table.tpl:36
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:82
-msgid "Round Earnings are not credited until <font class=\"confirmations\">%1</font> confirms."
-msgstr "Les gains du round ne seront crédités qu'après <font class=\"confirmations\">%1</font> confirmations."
+msgid ""
+"Round Earnings are not credited until <font class=\"confirmations\">%1</"
+"font> confirms."
+msgstr ""
+"Les gains du round ne seront crédités qu'après <font class=\"confirmations\">"
+"%1</font> confirmations."
 
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:5
 msgid "Last %1 Blocks Found"
@@ -1165,8 +1465,12 @@ msgid "The Past 12 Months"
 msgstr "12 derniers mois"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:188
-msgid "Round earnings are not credited until <font class=\"confirmations\">%1</font> confirms."
-msgstr "Les gains du round ne seront crédités qu'après <font class=\"confirmations\">%1</font> confirmations."
+msgid ""
+"Round earnings are not credited until <font class=\"confirmations\">%1</"
+"font> confirms."
+msgstr ""
+"Les gains du round ne seront crédités qu'après <font class=\"confirmations\">"
+"%1</font> confirmations."
 
 #: ../templates/bootstrap//statistics/donors/default.tpl:5
 msgid "Pool Donors"
@@ -1195,13 +1499,6 @@ msgstr "Emplacement"
 #: ../templates/bootstrap//statistics/uptime/default.tpl:10
 msgid "Service"
 msgstr "Service"
-
-#: ../templates/bootstrap//statistics/uptime/default.tpl:11
-#: ../templates/bootstrap//admin/wallet/status.tpl:15
-#: ../templates/bootstrap//account/transactions/default.tpl:24
-#: ../templates/bootstrap//account/transactions/default.tpl:47
-msgid "Status"
-msgstr "Statut"
 
 #: ../templates/bootstrap//statistics/uptime/default.tpl:12
 msgid "Status Since"
@@ -1267,56 +1564,60 @@ msgstr "Statistiques générales"
 msgid "Pool Hash Rate"
 msgstr "Hash Rate du Pool"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:14
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:19
 msgid "Pool Efficiency"
 msgstr "Efficacité du Pool"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:18
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:23
 msgid "Current Active Workers"
 msgstr "Mineurs Actif"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:22
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:27
 #: ../templates/bootstrap//statistics/default.tpl:22
 msgid "Current Difficulty"
 msgstr "Difficulté actuelle"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:38
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:43
 msgid "Est. Avg. Time per Round (Network)"
 msgstr "Temps estimé moyen par Round (Réseau)"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:42
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:47
 msgid "Est. Avg. Time per Round (Pool)"
 msgstr "Temps estimé moyen par Round (Pool)"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:46
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:51
 msgid "Est. Shares this Round"
 msgstr "Nombre de Shares Estimé dans ce Round"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:47
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:52
 msgid "done"
 msgstr "terminé"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:51
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:56
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:61
 msgid "Next Network Block"
 msgstr "Prochain Bloc du Réseau"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:57
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:62
 #: ../templates/bootstrap//admin/dashboard/mpos.tpl:12
 msgid "Current"
 msgstr "Actuel"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:61
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:66
 msgid "Last Block Found"
 msgstr "Dernier Bloc Trouvé"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:65
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:70
 msgid "Time Since Last Block"
 msgstr "Temps depuis le dernier bloc"
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:72
-msgid "These stats are also available in JSON format <a href=\"%1?page=api&action=getpoolstatus&api_key=%2\">HERE</a>"
-msgstr "Ces statistiques sont également disponibles <a href=\"%1?page=api&action=getpoolstatus&api_key=%2\">ICI</a> au format JSON"
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:77
+msgid ""
+"These stats are also available in JSON format <a href=\"%1?"
+"page=api&action=getpoolstatus&api_key=%2\">HERE</a>"
+msgstr ""
+"Ces statistiques sont également disponibles <a href=\"%1?"
+"page=api&action=getpoolstatus&api_key=%2\">ICI</a> au format JSON"
 
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:4
 msgid "Contributor Hashrates"
@@ -1332,8 +1633,12 @@ msgid "Current Total Miners"
 msgstr "Total des Mineurs actif"
 
 #: ../templates/bootstrap//statistics/default.tpl:29
-msgid "These stats are also available in JSON format <a href=\"%1?page=api&action=public\" target=\"_api\">HERE</a>"
-msgstr "Ces statistiques sont également disponibles <a href=\"%1?page=api&action=public\" target=\"_api\">ICI</a> au format JSON"
+msgid ""
+"These stats are also available in JSON format <a href=\"%1?"
+"page=api&action=public\" target=\"_api\">HERE</a>"
+msgstr ""
+"Ces statistiques sont également disponibles <a href=\"%1?"
+"page=api&action=public\" target=\"_api\">ICI</a> au format JSON"
 
 #: ../templates/bootstrap//statistics/graphs/default.tpl:38
 msgid "Sharerate"
@@ -1931,10 +2236,6 @@ msgstr "Comptes"
 msgid "Last %1 transactions"
 msgstr "Dernière %1 Transactions"
 
-#: ../templates/bootstrap//admin/wallet/transactions.tpl:13
-msgid "Address"
-msgstr "Adresse"
-
 #: ../templates/bootstrap//admin/wallet/transactions.tpl:14
 msgid "Category"
 msgstr "Catégorie"
@@ -1971,6 +2272,16 @@ msgstr "Le contenu de la news supporte la syntaxe Markdown"
 #: ../templates/bootstrap//admin/news/default.tpl:37
 msgid "Add"
 msgstr "Ajouter"
+
+#: ../templates/bootstrap//admin/news/default.tpl:51
+#: ../templates/bootstrap//news/default.tpl:8
+msgid "posted %1"
+msgstr "posté le %1"
+
+#: ../templates/bootstrap//admin/news/default.tpl:51
+#: ../templates/bootstrap//news/default.tpl:8
+msgid "by <b>%1</b>"
+msgstr "par <b>%1</b>"
 
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:5
 msgid "Earnings Report Last %1 Blocks For User: %2"
@@ -2050,8 +2361,11 @@ msgid "Setup Checks"
 msgstr "Contrôles de l'installation"
 
 #: ../templates/bootstrap//admin/setup/default.tpl:33
-msgid "To disable these checks, set skip_config_tests to true in global.inc.php"
-msgstr "Pour désactiver ces contrôles, editez la variable skip_config_tests en passant ca valeur à true dans global. Inc. php"
+msgid ""
+"To disable these checks, set skip_config_tests to true in global.inc.php"
+msgstr ""
+"Pour désactiver ces contrôles, editez la variable skip_config_tests en "
+"passant ca valeur à true dans global. Inc. php"
 
 #: ../templates/bootstrap//admin/transactions/default.tpl:6
 msgid "Transaction Summary"
@@ -2078,32 +2392,90 @@ msgid "This Agreement governs your use of %1."
 msgstr "Cet accord régit votre utilisation de %1."
 
 #: ../templates/bootstrap//tac/content.tpl:3
-msgid "By using any of the Pools or registering an account on the website, you agree to be bound by the terms and conditions below. If you do not agree with the terms and conditions in this Agreement you may not use the Pool."
-msgstr "En utilisant l’une des Pools ou en enregistrant un compte sur le site Web, vous acceptez d’être lié par les termes et conditions ci-dessous. Si vous n’acceptez pas les termes et conditions du présent accord, vous ne pouvez pas utiliser le Pool."
+msgid ""
+"By using any of the Pools or registering an account on the website, you "
+"agree to be bound by the terms and conditions below. If you do not agree "
+"with the terms and conditions in this Agreement you may not use the Pool."
+msgstr ""
+"En utilisant l’une des Pools ou en enregistrant un compte sur le site Web, "
+"vous acceptez d’être lié par les termes et conditions ci-dessous. Si vous "
+"n’acceptez pas les termes et conditions du présent accord, vous ne pouvez "
+"pas utiliser le Pool."
 
 #: ../templates/bootstrap//tac/content.tpl:4
-msgid "The %1 staff may modify this Agreement and any policies affecting the Site at any point of time. Such modification is effective immediately upon posting to the website and will be distribution via email, forum post and a link in chat. Your continued use of the Pool following any modification to this Agreement shall be deemed an acceptance of all modifications."
-msgstr "Les administrateurs de %1 peuvent modifier cet accord et toute politique affectant le site à tout moment. Cette modification est immédiatement prise en compte après l'affichage sur le site. L'utilisateur sera également notifié à via un Popup sur le site, une newsletter et via toutes les plateformes mise à disposition par le pool. Votre utilisation continue du pool à la suite de toute modification apportée au présent accord sera considérée comme une acceptation de celle-ci."
+msgid ""
+"The %1 staff may modify this Agreement and any policies affecting the Site "
+"at any point of time. Such modification is effective immediately upon "
+"posting to the website and will be distribution via email, forum post and a "
+"link in chat. Your continued use of the Pool following any modification to "
+"this Agreement shall be deemed an acceptance of all modifications."
+msgstr ""
+"Les administrateurs de %1 peuvent modifier cet accord et toute politique "
+"affectant le site à tout moment. Cette modification est immédiatement prise "
+"en compte après l'affichage sur le site. L'utilisateur sera également "
+"notifié à via un Popup sur le site, une newsletter et via toutes les "
+"plateformes mise à disposition par le pool. Votre utilisation continue du "
+"pool à la suite de toute modification apportée au présent accord sera "
+"considérée comme une acceptation de celle-ci."
 
 #: ../templates/bootstrap//tac/content.tpl:5
-msgid "The Pool rewards miners according to a <strong>%1</strong> system with <strong>%2%</strong> fee. The fee may change at any time, but notice will be given before doing so. Any fee change will be communicated through the pools news page."
-msgstr "Le pool récompense les mineurs selon le système <strong>%1</strong> avec <strong>%2%</strong> de frais. Les frais peuvent changer à tout moment, cependant les utilisateurs seront averti de ce changement  via un Popup sur le site, une newsletter et via toutes les plateformes mise à disposition par le pool."
+msgid ""
+"The Pool rewards miners according to a <strong>%1</strong> system with "
+"<strong>%2%</strong> fee. The fee may change at any time, but notice will be "
+"given before doing so. Any fee change will be communicated through the pools "
+"news page."
+msgstr ""
+"Le pool récompense les mineurs selon le système <strong>%1</strong> avec "
+"<strong>%2%</strong> de frais. Les frais peuvent changer à tout moment, "
+"cependant les utilisateurs seront averti de ce changement  via un Popup sur "
+"le site, une newsletter et via toutes les plateformes mise à disposition par "
+"le pool."
 
 #: ../templates/bootstrap//tac/content.tpl:6
-msgid "The Pool is not an e-wallet or a bank for your coins. The Pool and it's operators are not responsible for any loss of coins which are stored on the Pool. It is your responsibility to configure your account so that the coins you mine are regularly transferred to your own secured offline wallet."
-msgstr "Le pool n'est pas un e-wallet ou une banque pour vos gains. Le pool et ses administrateurs ne pourront être tenu pour responsable pour toutes pertes de coins présent sur le wallet du Pool."
+msgid ""
+"The Pool is not an e-wallet or a bank for your coins. The Pool and it's "
+"operators are not responsible for any loss of coins which are stored on the "
+"Pool. It is your responsibility to configure your account so that the coins "
+"you mine are regularly transferred to your own secured offline wallet."
+msgstr ""
+"Le pool n'est pas un e-wallet ou une banque pour vos gains. Le pool et ses "
+"administrateurs ne pourront être tenu pour responsable pour toutes pertes de "
+"coins présent sur le wallet du Pool."
 
 #: ../templates/bootstrap//tac/content.tpl:7
-msgid "The uptime of the pool or website is not guaranteed, maintenance and downtime may be required at times. Users are responsible for configuring their miners so that they will automatically reconnect, switch to all the pools we offer or a backup pool in the case of downtime."
-msgstr "L'uptime du Pool ou du site Web n'est pas garanti, les maintenances et accident peuvent parfois exigés un arrêt temporaire des services. Les utilisateurs sont responsables de la configuration de leurs mineurs de sorte qu'ils se reconnecteront automatiquement."
+msgid ""
+"The uptime of the pool or website is not guaranteed, maintenance and "
+"downtime may be required at times. Users are responsible for configuring "
+"their miners so that they will automatically reconnect, switch to all the "
+"pools we offer or a backup pool in the case of downtime."
+msgstr ""
+"L'uptime du Pool ou du site Web n'est pas garanti, les maintenances et "
+"accident peuvent parfois exigés un arrêt temporaire des services. Les "
+"utilisateurs sont responsables de la configuration de leurs mineurs de sorte "
+"qu'ils se reconnecteront automatiquement."
 
 #: ../templates/bootstrap//tac/content.tpl:8
-msgid "Botnets are not welcome. Accounts with a large amount of miners connecting from different IPs may be suspended without prior notice. If we are uncertian then an investigation will be opened and the user will be notified via their configured e-mail address. If we do not receive a response your account may be suspended."
-msgstr "Les Botnets ne sont pas les bienvenus. Les comptes avec une grande quantité de mineurs se connectant de différents fournisseur d'accès peuvent être suspendus sans préavis. Si nous sommes incertain alors une enquête sera ouverte et l'utilisateur sera notifié par l'intermédiaire de son adresse électronique configurée. Si nous ne recevons pas de réponse, le compte pourra être suspendu."
+msgid ""
+"Botnets are not welcome. Accounts with a large amount of miners connecting "
+"from different IPs may be suspended without prior notice. If we are "
+"uncertian then an investigation will be opened and the user will be notified "
+"via their configured e-mail address. If we do not receive a response your "
+"account may be suspended."
+msgstr ""
+"Les Botnets ne sont pas les bienvenus. Les comptes avec une grande quantité "
+"de mineurs se connectant de différents fournisseur d'accès peuvent être "
+"suspendus sans préavis. Si nous sommes incertain alors une enquête sera "
+"ouverte et l'utilisateur sera notifié par l'intermédiaire de son adresse "
+"électronique configurée. Si nous ne recevons pas de réponse, le compte "
+"pourra être suspendu."
 
 #: ../templates/bootstrap//tac/content.tpl:9
-msgid "Multiple accounts controlled by one person may be considered as a botnet and an investigation will be opened, see above point."
-msgstr "Plusieurs comptes contrôlés par une seule personne peuvent être considérées comme un Botnet et une enquête sera ouverte, voir le point ci-dessus."
+msgid ""
+"Multiple accounts controlled by one person may be considered as a botnet and "
+"an investigation will be opened, see above point."
+msgstr ""
+"Plusieurs comptes contrôlés par une seule personne peuvent être considérées "
+"comme un Botnet et une enquête sera ouverte, voir le point ci-dessus."
 
 #: ../templates/bootstrap//account/invitations/default.tpl:5
 msgid "Invitation"
@@ -2245,8 +2617,12 @@ msgid "API String"
 msgstr "Chaine d'API"
 
 #: ../templates/bootstrap//account/qrcode/default.tpl:24
-msgid "This code will allow you to import the full API string into your mobile application."
-msgstr "Ce code vous permettra d’importer la chaîne complète de l’API dans votre application mobile."
+msgid ""
+"This code will allow you to import the full API string into your mobile "
+"application."
+msgstr ""
+"Ce code vous permettra d’importer la chaîne complète de l’API dans votre "
+"application mobile."
 
 #: ../templates/bootstrap//account/transactions/default.tpl:8
 msgid "Transaction Filter"
@@ -2286,12 +2662,20 @@ msgid "Orphaned"
 msgstr "Orphelins"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:91
-msgid "<b>Debit_AP</b> = Auto Threshold Payment, <b>Debit_MP</b> = Manual Payment, <b>Donation</b> = Donation, <b>Fee</b> = Pool Fees (if applicable)"
-msgstr "<b>Debit_AP</b> = Paiement automatique par seuil, <b>Debit_MP</b> = Paiement manuel, <b>Don</b> = Don, <b>Frais</b> = Frais du Pool (le cas échéant)"
+msgid ""
+"<b>Debit_AP</b> = Auto Threshold Payment, <b>Debit_MP</b> = Manual Payment, "
+"<b>Donation</b> = Donation, <b>Fee</b> = Pool Fees (if applicable)"
+msgstr ""
+"<b>Debit_AP</b> = Paiement automatique par seuil, <b>Debit_MP</b> = Paiement "
+"manuel, <b>Don</b> = Don, <b>Frais</b> = Frais du Pool (le cas échéant)"
 
 #: ../templates/bootstrap//account/edit/password.tpl:16
-msgid "Note: You will be redirected to login on successful completion of a password change"
-msgstr "Remarque: Vous serez redirigé vers la page de connexion à la fin de votre changement de mot de passe"
+msgid ""
+"Note: You will be redirected to login on successful completion of a password "
+"change"
+msgstr ""
+"Remarque: Vous serez redirigé vers la page de connexion à la fin de votre "
+"changement de mot de passe"
 
 #: ../templates/bootstrap//account/edit/password.tpl:20
 #: ../templates/bootstrap//account/edit/resetpin.tpl:15
@@ -2346,16 +2730,24 @@ msgid "High Estimation"
 msgstr "Estimation Haute"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:66
-msgid "This %1 automatic payment transaction fee is a network fee and goes back into the network not the pool."
-msgstr "Ces %1 de frais sur le payement automatique sont des frais réseau et seront directement reversé au réseau et non pas au pool."
+msgid ""
+"This %1 automatic payment transaction fee is a network fee and goes back "
+"into the network not the pool."
+msgstr ""
+"Ces %1 de frais sur le payement automatique sont des frais réseau et seront "
+"directement reversé au réseau et non pas au pool."
 
 #: ../templates/bootstrap//account/edit/detail.tpl:71
 msgid "Anonymous Account"
 msgstr "Compte anonyme"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:75
-msgid "Hide username on website from others. Admins can still get your user information."
-msgstr "Cache votre nom d'utilisateur. Les administrateurs auront toujours accès à ces informations."
+msgid ""
+"Hide username on website from others. Admins can still get your user "
+"information."
+msgstr ""
+"Cache votre nom d'utilisateur. Les administrateurs auront toujours accès à "
+"ces informations."
 
 #: ../templates/bootstrap//account/edit/detail.tpl:79
 msgid "The 4 digit PIN you chose when registering"
@@ -2375,12 +2767,20 @@ msgid "Cash Out"
 msgstr "Retrait Manuel"
 
 #: ../templates/bootstrap//account/edit/cashout.tpl:27
-msgid "Please note: a %1 %2 transaction fee will apply when processing \"On-Demand\" manual payments"
-msgstr "Remarque: %1 %2 frais de transaction seront appliqué lors d'une demande de paiement manuel"
+msgid ""
+"Please note: a %1 %2 transaction fee will apply when processing \"On-Demand"
+"\" manual payments"
+msgstr ""
+"Remarque: %1 %2 frais de transaction seront appliqué lors d'une demande de "
+"paiement manuel"
 
 #: ../templates/bootstrap//account/edit/cashout.tpl:27
-msgid "This %1 manual payment transaction fee is a network fee and goes back into the network not the pool."
-msgstr "Ces %1 de frais sur le payement manuel sont des frais réseau et seront directement reversé au réseau et non pas au pool."
+msgid ""
+"This %1 manual payment transaction fee is a network fee and goes back into "
+"the network not the pool."
+msgstr ""
+"Ces %1 de frais sur le payement manuel sont des frais réseau et seront "
+"directement reversé au réseau et non pas au pool."
 
 #: ../templates/bootstrap//account/edit/cashout.tpl:30
 msgid "Minimum Cashout: %1 %2"
@@ -2440,8 +2840,12 @@ msgid "You have "
 msgstr "Vous avez "
 
 #: ../include/smarty_globals.inc.php:202
-msgid " failed login attempts! <a href=\"?page=account&action=reset_failed\">Reset Counter</a>"
-msgstr " échecs tentatives de connexion! <a href=\"?page=account&action=reset_failed\">Remettre à zéro le compteur</a>"
+msgid ""
+" failed login attempts! <a href=\"?page=account&action=reset_failed\">Reset "
+"Counter</a>"
+msgstr ""
+" échecs tentatives de connexion! <a href=\"?page=account&action=reset_failed"
+"\">Remettre à zéro le compteur</a>"
 
 #: ../include/smarty_globals.inc.php:206
 msgid "This pool is currently in maintenance mode."
@@ -2452,20 +2856,33 @@ msgid "You are using an old Theme that will not be maintained in the future."
 msgstr "Vous utilisez un vieux thème qui ne sera pas maintenu à l'avenir."
 
 #: ../include/smarty_globals.inc.php:246
-msgid "We are investigating issues in the backend. Your shares and hashrate are safe and we will fix things ASAP."
-msgstr "Nous enquêtons sur des problèmes serveurs. Vos actions et hashrate sont en sécurité et nous faisons notre maximum pour régler ce problème rapidement."
+msgid ""
+"We are investigating issues in the backend. Your shares and hashrate are "
+"safe and we will fix things ASAP."
+msgstr ""
+"Nous enquêtons sur des problèmes serveurs. Vos actions et hashrate sont en "
+"sécurité et nous faisons notre maximum pour régler ce problème rapidement."
 
 #: ../include/smarty_globals.inc.php:252
-msgid "Payouts disabled, you will not receive any coins to your offline wallet for the time being"
-msgstr "Paiement désactivé. Vous ne recevrez aucun coin dans votre wallet le temps de la résolution de cet incident"
+msgid ""
+"Payouts disabled, you will not receive any coins to your offline wallet for "
+"the time being"
+msgstr ""
+"Paiement désactivé. Vous ne recevrez aucun coin dans votre wallet le temps "
+"de la résolution de cet incident"
 
 #: ../include/smarty_globals.inc.php:255
-msgid "Findblocks disabled, new blocks will currently not show up in the frontend"
-msgstr "La détection de nouveau bloc est désactivé. L'affichage et la prise en compte des bloc est retardé"
+msgid ""
+"Findblocks disabled, new blocks will currently not show up in the frontend"
+msgstr ""
+"La détection de nouveau bloc est désactivé. L'affichage et la prise en "
+"compte des bloc est retardé"
 
 #: ../include/smarty_globals.inc.php:258
 msgid "Blockupdate disabled, blocks and transactions confirmations are delayed"
-msgstr "Blockupdate désactivé, les confirmations de blocs et de transactions sont retardées"
+msgstr ""
+"Blockupdate désactivé, les confirmations de blocs et de transactions sont "
+"retardées"
 
 #: ../include/smarty_globals.inc.php:261
 msgid "PPLNS payout disabled, round credit transactions are delayed"
@@ -2488,7 +2905,8 @@ msgstr "Captcha invalide. Veuillez réessayer."
 #: ../include/pages/contactform/contactform.inc.php:19
 #: ../include/pages/contactform.inc.php:5
 msgid "Contactform is currently disabled. Please try again later."
-msgstr "Formulaire de Contact actuellement désactivé. Veuillez réessayer plus tard."
+msgstr ""
+"Formulaire de Contact actuellement désactivé. Veuillez réessayer plus tard."
 
 #: ../include/pages/contactform/contactform.inc.php:21
 #: ../include/pages/contactform.inc.php:8
@@ -2497,15 +2915,23 @@ msgstr "Formulaire de Contact désactivé pour les visiteurs."
 
 #: ../include/pages/contactform/contactform.inc.php:26
 msgid "Thanks for sending your message! We will get back to you shortly"
-msgstr "Nous avons bien reçu votre message, nous reviendrons vers vous dès que possible"
+msgstr ""
+"Nous avons bien reçu votre message, nous reviendrons vers vous dès que "
+"possible"
 
 #: ../include/pages/contactform/contactform.inc.php:28
-msgid "There was a problem sending your message. Check following error and please try again: "
-msgstr "Il y a eu un problème d'envoi de votre message. Veuillez vérifier l'erreur suivante puis réessayer "
+msgid ""
+"There was a problem sending your message. Check following error and please "
+"try again: "
+msgstr ""
+"Il y a eu un problème d'envoi de votre message. Veuillez vérifier l'erreur "
+"suivante puis réessayer "
 
 #: ../include/pages/password/reset.inc.php:7
 msgid "Please check your mail account to finish your password reset"
-msgstr "Veuillez vérifier votre messagerie pour obtenir le lien de réinitialisation du mot de passe"
+msgstr ""
+"Veuillez vérifier votre messagerie pour obtenir le lien de réinitialisation "
+"du mot de passe"
 
 #: ../include/pages/password/change.inc.php:7
 msgid "Password reset complete! Please login."
@@ -2513,7 +2939,8 @@ msgstr "Réinitialisation du mot de passe effectuée, Veuillez vous identifie."
 
 #: ../include/pages/register/register.inc.php:25
 msgid "Account registration is currently disabled. Please try again later."
-msgstr "L’inscription est actuellement désactivée. Veuillez réessayer plus tard."
+msgstr ""
+"L’inscription est actuellement désactivée. Veuillez réessayer plus tard."
 
 #: ../include/pages/register/register.inc.php:27
 msgid "Only invited users are allowed to register."
@@ -2646,6 +3073,11 @@ msgstr " utilisateurs."
 msgid "Failed to send e-mail to "
 msgstr "Impossible d'envoyer un message électronique à "
 
+#: ../include/pages/account/unlock.inc.php:6
+#: ../include/pages/account/confirm.inc.php:6
+msgid "Missing token"
+msgstr "Jeton manquant"
+
 #: ../include/pages/account/unlock.inc.php:8
 msgid "Unable to re-activate your account. Invalid token."
 msgstr "Impossible de ré-activer votre compte. Jeton non valide."
@@ -2664,8 +3096,12 @@ msgid "You have no payout address set."
 msgstr "Vous n'avez pas d'adresse de paiement défini."
 
 #: ../include/pages/account/workers.inc.php:9
-msgid "You can not add workers unless a valid Payout Address is set in your User Settings."
-msgstr "Vous ne pouvez pas ajouter de mineurs à moins qu'une adresse de paiement valide ai été définie dans vos paramètres utilisateur."
+msgid ""
+"You can not add workers unless a valid Payout Address is set in your User "
+"Settings."
+msgstr ""
+"Vous ne pouvez pas ajouter de mineurs à moins qu'une adresse de paiement "
+"valide ai été définie dans vos paramètres utilisateur."
 
 #: ../include/pages/account/workers.inc.php:16
 msgid "Worker removed"
@@ -2682,11 +3118,6 @@ msgstr "Mineur mis à jour"
 #: ../include/pages/account/workers.inc.php:52
 msgid "You have no workers configured"
 msgstr "Vous n'avez pas de mineurs  configurés"
-
-#: ../include/pages/account/unlock.inc.php:6
-#: ../include/pages/account/confirm.inc.php:6
-msgid "Missing token"
-msgstr "Jeton manquant"
 
 #: ../include/pages/account/confirm.inc.php:8
 msgid "Unable to activate your account. Invalid token."
@@ -2766,7 +3197,9 @@ msgstr " tentatives restantes."
 
 #: ../include/pages/account/edit.inc.php:88
 msgid "A confirmation was sent to your e-mail, follow that link to continue"
-msgstr "Une confirmation a été envoyée à votre adresse e-mail, suivez le lien pour continuer"
+msgstr ""
+"Une confirmation a été envoyée à votre adresse e-mail, suivez le lien pour "
+"continuer"
 
 #: ../include/pages/account/edit.inc.php:102
 msgid "Manual payouts are disabled."
@@ -2832,10 +3265,13 @@ msgstr "Paramètres de notification mis à jour"
 msgid "Could not find any notifications"
 msgstr "Impossible de trouver des notifications"
 
-#: ../public/index.php:121 ../public/index.php:123
+#: ../public/index.php:127 ../public/index.php:129
 msgid "You last logged in from"
 msgstr "Vous vous êtes connecté pour la dernière fois avec l'IP"
 
-#: ../public/index.php:121 ../public/index.php:123
+#: ../public/index.php:127 ../public/index.php:129
 msgid "on"
 msgstr "le"
+
+#~ msgid "latest News"
+#~ msgstr "dernières Actualités"

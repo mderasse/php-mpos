@@ -157,6 +157,7 @@ $aGlobal['acl']['qrcode'] = $setting->getValue('acl_qrcode');
 if (@$_SESSION['USERDATA']['id']) {
   $aGlobal['userdata'] = $_SESSION['USERDATA']['id'] ? $user->getUserData($_SESSION['USERDATA']['id']) : array();
   $aGlobal['userdata']['balance'] = $transaction->getBalance($_SESSION['USERDATA']['id']);
+  $aGlobal['userdata']['b64username'] = base64_encode($_SESSION['USERDATA']['username']);
 
   // Fetch Last 5 notifications
   $aLastNotifications = $notification->getNotifications($_SESSION['USERDATA']['id'], 5);
