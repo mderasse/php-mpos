@@ -151,7 +151,64 @@ class Transaction extends Base {
         IFNULL(SUM(IF(t.type = 'Debit_AP' AND timestamp >= DATE_SUB(now(), INTERVAL 31536000 SECOND), t.amount, 0)), 0) AS 1YearDebitAP,
         IFNULL(SUM(IF(t.type = 'TXFee' AND timestamp >= DATE_SUB(now(), INTERVAL 31536000 SECOND), t.amount, 0)), 0) AS 1YearTXFee,
         IFNULL(SUM(IF(t.type = 'Fee' AND timestamp >= DATE_SUB(now(), INTERVAL 31536000 SECOND), t.amount, 0)), 0) AS 1YearFee,
-        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp >= DATE_SUB(now(), INTERVAL 31536000 SECOND), t.amount, 0)), 0) AS 1YearDonation
+        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp >= DATE_SUB(now(), INTERVAL 31536000 SECOND), t.amount, 0)), 0) AS 1YearDonation,
+
+        IFNULL(SUM(IF(t.type = 'Credit' AND timestamp >= CURDATE(), t.amount, 0)), 0) AS 1DayCredit,
+        IFNULL(SUM(IF(t.type = 'Bonus' AND timestamp >= CURDATE(), t.amount, 0)), 0) AS 1DayBonus,
+        IFNULL(SUM(IF(t.type = 'Debit_MP' AND timestamp >= CURDATE(), t.amount, 0)), 0) AS 1DayDebitMP,
+        IFNULL(SUM(IF(t.type = 'Debit_AP' AND timestamp >= CURDATE(), t.amount, 0)), 0) AS 1DayDebitAP,
+        IFNULL(SUM(IF(t.type = 'TXFee' AND timestamp >= CURDATE(), t.amount, 0)), 0) AS 1DayTXFee,
+        IFNULL(SUM(IF(t.type = 'Fee' AND timestamp >= CURDATE(), t.amount, 0)), 0) AS 1DayFee,
+        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp >= CURDATE(), t.amount, 0)), 0) AS 1DayDonation,
+
+        IFNULL(SUM(IF(t.type = 'Credit' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), '%'), t.amount, 0)), 0) AS 2DayCredit,
+        IFNULL(SUM(IF(t.type = 'Bonus' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), '%'), t.amount, 0)), 0) AS 2DayBonus,
+        IFNULL(SUM(IF(t.type = 'Debit_MP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), '%'), t.amount, 0)), 0) AS 2DayDebitMP,
+        IFNULL(SUM(IF(t.type = 'Debit_AP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), '%'), t.amount, 0)), 0) AS 2DayDebitAP,
+        IFNULL(SUM(IF(t.type = 'TXFee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), '%'), t.amount, 0)), 0) AS 2DayTXFee,
+        IFNULL(SUM(IF(t.type = 'Fee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), '%'), t.amount, 0)), 0) AS 2DayFee,
+        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), '%'), t.amount, 0)), 0) AS 2DayDonation,
+
+        IFNULL(SUM(IF(t.type = 'Credit' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY), '%'), t.amount, 0)), 0) AS 3DayCredit,
+        IFNULL(SUM(IF(t.type = 'Bonus' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY), '%'), t.amount, 0)), 0) AS 3DayBonus,
+        IFNULL(SUM(IF(t.type = 'Debit_MP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY), '%'), t.amount, 0)), 0) AS 3DayDebitMP,
+        IFNULL(SUM(IF(t.type = 'Debit_AP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY), '%'), t.amount, 0)), 0) AS 3DayDebitAP,
+        IFNULL(SUM(IF(t.type = 'TXFee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY), '%'), t.amount, 0)), 0) AS 3DayTXFee,
+        IFNULL(SUM(IF(t.type = 'Fee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY), '%'), t.amount, 0)), 0) AS 3DayFee,
+        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY), '%'), t.amount, 0)), 0) AS 3DayDonation,
+
+        IFNULL(SUM(IF(t.type = 'Credit' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 3 DAY), '%'), t.amount, 0)), 0) AS 4DayCredit,
+        IFNULL(SUM(IF(t.type = 'Bonus' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 3 DAY), '%'), t.amount, 0)), 0) AS 4DayBonus,
+        IFNULL(SUM(IF(t.type = 'Debit_MP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 3 DAY), '%'), t.amount, 0)), 0) AS 4DayDebitMP,
+        IFNULL(SUM(IF(t.type = 'Debit_AP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 3 DAY), '%'), t.amount, 0)), 0) AS 4DayDebitAP,
+        IFNULL(SUM(IF(t.type = 'TXFee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 3 DAY), '%'), t.amount, 0)), 0) AS 4DayTXFee,
+        IFNULL(SUM(IF(t.type = 'Fee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 3 DAY), '%'), t.amount, 0)), 0) AS 4DayFee,
+        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 3 DAY), '%'), t.amount, 0)), 0) AS 4DayDonation,
+
+        IFNULL(SUM(IF(t.type = 'Credit' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY), '%'), t.amount, 0)), 0) AS 5DayCredit,
+        IFNULL(SUM(IF(t.type = 'Bonus' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY), '%'), t.amount, 0)), 0) AS 5DayBonus,
+        IFNULL(SUM(IF(t.type = 'Debit_MP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY), '%'), t.amount, 0)), 0) AS 5DayDebitMP,
+        IFNULL(SUM(IF(t.type = 'Debit_AP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY), '%'), t.amount, 0)), 0) AS 5DayDebitAP,
+        IFNULL(SUM(IF(t.type = 'TXFee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY), '%'), t.amount, 0)), 0) AS 5DayTXFee,
+        IFNULL(SUM(IF(t.type = 'Fee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY), '%'), t.amount, 0)), 0) AS 5DayFee,
+        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY), '%'), t.amount, 0)), 0) AS 5DayDonation,
+
+        IFNULL(SUM(IF(t.type = 'Credit' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 5 DAY), '%'), t.amount, 0)), 0) AS 6DayCredit,
+        IFNULL(SUM(IF(t.type = 'Bonus' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 5 DAY), '%'), t.amount, 0)), 0) AS 6DayBonus,
+        IFNULL(SUM(IF(t.type = 'Debit_MP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 5 DAY), '%'), t.amount, 0)), 0) AS 6DayDebitMP,
+        IFNULL(SUM(IF(t.type = 'Debit_AP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 5 DAY), '%'), t.amount, 0)), 0) AS 6DayDebitAP,
+        IFNULL(SUM(IF(t.type = 'TXFee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 5 DAY), '%'), t.amount, 0)), 0) AS 6DayTXFee,
+        IFNULL(SUM(IF(t.type = 'Fee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 5 DAY), '%'), t.amount, 0)), 0) AS 6DayFee,
+        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 5 DAY), '%'), t.amount, 0)), 0) AS 6DayDonation,
+
+        IFNULL(SUM(IF(t.type = 'Credit' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 DAY), '%'), t.amount, 0)), 0) AS 7DayCredit,
+        IFNULL(SUM(IF(t.type = 'Bonus' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 DAY), '%'), t.amount, 0)), 0) AS 7DayBonus,
+        IFNULL(SUM(IF(t.type = 'Debit_MP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 DAY), '%'), t.amount, 0)), 0) AS 7DayDebitMP,
+        IFNULL(SUM(IF(t.type = 'Debit_AP' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 DAY), '%'), t.amount, 0)), 0) AS 7DayDebitAP,
+        IFNULL(SUM(IF(t.type = 'TXFee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 DAY), '%'), t.amount, 0)), 0) AS 7DayTXFee,
+        IFNULL(SUM(IF(t.type = 'Fee' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 DAY), '%'), t.amount, 0)), 0) AS 7DayFee,
+        IFNULL(SUM(IF(t.type = 'Donation' AND timestamp LIKE CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 DAY), '%'), t.amount, 0)), 0) AS 7DayDonation
+
       FROM $this->table AS t
       LEFT OUTER JOIN " . $this->block->getTableName() . " AS b ON b.id = t.block_id
       WHERE
