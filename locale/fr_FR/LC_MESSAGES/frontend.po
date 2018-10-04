@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mpos-vrm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-20 16:06+0200\n"
-"PO-Revision-Date: 2018-05-20 16:07+0200\n"
+"POT-Creation-Date: 2018-05-20 20:42+0200\n"
+"PO-Revision-Date: 2018-05-21 16:48+0200\n"
 "Last-Translator: Matthieu Derasse <it@derasse.fr>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -2384,9 +2384,134 @@ msgstr "E-mail"
 msgid "Forgot your password?"
 msgstr "Mot de passe oublié?"
 
+#: ../templates/bootstrap//tac/privacy.tpl:1
+msgid ""
+"This privacy policy sets out how %1 uses and protects any information that "
+"you give us when you use this website."
+msgstr ""
+"Cette politique de confidentialité définit comment %1 utilise et protège "
+"toutes les informations que vous nous donnez lorsque vous utilisez ce site "
+"Web."
+
+#: ../templates/bootstrap//tac/privacy.tpl:2
+msgid ""
+"We are committed to ensuring that your privacy is protected. Should we ask "
+"you to provide certain information by which you can be identified when using "
+"this website, then you can be assured that it will only be used in "
+"accordance with this privacy statement."
+msgstr ""
+"Sur notre site vous serez invité à fournir certaines informations par les "
+"quelles vous pouvez être identifié et vous pouvez être assuré qu'elles "
+"seront uniquement utilisées conformément à la présente déclaration de "
+"confidentialité."
+
+#: ../templates/bootstrap//tac/privacy.tpl:3
+msgid ""
+"We will not sell, distribute or lease your personal information to third "
+"parties unless we have your permission or are required by law to do so."
+msgstr ""
+"Nous ne vendrons, ne distribuerons ou ne louerons pas vos renseignements "
+"personnels à des tiers à moins que nous ayons votre permission ou que la loi "
+"ne l'exige."
+
+#: ../templates/bootstrap//tac/privacy.tpl:5
+msgid "What we collect"
+msgstr "Ce que nous collectons"
+
+#: ../templates/bootstrap//tac/privacy.tpl:6
+msgid "We may collect the following informations :"
+msgstr "Nous pouvons recueillir les informations suivantes :"
+
+#: ../templates/bootstrap//tac/privacy.tpl:8
+msgid "Contact Information including Email Address"
+msgstr "Coordonnées, y compris l'adresse e-mail"
+
+#: ../templates/bootstrap//tac/privacy.tpl:9
+msgid ""
+"Browser Information including : Operating System, Browser Software and "
+"version"
+msgstr ""
+"Information sur le navigateur internet : Système d'exploitation, Logiciel de "
+"navigation sur Internet et ça version"
+
+#: ../templates/bootstrap//tac/privacy.tpl:12
+msgid "What do we do with the Information"
+msgstr "Que faisons-nous des informations"
+
+#: ../templates/bootstrap//tac/privacy.tpl:14
+msgid ""
+"We require this information to understand your needs and provide you with a "
+"better service, and in particular for the following reasons:"
+msgstr ""
+"Nous avons besoin de ces informations afin de comprendre au mieux vos "
+"besoins et de vous fournir un meilleur service, et en particulier pour les "
+"raisons suivantes :"
+
+#: ../templates/bootstrap//tac/privacy.tpl:17
+msgid "Internal record Keeping"
+msgstr "Conservation d'archives, logs en interne"
+
+#: ../templates/bootstrap//tac/privacy.tpl:18
+msgid "Accurate Support"
+msgstr "Un support précis"
+
+#: ../templates/bootstrap//tac/privacy.tpl:19
+msgid ""
+"Promotional Emails about news products, maintenance or other information "
+"which we think you may find interesting using the email address which you "
+"have provided."
+msgstr ""
+"Messages électroniques promotionnels concernant de nouveaux produits, "
+"maintenance ou d'autres informations que nous pensons susceptibles de vous "
+"intéresser sur votre Email que vous nous avez fournis."
+
+#: ../templates/bootstrap//tac/privacy.tpl:22
+msgid "Security of the Information"
+msgstr "Sécurité de l'information"
+
+#: ../templates/bootstrap//tac/privacy.tpl:23
+msgid ""
+"We are committed to ensuring that your information is secure. In order to "
+"prevent unauthorised access or disclosure, we have put in place suitable "
+"physical, electronic and managerial procedures to safeguard and secure the "
+"information we collect online."
+msgstr ""
+"Nous nous engageons à veiller à ce que vos renseignements soient sécurisés. "
+"Afin d'empêcher l'accès non autorisé ou la divulgation, nous avons mis en "
+"place des procédures physiques, électroniques et managériales appropriées "
+"pour sauvegarder et sécuriser les informations que nous recueillons en ligne."
+
+#: ../templates/bootstrap//tac/privacy.tpl:26
+msgid "Links to other Website"
+msgstr "Liens hypertexte vers d'autre sites internet"
+
+#: ../templates/bootstrap//tac/privacy.tpl:27
+msgid ""
+"Our website may contain links to other websites of interest. However, once "
+"you have used these links to leave our site, you should note that we do not "
+"have any control over that other website. Therefore, we cannot be "
+"responsible for the protection and privacy of any information which you "
+"provide whilst visiting such sites and such sites are not governed by this "
+"privacy statement. You should exercise caution and look at the privacy "
+"statement applicable to the website in question."
+msgstr ""
+"Notre site Internet peut contenir des liens hypertexte vers d'autre sites "
+"internet. Toutefois, une fois que vous avez utilisé ces liens pour quitter "
+"notre site, vous devez prendre note que nous n'avons plus de contrôle de vos "
+"données sur cet autre site. Par conséquent, nous ne pouvons pas être "
+"responsables de la protection et de la confidentialité de toute information "
+"que vous fournissez lors de la visite de ces sites et ces sites ne sont pas "
+"régis par cette déclaration de confidentialité. Vous devez faire preuve de "
+"prudence et examiner la déclaration de confidentialité applicable au site "
+"Web en question."
+
 #: ../templates/bootstrap//tac/default.tpl:5
 msgid "Terms & Conditions"
 msgstr "Termes & Conditions"
+
+#: ../templates/bootstrap//tac/default.tpl:17
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
 
 #: ../templates/bootstrap//tac/content.tpl:1
 msgid "This Agreement governs your use of %1."
@@ -2477,6 +2602,19 @@ msgid ""
 msgstr ""
 "Plusieurs comptes contrôlés par une seule personne peuvent être considérées "
 "comme un Botnet et une enquête sera ouverte, voir le point ci-dessus."
+
+#: ../templates/bootstrap//tac/content.tpl:10
+msgid ""
+"Account with a high hashrate (> 40kh/s) are not welcome on the pool. Account "
+"will be suspended and share will be ignored (Work will be distributed to the "
+"current miners). You can contact the support in order to find a more "
+"appropriate way to mine."
+msgstr ""
+"Un Compte avec un hashrate important (> 40kh/s) n'est pas le bienvenue sur "
+"le Pool. Le compte sera suspendu et les shares seront ignoré (Les shares "
+"seront distribués entre les autres mineurs actif). Vous pouvez contacter le "
+"support afin de trouver un moyen de miner plus approprié à votre vitesse de "
+"mining."
 
 #: ../templates/bootstrap//account/invitations/default.tpl:5
 msgid "Invitation"
