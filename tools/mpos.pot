@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-21 18:09+0200\n"
+"POT-Creation-Date: 2018-05-20 15:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,13 +154,13 @@ msgid "Guest"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:80
-#: ../templates/bootstrap//global/navigation.tpl:9
-#: ../templates/bootstrap//global/navigation.tpl:34
+#: ../templates/bootstrap//global/navigation.tpl:12
+#: ../templates/bootstrap//global/navigation.tpl:37
 msgid "Dashboard"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:81
-#: ../templates/bootstrap//global/navigation.tpl:36
+#: ../templates/bootstrap//global/navigation.tpl:39
 #: ../templates/bootstrap//admin/settings/default.tpl:5
 msgid "Settings"
 msgstr ""
@@ -171,18 +171,18 @@ msgid "Workers"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:85
-#: ../templates/bootstrap//global/navigation.tpl:108
+#: ../templates/bootstrap//global/navigation.tpl:111
 msgid "Logout"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:88
-#: ../templates/bootstrap//global/navigation.tpl:110
+#: ../templates/bootstrap//global/navigation.tpl:113
 #: ../templates/bootstrap//login/default.tpl:29
 msgid "Login"
 msgstr ""
 
 #: ../templates/bootstrap//global/header.tpl:89
-#: ../templates/bootstrap//global/navigation.tpl:111
+#: ../templates/bootstrap//global/navigation.tpl:114
 msgid "Sign Up"
 msgstr ""
 
@@ -190,114 +190,118 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:13
-msgid "My Account"
-msgstr ""
-
-#: ../templates/bootstrap//global/navigation.tpl:15
-msgid "Edit Account"
+#: ../templates/bootstrap//global/navigation.tpl:8
+msgid "What's new"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:16
-msgid "My Workers"
-msgstr ""
-
-#: ../templates/bootstrap//global/navigation.tpl:17
-#: ../templates/bootstrap//global/navigation.tpl:43
-msgid "Transactions"
+msgid "My Account"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:18
-msgid "Earnings"
+msgid "Edit Account"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:19
-msgid "Notifications"
+msgid "My Workers"
 msgstr ""
 
 #: ../templates/bootstrap//global/navigation.tpl:20
-#: ../templates/bootstrap//global/navigation.tpl:59
+#: ../templates/bootstrap//global/navigation.tpl:46
+msgid "Transactions"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:21
+msgid "Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:22
+msgid "Notifications"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:23
+#: ../templates/bootstrap//global/navigation.tpl:62
 #: ../templates/bootstrap//admin/dashboard/invitation.tpl:4
 msgid "Invitations"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:21
+#: ../templates/bootstrap//global/navigation.tpl:24
 msgid "QR Codes"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:28
+#: ../templates/bootstrap//global/navigation.tpl:31
 msgid "Admin Panel"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:31
+#: ../templates/bootstrap//global/navigation.tpl:34
 msgid "System"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:33
+#: ../templates/bootstrap//global/navigation.tpl:36
 msgid "Setup"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:35
+#: ../templates/bootstrap//global/navigation.tpl:38
 #: ../templates/bootstrap//admin/monitoring/default.tpl:5
 msgid "Monitoring"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:40
+#: ../templates/bootstrap//global/navigation.tpl:43
 msgid "Funds"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:42
+#: ../templates/bootstrap//global/navigation.tpl:45
 msgid "Wallet Info"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:47
+#: ../templates/bootstrap//global/navigation.tpl:50
 msgid "News"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:49
+#: ../templates/bootstrap//global/navigation.tpl:52
 msgid "Site News"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:50
+#: ../templates/bootstrap//global/navigation.tpl:53
 msgid "Newsletter"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:54
+#: ../templates/bootstrap//global/navigation.tpl:57
 #: ../templates/bootstrap//admin/dashboard/user.tpl:5
 msgid "Users"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:56
+#: ../templates/bootstrap//global/navigation.tpl:59
 msgid "User Info"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:57
+#: ../templates/bootstrap//global/navigation.tpl:60
 msgid "Reports"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:58
+#: ../templates/bootstrap//global/navigation.tpl:61
 #: ../templates/bootstrap//admin/dashboard/registrations.tpl:4
 msgid "Registrations"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:60
+#: ../templates/bootstrap//global/navigation.tpl:63
 #: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:62
 #: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:62
 msgid "Pool Workers"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:69
+#: ../templates/bootstrap//global/navigation.tpl:72
 msgid "Statistics"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:71
+#: ../templates/bootstrap//global/navigation.tpl:74
 #: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:6
 #: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:6
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:6
 msgid "Pool"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:72
+#: ../templates/bootstrap//global/navigation.tpl:75
 #: ../templates/bootstrap//dashboard/js/api.tpl:143
 #: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:12
 #: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:12
@@ -305,56 +309,56 @@ msgstr ""
 msgid "Blocks"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:73
+#: ../templates/bootstrap//global/navigation.tpl:76
 msgid "Round"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:74
+#: ../templates/bootstrap//global/navigation.tpl:77
 msgid "Blockfinder"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:75
+#: ../templates/bootstrap//global/navigation.tpl:78
 msgid "Uptime"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:76
+#: ../templates/bootstrap//global/navigation.tpl:79
 msgid "Graphs"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:77
+#: ../templates/bootstrap//global/navigation.tpl:80
 msgid "Donors"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:91
+#: ../templates/bootstrap//global/navigation.tpl:94
 msgid "Help"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:93
+#: ../templates/bootstrap//global/navigation.tpl:96
 msgid "Getting Started"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:94
+#: ../templates/bootstrap//global/navigation.tpl:97
 msgid "About"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:95
+#: ../templates/bootstrap//global/navigation.tpl:98
 #: ../templates/bootstrap//about/chat/default.tpl:5
 msgid "Web Chat"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:96
+#: ../templates/bootstrap//global/navigation.tpl:99
 msgid "Forum"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:105
+#: ../templates/bootstrap//global/navigation.tpl:108
 msgid "Other"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:113
+#: ../templates/bootstrap//global/navigation.tpl:116
 msgid "Contact"
 msgstr ""
 
-#: ../templates/bootstrap//global/navigation.tpl:115
+#: ../templates/bootstrap//global/navigation.tpl:118
 msgid "Terms and Conditions"
 msgstr ""
 
@@ -418,20 +422,136 @@ msgid ""
 "License, Version 2.0, for details."
 msgstr ""
 
-#: ../templates/bootstrap//home/news_all.tpl:8
-#: ../templates/bootstrap//home/news_accordion.tpl:14
-#: ../templates/bootstrap//admin/news/default.tpl:51
-msgid "posted %1"
+#: ../templates/bootstrap//home/default.tpl:5
+msgid "Welcome to VRM - Mining-Pool"
 msgstr ""
 
-#: ../templates/bootstrap//home/news_all.tpl:8
-#: ../templates/bootstrap//home/news_accordion.tpl:14
-#: ../templates/bootstrap//admin/news/default.tpl:51
-msgid "by <b>%1</b>"
+#: ../templates/bootstrap//home/default.tpl:10
+msgid ""
+"To join the pool you can follow the <a href=\"%1?page=gettingstarted"
+"\">Getting Started Guide</a>."
 msgstr ""
 
-#: ../templates/bootstrap//home/news_accordion.tpl:5
-msgid "latest News"
+#: ../templates/bootstrap//home/default.tpl:10
+msgid "Feel free to click on the right-bottom Button if you have any question."
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:13
+msgid "Pool Features :"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:17
+msgid "Normal Fees : 0.9%"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:20
+msgid "Fully Redundant Infrastructure"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:23
+msgid "Servers in professional Datacenters in Europe, North America and Asia"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:28
+msgid "Stratum Servers :"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:32
+msgid "Localization"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:33
+msgid "Network Speed"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:34
+#: ../templates/bootstrap//home/default.tpl:62
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:13
+msgid "Address"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:35
+#: ../templates/bootstrap//statistics/uptime/default.tpl:11
+#: ../templates/bootstrap//admin/wallet/status.tpl:15
+#: ../templates/bootstrap//account/transactions/default.tpl:24
+#: ../templates/bootstrap//account/transactions/default.tpl:47
+msgid "Status"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:38
+msgid "North America - USA - Virginia"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:39
+#: ../templates/bootstrap//home/default.tpl:51
+msgid "1Gbps - DDos Protection"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:41
+#: ../templates/bootstrap//home/default.tpl:47
+#: ../templates/bootstrap//home/default.tpl:53
+msgid "UP"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:44
+msgid "Europe - France - Strasbourg"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:45
+msgid "10Gbps - DDos Protection"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:50
+msgid "Asia - Singapore"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:57
+msgid "Pool Vardiff :"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:61
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:6
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:12
+#: ../templates/bootstrap//statistics/graphs/default.tpl:8
+#: ../templates/bootstrap//admin/user/default.tpl:93
+msgid "Hashrate"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:63
+msgid "Port"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:64
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:7
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:14
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:13
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:118
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:58
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:58
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:57
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:56
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:39
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:17
+#: ../templates/bootstrap//account/workers/default.tpl:47
+msgid "Difficulty"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:70
+#: ../templates/bootstrap//home/default.tpl:100
+msgid "to"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:97
+msgid "Special SBC"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:98
+msgid "Europe Only"
+msgstr ""
+
+#: ../templates/bootstrap//home/default.tpl:103
+msgid "Regards"
 msgstr ""
 
 #: ../templates/bootstrap//password/change/default.tpl:11
@@ -758,28 +878,6 @@ msgstr ""
 msgid "Worker"
 msgstr ""
 
-#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:6
-#: ../templates/bootstrap//dashboard/worker_information/default.tpl:12
-#: ../templates/bootstrap//statistics/graphs/default.tpl:8
-#: ../templates/bootstrap//admin/user/default.tpl:93
-msgid "Hashrate"
-msgstr ""
-
-#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:7
-#: ../templates/bootstrap//dashboard/blocks/default.tpl:14
-#: ../templates/bootstrap//dashboard/worker_information/default.tpl:13
-#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:118
-#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:58
-#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:58
-#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:16
-#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:57
-#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:56
-#: ../templates/bootstrap//statistics/round/block_stats.tpl:39
-#: ../templates/bootstrap//admin/poolworkers/default.tpl:17
-#: ../templates/bootstrap//account/workers/default.tpl:47
-msgid "Difficulty"
-msgstr ""
-
 #: ../templates/bootstrap//dashboard/account_data/_workers.tpl:11
 #: ../templates/bootstrap//dashboard/worker_information/default.tpl:17
 msgid "No worker information available"
@@ -982,15 +1080,15 @@ msgstr ""
 #: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:30
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:35
 msgid "Est. Next Difficulty"
 msgstr ""
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:32
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:34
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:37
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:39
 msgid "Change in %1 Blocks"
 msgstr ""
 
@@ -1291,13 +1389,6 @@ msgstr ""
 msgid "Service"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/uptime/default.tpl:11
-#: ../templates/bootstrap//admin/wallet/status.tpl:15
-#: ../templates/bootstrap//account/transactions/default.tpl:24
-#: ../templates/bootstrap//account/transactions/default.tpl:47
-msgid "Status"
-msgstr ""
-
 #: ../templates/bootstrap//statistics/uptime/default.tpl:12
 msgid "Status Since"
 msgstr ""
@@ -1362,54 +1453,54 @@ msgstr ""
 msgid "Pool Hash Rate"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:14
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:19
 msgid "Pool Efficiency"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:18
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:23
 msgid "Current Active Workers"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:22
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:27
 #: ../templates/bootstrap//statistics/default.tpl:22
 msgid "Current Difficulty"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:38
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:43
 msgid "Est. Avg. Time per Round (Network)"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:42
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:47
 msgid "Est. Avg. Time per Round (Pool)"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:46
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:51
 msgid "Est. Shares this Round"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:47
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:52
 msgid "done"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:51
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:56
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:61
 msgid "Next Network Block"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:57
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:62
 #: ../templates/bootstrap//admin/dashboard/mpos.tpl:12
 msgid "Current"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:61
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:66
 msgid "Last Block Found"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:65
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:70
 msgid "Time Since Last Block"
 msgstr ""
 
-#: ../templates/bootstrap//statistics/pool/general_stats.tpl:72
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:77
 msgid ""
 "These stats are also available in JSON format <a href=\"%1?"
 "page=api&action=getpoolstatus&api_key=%2\">HERE</a>"
@@ -2030,10 +2121,6 @@ msgstr ""
 msgid "Last %1 transactions"
 msgstr ""
 
-#: ../templates/bootstrap//admin/wallet/transactions.tpl:13
-msgid "Address"
-msgstr ""
-
 #: ../templates/bootstrap//admin/wallet/transactions.tpl:14
 msgid "Category"
 msgstr ""
@@ -2069,6 +2156,16 @@ msgstr ""
 
 #: ../templates/bootstrap//admin/news/default.tpl:37
 msgid "Add"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news/default.tpl:51
+#: ../templates/bootstrap//news/default.tpl:8
+msgid "posted %1"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news/default.tpl:51
+#: ../templates/bootstrap//news/default.tpl:8
+msgid "by <b>%1</b>"
 msgstr ""
 
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:5
@@ -2662,12 +2759,10 @@ msgid "Password reset complete! Please login."
 msgstr ""
 
 #: ../include/pages/register/register.inc.php:25
-#: ../include/pages/register.inc.php:5
 msgid "Account registration is currently disabled. Please try again later."
 msgstr ""
 
 #: ../include/pages/register/register.inc.php:27
-#: ../include/pages/register.inc.php:8
 msgid "Only invited users are allowed to register."
 msgstr ""
 
