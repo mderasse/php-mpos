@@ -127,7 +127,7 @@
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
-                  <p id="b-nextdiff" class="h5">{if $GLOBAL.nethashrate > 0}{$NETWORK.EstNextDifficulty|number_format:"8"}{else}{t}n/a{/t}{/if}</p>
+                  <p id="b-nextdiff" class="h5 up-more">{if $GLOBAL.nethashrate > 0}{$NETWORK.EstNextDifficulty|number_format:"8"}{else}{t}n/a{/t}{/if}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
                   <p class="h6">{t}Est. Next Difficulty{/t}{if $GLOBAL.config.coindiffchangetarget > 1}{if $GLOBAL.nethashrate > 0}<br/>{t next_diff_block=$NETWORK.BlocksUntilDiffChange}Change in %1 Blocks{/t}{else}{t}No Estimates{/t}{/if}{/if}</p>
