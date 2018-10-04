@@ -8,7 +8,7 @@
                   <p class="h5 up-more">{t}My Hashrate{/t}</p>
                   <div class="circle-tile-number text-faded up">
                     <span class="overview" id="b-hashrate">{$GLOBAL.userdata.hashrate|number_format:"2"}</span>
-                    <span class="overview-mhs"> {$GLOBAL.hashunits.personal}</span>
+                    <span class="overview-mhs"> H/m</span>
                     <br>
                     <span class="personal-hashrate-bar spark-18"></span>
                   </div>
@@ -44,7 +44,7 @@
                   <p class="h5 up-more">{t}My Sharerate{/t}</p>
                   <div class="circle-tile-number text-faded up">
                     <span class="overview" id="b-sharerate">{$GLOBAL.userdata.sharerate|number_format:$GLOBAL.config.sharediffprecision}</span>
-                    <span class="overview-mhs"> S/s</span>
+                    <span class="overview-mhs"> S/m</span>
                     <br>
                     <span class="personal-sharerate-bar spark-18"></span>
                   </div>
