@@ -15,7 +15,7 @@ $smarty = new Smarty;
 $debug->append('Define Smarty Paths', 3);
 $smarty->template_dir = TEMPLATE_DIR . '/' . THEME . '/';
 $smarty->compile_dir = TEMPLATE_DIR . '/compile/' . THEME . '/';
-$smarty_cache_key = md5(serialize($_REQUEST) . serialize(@$_SESSION['USERDATA']['id']));
+$smarty_cache_key = md5(serialize($_REQUEST) . $_SESSION['USERDATA']['language'] . serialize(@$_SESSION['USERDATA']['id']));
 
 // Optional smarty caching, check Smarty documentation for details
 if ($config['smarty']['cache']) {
@@ -29,3 +29,5 @@ if ($config['smarty']['cache']) {
 
 // Load custom smarty plugins
 require_once(INCLUDE_DIR . '/lib/smarty_plugins/function.acl.php');
+require_once(INCLUDE_DIR . '/lib/smarty_plugins/function.locale.php');
+require_once(INCLUDE_DIR . '/lib/smarty_plugins/block.t.php');
