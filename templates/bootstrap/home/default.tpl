@@ -7,7 +7,7 @@
       <div class="panel-body">
           <p>
             <div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                {t escape=no}To join the pool you can follow the <a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted">Getting Started Guide</a>.{/t}{t} Feel free to click on the right-bottom Button if you have any question.{/t}
+		{t escape=no server_url=$smarty.server.SCRIPT_NAME}To join the pool you can follow the <a href="%1?page=gettingstarted">Getting Started Guide</a>.{/t} {t}Feel free to click on the right-bottom Button if you have any question.{/t}
             </div>
             <div style="margin-top: 15px; font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;">
                 <span style="font-weight: bold;">{t}Pool Features :{/t}</span>

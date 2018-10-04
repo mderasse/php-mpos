@@ -5,7 +5,7 @@
                         <a href="{$smarty.server.SCRIPT_NAME}"><i class="fa fa-home fa-fw"></i> {t}Home{/t}</a>
                     </li>
                     <li>
-                        <a href="{$smarty.server.SCRIPT_NAME}?page=news"><i class="fa fa-newspaper-o fa-fw"></i> {t}News{/t}</a>
+                        <a href="{$smarty.server.SCRIPT_NAME}?page=news"><i class="fa fa-newspaper-o fa-fw"></i> {t}What's new{/t}</a>
                     </li>
                     {if $smarty.session.AUTHENTICATED|default:"0" == 1}
                     <li>
