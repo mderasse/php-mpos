@@ -18,7 +18,7 @@ $languages = array(
 //  'de' => 'de_DE',
 //  'it' => 'it_IT',
 //  'ru' => 'ru_RU',
-//  'zh' => 'zh_CN',
+  'zh' => 'zh_CN',
 );
 // Include our configuration (holding defines for the requires)
 if (!include_once(INCLUDE_DIR . '/config/global.inc.dist.php')) die('Unable to load base global config from ['.INCLUDE_DIR. '/config/global.inc.dist.php' . '] - '.$quickstartlink);
