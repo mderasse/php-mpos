@@ -1,0 +1,3000 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-21 18:09+0200\n"
+"PO-Revision-Date: 2018-11-02 16:45+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh\n"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:5
+msgid "Getting Started Guide"
+msgstr "入门指南"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:15
+msgid "Download a miner."
+msgstr "下载矿工。"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:18
+#: ../templates/bootstrap//gettingstarted/default.tpl:22
+#: ../templates/bootstrap//gettingstarted/default.tpl:24
+#: ../templates/bootstrap//gettingstarted/default.tpl:26
+#: ../templates/bootstrap//gettingstarted/default.tpl:27
+#: ../templates/bootstrap//gettingstarted/default.tpl:28
+msgid "Download here"
+msgstr "在这里下载"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:19
+#: ../templates/bootstrap//gettingstarted/default.tpl:23
+msgid "Download Here"
+msgstr "点击此处下载"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:31
+msgid "Configure your miner."
+msgstr "配置您的矿工."
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:33
+msgid "If your using Linux, Then type the following into the console:"
+msgstr "如果您使用的是 Linux, 请在控制台中键入以下内容:"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:39
+msgid ""
+"If you want to mine on a <strong> Windows Operating System</strong>, then "
+"you'll need to create a batch file to start your miner."
+msgstr ""
+"如果要在 <strong> Windows 操作系统 </strong> 上进行挖掘, 则需要创建一个批处理"
+"文件以启动您的矿工。"
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:39
+msgid "Simply open notepad and then copy and paste the following:"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:51
+msgid ""
+"You then need to change \"-u Weblogin.Worker -p Worker password\" to reflect "
+"your own account. Eg, \"-u Steve.StevesWorker -p StevesWorkerPassword\" then "
+"go to \"File > Save as\" and save the file as \"RunMe.bat\" in the same "
+"folder containing your miners application files. You are now ready to mine, "
+"double click on \"RunMe.bat\" to start mining. If you want, you can create "
+"additional workers with usernames and passwords of your choice <a href=\"%1?"
+"page=account&action=workers\">here</a>"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:53
+msgid "Create a %1 address to receive payments."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:56
+msgid ""
+"Generate a new address and input it on your account page to receive payments."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:61
+msgid "Advanced CGMiner settings / FAQ"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:63
+msgid "Scrypt readme"
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:64
+msgid ""
+"Don't set <b>intensity</b> too high, I=11 is standard and safest. Higher "
+"intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner "
+"(HW). HW=0 is good, otherwise lower intensity."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:65
+msgid ""
+"Set shaders according to the readme (or look at your graphic cards "
+"specifications). CGMiner uses this value at first run to calculate <b>thread-"
+"concurrency</b>. Easiest way to get this optimized is to use same settings "
+"as others have used here: <a href=\"http://litecoin.info/"
+"Mining_Hardware_Comparison\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:66
+msgid ""
+"There's also an interesting project which gives you a GUI for CGMiner. "
+"Windows only it seems."
+msgstr ""
+
+#: ../templates/bootstrap//gettingstarted/default.tpl:67
+msgid ""
+"Here's a great <a href=\"https://docs.google.com/document/"
+"d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
+"\"_blank\">guide</a> how to get up and running with Xubuntu."
+msgstr ""
+
+#: ../templates/bootstrap//global/footer.tpl:5
+msgid ""
+"Powered by <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank"
+"\">MPOS</a>"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:4
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:43
+#: ../templates/bootstrap//account/notifications/default.tpl:160
+msgid "New Block"
+msgstr "新区块"
+
+#: ../templates/bootstrap//global/header.tpl:44
+#: ../templates/bootstrap//account/notifications/default.tpl:89
+#: ../templates/bootstrap//account/notifications/default.tpl:161
+msgid "Payout"
+msgstr "收益支付"
+
+#: ../templates/bootstrap//global/header.tpl:45
+msgid "IDLE Worker"
+msgstr "编辑矿工"
+
+#: ../templates/bootstrap//global/header.tpl:46
+#: ../templates/bootstrap//account/notifications/default.tpl:102
+#: ../templates/bootstrap//account/notifications/default.tpl:163
+msgid "Successful Login"
+msgstr "登录成功"
+
+#: ../templates/bootstrap//global/header.tpl:57
+msgid "See All Notifications"
+msgstr "查看所有通知"
+
+#: ../templates/bootstrap//global/header.tpl:76
+msgid "Guest"
+msgstr "游客"
+
+#: ../templates/bootstrap//global/header.tpl:80
+#: ../templates/bootstrap//global/navigation.tpl:9
+#: ../templates/bootstrap//global/navigation.tpl:34
+msgid "Dashboard"
+msgstr "控制面板"
+
+#: ../templates/bootstrap//global/header.tpl:81
+#: ../templates/bootstrap//global/navigation.tpl:36
+#: ../templates/bootstrap//admin/settings/default.tpl:5
+msgid "Settings"
+msgstr "设置"
+
+#: ../templates/bootstrap//global/header.tpl:82
+#: ../templates/bootstrap//statistics/graphs/default.tpl:23
+msgid "Workers"
+msgstr "矿工"
+
+#: ../templates/bootstrap//global/header.tpl:85
+#: ../templates/bootstrap//global/navigation.tpl:108
+msgid "Logout"
+msgstr "退出"
+
+#: ../templates/bootstrap//global/header.tpl:88
+#: ../templates/bootstrap//global/navigation.tpl:110
+#: ../templates/bootstrap//login/default.tpl:29
+msgid "Login"
+msgstr "登录"
+
+#: ../templates/bootstrap//global/header.tpl:89
+#: ../templates/bootstrap//global/navigation.tpl:111
+msgid "Sign Up"
+msgstr "注册"
+
+#: ../templates/bootstrap//global/navigation.tpl:5
+msgid "Home"
+msgstr "首页"
+
+#: ../templates/bootstrap//global/navigation.tpl:13
+msgid "My Account"
+msgstr "我的账户"
+
+#: ../templates/bootstrap//global/navigation.tpl:15
+msgid "Edit Account"
+msgstr "编辑帐户"
+
+#: ../templates/bootstrap//global/navigation.tpl:16
+msgid "My Workers"
+msgstr "我的矿工"
+
+#: ../templates/bootstrap//global/navigation.tpl:17
+#: ../templates/bootstrap//global/navigation.tpl:43
+msgid "Transactions"
+msgstr "交易"
+
+#: ../templates/bootstrap//global/navigation.tpl:18
+msgid "Earnings"
+msgstr "收益"
+
+#: ../templates/bootstrap//global/navigation.tpl:19
+msgid "Notifications"
+msgstr "通知"
+
+#: ../templates/bootstrap//global/navigation.tpl:20
+#: ../templates/bootstrap//global/navigation.tpl:59
+#: ../templates/bootstrap//admin/dashboard/invitation.tpl:4
+msgid "Invitations"
+msgstr "邀请"
+
+#: ../templates/bootstrap//global/navigation.tpl:21
+msgid "QR Codes"
+msgstr "QR 码"
+
+#: ../templates/bootstrap//global/navigation.tpl:28
+msgid "Admin Panel"
+msgstr "管理面板"
+
+#: ../templates/bootstrap//global/navigation.tpl:31
+msgid "System"
+msgstr "系统"
+
+#: ../templates/bootstrap//global/navigation.tpl:33
+msgid "Setup"
+msgstr "设置"
+
+#: ../templates/bootstrap//global/navigation.tpl:35
+#: ../templates/bootstrap//admin/monitoring/default.tpl:5
+msgid "Monitoring"
+msgstr "矿池监控"
+
+#: ../templates/bootstrap//global/navigation.tpl:40
+msgid "Funds"
+msgstr "当前余额"
+
+#: ../templates/bootstrap//global/navigation.tpl:42
+msgid "Wallet Info"
+msgstr "钱包信息"
+
+#: ../templates/bootstrap//global/navigation.tpl:47
+msgid "News"
+msgstr "公告"
+
+#: ../templates/bootstrap//global/navigation.tpl:49
+msgid "Site News"
+msgstr "矿池公告"
+
+#: ../templates/bootstrap//global/navigation.tpl:50
+msgid "Newsletter"
+msgstr ""
+
+#: ../templates/bootstrap//global/navigation.tpl:54
+#: ../templates/bootstrap//admin/dashboard/user.tpl:5
+msgid "Users"
+msgstr "用户"
+
+#: ../templates/bootstrap//global/navigation.tpl:56
+msgid "User Info"
+msgstr "用户信息"
+
+#: ../templates/bootstrap//global/navigation.tpl:57
+msgid "Reports"
+msgstr "报告"
+
+#: ../templates/bootstrap//global/navigation.tpl:58
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:4
+msgid "Registrations"
+msgstr "注册用户"
+
+#: ../templates/bootstrap//global/navigation.tpl:60
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:62
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:62
+msgid "Pool Workers"
+msgstr "矿池矿工"
+
+#: ../templates/bootstrap//global/navigation.tpl:69
+msgid "Statistics"
+msgstr "统计"
+
+#: ../templates/bootstrap//global/navigation.tpl:71
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:6
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:6
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:6
+msgid "Pool"
+msgstr "矿池"
+
+#: ../templates/bootstrap//global/navigation.tpl:72
+#: ../templates/bootstrap//dashboard/js/api.tpl:143
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:12
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:12
+#: ../templates/bootstrap//admin/wallet/status.tpl:16
+msgid "Blocks"
+msgstr "区块"
+
+#: ../templates/bootstrap//global/navigation.tpl:73
+msgid "Round"
+msgstr "回合"
+
+#: ../templates/bootstrap//global/navigation.tpl:74
+msgid "Blockfinder"
+msgstr "区块发现者"
+
+#: ../templates/bootstrap//global/navigation.tpl:75
+msgid "Uptime"
+msgstr "启动时间"
+
+#: ../templates/bootstrap//global/navigation.tpl:76
+msgid "Graphs"
+msgstr "算力图表"
+
+#: ../templates/bootstrap//global/navigation.tpl:77
+msgid "Donors"
+msgstr "捐赠者"
+
+#: ../templates/bootstrap//global/navigation.tpl:91
+msgid "Help"
+msgstr "帮助"
+
+#: ../templates/bootstrap//global/navigation.tpl:93
+msgid "Getting Started"
+msgstr "开始使用"
+
+#: ../templates/bootstrap//global/navigation.tpl:94
+msgid "About"
+msgstr "关于矿池"
+
+#: ../templates/bootstrap//global/navigation.tpl:95
+#: ../templates/bootstrap//about/chat/default.tpl:5
+msgid "Web Chat"
+msgstr "在线聊天"
+
+#: ../templates/bootstrap//global/navigation.tpl:96
+msgid "Forum"
+msgstr "论坛"
+
+#: ../templates/bootstrap//global/navigation.tpl:105
+msgid "Other"
+msgstr "其他"
+
+#: ../templates/bootstrap//global/navigation.tpl:113
+msgid "Contact"
+msgstr "联系"
+
+#: ../templates/bootstrap//global/navigation.tpl:115
+msgid "Terms and Conditions"
+msgstr "条款和条件"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:9
+#: ../templates/bootstrap//contactform/default.tpl:9
+msgid "Contact Us"
+msgstr "联系我们"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:15
+#: ../templates/bootstrap//contactform/default.tpl:15
+msgid "Your Name"
+msgstr "你的名字"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:16
+#: ../templates/bootstrap//contactform/default.tpl:16
+msgid "Please type your name"
+msgstr "请输入您的姓名"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:19
+#: ../templates/bootstrap//contactform/default.tpl:19
+msgid "Your Email Address"
+msgstr "您的邮箱地址"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:20
+#: ../templates/bootstrap//contactform/default.tpl:20
+msgid "Please type your email"
+msgstr "请输入您的邮箱"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:23
+#: ../templates/bootstrap//contactform/default.tpl:23
+msgid "Your Subject"
+msgstr "您的主题"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:24
+#: ../templates/bootstrap//contactform/default.tpl:24
+msgid "Please type your subject"
+msgstr "请输入您的主题"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:32
+#: ../templates/bootstrap//contactform/default.tpl:32
+msgid "Your Message"
+msgstr "您的消息"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:39
+#: ../templates/bootstrap//contactform/default.tpl:39
+msgid "Send Email"
+msgstr "发送邮件"
+
+#: ../templates/bootstrap//contactform/contactform/default.tpl:40
+#: ../templates/bootstrap//contactform/default.tpl:40
+msgid "Reset Values"
+msgstr ""
+
+#: ../templates/bootstrap//contactform/disabled.tpl:5
+msgid "Contact & Support"
+msgstr "联系 & 支持"
+
+#: ../templates/bootstrap//contactform/disabled.tpl:10
+msgid ""
+"This product comes 'as-is' without any warranty. Please check the Apache "
+"License, Version 2.0, for details."
+msgstr ""
+
+#: ../templates/bootstrap//home/news_all.tpl:8
+#: ../templates/bootstrap//home/news_accordion.tpl:14
+#: ../templates/bootstrap//admin/news/default.tpl:51
+msgid "posted %1"
+msgstr ""
+
+#: ../templates/bootstrap//home/news_all.tpl:8
+#: ../templates/bootstrap//home/news_accordion.tpl:14
+#: ../templates/bootstrap//admin/news/default.tpl:51
+msgid "by <b>%1</b>"
+msgstr ""
+
+#: ../templates/bootstrap//home/news_accordion.tpl:5
+msgid "latest News"
+msgstr "最近公告"
+
+#: ../templates/bootstrap//password/change/default.tpl:11
+#: ../templates/bootstrap//password/default.tpl:8
+msgid "Password reset"
+msgstr "重置密码"
+
+#: ../templates/bootstrap//password/change/default.tpl:16
+#: ../templates/bootstrap//account/edit/password.tpl:24
+msgid "New Password"
+msgstr "新密码"
+
+#: ../templates/bootstrap//password/change/default.tpl:22
+#: ../templates/bootstrap//account/edit/password.tpl:29
+msgid "Repeat New Password"
+msgstr "再次输入新密码"
+
+#: ../templates/bootstrap//password/change/default.tpl:33
+#: ../templates/bootstrap//password/change/default.tpl:35
+#: ../templates/bootstrap//password/change/default.tpl:40
+#: ../templates/bootstrap//account/edit/password.tpl:9
+#: ../templates/bootstrap//account/edit/password.tpl:48
+#: ../templates/bootstrap//account/edit/password.tpl:50
+#: ../templates/bootstrap//account/edit/password.tpl:55
+msgid "Change Password"
+msgstr "修改密码"
+
+#: ../templates/bootstrap//password/change/default.tpl:37
+#: ../templates/bootstrap//account/edit/password.tpl:52
+#: ../templates/bootstrap//account/edit/detail.tpl:96
+#: ../templates/bootstrap//account/edit/cashout.tpl:55
+#: ../templates/bootstrap//account/edit/cashout.tpl:61
+msgid "Unlock"
+msgstr "解锁"
+
+#: ../templates/bootstrap//password/default.tpl:12
+msgid ""
+"If you have an email set for your account, enter your username to get your "
+"password reset"
+msgstr "如果您有一个电子邮件设置为您的帐户，输入您的用户名，以获得您的密码重置"
+
+#: ../templates/bootstrap//password/default.tpl:15
+msgid "Username or E-mail"
+msgstr "用户名或者邮箱"
+
+#: ../templates/bootstrap//password/default.tpl:20
+msgid "Reset"
+msgstr "重置"
+
+#: ../templates/bootstrap//register/default.tpl:16
+msgid "Register new account"
+msgstr "创建一个新账户"
+
+#: ../templates/bootstrap//register/default.tpl:20
+#: ../templates/bootstrap//register/default.tpl:23
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:11
+#: ../templates/bootstrap//admin/invitations/default.tpl:12
+#: ../templates/bootstrap//admin/registrations/default.tpl:14
+#: ../templates/bootstrap//admin/user/default.tpl:90
+#: ../templates/bootstrap//account/edit/detail.tpl:25
+msgid "Username"
+msgstr "用户名"
+
+#: ../templates/bootstrap//register/default.tpl:26
+#: ../templates/bootstrap//register/default.tpl:29
+msgid "Coin Address"
+msgstr "钱包地址"
+
+#: ../templates/bootstrap//register/default.tpl:32
+#: ../templates/bootstrap//register/default.tpl:35
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:13
+#: ../templates/bootstrap//login/default.tpl:16
+msgid "Password"
+msgstr "密码"
+
+#: ../templates/bootstrap//register/default.tpl:32
+msgid "Strength"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:40
+msgid "Repeat Password"
+msgstr "重复密码"
+
+#: ../templates/bootstrap//register/default.tpl:42
+#: ../templates/bootstrap//register/default.tpl:45
+#: ../templates/bootstrap//account/notifications/default.tpl:52
+msgid "Email"
+msgstr "邮箱"
+
+#: ../templates/bootstrap//register/default.tpl:49
+msgid "Repeat Email"
+msgstr "重复邮箱"
+
+#: ../templates/bootstrap//register/default.tpl:51
+#: ../templates/bootstrap//register/default.tpl:55
+msgid "PIN"
+msgstr ""
+
+#: ../templates/bootstrap//register/default.tpl:52
+msgid "Four digit number."
+msgstr "4位数."
+
+#: ../templates/bootstrap//register/default.tpl:52
+msgid "Remember this pin!"
+msgstr "记住这个PIN!"
+
+#: ../templates/bootstrap//register/default.tpl:59
+msgid ""
+"I Accept The <a data-toggle=\"modal\" data-target=\"#TAC\">Terms and "
+"Conditions</a>"
+msgstr "我接受<a data-toggle=\"modal\" data-target=\"#TAC\">服务条款</a>"
+
+#: ../templates/bootstrap//register/default.tpl:73
+msgid "Register"
+msgstr "注册"
+
+#: ../templates/bootstrap//register/default.tpl:90
+msgid "Close"
+msgstr "关闭"
+
+#: ../templates/bootstrap//register/disabled.tpl:1
+msgid "We are currently not accepting new user registrations."
+msgstr ""
+
+#: ../templates/bootstrap//about/api/default.tpl:5
+msgid "API Reference"
+msgstr "API参考"
+
+#: ../templates/bootstrap//about/api/default.tpl:8
+msgid ""
+"Please head over to the <a href=\"https://github.com/TheSerapher/php-mpos/"
+"wiki/API-Reference\">official documentation</a> to learn about the API "
+"featured in <b>MPOS</b>."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:5
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:9
+msgid "Q: When will I get paid?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:10
+msgid "<b>A:</b> This pool uses the following payout system."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:13
+msgid "Proportional (Prop)"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:13
+msgid ""
+"The block reward is distributed among miners in proportion to the number of "
+"shares they submitted in a round. The expected reward per share depends on "
+"the number of shares already submitted in the round."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:17
+msgid "Pay Per Last N Shares (PPLNS)"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:17
+msgid ""
+"Block rewards are distributed among the last shares, disregarding round "
+"boundaries. In the accurate implementation, the number of shares is "
+"determined so that their total will be a specified quantity of score (where "
+"the score of a share is the inverse of the difficulty). Most pools use a "
+"naive implementation based on a fixed number of shares or a fixed multiple "
+"of the difficulty. The share-variance can be reduced at the cost of "
+"increased maturity time, but there is no way to decrease the long-term pool-"
+"variance."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:21
+msgid "Pay Per Share (PPS)"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:21
+msgid ""
+"Each share receives a fixed reward known in advance. This is the ultimate "
+"low-variance, low-maturity simple method, but has the highest risk for the "
+"operator, and hence lower expected returns than other methods and risk of "
+"collapse if not managed properly."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:24
+msgid "Q: What is a orphan block?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:25
+msgid ""
+"<b>A:</b> Coins generated by a block will not be available to you right "
+"away. They will take some time to be confirmed by the entire network before "
+"you are allowed to transfer them out of the pool. Usually coins have a "
+"confirmation set to 120. What that actually means: the network (not the "
+"pool) has to discover 120 additional blocks on top of the one found by the "
+"pool to confirm it."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:27
+msgid "Q: What is estimated payout?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:28
+msgid ""
+"<b>A:</b> Estimated payout is your estimated payout if a block is found at "
+"that time. This is an estimate according to your amount of shares submitted "
+"for the round(s)."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:31
+msgid "Q: What is pool-variance?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:32
+msgid ""
+"<b>A:</b> This is the variance caused by the pool being too small. Using a "
+"method with high pool-variance does no harm to large pools."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:35
+msgid "Q: What is a share?"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:36
+msgid ""
+"<b>A:</b> Finding blocks is not an easy task. Since it would take a really "
+"long time on some coins, finding a block is broken down into shares. "
+"Depending on the server side setting, each share can be a certain "
+"difficulty. The more difficult each share is to find by miners, the fewer "
+"total shares are required to eventually find a block."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:38
+msgid ""
+"On the server side, each share is checked against the coin daemon (a server "
+"side wallet with more features) if it is indeed a valid block solution. "
+"Every share computed has the potential to be a block solution. I will not go "
+"into details why this is, but rest assured that share estimates for blocks "
+"can sometimes be exceeded. In the long run though, shorter round with less "
+"shares than required will make up for those taking very long."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:40
+msgid ""
+"Keep in mind: shares are not blocks! Shares are part of a block and will "
+"count towards the block payout!"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:42
+msgid ""
+"At times, you will see shares being rejected by the pool. This can happen if "
+"you try to send an outdated share right after a block was found. Stratum, a "
+"protocol used by a miner to request work from a server, is used for share "
+"submission and getting new work. It is very solid when it comes to avoiding "
+"rejects but they can still happen once in a while."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:44
+msgid ""
+"If you are seeing reject all the time, then something isn’t working right on "
+"your end. You may also notice that your hashrate on the pool website is not "
+"increasing while your invalid share count keeps climbing up. In that case "
+"turn off your miner and check your settings!"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:46
+msgid "Q: I am having problems connecting to the pool."
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:47
+msgid ""
+"<b>A:</b> Double check your settings against our <a href=\"%1?"
+"page=gettingstarted\">getting started page.</a>"
+msgstr ""
+
+#: ../templates/bootstrap//about/pool/default.tpl:51
+msgid ""
+"This Pool is running <a href=\"https://github.com/TheSerapher/php-mpos"
+"\">MPOS</a> project code. This frontend was created by <a href=\"https://"
+"github.com/MPOS/php-mpos\">TheSerapher aka Sebastian Grewe</a>. The "
+"operation of the pool is soley at the hand of your trusted pool operator."
+msgstr ""
+
+#: ../templates/bootstrap//about/moot/default.tpl:5
+msgid "Moot Forum"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:123
+#: ../templates/bootstrap//dashboard/js/api.tpl:145
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:130
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:70
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:81
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:81
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:39
+msgid "n/a"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:143
+msgid "Change in"
+msgstr "变化"
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:146
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
+msgid "No Estimates"
+msgstr "没有估计"
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:183
+msgid "No active workers"
+msgstr "没有活跃的矿工"
+
+#: ../templates/bootstrap//dashboard/js/api.tpl:184
+#: ../templates/bootstrap//admin/dashboard/user.tpl:11
+#: ../templates/bootstrap//admin/dashboard/invitation.tpl:10
+msgid "Total"
+msgstr "汇总"
+
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:5
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:11
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:11
+msgid "Worker"
+msgstr "矿工"
+
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:6
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:12
+#: ../templates/bootstrap//statistics/graphs/default.tpl:8
+#: ../templates/bootstrap//admin/user/default.tpl:93
+msgid "Hashrate"
+msgstr "算力"
+
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:7
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:14
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:13
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:118
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:58
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:58
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:57
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:56
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:39
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:17
+#: ../templates/bootstrap//account/workers/default.tpl:47
+msgid "Difficulty"
+msgstr "难度"
+
+#: ../templates/bootstrap//dashboard/account_data/_workers.tpl:11
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:17
+msgid "No worker information available"
+msgstr "没有可用的矿工信息"
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:4
+msgid "Account Information"
+msgstr "账户信息"
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:11
+msgid "You are mining without any pool fees applied and"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:14
+msgid "You are mining at <font color=\"orange\">%1%</font> pool fee and"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:16
+msgid "This pool does not apply fees and"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:19
+msgid "you donate <font color=\"green\">%1%</font>."
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:21
+msgid "you are not <a href=\"%1?page=account&action=edit\">donating</a>."
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:28
+msgid "%1 Account Balance"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:32
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:41
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:45
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:42
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:29
+#: ../templates/bootstrap//account/transactions/default.tpl:69
+#: ../include/pages/admin/transactions.inc.php:24
+#: ../include/pages/account/transactions.inc.php:14
+msgid "Confirmed"
+msgstr "确认"
+
+#: ../templates/bootstrap//dashboard/account_data/default.tpl:38
+#: ../templates/bootstrap//admin/wallet/balance.tpl:17
+#: ../templates/bootstrap//account/transactions/default.tpl:73
+#: ../include/pages/admin/transactions.inc.php:24
+#: ../include/pages/account/transactions.inc.php:14
+msgid "Unconfirmed"
+msgstr "未确认"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:5
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:4
+msgid "Last Found Blocks"
+msgstr "最后发现的区块"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:11
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:24
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:26
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:19
+msgid "Height"
+msgstr "高度"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:12
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:11
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:14
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:75
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:68
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:45
+msgid "Finder"
+msgstr "爆块用户"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:13
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:12
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:63
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:58
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:41
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:18
+#: ../templates/bootstrap//account/notifications/default.tpl:149
+msgid "Time"
+msgstr "时间"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:15
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:17
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:22
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:22
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:18
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:34
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:38
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:25
+#: ../templates/bootstrap//admin/invitations/default.tpl:14
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:15
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:26
+#: ../templates/bootstrap//account/transactions/default.tpl:51
+msgid "Amount"
+msgstr "总额"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:16
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:18
+msgid "Expected Shares"
+msgstr "预计占有率"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:17
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:13
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:20
+msgid "Actual Shares"
+msgstr "实际占有率"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:18
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:21
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:21
+msgid "Percentage"
+msgstr "百分比"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:27
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:22
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:26
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:50
+#: ../templates/bootstrap//statistics/donors/default.tpl:19
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:23
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:28
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:29
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:26
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:25
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:22
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:24
+msgid "anonymous"
+msgstr "匿名"
+
+#: ../templates/bootstrap//dashboard/blocks/default.tpl:29
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:19
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:25
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:49
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:28
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:25
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:23
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:76
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:21
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:69
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:46
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:23
+msgid "unknown"
+msgstr "未知"
+
+#: ../templates/bootstrap//dashboard/default.tpl:9
+msgid "Overview"
+msgstr "概述"
+
+#: ../templates/bootstrap//dashboard/default.tpl:27
+msgid ""
+"Refresh interval: %1 seconds, worker and account %2 seconds. Hashrate based "
+"on shares submitted in the past %3 minutes."
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/worker_information/default.tpl:5
+msgid "Worker Information"
+msgstr "矿工信息"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:13
+msgid "%1 1 Hour Estimated Earnings"
+msgstr "预计1小时收益"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:28
+msgid "%1 24 Hour Estimated Earnings"
+msgstr "预计24小时收益"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:43
+msgid "%1 7 Days Estimated Earnings"
+msgstr "预计7天收益"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:58
+msgid "%1 14 Days Estimated Earnings"
+msgstr "预计14天收益"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:73
+msgid "%1 30 Days Estimated Earnings"
+msgstr "预计30天收益"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:88
+msgid "PPS"
+msgstr "PPS"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:88
+msgid "Value"
+msgstr "值"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:103
+msgid "Unpaid"
+msgstr "未支付"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:103
+msgid "difficulty shares"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:30
+msgid "Est. Next Difficulty"
+msgstr "下一个难度调整"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:73
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:32
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:34
+msgid "Change in %1 Blocks"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:148
+msgid "Estimated Average"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:148
+msgid "Time per Block"
+msgstr "每块的时间"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:5
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:5
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:5
+msgid "Own"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:9
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:9
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:9
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:15
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:13
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:13
+msgid "Valid"
+msgstr "有效的"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:22
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:22
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:22
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:14
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:18
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:14
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:14
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:15
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:21
+msgid "Invalid"
+msgstr "无效的"
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:35
+#: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:35
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:35
+msgid "Efficiency"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/default.tpl:5
+#: ../templates/bootstrap//dashboard/round_statistics/prop/default.tpl:5
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/default.tpl:5
+msgid "Round Information"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/pps/default.tpl:16
+#: ../templates/bootstrap//dashboard/round_statistics/prop/default.tpl:16
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/default.tpl:16
+msgid "Share Information"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:13
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:13
+#: ../templates/bootstrap//statistics/default.tpl:18
+msgid "Current Block"
+msgstr "当前高度"
+
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:28
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:28
+msgid "Of Expected Shares"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:43
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:43
+msgid "%1 Est. Earnings"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:88
+#: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:88
+msgid "Est. Avg. Time per Block"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:8
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:8
+msgid "My Hashrate"
+msgstr "我的算力"
+
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:26
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:26
+msgid "Pool Hashrate"
+msgstr "矿池算力"
+
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:44
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:44
+msgid "My Sharerate"
+msgstr ""
+
+#: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:79
+#: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:79
+msgid "Net Hashrate"
+msgstr "全网算力"
+
+#: ../templates/bootstrap//dashboard/overview/default.tpl:5
+msgid "Pool Information"
+msgstr "矿池信息"
+
+#: ../templates/bootstrap//error/ratelimit/default.tpl:2
+msgid "Request rate limit exceeded"
+msgstr ""
+
+#: ../templates/bootstrap//error/ratelimit/default.tpl:4
+msgid "You're sending too many requests too fast!"
+msgstr ""
+
+#: ../templates/bootstrap//error/default.tpl:4
+#: ../templates/bootstrap//error/404/default.tpl:4
+msgid "The page you requested was not found."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:4
+msgid "Blocks found by own Workers"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:10
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:10
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:10
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:10
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:11
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:11
+msgid "Rank"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:13
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:13
+msgid "Coins Generated"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:19
+msgid "unknown/deleted"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:4
+msgid "Top 25 Blockfinder"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
+msgid "Average Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:19
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:20
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:32
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:19
+msgid "PPLNS Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:41
+msgid "Block Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:10
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:12
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:12
+msgid "Block"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/small_table.tpl:36
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:82
+msgid ""
+"Round Earnings are not credited until <font class=\"confirmations\">%1</"
+"font> confirms."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:5
+msgid "Last %1 Blocks Found"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:13
+msgid "Validity"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:43
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:47
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:44
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:31
+#: ../include/pages/admin/transactions.inc.php:24
+#: ../include/pages/account/transactions.inc.php:14
+msgid "Orphan"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:46
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:51
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:48
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:35
+msgid "%1 left"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:69
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:78
+msgid "Totals"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:5
+msgid "Block Overview"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:13
+msgid "Gen. Est."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:14
+msgid "Found"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:17
+msgid "Orphan %"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:18
+msgid "Avg. Diff"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:19
+msgid "Shares Est."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:20
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:13
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:69
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:66
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:43
+#: ../templates/bootstrap//admin/user/default.tpl:92
+msgid "Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:23
+msgid "Rate Est."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:28
+#: ../templates/bootstrap//statistics/uptime/default.tpl:16
+#: ../templates/bootstrap//account/earnings/default.tpl:28
+msgid "All Time"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:54
+#: ../templates/bootstrap//admin/userdetails/default.tpl:61
+#: ../templates/bootstrap//account/earnings/default.tpl:66
+msgid "Last Hour"
+msgstr "最近一小时"
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:80
+msgid "Last 24 Hours"
+msgstr "最近24小时"
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:106
+#: ../templates/bootstrap//account/earnings/default.tpl:136
+msgid "Last 7 Days"
+msgstr "最近7天"
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:132
+msgid "Last 4 Weeks"
+msgstr "最近4周"
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:158
+msgid "The Past 12 Months"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:188
+msgid ""
+"Round earnings are not credited until <font class=\"confirmations\">%1</"
+"font> confirms."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/donors/default.tpl:5
+msgid "Pool Donors"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/donors/default.tpl:11
+msgid "Name"
+msgstr "名称"
+
+#: ../templates/bootstrap//statistics/donors/default.tpl:13
+msgid "%1 Total"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/donors/default.tpl:25
+msgid "No confirmed donations yet, please be patient!"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:4
+msgid "UptimeRobot Status"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:9
+msgid "Location"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:10
+msgid "Service"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:11
+#: ../templates/bootstrap//admin/wallet/status.tpl:15
+#: ../templates/bootstrap//account/transactions/default.tpl:24
+#: ../templates/bootstrap//account/transactions/default.tpl:47
+msgid "Status"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:12
+msgid "Status Since"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:13
+msgid "Day"
+msgstr "日"
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:14
+msgid "Week"
+msgstr "周"
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:15
+msgid "Month"
+msgstr "月"
+
+#: ../templates/bootstrap//statistics/uptime/default.tpl:61
+msgid "Last update"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:4
+msgid "Contributor Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:11
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:11
+msgid "Donor"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:12
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:12
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:12
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:12
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:12
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:11
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:12
+msgid "User Name"
+msgstr "用户名"
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:40
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:54
+msgid "no Donation"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:41
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:55
+msgid "0%-2% Donation"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:42
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:56
+msgid "2% or more Donation"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:4
+#: ../templates/bootstrap//statistics/default.tpl:4
+msgid "General Statistics"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:10
+#: ../templates/bootstrap//statistics/default.tpl:10
+msgid "Pool Hash Rate"
+msgstr "矿池算力"
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:14
+msgid "Pool Efficiency"
+msgstr "池效率"
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:18
+msgid "Current Active Workers"
+msgstr "当前活跃矿工"
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:22
+#: ../templates/bootstrap//statistics/default.tpl:22
+msgid "Current Difficulty"
+msgstr "当前难度"
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:38
+msgid "Est. Avg. Time per Round (Network)"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:42
+msgid "Est. Avg. Time per Round (Pool)"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:46
+msgid "Est. Shares this Round"
+msgstr "这一轮分享"
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:47
+msgid "done"
+msgstr "完成"
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:51
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:56
+msgid "Next Network Block"
+msgstr "下个网络区块"
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:57
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:12
+msgid "Current"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:61
+msgid "Last Block Found"
+msgstr "最近挖掘区块"
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:65
+msgid "Time Since Last Block"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/general_stats.tpl:72
+msgid ""
+"These stats are also available in JSON format <a href=\"%1?"
+"page=api&action=getpoolstatus&api_key=%2\">HERE</a>"
+msgstr ""
+"这些统计数据也可用JSON格式提供。<a href=\"%1?"
+"page=api&action=getpoolstatus&api_key=%2\">这里</a>"
+
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:4
+msgid "Contributor Hashrates"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:14
+#: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:16
+msgid "%1/Day"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/default.tpl:14
+msgid "Current Total Miners"
+msgstr "当前所有矿工"
+
+#: ../templates/bootstrap//statistics/default.tpl:29
+msgid ""
+"These stats are also available in JSON format <a href=\"%1?"
+"page=api&action=public\" target=\"_api\">HERE</a>"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:38
+msgid "Sharerate"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:54
+msgid "Average Hashrate past 24h"
+msgstr "24小时平均算力"
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:60
+msgid "Your average hashrate per hour, updated every backend cron run."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:70
+msgid "Average Workers past 24h"
+msgstr "24小时平均矿工"
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:76
+msgid "Your average active workers per hour, updated every backend cron run."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:86
+msgid "Average Sharerate past 24h"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/graphs/default.tpl:92
+msgid "Your share rate per hour, updated every backend cron run."
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:5
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:5
+msgid "Round Statistics"
+msgstr "循环统计量"
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:13
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:14
+msgid "Round Valid"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:19
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:15
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:15
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:16
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:22
+msgid "Invalid %"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:16
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:14
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:14
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:17
+msgid "Round %"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:17
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:20
+msgid "PPLNS Valid"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:20
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:16
+msgid "PPLNS Round %"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:21
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:17
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:24
+msgid "Variance"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:5
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:4
+msgid "Round Transactions"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:13
+#: ../templates/bootstrap//statistics/round/round_shares.tpl:4
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:13
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:13
+msgid "Round Shares"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:12
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:5
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:18
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:5
+msgid "Block Statistics"
+msgstr "区块统计"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:13
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:19
+msgid "PPLNS Round Statistics"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:18
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:24
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:17
+#: ../templates/bootstrap//admin/registrations/default.tpl:13
+#: ../templates/bootstrap//admin/user/default.tpl:89
+#: ../templates/bootstrap//account/notifications/default.tpl:148
+#: ../templates/bootstrap//account/transactions/default.tpl:44
+msgid "ID"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:30
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:34
+msgid "Estimated Shares"
+msgstr "市场占有率"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:36
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:62
+msgid "Target Variance"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:43
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:40
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:27
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:16
+msgid "Confirmations"
+msgstr "确认数"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:53
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:50
+msgid "Block Average"
+msgstr "块平均"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:59
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:52
+msgid "Average Efficiency"
+msgstr "平均效率"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:65
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:60
+msgid "Target Rounds"
+msgstr "计算目标"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:71
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:71
+msgid "Seconds This Round"
+msgstr "这一轮的秒数"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:78
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:73
+msgid "Round Variance"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:98
+msgid "Search Block Height"
+msgstr "搜索块高度"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:101
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:86
+#: ../templates/bootstrap//statistics/round/block_stats.tpl:58
+#: ../templates/bootstrap//admin/user/default.tpl:71
+msgid "Search"
+msgstr "搜索"
+
+#: ../templates/bootstrap//statistics/round/round_transactions.tpl:12
+#: ../templates/bootstrap//account/notifications/default.tpl:150
+#: ../templates/bootstrap//account/transactions/default.tpl:20
+msgid "Type"
+msgstr "类型"
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:9
+#: ../templates/bootstrap//admin/invitations/default.tpl:35
+#: ../templates/bootstrap//admin/registrations/default.tpl:39
+#: ../templates/bootstrap//admin/user/default.tpl:39
+#: ../templates/bootstrap//admin/user/default.tpl:42
+#: ../templates/bootstrap//account/transactions/default.tpl:13
+msgid "Prev"
+msgstr ""
+
+#: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:12
+#: ../templates/bootstrap//admin/invitations/default.tpl:38
+#: ../templates/bootstrap//admin/registrations/default.tpl:42
+#: ../templates/bootstrap//admin/user/default.tpl:46
+#: ../templates/bootstrap//account/transactions/default.tpl:16
+msgid "Next"
+msgstr "下一页"
+
+#: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:4
+msgid "PPLNS Round Shares"
+msgstr ""
+
+#: ../templates/bootstrap//admin/invitations/default.tpl:6
+msgid "Top Inviters"
+msgstr ""
+
+#: ../templates/bootstrap//admin/invitations/default.tpl:13
+#: ../templates/bootstrap//admin/registrations/default.tpl:15
+#: ../templates/bootstrap//admin/user/default.tpl:91
+msgid "eMail"
+msgstr ""
+
+#: ../templates/bootstrap//admin/invitations/default.tpl:15
+#: ../templates/bootstrap//admin/dashboard/invitation.tpl:12
+msgid "Outstanding"
+msgstr ""
+
+#: ../templates/bootstrap//admin/invitations/default.tpl:16
+#: ../templates/bootstrap//admin/dashboard/invitation.tpl:11
+#: ../templates/bootstrap//account/invitations/default.tpl:41
+msgid "Activated"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:12
+msgid "Edit news entry #%1"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:24
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:14
+#: ../templates/bootstrap//admin/dashboard/user.tpl:12
+#: ../templates/bootstrap//admin/news/default.tpl:22
+#: ../templates/bootstrap//admin/monitoring/default.tpl:13
+#: ../templates/bootstrap//account/workers/default.tpl:44
+#: ../templates/bootstrap//account/notifications/default.tpl:151
+msgid "Active"
+msgstr "活跃"
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:31
+#: ../templates/bootstrap//admin/news/default.tpl:26
+msgid "Header"
+msgstr "标头"
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:35
+#: ../templates/bootstrap//admin/newsletter/default.tpl:26
+#: ../templates/bootstrap//admin/news/default.tpl:30
+msgid "Content"
+msgstr "内容"
+
+#: ../templates/bootstrap//admin/news_edit/default.tpl:42
+#: ../templates/bootstrap//admin/settings/default.tpl:43
+msgid "Save"
+msgstr "保存"
+
+#: ../templates/bootstrap//admin/registrations/default.tpl:6
+msgid "Last Registered Users"
+msgstr ""
+
+#: ../templates/bootstrap//admin/registrations/default.tpl:16
+#: ../templates/bootstrap//admin/user/default.tpl:101
+msgid "Reg. Date"
+msgstr ""
+
+#: ../templates/bootstrap//admin/registrations/default.tpl:17
+#: ../templates/bootstrap//account/invitations/default.tpl:23
+msgid "Invite"
+msgstr ""
+
+#: ../templates/bootstrap//admin/registrations/default.tpl:18
+msgid "Invited From"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:6
+msgid "%1 Account Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:13
+msgid "All Time Transaction Totals"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:20
+#: ../templates/bootstrap//admin/monitoring/default.tpl:22
+#: ../templates/bootstrap//admin/transactions/default.tpl:14
+msgid "%1"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:41
+msgid "Transactions over time"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:48
+#: ../templates/bootstrap//account/earnings/default.tpl:53
+#: ../templates/bootstrap//account/earnings/default.tpl:144
+msgid "Credit"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:49
+#: ../templates/bootstrap//account/earnings/default.tpl:54
+#: ../templates/bootstrap//account/earnings/default.tpl:145
+msgid "Bonus"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:50
+#: ../templates/bootstrap//account/earnings/default.tpl:55
+#: ../templates/bootstrap//account/earnings/default.tpl:146
+msgid "Debit AP"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:51
+#: ../templates/bootstrap//account/earnings/default.tpl:56
+#: ../templates/bootstrap//account/earnings/default.tpl:147
+msgid "Debit MP"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:52
+#: ../templates/bootstrap//account/earnings/default.tpl:57
+#: ../templates/bootstrap//account/earnings/default.tpl:148
+msgid "Donation"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:54
+#: ../templates/bootstrap//account/earnings/default.tpl:59
+#: ../templates/bootstrap//account/earnings/default.tpl:150
+msgid "Fee"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:56
+#: ../templates/bootstrap//account/earnings/default.tpl:61
+#: ../templates/bootstrap//account/earnings/default.tpl:152
+msgid "TXFee"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:73
+#: ../templates/bootstrap//account/earnings/default.tpl:78
+msgid "Last Day"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:85
+#: ../templates/bootstrap//account/earnings/default.tpl:90
+msgid "Last Week"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:97
+#: ../templates/bootstrap//account/earnings/default.tpl:102
+msgid "Last Month"
+msgstr ""
+
+#: ../templates/bootstrap//admin/userdetails/default.tpl:109
+#: ../templates/bootstrap//account/earnings/default.tpl:114
+msgid "Last Year"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:5
+msgid "%1 Current Active Pool Workers"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:12
+#: ../templates/bootstrap//account/workers/default.tpl:13
+msgid "Worker Name"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:15
+#: ../templates/bootstrap//account/workers/default.tpl:45
+msgid "Monitor"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:16
+#: ../templates/bootstrap//account/workers/default.tpl:46
+msgid "Khash/s"
+msgstr ""
+
+#: ../templates/bootstrap//admin/poolworkers/default.tpl:18
+msgid "Avg Difficulty"
+msgstr ""
+
+#: ../templates/bootstrap//admin/newsletter/default.tpl:10
+msgid "Write Newsletter"
+msgstr ""
+
+#: ../templates/bootstrap//admin/newsletter/default.tpl:12
+msgid "Newsletters support the Markdown syntax"
+msgstr ""
+
+#: ../templates/bootstrap//admin/newsletter/default.tpl:22
+msgid "Subject"
+msgstr "主题"
+
+#: ../templates/bootstrap//admin/newsletter/default.tpl:33
+msgid "Send"
+msgstr "发送"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:13
+#: ../templates/bootstrap//admin/user/default.tpl:104
+msgid "Locked"
+msgstr "锁定"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:14
+msgid "Admins"
+msgstr "管理员"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:15
+#: ../templates/bootstrap//admin/user/default.tpl:66
+#: ../templates/bootstrap//admin/user/default.tpl:105
+msgid "No Fees"
+msgstr "没有 手续费"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:35
+msgid "Logins"
+msgstr "登录"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:41
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:11
+msgid "24 hours"
+msgstr "24 小时"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:42
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:12
+msgid "7 days"
+msgstr "7 天"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:43
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:13
+msgid "1 month"
+msgstr "1 个月"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:44
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:14
+msgid "6 months"
+msgstr "6 个月"
+
+#: ../templates/bootstrap//admin/dashboard/user.tpl:45
+#: ../templates/bootstrap//admin/dashboard/registrations.tpl:15
+msgid "1 year"
+msgstr "1 年"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:5
+msgid "MPOS Version Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:11
+msgid "Component"
+msgstr ""
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:13
+msgid "Installed"
+msgstr "安装"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:14
+msgid "Online"
+msgstr "在线"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:29
+msgid "Config"
+msgstr "配置"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:39
+msgid "Database"
+msgstr "数据库"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:57
+msgid "MPOS Status"
+msgstr "系统状态"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:63
+msgid "Cronjobs"
+msgstr "计划任务"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:64
+msgid "Wallet"
+msgstr "钱包"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:67
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:69
+msgid "Errors"
+msgstr "错误"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:68
+#: ../templates/bootstrap//admin/monitoring/default.tpl:11
+#: ../templates/bootstrap//account/notifications/default.tpl:22
+msgid "Disabled"
+msgstr "关闭"
+
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:75
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:78
+#: ../templates/bootstrap//admin/dashboard/mpos.tpl:81
+msgid "None - OK"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:33
+msgid "User Search"
+msgstr "用户搜索"
+
+#: ../templates/bootstrap//admin/user/default.tpl:50
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:12
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:13
+msgid "Account"
+msgstr "账户"
+
+#: ../templates/bootstrap//admin/user/default.tpl:54
+#: ../templates/bootstrap//account/invitations/default.tpl:13
+#: ../templates/bootstrap//account/invitations/default.tpl:39
+#: ../templates/bootstrap//account/edit/detail.tpl:40
+msgid "E-Mail"
+msgstr "邮箱"
+
+#: ../templates/bootstrap//admin/user/default.tpl:58
+msgid "Is Admin"
+msgstr "是管理员"
+
+#: ../templates/bootstrap//admin/user/default.tpl:62
+msgid "Is Locked"
+msgstr "已锁定"
+
+#: ../templates/bootstrap//admin/user/default.tpl:82
+msgid "User Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:95
+msgid "Est. Donation"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:96
+msgid "Est. Payout"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:98
+msgid "Est. 24 Hours"
+msgstr ""
+
+#: ../templates/bootstrap//admin/user/default.tpl:100
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:24
+msgid "Balance"
+msgstr "余额"
+
+#: ../templates/bootstrap//admin/user/default.tpl:102
+msgid "Last Login"
+msgstr "最近登录"
+
+#: ../templates/bootstrap//admin/user/default.tpl:103
+msgid "Admin"
+msgstr "管理员"
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:5
+msgid "Peer Information"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:12
+msgid "Host"
+msgstr "主机"
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:13
+msgid "Protocol"
+msgstr "协议"
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:14
+msgid "Identity"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:15
+msgid "Connected"
+msgstr "已连接"
+
+#: ../templates/bootstrap//admin/wallet/peers.tpl:16
+msgid "Traffic"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:4
+msgid "Balance Summary"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:9
+msgid "Wallet Balance"
+msgstr "钱包余额"
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:13
+msgid "Locked for users"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:22
+#: ../templates/bootstrap//admin/wallet/balance.tpl:35
+msgid "Liquid Assets"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/balance.tpl:30
+msgid "PoS New Mint"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:4
+msgid "Wallet Status"
+msgstr "钱包状态"
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:11
+msgid "Version"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:12
+msgid "Protocol Version"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:13
+msgid "Wallet Version"
+msgstr "钱包版本"
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:14
+msgid "Peers"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/status.tpl:17
+msgid "Accounts"
+msgstr "用户"
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:5
+msgid "Last %1 transactions"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:13
+msgid "Address"
+msgstr "地址"
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:14
+msgid "Category"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:17
+msgid "Transaction ID"
+msgstr "交易ID"
+
+#: ../templates/bootstrap//admin/wallet/transactions.tpl:23
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:2
+msgid "Default"
+msgstr ""
+
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:6
+msgid "Wallet Accounts"
+msgstr "钱包账户"
+
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:19
+msgid "Balance Info"
+msgstr "余额信息"
+
+#: ../templates/bootstrap//admin/wallet/accounts.tpl:38
+msgid "Addresses assigned to Account %1"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news/default.tpl:10
+msgid "Write News"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news/default.tpl:12
+msgid "News posts support the Markdown syntax"
+msgstr ""
+
+#: ../templates/bootstrap//admin/news/default.tpl:37
+msgid "Add"
+msgstr "添加"
+
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:5
+msgid "Earnings Report Last %1 Blocks For User: %2"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_report.tpl:23
+msgid "PPLNS %"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:9
+msgid "Earnings Information"
+msgstr "收益信息"
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:26
+msgid "Select User"
+msgstr "选择用户"
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:32
+msgid "Block Limit"
+msgstr "区块限制"
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:38
+msgid "Starting block height"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:44
+msgid "Show empty rounds"
+msgstr ""
+
+#: ../templates/bootstrap//admin/reports/earnings_control.tpl:58
+msgid "Submit"
+msgstr "提交"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:10
+msgid "Cronjob"
+msgstr "计划任务"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:12
+msgid "Exit Code"
+msgstr "推出码"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:14
+msgid "Runtime"
+msgstr ""
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:15
+msgid "Start Time"
+msgstr "运行时间"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:16
+msgid "End Time"
+msgstr "结束时间"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:17
+#: ../templates/bootstrap//account/invitations/default.tpl:17
+msgid "Message"
+msgstr "消息"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:27
+msgid "OK"
+msgstr "正常"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:29
+msgid "WARN"
+msgstr "警告"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:31
+msgid "ERROR"
+msgstr "错误"
+
+#: ../templates/bootstrap//admin/monitoring/default.tpl:45
+msgid "%1 seconds"
+msgstr ""
+
+#: ../templates/bootstrap//admin/setup/default.tpl:5
+msgid "Setup Checks"
+msgstr "设置检查"
+
+#: ../templates/bootstrap//admin/setup/default.tpl:33
+msgid ""
+"To disable these checks, set skip_config_tests to true in global.inc.php"
+msgstr ""
+
+#: ../templates/bootstrap//admin/transactions/default.tpl:6
+msgid "Transaction Summary"
+msgstr ""
+
+#: ../templates/bootstrap//login/default.tpl:6
+msgid "Login with existing account"
+msgstr "使用现有用户登录"
+
+#: ../templates/bootstrap//login/default.tpl:12
+msgid "E-mail"
+msgstr "邮箱"
+
+#: ../templates/bootstrap//login/default.tpl:30
+msgid "Forgot your password?"
+msgstr "忘记密码?"
+
+#: ../templates/bootstrap//tac/default.tpl:5
+msgid "Terms & Conditions"
+msgstr "条款与条件"
+
+#: ../templates/bootstrap//tac/content.tpl:1
+msgid "This Agreement governs your use of %1."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:3
+msgid ""
+"By using any of the Pools or registering an account on the website, you "
+"agree to be bound by the terms and conditions below. If you do not agree "
+"with the terms and conditions in this Agreement you may not use the Pool."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:4
+msgid ""
+"The %1 staff may modify this Agreement and any policies affecting the Site "
+"at any point of time. Such modification is effective immediately upon "
+"posting to the website and will be distribution via email, forum post and a "
+"link in chat. Your continued use of the Pool following any modification to "
+"this Agreement shall be deemed an acceptance of all modifications."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:5
+msgid ""
+"The Pool rewards miners according to a <strong>%1</strong> system with "
+"<strong>%2%</strong> fee. The fee may change at any time, but notice will be "
+"given before doing so. Any fee change will be communicated through the pools "
+"news page."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:6
+msgid ""
+"The Pool is not an e-wallet or a bank for your coins. The Pool and it's "
+"operators are not responsible for any loss of coins which are stored on the "
+"Pool. It is your responsibility to configure your account so that the coins "
+"you mine are regularly transferred to your own secured offline wallet."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:7
+msgid ""
+"The uptime of the pool or website is not guaranteed, maintenance and "
+"downtime may be required at times. Users are responsible for configuring "
+"their miners so that they will automatically reconnect, switch to all the "
+"pools we offer or a backup pool in the case of downtime."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:8
+msgid ""
+"Botnets are not welcome. Accounts with a large amount of miners connecting "
+"from different IPs may be suspended without prior notice. If we are "
+"uncertian then an investigation will be opened and the user will be notified "
+"via their configured e-mail address. If we do not receive a response your "
+"account may be suspended."
+msgstr ""
+
+#: ../templates/bootstrap//tac/content.tpl:9
+msgid ""
+"Multiple accounts controlled by one person may be considered as a botnet and "
+"an investigation will be opened, see above point."
+msgstr ""
+
+#: ../templates/bootstrap//account/invitations/default.tpl:5
+msgid "Invitation"
+msgstr ""
+
+#: ../templates/bootstrap//account/invitations/default.tpl:18
+msgid "Please accept my invitation to this awesome pool."
+msgstr ""
+
+#: ../templates/bootstrap//account/invitations/default.tpl:31
+msgid "Past Invitations"
+msgstr "过去推荐"
+
+#: ../templates/bootstrap//account/invitations/default.tpl:40
+msgid "Sent"
+msgstr "发送"
+
+#: ../templates/bootstrap//account/workers/default.tpl:9
+#: ../templates/bootstrap//account/workers/default.tpl:22
+msgid "Add New Worker"
+msgstr "添加新矿工"
+
+#: ../templates/bootstrap//account/workers/default.tpl:14
+msgid "user"
+msgstr "用户"
+
+#: ../templates/bootstrap//account/workers/default.tpl:17
+#: ../templates/bootstrap//account/workers/default.tpl:43
+msgid "Worker Password"
+msgstr "矿工密码"
+
+#: ../templates/bootstrap//account/workers/default.tpl:18
+msgid "password"
+msgstr "密码"
+
+#: ../templates/bootstrap//account/workers/default.tpl:30
+msgid "Worker Configuration"
+msgstr "矿工配置"
+
+#: ../templates/bootstrap//account/workers/default.tpl:42
+msgid "Worker Login"
+msgstr "矿工登录"
+
+#: ../templates/bootstrap//account/workers/default.tpl:48
+msgid "Action"
+msgstr "动作"
+
+#: ../templates/bootstrap//account/workers/default.tpl:80
+msgid "Update Workers"
+msgstr "更新矿工"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:11
+msgid "Push Notification Settings"
+msgstr "推送通知管理"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:18
+msgid "Push Notifications"
+msgstr "推送通知"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:45
+msgid "Notification Settings"
+msgstr "通知管理"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:51
+msgid "Event"
+msgstr "事件"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:53
+msgid "Push"
+msgstr "推送"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:60
+#: ../templates/bootstrap//account/notifications/default.tpl:162
+msgid "Idle Worker"
+msgstr "无效矿工"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:75
+msgid "New Blocks"
+msgstr "新区块"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:116
+msgid "Pool Newsletter"
+msgstr ""
+
+#: ../templates/bootstrap//account/notifications/default.tpl:132
+msgid "Update"
+msgstr "更新"
+
+#: ../templates/bootstrap//account/notifications/default.tpl:141
+msgid "Notification History"
+msgstr "通知历史"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:6
+msgid "Total %1 Earning Reports"
+msgstr ""
+
+#: ../templates/bootstrap//account/earnings/default.tpl:13
+msgid "Summary"
+msgstr "概要"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:45
+msgid "Sorted by Time"
+msgstr "按时间排序"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:157
+msgid "Today"
+msgstr "今天"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:169
+msgid "Yesterday"
+msgstr "昨日"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:181
+msgid "3 Day ago"
+msgstr "3 天以前"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:193
+msgid "4 Day ago"
+msgstr "4 天以前"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:205
+msgid "5 Day ago"
+msgstr "5 天以前"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:217
+msgid "6 Day ago"
+msgstr "6 天以前"
+
+#: ../templates/bootstrap//account/earnings/default.tpl:229
+msgid "7 Day ago"
+msgstr "7 天以前"
+
+#: ../templates/bootstrap//account/default.tpl:1
+msgid "No action specified"
+msgstr ""
+
+#: ../templates/bootstrap//account/qrcode/default.tpl:21
+msgid "API String"
+msgstr ""
+
+#: ../templates/bootstrap//account/qrcode/default.tpl:24
+msgid ""
+"This code will allow you to import the full API string into your mobile "
+"application."
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:8
+msgid "Transaction Filter"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:29
+msgid "Filter"
+msgstr "查询"
+
+#: ../templates/bootstrap//account/transactions/default.tpl:37
+msgid "Transaction History"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:45
+msgid "Date"
+msgstr "时间"
+
+#: ../templates/bootstrap//account/transactions/default.tpl:46
+msgid "TX Type"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:48
+#: ../templates/bootstrap//account/edit/detail.tpl:52
+msgid "Payment Address"
+msgstr "支付地址"
+
+#: ../templates/bootstrap//account/transactions/default.tpl:49
+msgid "TX #"
+msgstr "交易 #"
+
+#: ../templates/bootstrap//account/transactions/default.tpl:50
+msgid "Block #"
+msgstr "区块 #"
+
+#: ../templates/bootstrap//account/transactions/default.tpl:71
+msgid "Orphaned"
+msgstr ""
+
+#: ../templates/bootstrap//account/transactions/default.tpl:91
+msgid ""
+"<b>Debit_AP</b> = Auto Threshold Payment, <b>Debit_MP</b> = Manual Payment, "
+"<b>Donation</b> = Donation, <b>Fee</b> = Pool Fees (if applicable)"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/password.tpl:16
+msgid ""
+"Note: You will be redirected to login on successful completion of a password "
+"change"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/password.tpl:20
+#: ../templates/bootstrap//account/edit/resetpin.tpl:15
+msgid "Current Password"
+msgstr "当前密码"
+
+#: ../templates/bootstrap//account/edit/password.tpl:34
+#: ../templates/bootstrap//account/edit/detail.tpl:78
+#: ../templates/bootstrap//account/edit/cashout.tpl:42
+msgid "4 Digit PIN"
+msgstr "4 位PIN"
+
+#: ../templates/bootstrap//account/edit/detail.tpl:19
+msgid "Account Details"
+msgstr "账户详情"
+
+#: ../templates/bootstrap//account/edit/detail.tpl:29
+msgid "User Id"
+msgstr "用户ID"
+
+#: ../templates/bootstrap//account/edit/detail.tpl:34
+msgid "API Key"
+msgstr "API 密钥"
+
+#: ../templates/bootstrap//account/edit/detail.tpl:44
+msgid "Timezone"
+msgstr "时区"
+
+#: ../templates/bootstrap//account/edit/detail.tpl:56
+msgid "Donation Percentage"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:57
+msgid "Donation amount in percent (%1 - 100%)"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:61
+msgid "Automatic Payout Threshold"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:66
+msgid "%1 - %2 %3. Set to '0' for no auto payout."
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:66
+msgid "%1 %2 TX fee will apply "
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:66
+#: ../templates/bootstrap//account/edit/cashout.tpl:27
+msgid "High Estimation"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:66
+msgid ""
+"This %1 automatic payment transaction fee is a network fee and goes back "
+"into the network not the pool."
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:71
+msgid "Anonymous Account"
+msgstr "匿名账户"
+
+#: ../templates/bootstrap//account/edit/detail.tpl:75
+msgid ""
+"Hide username on website from others. Admins can still get your user "
+"information."
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:79
+msgid "The 4 digit PIN you chose when registering"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/detail.tpl:92
+#: ../templates/bootstrap//account/edit/detail.tpl:94
+#: ../templates/bootstrap//account/edit/detail.tpl:99
+msgid "Update Account"
+msgstr "更新账户"
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:19
+#: ../templates/bootstrap//account/edit/cashout.tpl:57
+#: ../templates/bootstrap//account/edit/cashout.tpl:59
+#: ../templates/bootstrap//account/edit/cashout.tpl:64
+msgid "Cash Out"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:27
+msgid ""
+"Please note: a %1 %2 transaction fee will apply when processing \"On-Demand"
+"\" manual payments"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:27
+msgid ""
+"This %1 manual payment transaction fee is a network fee and goes back into "
+"the network not the pool."
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:30
+msgid "Minimum Cashout: %1 %2"
+msgstr ""
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:34
+msgid "Account Balance"
+msgstr "账户余额"
+
+#: ../templates/bootstrap//account/edit/cashout.tpl:38
+msgid "Payout to"
+msgstr "支付给"
+
+#: ../templates/bootstrap//account/edit/resetpin.tpl:9
+#: ../templates/bootstrap//account/edit/resetpin.tpl:22
+msgid "Reset PIN"
+msgstr "重置PIN"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "en"
+msgstr "english"
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "fr"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "es"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "de"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "it"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "ru"
+msgstr ""
+
+#: ../templates/bootstrap//global/header.tpl:70
+msgid "zh"
+msgstr "中文简体"
+
+#: ../include/smarty_globals.inc.php:200
+msgid "You have exceeded the pools configured "
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:200
+msgid " warning threshold. Please initiate a transfer!"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:202
+msgid "You have "
+msgstr "你 有"
+
+#: ../include/smarty_globals.inc.php:202
+msgid ""
+" failed login attempts! <a href=\"?page=account&action=reset_failed\">Reset "
+"Counter</a>"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:206
+msgid "This pool is currently in maintenance mode."
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:234
+msgid "You are using an old Theme that will not be maintained in the future."
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:246
+msgid ""
+"We are investigating issues in the backend. Your shares and hashrate are "
+"safe and we will fix things ASAP."
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:252
+msgid ""
+"Payouts disabled, you will not receive any coins to your offline wallet for "
+"the time being"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:255
+msgid ""
+"Findblocks disabled, new blocks will currently not show up in the frontend"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:258
+msgid "Blockupdate disabled, blocks and transactions confirmations are delayed"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:261
+msgid "PPLNS payout disabled, round credit transactions are delayed"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:264
+msgid "Proportional payout disabled, round credit transactions are delayed"
+msgstr ""
+
+#: ../include/smarty_globals.inc.php:267
+msgid "PPS payout disabled, share credit transactions are delayed"
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:15
+#: ../include/pages/register/register.inc.php:21
+#: ../include/pages/login.inc.php:48
+msgid "Invalid Captcha, please try again."
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:19
+#: ../include/pages/contactform.inc.php:5
+msgid "Contactform is currently disabled. Please try again later."
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:21
+#: ../include/pages/contactform.inc.php:8
+msgid "Contactform is disabled for guests."
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:26
+msgid "Thanks for sending your message! We will get back to you shortly"
+msgstr ""
+
+#: ../include/pages/contactform/contactform.inc.php:28
+msgid ""
+"There was a problem sending your message. Check following error and please "
+"try again: "
+msgstr ""
+
+#: ../include/pages/password/reset.inc.php:7
+msgid "Please check your mail account to finish your password reset"
+msgstr "请检查你的邮箱账户去完成密码重置"
+
+#: ../include/pages/password/change.inc.php:7
+msgid "Password reset complete! Please login."
+msgstr "密码重置完成！请登录."
+
+#: ../include/pages/register/register.inc.php:25
+#: ../include/pages/register.inc.php:5
+msgid "Account registration is currently disabled. Please try again later."
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:27
+#: ../include/pages/register.inc.php:8
+msgid "Only invited users are allowed to register."
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:36
+msgid "Please enter a valid Wallet Address"
+msgstr "请输入一个正确的钱包地址"
+
+#: ../include/pages/register/register.inc.php:39
+msgid "Please check your mailbox to activate this account"
+msgstr "请检查您的邮箱去激活当前用户"
+
+#: ../include/pages/register/register.inc.php:39
+msgid "Account created, please login"
+msgstr ""
+
+#: ../include/pages/register/register.inc.php:41
+msgid "Unable to create account: "
+msgstr ""
+
+#: ../include/pages/about/moot.inc.php:17
+#: ../include/pages/about/pool.inc.php:15
+#: ../include/pages/about/chat.inc.php:17
+#: ../include/pages/statistics/blocks.inc.php:104
+#: ../include/pages/statistics/donors.inc.php:19
+#: ../include/pages/statistics/uptime.inc.php:35
+#: ../include/pages/statistics/pool.inc.php:94
+#: ../include/pages/statistics/round.inc.php:61
+#: ../include/pages/statistics/graphs.inc.php:24
+#: ../include/pages/account/qrcode.inc.php:11
+msgid "Page currently disabled. Please try again later."
+msgstr ""
+
+#: ../include/pages/login.inc.php:28
+msgid "You are not allowed to login during maintenace."
+msgstr ""
+
+#: ../include/pages/login.inc.php:42
+msgid "Unable to login: "
+msgstr "无法登录 : "
+
+#: ../include/pages/statistics/uptime.inc.php:10
+msgid "Paused"
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:11
+msgid "Unchecked"
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:12
+msgid "Up"
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:13
+#: ../include/pages/statistics/uptime.inc.php:14
+msgid "Down"
+msgstr ""
+
+#: ../include/pages/statistics/uptime.inc.php:18
+msgid "UptimeRobot API Key not configured or no data available."
+msgstr ""
+
+#: ../include/pages/statistics/pool.inc.php:14
+#: ../include/pages/admin/wallet.inc.php:44
+#: ../include/pages/admin/dashboard.inc.php:14
+msgid "Unable to connect to wallet RPC service: "
+msgstr "无法连接到钱包RPC服务: "
+
+#: ../include/pages/admin/wallet.inc.php:39
+#: ../include/pages/admin/dashboard.inc.php:13
+msgid "Unable to connect"
+msgstr "无法连接"
+
+#: ../include/pages/admin/transactions.inc.php:16
+#: ../include/pages/account/transactions.inc.php:9
+msgid "Could not find any transaction"
+msgstr ""
+
+#: ../include/pages/admin/news_edit.inc.php:16
+msgid "News updated"
+msgstr "修改公告"
+
+#: ../include/pages/admin/news_edit.inc.php:18
+msgid "News update failed: "
+msgstr ""
+
+#: ../include/pages/admin/user.inc.php:79
+msgid "Could not find any users"
+msgstr ""
+
+#: ../include/pages/admin/settings.inc.php:16
+msgid "Settings updated"
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:16
+msgid "News entry changed"
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:24
+msgid "News entry added"
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:26
+msgid "Failed to add new entry: "
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:34
+msgid "Succesfully removed news entry"
+msgstr ""
+
+#: ../include/pages/admin/news.inc.php:36
+msgid "Failed to delete entry: "
+msgstr ""
+
+#: ../include/pages/admin/newsletter.inc.php:14
+msgid "Pool newsletters are disabled."
+msgstr ""
+
+#: ../include/pages/admin/newsletter.inc.php:32
+msgid "Newsletter sent to "
+msgstr ""
+
+#: ../include/pages/admin/newsletter.inc.php:32
+#: ../include/pages/admin/newsletter.inc.php:34
+msgid " users."
+msgstr " 用户."
+
+#: ../include/pages/admin/newsletter.inc.php:34
+msgid "Failed to send e-mail to "
+msgstr ""
+
+#: ../include/pages/account/unlock.inc.php:6
+#: ../include/pages/account/confirm.inc.php:6
+msgid "Missing token"
+msgstr ""
+
+#: ../include/pages/account/unlock.inc.php:8
+msgid "Unable to re-activate your account. Invalid token."
+msgstr ""
+
+#: ../include/pages/account/unlock.inc.php:12
+msgid "Account re-activated. Please login."
+msgstr ""
+
+#: ../include/pages/account/unlock.inc.php:14
+msgid "Failed to re-activate account. Contact site support."
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:8
+#: ../include/pages/account/edit.inc.php:108
+msgid "You have no payout address set."
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:9
+msgid ""
+"You can not add workers unless a valid Payout Address is set in your User "
+"Settings."
+msgstr ""
+
+#: ../include/pages/account/workers.inc.php:16
+msgid "Worker removed"
+msgstr "删除矿工"
+
+#: ../include/pages/account/workers.inc.php:28
+msgid "Worker added"
+msgstr "添加矿工"
+
+#: ../include/pages/account/workers.inc.php:40
+msgid "Worker updated"
+msgstr "修改矿工"
+
+#: ../include/pages/account/workers.inc.php:52
+msgid "You have no workers configured"
+msgstr "您没有矿工"
+
+#: ../include/pages/account/confirm.inc.php:8
+msgid "Unable to activate your account. Invalid token."
+msgstr ""
+
+#: ../include/pages/account/confirm.inc.php:12
+msgid "Account activated. Please login."
+msgstr ""
+
+#: ../include/pages/account/invitations.inc.php:7
+msgid "You have exceeded the allowed invitations of "
+msgstr ""
+
+#: ../include/pages/account/invitations.inc.php:11
+msgid "Invitation sent"
+msgstr ""
+
+#: ../include/pages/account/invitations.inc.php:13
+msgid "Unable to send invitation to recipient: "
+msgstr ""
+
+#: ../include/pages/account/invitations.inc.php:23
+msgid "Invitations are disabled"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:16
+msgid "E-mail confirmations are required for "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:19
+msgid "editing your details"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:24
+msgid "changing your password"
+msgstr "更改密码"
+
+#: ../include/pages/account/edit.inc.php:29
+msgid "withdrawals"
+msgstr "提现"
+
+#: ../include/pages/account/edit.inc.php:35
+msgid "A token was sent to your e-mail that will allow you to "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:36
+msgid "You can currently "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:38
+msgid "edit your account details"
+msgstr "编辑您的账户信息"
+
+#: ../include/pages/account/edit.inc.php:39
+msgid "withdraw funds"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:40
+msgid "change your password"
+msgstr "修改您的密码"
+
+#: ../include/pages/account/edit.inc.php:56
+msgid "and "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:68
+msgid "Your PIN # has been sent to your email."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:78
+msgid "Invalid PIN."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:78
+msgid " attempts remaining."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:88
+msgid "A confirmation was sent to your e-mail, follow that link to continue"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:102
+msgid "Manual payouts are disabled."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:104
+msgid "You have not yet unlocked account withdrawls."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:106
+msgid "Account balance must be >= "
+msgstr "用户余额必须 >= "
+
+#: ../include/pages/account/edit.inc.php:106
+msgid " to do a Manual Payout."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:121
+msgid "Created new manual payout request with ID #"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:129
+msgid "You already have one active manual payout request."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:132
+msgid "Insufficient funds, you need more than "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:132
+msgid " to cover transaction fees"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:139
+msgid "You have not yet unlocked account updates."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:143
+msgid "Account details updated"
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:145
+msgid "Failed to update your account: "
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:154
+msgid "You have not yet unlocked password updates."
+msgstr ""
+
+#: ../include/pages/account/edit.inc.php:157
+msgid "Password updated"
+msgstr "密码已更新"
+
+#: ../include/pages/account/notifications.inc.php:6
+msgid "Notification system disabled by admin."
+msgstr ""
+
+#: ../include/pages/account/notifications.inc.php:30
+msgid "Updated notification settings"
+msgstr ""
+
+#: ../include/pages/account/notifications.inc.php:41
+msgid "Could not find any notifications"
+msgstr ""
+
+#: ../public/index.php:127 ../public/index.php:129
+msgid "You last logged in from"
+msgstr "您最近登录"
+
+#: ../public/index.php:127 ../public/index.php:129
+msgid "on"
+msgstr ""
