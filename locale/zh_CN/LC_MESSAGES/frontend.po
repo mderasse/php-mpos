@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-21 18:09+0200\n"
-"PO-Revision-Date: 2018-11-02 16:45+0800\n"
+"PO-Revision-Date: 2018-11-06 15:57+0800\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:39
 msgid "Simply open notepad and then copy and paste the following:"
-msgstr ""
+msgstr "只需打开记事本，然后复制并粘贴以下内容："
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:51
 msgid ""
@@ -70,23 +70,28 @@ msgid ""
 "additional workers with usernames and passwords of your choice <a href=\"%1?"
 "page=account&action=workers\">here</a>"
 msgstr ""
+"然后，您需要更改“-u Weblogin.Worker -p Worker password”以反映您自己的帐户。例"
+"如，“-u Steve.StevesWorker -p StevesWorkerPassword”然后转到“文件>另存为”并将"
+"文件保存为包含矿工应用程序文件的同一文件夹中的“RunMe.bat”。您现在已准备好开"
+"采，双击“RunMe.bat”开始挖掘。如果需要，您可以使用您选择的用户名和密码创建其他"
+"工作人员"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:53
 msgid "Create a %1 address to receive payments."
-msgstr ""
+msgstr "创建一个％1地址以接收付款。"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:56
 msgid ""
 "Generate a new address and input it on your account page to receive payments."
-msgstr ""
+msgstr "生成一个新地址并将其输入您的帐户页面以接收付款。"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:61
 msgid "Advanced CGMiner settings / FAQ"
-msgstr ""
+msgstr "高级CGMiner设置/常见问题解答"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:63
 msgid "Scrypt readme"
-msgstr ""
+msgstr "Scrypt自述文件"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:64
 msgid ""
@@ -94,6 +99,9 @@ msgid ""
 "intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner "
 "(HW). HW=0 is good, otherwise lower intensity."
 msgstr ""
+"不要将<b>强度</ b>设置得太高，I = 11是标准且最安全的。 更高的强度需要更多的"
+"GPU RAM。 检查CGMiner（HW）中的<b>硬件错误</ b>。 HW = 0是好的，否则强度较"
+"低。"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:65
 msgid ""
@@ -103,12 +111,16 @@ msgid ""
 "as others have used here: <a href=\"http://litecoin.info/"
 "Mining_Hardware_Comparison\" target=\"_blank\">here</a>."
 msgstr ""
+"根据自述文件设置着色器（或查看您的图形卡规格）。 CGMiner在首次运行时使用此值"
+"来计算<b>线程并发性</ b>。 最简单的优化方法是使用与其他人在此处使用的设置相同"
+"的设置：<a href=\"http://litecoin.info/Mining_Hardware_Comparison\" target="
+"\"_blank\">此处</a>。"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:66
 msgid ""
 "There's also an interesting project which gives you a GUI for CGMiner. "
 "Windows only it seems."
-msgstr ""
+msgstr "还有一个有趣的项目，为您提供CGMiner的GUI。 Windows似乎只有。"
 
 #: ../templates/bootstrap//gettingstarted/default.tpl:67
 msgid ""
@@ -116,16 +128,21 @@ msgid ""
 "d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
 "\"_blank\">guide</a> how to get up and running with Xubuntu."
 msgstr ""
+"这是一个很棒的<a href=\"https://docs.google.com/document/"
+"d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target="
+"\"_blank\">指南</a>如何启动和运行Xubuntu。"
 
 #: ../templates/bootstrap//global/footer.tpl:5
 msgid ""
 "Powered by <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank"
 "\">MPOS</a>"
 msgstr ""
+"由<a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank\">MPOS</a>提供"
+"技术支持"
 
 #: ../templates/bootstrap//global/header.tpl:4
 msgid "Toggle navigation"
-msgstr ""
+msgstr "切换导航"
 
 #: ../templates/bootstrap//global/header.tpl:43
 #: ../templates/bootstrap//account/notifications/default.tpl:160
@@ -263,7 +280,7 @@ msgstr "矿池公告"
 
 #: ../templates/bootstrap//global/navigation.tpl:50
 msgid "Newsletter"
-msgstr ""
+msgstr "公告资讯"
 
 #: ../templates/bootstrap//global/navigation.tpl:54
 #: ../templates/bootstrap//admin/dashboard/user.tpl:5
@@ -409,7 +426,7 @@ msgstr "发送邮件"
 #: ../templates/bootstrap//contactform/contactform/default.tpl:40
 #: ../templates/bootstrap//contactform/default.tpl:40
 msgid "Reset Values"
-msgstr ""
+msgstr "重置值"
 
 #: ../templates/bootstrap//contactform/disabled.tpl:5
 msgid "Contact & Support"
@@ -419,19 +436,19 @@ msgstr "联系 & 支持"
 msgid ""
 "This product comes 'as-is' without any warranty. Please check the Apache "
 "License, Version 2.0, for details."
-msgstr ""
+msgstr "该产品“原样”没有任何保修。有关详细信息，请查看Apache许可证2.0版。"
 
 #: ../templates/bootstrap//home/news_all.tpl:8
 #: ../templates/bootstrap//home/news_accordion.tpl:14
 #: ../templates/bootstrap//admin/news/default.tpl:51
 msgid "posted %1"
-msgstr ""
+msgstr "已发布％1"
 
 #: ../templates/bootstrap//home/news_all.tpl:8
 #: ../templates/bootstrap//home/news_accordion.tpl:14
 #: ../templates/bootstrap//admin/news/default.tpl:51
 msgid "by <b>%1</b>"
-msgstr ""
+msgstr "by <b>%1</b>"
 
 #: ../templates/bootstrap//home/news_accordion.tpl:5
 msgid "latest News"
@@ -512,7 +529,7 @@ msgstr "密码"
 
 #: ../templates/bootstrap//register/default.tpl:32
 msgid "Strength"
-msgstr ""
+msgstr "复杂度"
 
 #: ../templates/bootstrap//register/default.tpl:40
 msgid "Repeat Password"
@@ -531,7 +548,7 @@ msgstr "重复邮箱"
 #: ../templates/bootstrap//register/default.tpl:51
 #: ../templates/bootstrap//register/default.tpl:55
 msgid "PIN"
-msgstr ""
+msgstr "PIN"
 
 #: ../templates/bootstrap//register/default.tpl:52
 msgid "Four digit number."
@@ -557,7 +574,7 @@ msgstr "关闭"
 
 #: ../templates/bootstrap//register/disabled.tpl:1
 msgid "We are currently not accepting new user registrations."
-msgstr ""
+msgstr "我们目前不接受新用户注册."
 
 #: ../templates/bootstrap//about/api/default.tpl:5
 msgid "API Reference"
@@ -569,22 +586,24 @@ msgid ""
 "wiki/API-Reference\">official documentation</a> to learn about the API "
 "featured in <b>MPOS</b>."
 msgstr ""
+"请转到<a href=\"https://github.com/TheSerapher/php-mpos/wiki/API-Reference\">"
+"官方文档</a>，了解<b> MPOS中的API </b>。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:5
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "常见问题"
 
 #: ../templates/bootstrap//about/pool/default.tpl:9
 msgid "Q: When will I get paid?"
-msgstr ""
+msgstr "问：我什么时候可以获得报酬？"
 
 #: ../templates/bootstrap//about/pool/default.tpl:10
 msgid "<b>A:</b> This pool uses the following payout system."
-msgstr ""
+msgstr "<b> 答：</ b>此池使用以下支付系统。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:13
 msgid "Proportional (Prop)"
-msgstr ""
+msgstr "按比例支付（Prop）"
 
 #: ../templates/bootstrap//about/pool/default.tpl:13
 msgid ""
@@ -592,10 +611,12 @@ msgid ""
 "shares they submitted in a round. The expected reward per share depends on "
 "the number of shares already submitted in the round."
 msgstr ""
+"区块奖励按照他们在一轮中提交的股票数量的比例在矿工中分配。 每股预期回报取决于"
+"该回合中已提交的股票数量。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:17
 msgid "Pay Per Last N Shares (PPLNS)"
-msgstr ""
+msgstr "依据过去的N个股份来支付收益（PPLNS）"
 
 #: ../templates/bootstrap//about/pool/default.tpl:17
 msgid ""
@@ -608,10 +629,14 @@ msgid ""
 "increased maturity time, but there is no way to decrease the long-term pool-"
 "variance."
 msgstr ""
+"块奖励分配在最后的股票中，无视圆边界。 在准确的实施中，确定份额的数量，使得它"
+"们的总数将是指定的得分数量（其中份额的得分是难度的倒数）。 大多数池使用基于固"
+"定数量的共享或难度的固定倍数的简单实现。 可以通过增加成熟时间来降低份额差异，"
+"但无法减少长期池差异。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:21
 msgid "Pay Per Share (PPS)"
-msgstr ""
+msgstr "按股份支付 (PPS)"
 
 #: ../templates/bootstrap//about/pool/default.tpl:21
 msgid ""
@@ -620,10 +645,13 @@ msgid ""
 "operator, and hence lower expected returns than other methods and risk of "
 "collapse if not managed properly."
 msgstr ""
+"每个股票都会收到预先知道的固定奖励。 这是最小的低方差，低成熟度的简单方法，但"
+"对于运营商而言风险最高，因此与其他方法相比预期收益较低，如果管理不当，则可能"
+"导致崩溃风险。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:24
 msgid "Q: What is a orphan block?"
-msgstr ""
+msgstr "问:什么是孤块?"
 
 #: ../templates/bootstrap//about/pool/default.tpl:25
 msgid ""
@@ -634,10 +662,13 @@ msgid ""
 "pool) has to discover 120 additional blocks on top of the one found by the "
 "pool to confirm it."
 msgstr ""
+"<b> 答：</ b>您无法立即使用块生成的硬币。 在允许将它们从池中转出之前，它们需"
+"要一些时间才能被整个网络确认。 通常硬币的确认设置为120.这实际意味着什么：网络"
+"（不是池）必须在池找到的块之上发现120个额外块以确认它。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:27
 msgid "Q: What is estimated payout?"
-msgstr ""
+msgstr "问：估计支出是多少？"
 
 #: ../templates/bootstrap//about/pool/default.tpl:28
 msgid ""
@@ -645,20 +676,24 @@ msgid ""
 "that time. This is an estimate according to your amount of shares submitted "
 "for the round(s)."
 msgstr ""
+"<b> 答：</ b>如果当时发现了某个区块，则估算的付款额是您估计的付款金额。 这是"
+"根据您为该轮提交的股票数量估算的。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:31
 msgid "Q: What is pool-variance?"
-msgstr ""
+msgstr "问：什么是池差异？"
 
 #: ../templates/bootstrap//about/pool/default.tpl:32
 msgid ""
 "<b>A:</b> This is the variance caused by the pool being too small. Using a "
 "method with high pool-variance does no harm to large pools."
 msgstr ""
+"<b> 答：</ b>这是由于矿池太小而导致的差异。 使用具有高池差异的方法不会对大型"
+"池造成损害。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:35
 msgid "Q: What is a share?"
-msgstr ""
+msgstr "问:什么是share？"
 
 #: ../templates/bootstrap//about/pool/default.tpl:36
 msgid ""
@@ -668,6 +703,9 @@ msgid ""
 "difficulty. The more difficult each share is to find by miners, the fewer "
 "total shares are required to eventually find a block."
 msgstr ""
+"<b> 答：</ b>查找块并不是一件容易的事。 由于某些硬币需要很长时间，因此找到一"
+"个区块会被分解成股票。 根据服务器端设置，每个共享可能是一定的难度。 矿工发现"
+"每股的难度越大，最终找到区块所需的总股数就越少。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:38
 msgid ""
@@ -678,12 +716,16 @@ msgid ""
 "can sometimes be exceeded. In the long run though, shorter round with less "
 "shares than required will make up for those taking very long."
 msgstr ""
+"在服务器端，如果确实是有效的块解决方案，则针对硬币守护程序（具有更多功能的服"
+"务器端钱包）检查每个共享。 计算的每个份额都有可能成为块解决方案。 我不会详细"
+"说明为什么会这样，但请放心，有时会超出块的估计值。 从长远来看，较短的一轮股票"
+"比不需要的股票将弥补那些需要很长时间的股票。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:40
 msgid ""
 "Keep in mind: shares are not blocks! Shares are part of a block and will "
 "count towards the block payout!"
-msgstr ""
+msgstr "请记住：shares不是块！ shares是一个区块的一部分，将计入块支付！"
 
 #: ../templates/bootstrap//about/pool/default.tpl:42
 msgid ""
@@ -693,6 +735,9 @@ msgid ""
 "submission and getting new work. It is very solid when it comes to avoiding "
 "rejects but they can still happen once in a while."
 msgstr ""
+"有时，您会看到池被拒绝的shares。 如果您尝试在找到阻止后立即发送过时的共享，则"
+"会发生这种情况。 Stratum是矿工用来从服务器请求工作的协议，用于共享提交和获取"
+"新工作。 在避免拒绝方面它是非常可靠的，但它们仍然可能偶尔发生。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:44
 msgid ""
@@ -701,16 +746,21 @@ msgid ""
 "increasing while your invalid share count keeps climbing up. In that case "
 "turn off your miner and check your settings!"
 msgstr ""
+"如果你一直看到拒绝，那么一些东西就不能正常运作了。 您可能还注意到，当您的无效"
+"共享计数不断攀升时，矿池网站上的哈希值不会增加。 在这种情况下，请关闭您的矿工"
+"并检查您的设置！"
 
 #: ../templates/bootstrap//about/pool/default.tpl:46
 msgid "Q: I am having problems connecting to the pool."
-msgstr ""
+msgstr "问：我在连接池时遇到问题。"
 
 #: ../templates/bootstrap//about/pool/default.tpl:47
 msgid ""
 "<b>A:</b> Double check your settings against our <a href=\"%1?"
 "page=gettingstarted\">getting started page.</a>"
 msgstr ""
+"<b>答：</ b>根据我们的<a href=\"%1?page=gettingstarted\">使用入门页面</a>仔细"
+"检查您的设置"
 
 #: ../templates/bootstrap//about/pool/default.tpl:51
 msgid ""
@@ -719,10 +769,14 @@ msgid ""
 "github.com/MPOS/php-mpos\">TheSerapher aka Sebastian Grewe</a>. The "
 "operation of the pool is soley at the hand of your trusted pool operator."
 msgstr ""
+"此矿池正在运行<a href=\"https://github.com/TheSerapher/php-mpos\"> MPOS </a>"
+"项目代码。 这个前端是由<a href=\"https://github.com/MPOS/php-mpos\"> "
+"TheSerapher aka Sebastian Grewe </a>创建的。 池的操作是在您的可信池操作员的手"
+"中。"
 
 #: ../templates/bootstrap//about/moot/default.tpl:5
 msgid "Moot Forum"
-msgstr ""
+msgstr "模拟论坛"
 
 #: ../templates/bootstrap//dashboard/js/api.tpl:123
 #: ../templates/bootstrap//dashboard/js/api.tpl:145
@@ -732,7 +786,7 @@ msgstr ""
 #: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:81
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:39
 msgid "n/a"
-msgstr ""
+msgstr "n/a"
 
 #: ../templates/bootstrap//dashboard/js/api.tpl:143
 msgid "Change in"
@@ -794,27 +848,27 @@ msgstr "账户信息"
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:11
 msgid "You are mining without any pool fees applied and"
-msgstr ""
+msgstr "您在没有任何泳池费用的情况下开采"
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:14
 msgid "You are mining at <font color=\"orange\">%1%</font> pool fee and"
-msgstr ""
+msgstr "您当前的矿池费率为 <font color =“orange”>％1％ 并且"
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:16
 msgid "This pool does not apply fees and"
-msgstr ""
+msgstr "这个矿池不收取费用"
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:19
 msgid "you donate <font color=\"green\">%1%</font>."
-msgstr ""
+msgstr "你捐赠<font color =“green”>％1％</ font>."
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:21
 msgid "you are not <a href=\"%1?page=account&action=edit\">donating</a>."
-msgstr ""
+msgstr "您没有<a href=\"%1?page=account&action=edit\">捐赠</a>。"
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:28
 msgid "%1 Account Balance"
-msgstr ""
+msgstr "％1帐户余额"
 
 #: ../templates/bootstrap//dashboard/account_data/default.tpl:32
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:41
@@ -900,7 +954,7 @@ msgstr "实际占有率"
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:21
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:21
 msgid "Percentage"
-msgstr "百分比"
+msgstr "幸运值"
 
 #: ../templates/bootstrap//dashboard/blocks/default.tpl:27
 #: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:22
@@ -941,6 +995,8 @@ msgid ""
 "Refresh interval: %1 seconds, worker and account %2 seconds. Hashrate based "
 "on shares submitted in the past %3 minutes."
 msgstr ""
+"数据更新周期:  %1 秒, 矿工和账号信息每 %2 秒更新1次. 算力根据最近 %3 分钟提交"
+"的股份计算得出."
 
 #: ../templates/bootstrap//dashboard/worker_information/default.tpl:5
 msgid "Worker Information"
@@ -980,7 +1036,7 @@ msgstr "未支付"
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:103
 msgid "difficulty shares"
-msgstr ""
+msgstr "难度Shares"
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:133
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:73
@@ -995,11 +1051,11 @@ msgstr "下一个难度调整"
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:32
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:34
 msgid "Change in %1 Blocks"
-msgstr ""
+msgstr "%1块后将改变难度"
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:148
 msgid "Estimated Average"
-msgstr ""
+msgstr "预估平均值"
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/round.tpl:148
 msgid "Time per Block"
@@ -1009,7 +1065,7 @@ msgstr "每块的时间"
 #: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:5
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:5
 msgid "Own"
-msgstr ""
+msgstr "我的"
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/shares.tpl:9
 #: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:9
@@ -1036,19 +1092,19 @@ msgstr "无效的"
 #: ../templates/bootstrap//dashboard/round_statistics/prop/shares.tpl:35
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/shares.tpl:35
 msgid "Efficiency"
-msgstr ""
+msgstr "效率"
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/default.tpl:5
 #: ../templates/bootstrap//dashboard/round_statistics/prop/default.tpl:5
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/default.tpl:5
 msgid "Round Information"
-msgstr ""
+msgstr "每轮信息"
 
 #: ../templates/bootstrap//dashboard/round_statistics/pps/default.tpl:16
 #: ../templates/bootstrap//dashboard/round_statistics/prop/default.tpl:16
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/default.tpl:16
 msgid "Share Information"
-msgstr ""
+msgstr "贡献信息"
 
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:13
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:13
@@ -1059,17 +1115,17 @@ msgstr "当前高度"
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:28
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:28
 msgid "Of Expected Shares"
-msgstr ""
+msgstr "预期股份"
 
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:43
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:43
 msgid "%1 Est. Earnings"
-msgstr ""
+msgstr "%1 全网收益"
 
 #: ../templates/bootstrap//dashboard/round_statistics/prop/round.tpl:88
 #: ../templates/bootstrap//dashboard/round_statistics/pplns/round.tpl:88
 msgid "Est. Avg. Time per Block"
-msgstr ""
+msgstr "全网平均出块时间"
 
 #: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:8
 #: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:8
@@ -1084,7 +1140,7 @@ msgstr "矿池算力"
 #: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:44
 #: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:44
 msgid "My Sharerate"
-msgstr ""
+msgstr "我的提交股份率"
 
 #: ../templates/bootstrap//dashboard/overview/_without_price_graph.tpl:79
 #: ../templates/bootstrap//dashboard/overview/_with_price_graph.tpl:79
@@ -1097,20 +1153,20 @@ msgstr "矿池信息"
 
 #: ../templates/bootstrap//error/ratelimit/default.tpl:2
 msgid "Request rate limit exceeded"
-msgstr ""
+msgstr "超出请求率限制"
 
 #: ../templates/bootstrap//error/ratelimit/default.tpl:4
 msgid "You're sending too many requests too fast!"
-msgstr ""
+msgstr "你发送的请求太快了！"
 
 #: ../templates/bootstrap//error/default.tpl:4
 #: ../templates/bootstrap//error/404/default.tpl:4
 msgid "The page you requested was not found."
-msgstr ""
+msgstr "未找到您所请求的页面。"
 
 #: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:4
 msgid "Blocks found by own Workers"
-msgstr ""
+msgstr "由自己的工人发现的块"
 
 #: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:10
 #: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:10
@@ -1119,24 +1175,24 @@ msgstr ""
 #: ../templates/bootstrap//statistics/round/round_shares.tpl:11
 #: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:11
 msgid "Rank"
-msgstr ""
+msgstr "排名"
 
 #: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:13
 #: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:13
 msgid "Coins Generated"
-msgstr ""
+msgstr "累计产生币数"
 
 #: ../templates/bootstrap//statistics/blockfinder/finder_own.tpl:19
 msgid "unknown/deleted"
-msgstr ""
+msgstr "未知/已删除"
 
 #: ../templates/bootstrap//statistics/blockfinder/finder_top.tpl:4
 msgid "Top 25 Blockfinder"
-msgstr ""
+msgstr "最近25个块发现者"
 
 #: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
 msgid "Average Shares"
-msgstr ""
+msgstr "平均Shares"
 
 #: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:26
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:19
@@ -1145,32 +1201,32 @@ msgstr ""
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:32
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:19
 msgid "PPLNS Shares"
-msgstr ""
+msgstr "PPLNS Shares"
 
 #: ../templates/bootstrap//statistics/blocks/block_shares_graph.tpl:41
 msgid "Block Shares"
-msgstr ""
+msgstr "区块 Shares"
 
 #: ../templates/bootstrap//statistics/blocks/small_table.tpl:10
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:12
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:12
 msgid "Block"
-msgstr ""
+msgstr "累计区块"
 
 #: ../templates/bootstrap//statistics/blocks/small_table.tpl:36
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:82
 msgid ""
 "Round Earnings are not credited until <font class=\"confirmations\">%1</"
 "font> confirms."
-msgstr ""
+msgstr "在<font class =“confirmmations”>％1 </ font>确认之前，不计入每轮收益。"
 
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:5
 msgid "Last %1 Blocks Found"
-msgstr ""
+msgstr "找到最后一个％1块"
 
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:13
 msgid "Validity"
-msgstr ""
+msgstr "合法性"
 
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:43
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:16
@@ -1180,43 +1236,43 @@ msgstr ""
 #: ../include/pages/admin/transactions.inc.php:24
 #: ../include/pages/account/transactions.inc.php:14
 msgid "Orphan"
-msgstr ""
+msgstr "孤块"
 
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:46
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:51
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:48
 #: ../templates/bootstrap//statistics/round/block_stats.tpl:35
 msgid "%1 left"
-msgstr ""
+msgstr "%1 剩下"
 
 #: ../templates/bootstrap//statistics/blocks/blocks_found_details.tpl:69
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:78
 msgid "Totals"
-msgstr ""
+msgstr "汇总"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:5
 msgid "Block Overview"
-msgstr ""
+msgstr "区块概述"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:13
 msgid "Gen. Est."
-msgstr ""
+msgstr "总产出区块数"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:14
 msgid "Found"
-msgstr ""
+msgstr "本矿池挖出区块"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:17
 msgid "Orphan %"
-msgstr ""
+msgstr "孤块率%"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:18
 msgid "Avg. Diff"
-msgstr ""
+msgstr "平均难度"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:19
 msgid "Shares Est."
-msgstr ""
+msgstr "预期股份数量"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:20
 #: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:13
@@ -1225,17 +1281,17 @@ msgstr ""
 #: ../templates/bootstrap//statistics/round/block_stats.tpl:43
 #: ../templates/bootstrap//admin/user/default.tpl:92
 msgid "Shares"
-msgstr ""
+msgstr "实际股份数量"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:23
 msgid "Rate Est."
-msgstr ""
+msgstr "矿池占全网百分比"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:28
 #: ../templates/bootstrap//statistics/uptime/default.tpl:16
 #: ../templates/bootstrap//account/earnings/default.tpl:28
 msgid "All Time"
-msgstr ""
+msgstr "所有时间"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:54
 #: ../templates/bootstrap//admin/userdetails/default.tpl:61
@@ -1258,17 +1314,18 @@ msgstr "最近4周"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:158
 msgid "The Past 12 Months"
-msgstr ""
+msgstr "过去12个月"
 
 #: ../templates/bootstrap//statistics/blocks/block_overview_time.tpl:188
 msgid ""
 "Round earnings are not credited until <font class=\"confirmations\">%1</"
 "font> confirms."
 msgstr ""
+"在<font class =“confirmmations”>％1 </ font>确认之前，不会记入回合收入。"
 
 #: ../templates/bootstrap//statistics/donors/default.tpl:5
 msgid "Pool Donors"
-msgstr ""
+msgstr "矿池捐助者"
 
 #: ../templates/bootstrap//statistics/donors/default.tpl:11
 msgid "Name"
@@ -1276,34 +1333,34 @@ msgstr "名称"
 
 #: ../templates/bootstrap//statistics/donors/default.tpl:13
 msgid "%1 Total"
-msgstr ""
+msgstr "%1 所有"
 
 #: ../templates/bootstrap//statistics/donors/default.tpl:25
 msgid "No confirmed donations yet, please be patient!"
-msgstr ""
+msgstr "尚无确认捐款，请耐心等待!"
 
 #: ../templates/bootstrap//statistics/uptime/default.tpl:4
 msgid "UptimeRobot Status"
-msgstr ""
+msgstr "机器人启动状态"
 
 #: ../templates/bootstrap//statistics/uptime/default.tpl:9
 msgid "Location"
-msgstr ""
+msgstr "地点"
 
 #: ../templates/bootstrap//statistics/uptime/default.tpl:10
 msgid "Service"
-msgstr ""
+msgstr "服务"
 
 #: ../templates/bootstrap//statistics/uptime/default.tpl:11
 #: ../templates/bootstrap//admin/wallet/status.tpl:15
 #: ../templates/bootstrap//account/transactions/default.tpl:24
 #: ../templates/bootstrap//account/transactions/default.tpl:47
 msgid "Status"
-msgstr ""
+msgstr "状态"
 
 #: ../templates/bootstrap//statistics/uptime/default.tpl:12
 msgid "Status Since"
-msgstr ""
+msgstr "状态 因为"
 
 #: ../templates/bootstrap//statistics/uptime/default.tpl:13
 msgid "Day"
@@ -1319,16 +1376,16 @@ msgstr "月"
 
 #: ../templates/bootstrap//statistics/uptime/default.tpl:61
 msgid "Last update"
-msgstr ""
+msgstr "最后更新"
 
 #: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:4
 msgid "Contributor Shares"
-msgstr ""
+msgstr "贡献者股票"
 
 #: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:11
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:11
 msgid "Donor"
-msgstr ""
+msgstr "捐赠者"
 
 #: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:12
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:12
@@ -1343,22 +1400,22 @@ msgstr "用户名"
 #: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:40
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:54
 msgid "no Donation"
-msgstr ""
+msgstr "没有捐款"
 
 #: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:41
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:55
 msgid "0%-2% Donation"
-msgstr ""
+msgstr "0%-2% 捐款"
 
 #: ../templates/bootstrap//statistics/pool/contributors_shares.tpl:42
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:56
 msgid "2% or more Donation"
-msgstr ""
+msgstr "2％或更多捐款"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:4
 #: ../templates/bootstrap//statistics/default.tpl:4
 msgid "General Statistics"
-msgstr ""
+msgstr "概要统计"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:10
 #: ../templates/bootstrap//statistics/default.tpl:10
@@ -1380,15 +1437,15 @@ msgstr "当前难度"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:38
 msgid "Est. Avg. Time per Round (Network)"
-msgstr ""
+msgstr "预计全网每轮时间"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:42
 msgid "Est. Avg. Time per Round (Pool)"
-msgstr ""
+msgstr "预计矿池下一区块时间"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:46
 msgid "Est. Shares this Round"
-msgstr "这一轮分享"
+msgstr "预计本轮Shares"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:47
 msgid "done"
@@ -1397,12 +1454,12 @@ msgstr "完成"
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:51
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:56
 msgid "Next Network Block"
-msgstr "下个网络区块"
+msgstr "下个网络区块高度"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:57
 #: ../templates/bootstrap//admin/dashboard/mpos.tpl:12
 msgid "Current"
-msgstr ""
+msgstr "当前"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:61
 msgid "Last Block Found"
@@ -1410,7 +1467,7 @@ msgstr "最近挖掘区块"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:65
 msgid "Time Since Last Block"
-msgstr ""
+msgstr "自上次出块以来的时间"
 
 #: ../templates/bootstrap//statistics/pool/general_stats.tpl:72
 msgid ""
@@ -1422,12 +1479,12 @@ msgstr ""
 
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:4
 msgid "Contributor Hashrates"
-msgstr ""
+msgstr "贡献者算力"
 
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:14
 #: ../templates/bootstrap//statistics/pool/contributors_hashrate.tpl:16
 msgid "%1/Day"
-msgstr ""
+msgstr "%1/天"
 
 #: ../templates/bootstrap//statistics/default.tpl:14
 msgid "Current Total Miners"
@@ -1438,10 +1495,12 @@ msgid ""
 "These stats are also available in JSON format <a href=\"%1?"
 "page=api&action=public\" target=\"_api\">HERE</a>"
 msgstr ""
+"这些统计信息也以JSON格式提供<a href=\"%1?page=api&action=public\" target="
+"\"_api\"> 这里 </a>"
 
 #: ../templates/bootstrap//statistics/graphs/default.tpl:38
 msgid "Sharerate"
-msgstr ""
+msgstr "贡献率"
 
 #: ../templates/bootstrap//statistics/graphs/default.tpl:54
 msgid "Average Hashrate past 24h"
@@ -1449,7 +1508,7 @@ msgstr "24小时平均算力"
 
 #: ../templates/bootstrap//statistics/graphs/default.tpl:60
 msgid "Your average hashrate per hour, updated every backend cron run."
-msgstr ""
+msgstr "您每小时的平均算力，每个后端cron运行更新。"
 
 #: ../templates/bootstrap//statistics/graphs/default.tpl:70
 msgid "Average Workers past 24h"
@@ -1457,15 +1516,15 @@ msgstr "24小时平均矿工"
 
 #: ../templates/bootstrap//statistics/graphs/default.tpl:76
 msgid "Your average active workers per hour, updated every backend cron run."
-msgstr ""
+msgstr "您每小时的平均活跃工人，每个后端cron运行更新。"
 
 #: ../templates/bootstrap//statistics/graphs/default.tpl:86
 msgid "Average Sharerate past 24h"
-msgstr ""
+msgstr "24小时平均share速率"
 
 #: ../templates/bootstrap//statistics/graphs/default.tpl:92
 msgid "Your share rate per hour, updated every backend cron run."
-msgstr ""
+msgstr "您每小时的分享率，每个后端cron运行更新。"
 
 #: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:5
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:5
@@ -1475,7 +1534,7 @@ msgstr "循环统计量"
 #: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:13
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:14
 msgid "Round Valid"
-msgstr ""
+msgstr "每轮 有效"
 
 #: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:15
 #: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:19
@@ -1484,42 +1543,42 @@ msgstr ""
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:16
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:22
 msgid "Invalid %"
-msgstr ""
+msgstr "无效%"
 
 #: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:16
 #: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:14
 #: ../templates/bootstrap//statistics/round/round_transactions.tpl:14
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:17
 msgid "Round %"
-msgstr ""
+msgstr "每轮 %"
 
 #: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:17
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:20
 msgid "PPLNS Valid"
-msgstr ""
+msgstr "PPLNS 有效"
 
 #: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:20
 #: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:16
 msgid "PPLNS Round %"
-msgstr ""
+msgstr "PPLNS 每论Shares"
 
 #: ../templates/bootstrap//statistics/round/pplns_transactions_small.tpl:21
 #: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:17
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:24
 msgid "Variance"
-msgstr ""
+msgstr "差异"
 
 #: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:5
 #: ../templates/bootstrap//statistics/round/round_transactions.tpl:4
 msgid "Round Transactions"
-msgstr ""
+msgstr "每轮交易"
 
 #: ../templates/bootstrap//statistics/round/pplns_transactions.tpl:13
 #: ../templates/bootstrap//statistics/round/round_shares.tpl:4
 #: ../templates/bootstrap//statistics/round/round_transactions.tpl:13
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:13
 msgid "Round Shares"
-msgstr ""
+msgstr "每轮 Shares"
 
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:12
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:5
@@ -1531,7 +1590,7 @@ msgstr "区块统计"
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:13
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:19
 msgid "PPLNS Round Statistics"
-msgstr ""
+msgstr "PPLNS每轮统计"
 
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:18
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:24
@@ -1541,7 +1600,7 @@ msgstr ""
 #: ../templates/bootstrap//account/notifications/default.tpl:148
 #: ../templates/bootstrap//account/transactions/default.tpl:44
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:30
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:34
@@ -1551,7 +1610,7 @@ msgstr "市场占有率"
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:36
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:62
 msgid "Target Variance"
-msgstr ""
+msgstr "目标差异"
 
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:43
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:40
@@ -1583,7 +1642,7 @@ msgstr "这一轮的秒数"
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:78
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:73
 msgid "Round Variance"
-msgstr ""
+msgstr "每轮差异"
 
 #: ../templates/bootstrap//statistics/round/pplns_block_stats.tpl:98
 msgid "Search Block Height"
@@ -1609,7 +1668,7 @@ msgstr "类型"
 #: ../templates/bootstrap//admin/user/default.tpl:42
 #: ../templates/bootstrap//account/transactions/default.tpl:13
 msgid "Prev"
-msgstr ""
+msgstr "上一页"
 
 #: ../templates/bootstrap//statistics/round/pplns_block_stats_small.tpl:12
 #: ../templates/bootstrap//admin/invitations/default.tpl:38
@@ -1621,32 +1680,32 @@ msgstr "下一页"
 
 #: ../templates/bootstrap//statistics/round/pplns_round_shares.tpl:4
 msgid "PPLNS Round Shares"
-msgstr ""
+msgstr "PPLNS 每轮 Shares"
 
 #: ../templates/bootstrap//admin/invitations/default.tpl:6
 msgid "Top Inviters"
-msgstr ""
+msgstr "顶级邀请者"
 
 #: ../templates/bootstrap//admin/invitations/default.tpl:13
 #: ../templates/bootstrap//admin/registrations/default.tpl:15
 #: ../templates/bootstrap//admin/user/default.tpl:91
 msgid "eMail"
-msgstr ""
+msgstr "邮箱"
 
 #: ../templates/bootstrap//admin/invitations/default.tpl:15
 #: ../templates/bootstrap//admin/dashboard/invitation.tpl:12
 msgid "Outstanding"
-msgstr ""
+msgstr "优秀的"
 
 #: ../templates/bootstrap//admin/invitations/default.tpl:16
 #: ../templates/bootstrap//admin/dashboard/invitation.tpl:11
 #: ../templates/bootstrap//account/invitations/default.tpl:41
 msgid "Activated"
-msgstr ""
+msgstr "活跃的"
 
 #: ../templates/bootstrap//admin/news_edit/default.tpl:12
 msgid "Edit news entry #%1"
-msgstr ""
+msgstr "编辑公告条目 #%1"
 
 #: ../templates/bootstrap//admin/news_edit/default.tpl:24
 #: ../templates/bootstrap//admin/poolworkers/default.tpl:14
@@ -1676,132 +1735,132 @@ msgstr "保存"
 
 #: ../templates/bootstrap//admin/registrations/default.tpl:6
 msgid "Last Registered Users"
-msgstr ""
+msgstr "最近注册的用户"
 
 #: ../templates/bootstrap//admin/registrations/default.tpl:16
 #: ../templates/bootstrap//admin/user/default.tpl:101
 msgid "Reg. Date"
-msgstr ""
+msgstr "注册.日期"
 
 #: ../templates/bootstrap//admin/registrations/default.tpl:17
 #: ../templates/bootstrap//account/invitations/default.tpl:23
 msgid "Invite"
-msgstr ""
+msgstr "邀请"
 
 #: ../templates/bootstrap//admin/registrations/default.tpl:18
 msgid "Invited From"
-msgstr ""
+msgstr "邀请来自于"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:6
 msgid "%1 Account Information"
-msgstr ""
+msgstr "%1 账户信息"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:13
 msgid "All Time Transaction Totals"
-msgstr ""
+msgstr "所有交易时间统计"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:20
 #: ../templates/bootstrap//admin/monitoring/default.tpl:22
 #: ../templates/bootstrap//admin/transactions/default.tpl:14
 msgid "%1"
-msgstr ""
+msgstr "%1"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:41
 msgid "Transactions over time"
-msgstr ""
+msgstr "交易所用时间"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:48
 #: ../templates/bootstrap//account/earnings/default.tpl:53
 #: ../templates/bootstrap//account/earnings/default.tpl:144
 msgid "Credit"
-msgstr ""
+msgstr "金额"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:49
 #: ../templates/bootstrap//account/earnings/default.tpl:54
 #: ../templates/bootstrap//account/earnings/default.tpl:145
 msgid "Bonus"
-msgstr ""
+msgstr "奖金"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:50
 #: ../templates/bootstrap//account/earnings/default.tpl:55
 #: ../templates/bootstrap//account/earnings/default.tpl:146
 msgid "Debit AP"
-msgstr ""
+msgstr "自动支付"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:51
 #: ../templates/bootstrap//account/earnings/default.tpl:56
 #: ../templates/bootstrap//account/earnings/default.tpl:147
 msgid "Debit MP"
-msgstr ""
+msgstr "手动支付"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:52
 #: ../templates/bootstrap//account/earnings/default.tpl:57
 #: ../templates/bootstrap//account/earnings/default.tpl:148
 msgid "Donation"
-msgstr ""
+msgstr "捐款"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:54
 #: ../templates/bootstrap//account/earnings/default.tpl:59
 #: ../templates/bootstrap//account/earnings/default.tpl:150
 msgid "Fee"
-msgstr ""
+msgstr "手续费"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:56
 #: ../templates/bootstrap//account/earnings/default.tpl:61
 #: ../templates/bootstrap//account/earnings/default.tpl:152
 msgid "TXFee"
-msgstr ""
+msgstr "交易手续费"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:73
 #: ../templates/bootstrap//account/earnings/default.tpl:78
 msgid "Last Day"
-msgstr ""
+msgstr "最近1天"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:85
 #: ../templates/bootstrap//account/earnings/default.tpl:90
 msgid "Last Week"
-msgstr ""
+msgstr "最近1周"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:97
 #: ../templates/bootstrap//account/earnings/default.tpl:102
 msgid "Last Month"
-msgstr ""
+msgstr "最近1月"
 
 #: ../templates/bootstrap//admin/userdetails/default.tpl:109
 #: ../templates/bootstrap//account/earnings/default.tpl:114
 msgid "Last Year"
-msgstr ""
+msgstr "最近1年"
 
 #: ../templates/bootstrap//admin/poolworkers/default.tpl:5
 msgid "%1 Current Active Pool Workers"
-msgstr ""
+msgstr "%1 矿池当前活跃的矿工数"
 
 #: ../templates/bootstrap//admin/poolworkers/default.tpl:12
 #: ../templates/bootstrap//account/workers/default.tpl:13
 msgid "Worker Name"
-msgstr ""
+msgstr "矿工名"
 
 #: ../templates/bootstrap//admin/poolworkers/default.tpl:15
 #: ../templates/bootstrap//account/workers/default.tpl:45
 msgid "Monitor"
-msgstr ""
+msgstr "监控"
 
 #: ../templates/bootstrap//admin/poolworkers/default.tpl:16
 #: ../templates/bootstrap//account/workers/default.tpl:46
 msgid "Khash/s"
-msgstr ""
+msgstr "Khash/s"
 
 #: ../templates/bootstrap//admin/poolworkers/default.tpl:18
 msgid "Avg Difficulty"
-msgstr ""
+msgstr "平均难度"
 
 #: ../templates/bootstrap//admin/newsletter/default.tpl:10
 msgid "Write Newsletter"
-msgstr ""
+msgstr "发布公告"
 
 #: ../templates/bootstrap//admin/newsletter/default.tpl:12
 msgid "Newsletters support the Markdown syntax"
-msgstr ""
+msgstr "公告信息支持Markdown语法"
 
 #: ../templates/bootstrap//admin/newsletter/default.tpl:22
 msgid "Subject"
@@ -1857,11 +1916,11 @@ msgstr "1 年"
 
 #: ../templates/bootstrap//admin/dashboard/mpos.tpl:5
 msgid "MPOS Version Information"
-msgstr ""
+msgstr "MPOS 版本信息"
 
 #: ../templates/bootstrap//admin/dashboard/mpos.tpl:11
 msgid "Component"
-msgstr ""
+msgstr "组件"
 
 #: ../templates/bootstrap//admin/dashboard/mpos.tpl:13
 msgid "Installed"
@@ -1906,7 +1965,7 @@ msgstr "关闭"
 #: ../templates/bootstrap//admin/dashboard/mpos.tpl:78
 #: ../templates/bootstrap//admin/dashboard/mpos.tpl:81
 msgid "None - OK"
-msgstr ""
+msgstr "None-OK"
 
 #: ../templates/bootstrap//admin/user/default.tpl:33
 msgid "User Search"
@@ -1935,19 +1994,19 @@ msgstr "已锁定"
 
 #: ../templates/bootstrap//admin/user/default.tpl:82
 msgid "User Information"
-msgstr ""
+msgstr "用户信息"
 
 #: ../templates/bootstrap//admin/user/default.tpl:95
 msgid "Est. Donation"
-msgstr ""
+msgstr "捐款"
 
 #: ../templates/bootstrap//admin/user/default.tpl:96
 msgid "Est. Payout"
-msgstr ""
+msgstr "支付"
 
 #: ../templates/bootstrap//admin/user/default.tpl:98
 msgid "Est. 24 Hours"
-msgstr ""
+msgstr "最近24小时"
 
 #: ../templates/bootstrap//admin/user/default.tpl:100
 #: ../templates/bootstrap//admin/wallet/accounts.tpl:24
@@ -1964,7 +2023,7 @@ msgstr "管理员"
 
 #: ../templates/bootstrap//admin/wallet/peers.tpl:5
 msgid "Peer Information"
-msgstr ""
+msgstr "节点信息"
 
 #: ../templates/bootstrap//admin/wallet/peers.tpl:12
 msgid "Host"
@@ -1976,19 +2035,19 @@ msgstr "协议"
 
 #: ../templates/bootstrap//admin/wallet/peers.tpl:14
 msgid "Identity"
-msgstr ""
+msgstr "身份"
 
 #: ../templates/bootstrap//admin/wallet/peers.tpl:15
 msgid "Connected"
-msgstr "已连接"
+msgstr "已建立连接"
 
 #: ../templates/bootstrap//admin/wallet/peers.tpl:16
 msgid "Traffic"
-msgstr ""
+msgstr "流量"
 
 #: ../templates/bootstrap//admin/wallet/balance.tpl:4
 msgid "Balance Summary"
-msgstr ""
+msgstr "余额概要"
 
 #: ../templates/bootstrap//admin/wallet/balance.tpl:9
 msgid "Wallet Balance"
@@ -1996,16 +2055,16 @@ msgstr "钱包余额"
 
 #: ../templates/bootstrap//admin/wallet/balance.tpl:13
 msgid "Locked for users"
-msgstr ""
+msgstr "禁用账户"
 
 #: ../templates/bootstrap//admin/wallet/balance.tpl:22
 #: ../templates/bootstrap//admin/wallet/balance.tpl:35
 msgid "Liquid Assets"
-msgstr ""
+msgstr "流动资产"
 
 #: ../templates/bootstrap//admin/wallet/balance.tpl:30
 msgid "PoS New Mint"
-msgstr ""
+msgstr "Pos 新铸币"
 
 #: ../templates/bootstrap//admin/wallet/status.tpl:4
 msgid "Wallet Status"
@@ -2013,11 +2072,11 @@ msgstr "钱包状态"
 
 #: ../templates/bootstrap//admin/wallet/status.tpl:11
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../templates/bootstrap//admin/wallet/status.tpl:12
 msgid "Protocol Version"
-msgstr ""
+msgstr "协议版本"
 
 #: ../templates/bootstrap//admin/wallet/status.tpl:13
 msgid "Wallet Version"
@@ -2025,7 +2084,7 @@ msgstr "钱包版本"
 
 #: ../templates/bootstrap//admin/wallet/status.tpl:14
 msgid "Peers"
-msgstr ""
+msgstr "所有节点"
 
 #: ../templates/bootstrap//admin/wallet/status.tpl:17
 msgid "Accounts"
@@ -2033,7 +2092,7 @@ msgstr "用户"
 
 #: ../templates/bootstrap//admin/wallet/transactions.tpl:5
 msgid "Last %1 transactions"
-msgstr ""
+msgstr "最后 %1 交易"
 
 #: ../templates/bootstrap//admin/wallet/transactions.tpl:13
 msgid "Address"
@@ -2041,7 +2100,7 @@ msgstr "地址"
 
 #: ../templates/bootstrap//admin/wallet/transactions.tpl:14
 msgid "Category"
-msgstr ""
+msgstr "类别"
 
 #: ../templates/bootstrap//admin/wallet/transactions.tpl:17
 msgid "Transaction ID"
@@ -2050,7 +2109,7 @@ msgstr "交易ID"
 #: ../templates/bootstrap//admin/wallet/transactions.tpl:23
 #: ../templates/bootstrap//admin/wallet/accounts.tpl:2
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: ../templates/bootstrap//admin/wallet/accounts.tpl:6
 msgid "Wallet Accounts"
@@ -2062,15 +2121,15 @@ msgstr "余额信息"
 
 #: ../templates/bootstrap//admin/wallet/accounts.tpl:38
 msgid "Addresses assigned to Account %1"
-msgstr ""
+msgstr "地址分配给账户 %1"
 
 #: ../templates/bootstrap//admin/news/default.tpl:10
 msgid "Write News"
-msgstr ""
+msgstr "发布公告"
 
 #: ../templates/bootstrap//admin/news/default.tpl:12
 msgid "News posts support the Markdown syntax"
-msgstr ""
+msgstr "公告信息支持Markdown语法"
 
 #: ../templates/bootstrap//admin/news/default.tpl:37
 msgid "Add"
@@ -2078,11 +2137,11 @@ msgstr "添加"
 
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:5
 msgid "Earnings Report Last %1 Blocks For User: %2"
-msgstr ""
+msgstr "最近收入报告 ％1 用户块：％2"
 
 #: ../templates/bootstrap//admin/reports/earnings_report.tpl:23
 msgid "PPLNS %"
-msgstr ""
+msgstr "PPLNS %"
 
 #: ../templates/bootstrap//admin/reports/earnings_control.tpl:9
 msgid "Earnings Information"
@@ -2098,11 +2157,11 @@ msgstr "区块限制"
 
 #: ../templates/bootstrap//admin/reports/earnings_control.tpl:38
 msgid "Starting block height"
-msgstr ""
+msgstr "起始块高度"
 
 #: ../templates/bootstrap//admin/reports/earnings_control.tpl:44
 msgid "Show empty rounds"
-msgstr ""
+msgstr "显示空轮"
 
 #: ../templates/bootstrap//admin/reports/earnings_control.tpl:58
 msgid "Submit"
@@ -2114,15 +2173,15 @@ msgstr "计划任务"
 
 #: ../templates/bootstrap//admin/monitoring/default.tpl:12
 msgid "Exit Code"
-msgstr "推出码"
+msgstr "退出状态"
 
 #: ../templates/bootstrap//admin/monitoring/default.tpl:14
 msgid "Runtime"
-msgstr ""
+msgstr "运行时间"
 
 #: ../templates/bootstrap//admin/monitoring/default.tpl:15
 msgid "Start Time"
-msgstr "运行时间"
+msgstr "开始时间"
 
 #: ../templates/bootstrap//admin/monitoring/default.tpl:16
 msgid "End Time"
@@ -2147,7 +2206,7 @@ msgstr "错误"
 
 #: ../templates/bootstrap//admin/monitoring/default.tpl:45
 msgid "%1 seconds"
-msgstr ""
+msgstr "%1 秒"
 
 #: ../templates/bootstrap//admin/setup/default.tpl:5
 msgid "Setup Checks"
@@ -2156,11 +2215,11 @@ msgstr "设置检查"
 #: ../templates/bootstrap//admin/setup/default.tpl:33
 msgid ""
 "To disable these checks, set skip_config_tests to true in global.inc.php"
-msgstr ""
+msgstr "要禁用这些检查，请在global.inc.php中将skip_config_tests设置为true"
 
 #: ../templates/bootstrap//admin/transactions/default.tpl:6
 msgid "Transaction Summary"
-msgstr ""
+msgstr "交易概要信息"
 
 #: ../templates/bootstrap//login/default.tpl:6
 msgid "Login with existing account"
@@ -2180,7 +2239,7 @@ msgstr "条款与条件"
 
 #: ../templates/bootstrap//tac/content.tpl:1
 msgid "This Agreement governs your use of %1."
-msgstr ""
+msgstr "本协议适用于您对％1的使用."
 
 #: ../templates/bootstrap//tac/content.tpl:3
 msgid ""
@@ -2188,6 +2247,8 @@ msgid ""
 "agree to be bound by the terms and conditions below. If you do not agree "
 "with the terms and conditions in this Agreement you may not use the Pool."
 msgstr ""
+"通过使用任何池或在网站上注册帐户，即表示您同意遵守以下条款和条件。如果您不同"
+"意本协议中的条款和条件，则不得使用该池。"
 
 #: ../templates/bootstrap//tac/content.tpl:4
 msgid ""
@@ -2197,6 +2258,9 @@ msgid ""
 "link in chat. Your continued use of the Pool following any modification to "
 "this Agreement shall be deemed an acceptance of all modifications."
 msgstr ""
+"％1员工可以随时修改本协议以及任何影响本网站的政策。 此类修改在发布到网站后立"
+"即生效，并将通过电子邮件，论坛帖子和聊天链接进行分发。 在对本协议进行任何修改"
+"后，您继续使用该池将被视为接受所有修改。"
 
 #: ../templates/bootstrap//tac/content.tpl:5
 msgid ""
@@ -2205,6 +2269,9 @@ msgid ""
 "given before doing so. Any fee change will be communicated through the pools "
 "news page."
 msgstr ""
+"游泳池根据<strong>％1 </ strong>系统奖励矿工，费用为<strong>％2％</ "
+"strong>。 费用可能随时发生变化，但在此之前会发出通知。 任何费用变更都将通过泳"
+"池新闻页面进行传达。"
 
 #: ../templates/bootstrap//tac/content.tpl:6
 msgid ""
@@ -2213,6 +2280,8 @@ msgid ""
 "Pool. It is your responsibility to configure your account so that the coins "
 "you mine are regularly transferred to your own secured offline wallet."
 msgstr ""
+"矿池不是电子钱包或硬币的银行。 矿池及其运营商不对存储在矿池上的任何硬币损失负"
+"责。 您有责任配置您的帐户，以便您开采的硬币定期转移到您自己的安全离线钱包中。"
 
 #: ../templates/bootstrap//tac/content.tpl:7
 msgid ""
@@ -2221,6 +2290,8 @@ msgid ""
 "their miners so that they will automatically reconnect, switch to all the "
 "pools we offer or a backup pool in the case of downtime."
 msgstr ""
+"不保证矿池或网站的正常运行时间，有时可能需要维护和停机。 用户负责配置他们的矿"
+"工，以便他们自动重新连接，切换到我们提供的所有池或停机时的备份池。"
 
 #: ../templates/bootstrap//tac/content.tpl:8
 msgid ""
@@ -2230,20 +2301,24 @@ msgid ""
 "via their configured e-mail address. If we do not receive a response your "
 "account may be suspended."
 msgstr ""
+"不欢迎僵尸网络用户。 有大量矿工连接不同知识产权的账户可能会被暂停，恕不另行通"
+"知。 如果我们是不确定的，那么将打开调查，并通过其配置的电子邮件地址通知用"
+"户。 如果我们未收到回复，您的帐户可能会被暂停。"
 
 #: ../templates/bootstrap//tac/content.tpl:9
 msgid ""
 "Multiple accounts controlled by one person may be considered as a botnet and "
 "an investigation will be opened, see above point."
 msgstr ""
+"由一个人控制的多个帐户可以被视为僵尸网络，并且将打开调查，参见上述观点。"
 
 #: ../templates/bootstrap//account/invitations/default.tpl:5
 msgid "Invitation"
-msgstr ""
+msgstr "邀请"
 
 #: ../templates/bootstrap//account/invitations/default.tpl:18
 msgid "Please accept my invitation to this awesome pool."
-msgstr ""
+msgstr "请接受我对这个令人敬畏的游泳池的邀请。"
 
 #: ../templates/bootstrap//account/invitations/default.tpl:31
 msgid "Past Invitations"
@@ -2318,7 +2393,7 @@ msgstr "新区块"
 
 #: ../templates/bootstrap//account/notifications/default.tpl:116
 msgid "Pool Newsletter"
-msgstr ""
+msgstr "矿池公告资讯"
 
 #: ../templates/bootstrap//account/notifications/default.tpl:132
 msgid "Update"
@@ -2330,7 +2405,7 @@ msgstr "通知历史"
 
 #: ../templates/bootstrap//account/earnings/default.tpl:6
 msgid "Total %1 Earning Reports"
-msgstr ""
+msgstr "总共％1收益报告"
 
 #: ../templates/bootstrap//account/earnings/default.tpl:13
 msgid "Summary"
@@ -2370,21 +2445,21 @@ msgstr "7 天以前"
 
 #: ../templates/bootstrap//account/default.tpl:1
 msgid "No action specified"
-msgstr ""
+msgstr "未指定任何操作"
 
 #: ../templates/bootstrap//account/qrcode/default.tpl:21
 msgid "API String"
-msgstr ""
+msgstr "API 字符串"
 
 #: ../templates/bootstrap//account/qrcode/default.tpl:24
 msgid ""
 "This code will allow you to import the full API string into your mobile "
 "application."
-msgstr ""
+msgstr "此代码允许您将完整的API字符串导入到移动应用程序中。"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:8
 msgid "Transaction Filter"
-msgstr ""
+msgstr "交易查询"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:29
 msgid "Filter"
@@ -2392,7 +2467,7 @@ msgstr "查询"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:37
 msgid "Transaction History"
-msgstr ""
+msgstr "交易历史"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:45
 msgid "Date"
@@ -2400,7 +2475,7 @@ msgstr "时间"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:46
 msgid "TX Type"
-msgstr ""
+msgstr "交易类型"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:48
 #: ../templates/bootstrap//account/edit/detail.tpl:52
@@ -2417,19 +2492,21 @@ msgstr "区块 #"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:71
 msgid "Orphaned"
-msgstr ""
+msgstr "孤块"
 
 #: ../templates/bootstrap//account/transactions/default.tpl:91
 msgid ""
 "<b>Debit_AP</b> = Auto Threshold Payment, <b>Debit_MP</b> = Manual Payment, "
 "<b>Donation</b> = Donation, <b>Fee</b> = Pool Fees (if applicable)"
 msgstr ""
+"<b>Debit_AP</b> = 自动支付, <b>Debit_MP</b> = 手动支付, <b>Donation</b> = 捐"
+"赠, <b>Fee</b> =矿池费用 (if applicable)"
 
 #: ../templates/bootstrap//account/edit/password.tpl:16
 msgid ""
 "Note: You will be redirected to login on successful completion of a password "
 "change"
-msgstr ""
+msgstr "注意：成功完成密码更改后，您将被重定向到登录状态"
 
 #: ../templates/bootstrap//account/edit/password.tpl:20
 #: ../templates/bootstrap//account/edit/resetpin.tpl:15
@@ -2460,34 +2537,34 @@ msgstr "时区"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:56
 msgid "Donation Percentage"
-msgstr ""
+msgstr "捐赠百分比"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:57
 msgid "Donation amount in percent (%1 - 100%)"
-msgstr ""
+msgstr "捐赠金额百分比（％1  -  100％）"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:61
 msgid "Automatic Payout Threshold"
-msgstr ""
+msgstr "自动付款额度"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:66
 msgid "%1 - %2 %3. Set to '0' for no auto payout."
-msgstr ""
+msgstr "％1 - ％2 ％3. 设置为“0”表示没有自动付款."
 
 #: ../templates/bootstrap//account/edit/detail.tpl:66
 msgid "%1 %2 TX fee will apply "
-msgstr ""
+msgstr "%1 %2 交易费用将被应用. "
 
 #: ../templates/bootstrap//account/edit/detail.tpl:66
 #: ../templates/bootstrap//account/edit/cashout.tpl:27
 msgid "High Estimation"
-msgstr ""
+msgstr "高估计"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:66
 msgid ""
 "This %1 automatic payment transaction fee is a network fee and goes back "
 "into the network not the pool."
-msgstr ""
+msgstr "此％1自动支付交易费是网络费用，并返回到网络而非池。"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:71
 msgid "Anonymous Account"
@@ -2497,11 +2574,11 @@ msgstr "匿名账户"
 msgid ""
 "Hide username on website from others. Admins can still get your user "
 "information."
-msgstr ""
+msgstr "在其他人的网站上隐藏用户名。管理员仍然可以获取您的用户信息。"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:79
 msgid "The 4 digit PIN you chose when registering"
-msgstr ""
+msgstr "注册时选择的4位数PIN"
 
 #: ../templates/bootstrap//account/edit/detail.tpl:92
 #: ../templates/bootstrap//account/edit/detail.tpl:94
@@ -2514,23 +2591,23 @@ msgstr "更新账户"
 #: ../templates/bootstrap//account/edit/cashout.tpl:59
 #: ../templates/bootstrap//account/edit/cashout.tpl:64
 msgid "Cash Out"
-msgstr ""
+msgstr "兑现"
 
 #: ../templates/bootstrap//account/edit/cashout.tpl:27
 msgid ""
 "Please note: a %1 %2 transaction fee will apply when processing \"On-Demand"
 "\" manual payments"
-msgstr ""
+msgstr "请注意：处理“按需”手动付款时，将收取％1 ％2的交易费"
 
 #: ../templates/bootstrap//account/edit/cashout.tpl:27
 msgid ""
 "This %1 manual payment transaction fee is a network fee and goes back into "
 "the network not the pool."
-msgstr ""
+msgstr "此％1手动支付交易费是网络费用，并返回网络而不是池。"
 
 #: ../templates/bootstrap//account/edit/cashout.tpl:30
 msgid "Minimum Cashout: %1 %2"
-msgstr ""
+msgstr "最低支付：％1％2"
 
 #: ../templates/bootstrap//account/edit/cashout.tpl:34
 msgid "Account Balance"
@@ -2547,27 +2624,27 @@ msgstr "重置PIN"
 
 #: ../templates/bootstrap//global/header.tpl:70
 msgid "en"
-msgstr "english"
+msgstr "英语"
 
 #: ../templates/bootstrap//global/header.tpl:70
 msgid "fr"
-msgstr ""
+msgstr "法语"
 
 #: ../templates/bootstrap//global/header.tpl:70
 msgid "es"
-msgstr ""
+msgstr "西班牙语"
 
 #: ../templates/bootstrap//global/header.tpl:70
 msgid "de"
-msgstr ""
+msgstr "德语"
 
 #: ../templates/bootstrap//global/header.tpl:70
 msgid "it"
-msgstr ""
+msgstr "意大利语"
 
 #: ../templates/bootstrap//global/header.tpl:70
 msgid "ru"
-msgstr ""
+msgstr "俄语"
 
 #: ../templates/bootstrap//global/header.tpl:70
 msgid "zh"
@@ -2575,88 +2652,90 @@ msgstr "中文简体"
 
 #: ../include/smarty_globals.inc.php:200
 msgid "You have exceeded the pools configured "
-msgstr ""
+msgstr "您已超出配置的池 "
 
 #: ../include/smarty_globals.inc.php:200
 msgid " warning threshold. Please initiate a transfer!"
-msgstr ""
+msgstr " 警告阈值。 请发起转移！"
 
 #: ../include/smarty_globals.inc.php:202
 msgid "You have "
-msgstr "你 有"
+msgstr "你 有 "
 
 #: ../include/smarty_globals.inc.php:202
 msgid ""
 " failed login attempts! <a href=\"?page=account&action=reset_failed\">Reset "
 "Counter</a>"
 msgstr ""
+" 登录尝试失败！ <a href=\"?page=account&action=reset_failed\">重置计数器</a>"
 
 #: ../include/smarty_globals.inc.php:206
 msgid "This pool is currently in maintenance mode."
-msgstr ""
+msgstr "当前矿池当前处于维护模式."
 
 #: ../include/smarty_globals.inc.php:234
 msgid "You are using an old Theme that will not be maintained in the future."
-msgstr ""
+msgstr "您正在使用将来不会维护的旧主题。"
 
 #: ../include/smarty_globals.inc.php:246
 msgid ""
 "We are investigating issues in the backend. Your shares and hashrate are "
 "safe and we will fix things ASAP."
 msgstr ""
+"我们正在调查后端的问题。 您的shares和算力是安全的，我们会尽快解决问题。"
 
 #: ../include/smarty_globals.inc.php:252
 msgid ""
 "Payouts disabled, you will not receive any coins to your offline wallet for "
 "the time being"
-msgstr ""
+msgstr "付款已停用，您暂时不会向离线钱包收到任何硬币"
 
 #: ../include/smarty_globals.inc.php:255
 msgid ""
 "Findblocks disabled, new blocks will currently not show up in the frontend"
-msgstr ""
+msgstr "区块发现已停用，新的区块目前不会出现在前端显示"
 
 #: ../include/smarty_globals.inc.php:258
 msgid "Blockupdate disabled, blocks and transactions confirmations are delayed"
-msgstr ""
+msgstr "区块更新已停用，区块和交易确认被延迟"
 
 #: ../include/smarty_globals.inc.php:261
 msgid "PPLNS payout disabled, round credit transactions are delayed"
-msgstr ""
+msgstr "PPLNS支付被禁用，信用交易被延迟"
 
 #: ../include/smarty_globals.inc.php:264
 msgid "Proportional payout disabled, round credit transactions are delayed"
-msgstr ""
+msgstr "比例支付被禁用，信用交易被延迟"
 
 #: ../include/smarty_globals.inc.php:267
 msgid "PPS payout disabled, share credit transactions are delayed"
-msgstr ""
+msgstr "禁用PPS，股份信用交易延迟"
 
 #: ../include/pages/contactform/contactform.inc.php:15
 #: ../include/pages/register/register.inc.php:21
 #: ../include/pages/login.inc.php:48
 msgid "Invalid Captcha, please try again."
-msgstr ""
+msgstr "错误验证码，请重试."
 
 #: ../include/pages/contactform/contactform.inc.php:19
 #: ../include/pages/contactform.inc.php:5
 msgid "Contactform is currently disabled. Please try again later."
-msgstr ""
+msgstr "联系表格目前已停用。 请稍后再试."
 
 #: ../include/pages/contactform/contactform.inc.php:21
 #: ../include/pages/contactform.inc.php:8
 msgid "Contactform is disabled for guests."
-msgstr ""
+msgstr "对于匿名用户联系表格已禁用。"
 
 #: ../include/pages/contactform/contactform.inc.php:26
 msgid "Thanks for sending your message! We will get back to you shortly"
-msgstr ""
+msgstr "感谢您发送邮件！ 我们会尽快给您回复"
 
 #: ../include/pages/contactform/contactform.inc.php:28
 msgid ""
 "There was a problem sending your message. Check following error and please "
 "try again: "
-msgstr ""
+msgstr "发送邮件时出现问题。 检查以下错误，请再试一次 "
 
 #: ../include/pages/password/reset.inc.php:7
 msgid "Please check your mail account to finish your password reset"
@@ -2669,12 +2748,12 @@ msgstr "密码重置完成！请登录."
 #: ../include/pages/register/register.inc.php:25
 #: ../include/pages/register.inc.php:5
 msgid "Account registration is currently disabled. Please try again later."
-msgstr ""
+msgstr "帐户注册目前已停用。 请稍后再试."
 
 #: ../include/pages/register/register.inc.php:27
 #: ../include/pages/register.inc.php:8
 msgid "Only invited users are allowed to register."
-msgstr ""
+msgstr "只有受邀用户才能注册."
 
 #: ../include/pages/register/register.inc.php:36
 msgid "Please enter a valid Wallet Address"
@@ -2686,11 +2765,11 @@ msgstr "请检查您的邮箱去激活当前用户"
 
 #: ../include/pages/register/register.inc.php:39
 msgid "Account created, please login"
-msgstr ""
+msgstr "账户已创建,请登录"
 
 #: ../include/pages/register/register.inc.php:41
 msgid "Unable to create account: "
-msgstr ""
+msgstr "无法创建用户: "
 
 #: ../include/pages/about/moot.inc.php:17
 #: ../include/pages/about/pool.inc.php:15
@@ -2703,11 +2782,11 @@ msgstr ""
 #: ../include/pages/statistics/graphs.inc.php:24
 #: ../include/pages/account/qrcode.inc.php:11
 msgid "Page currently disabled. Please try again later."
-msgstr ""
+msgstr "页面目前已停用. 请稍后再试."
 
 #: ../include/pages/login.inc.php:28
 msgid "You are not allowed to login during maintenace."
-msgstr ""
+msgstr "在维护期间不允许您登录."
 
 #: ../include/pages/login.inc.php:42
 msgid "Unable to login: "
@@ -2715,24 +2794,24 @@ msgstr "无法登录 : "
 
 #: ../include/pages/statistics/uptime.inc.php:10
 msgid "Paused"
-msgstr ""
+msgstr "已暂停"
 
 #: ../include/pages/statistics/uptime.inc.php:11
 msgid "Unchecked"
-msgstr ""
+msgstr "未选中"
 
 #: ../include/pages/statistics/uptime.inc.php:12
 msgid "Up"
-msgstr ""
+msgstr "上"
 
 #: ../include/pages/statistics/uptime.inc.php:13
 #: ../include/pages/statistics/uptime.inc.php:14
 msgid "Down"
-msgstr ""
+msgstr "下"
 
 #: ../include/pages/statistics/uptime.inc.php:18
 msgid "UptimeRobot API Key not configured or no data available."
-msgstr ""
+msgstr "UptimeRobot API密钥未配置或没有可用数据."
 
 #: ../include/pages/statistics/pool.inc.php:14
 #: ../include/pages/admin/wallet.inc.php:44
@@ -2748,7 +2827,7 @@ msgstr "无法连接"
 #: ../include/pages/admin/transactions.inc.php:16
 #: ../include/pages/account/transactions.inc.php:9
 msgid "Could not find any transaction"
-msgstr ""
+msgstr "不能发现任何交易"
 
 #: ../include/pages/admin/news_edit.inc.php:16
 msgid "News updated"
@@ -2756,43 +2835,43 @@ msgstr "修改公告"
 
 #: ../include/pages/admin/news_edit.inc.php:18
 msgid "News update failed: "
-msgstr ""
+msgstr "公告更新失败: "
 
 #: ../include/pages/admin/user.inc.php:79
 msgid "Could not find any users"
-msgstr ""
+msgstr "找不到任何用户"
 
 #: ../include/pages/admin/settings.inc.php:16
 msgid "Settings updated"
-msgstr ""
+msgstr "设置已更新"
 
 #: ../include/pages/admin/news.inc.php:16
 msgid "News entry changed"
-msgstr ""
+msgstr "公告条目已改变"
 
 #: ../include/pages/admin/news.inc.php:24
 msgid "News entry added"
-msgstr ""
+msgstr "公告条目已添加"
 
 #: ../include/pages/admin/news.inc.php:26
 msgid "Failed to add new entry: "
-msgstr ""
+msgstr "添加公告条目失败 "
 
 #: ../include/pages/admin/news.inc.php:34
 msgid "Succesfully removed news entry"
-msgstr ""
+msgstr "成功移除公告条目"
 
 #: ../include/pages/admin/news.inc.php:36
 msgid "Failed to delete entry: "
-msgstr ""
+msgstr "删除条目失败: "
 
 #: ../include/pages/admin/newsletter.inc.php:14
 msgid "Pool newsletters are disabled."
-msgstr ""
+msgstr "矿池池通讯被禁用."
 
 #: ../include/pages/admin/newsletter.inc.php:32
 msgid "Newsletter sent to "
-msgstr ""
+msgstr "通讯发送到 "
 
 #: ../include/pages/admin/newsletter.inc.php:32
 #: ../include/pages/admin/newsletter.inc.php:34
@@ -2801,35 +2880,35 @@ msgstr " 用户."
 
 #: ../include/pages/admin/newsletter.inc.php:34
 msgid "Failed to send e-mail to "
-msgstr ""
+msgstr "发送邮件失败 "
 
 #: ../include/pages/account/unlock.inc.php:6
 #: ../include/pages/account/confirm.inc.php:6
 msgid "Missing token"
-msgstr ""
+msgstr "缺少Token令牌"
 
 #: ../include/pages/account/unlock.inc.php:8
 msgid "Unable to re-activate your account. Invalid token."
-msgstr ""
+msgstr "无法重新启动您的帐户。 令牌无效。"
 
 #: ../include/pages/account/unlock.inc.php:12
 msgid "Account re-activated. Please login."
-msgstr ""
+msgstr "帐户重新激活。 请登录。"
 
 #: ../include/pages/account/unlock.inc.php:14
 msgid "Failed to re-activate account. Contact site support."
-msgstr ""
+msgstr "无法重新激活帐户。 联系网站支持。"
 
 #: ../include/pages/account/workers.inc.php:8
 #: ../include/pages/account/edit.inc.php:108
 msgid "You have no payout address set."
-msgstr ""
+msgstr "您没有设置付款地址。"
 
 #: ../include/pages/account/workers.inc.php:9
 msgid ""
 "You can not add workers unless a valid Payout Address is set in your User "
 "Settings."
-msgstr ""
+msgstr "除非在“用户设置”中设置了有效的“付款地址”，否则无法添加工作人员。"
 
 #: ../include/pages/account/workers.inc.php:16
 msgid "Worker removed"
@@ -2849,35 +2928,35 @@ msgstr "您没有矿工"
 
 #: ../include/pages/account/confirm.inc.php:8
 msgid "Unable to activate your account. Invalid token."
-msgstr ""
+msgstr "无法激活您的帐户。 令牌无效。"
 
 #: ../include/pages/account/confirm.inc.php:12
 msgid "Account activated. Please login."
-msgstr ""
+msgstr "帐户已激活。 请登录。"
 
 #: ../include/pages/account/invitations.inc.php:7
 msgid "You have exceeded the allowed invitations of "
-msgstr ""
+msgstr "您已超出允许的邀请 "
 
 #: ../include/pages/account/invitations.inc.php:11
 msgid "Invitation sent"
-msgstr ""
+msgstr "邀请已发送"
 
 #: ../include/pages/account/invitations.inc.php:13
 msgid "Unable to send invitation to recipient: "
-msgstr ""
+msgstr "无法向收件人发送邀请： "
 
 #: ../include/pages/account/invitations.inc.php:23
 msgid "Invitations are disabled"
-msgstr ""
+msgstr "邀请已被禁用"
 
 #: ../include/pages/account/edit.inc.php:16
 msgid "E-mail confirmations are required for "
-msgstr ""
+msgstr "需要电子邮件确认 "
 
 #: ../include/pages/account/edit.inc.php:19
 msgid "editing your details"
-msgstr ""
+msgstr "编辑你的详细信息"
 
 #: ../include/pages/account/edit.inc.php:24
 msgid "changing your password"
@@ -2889,11 +2968,11 @@ msgstr "提现"
 
 #: ../include/pages/account/edit.inc.php:35
 msgid "A token was sent to your e-mail that will allow you to "
-msgstr ""
+msgstr "一个令牌被发送到您的电子邮件，允许您 "
 
 #: ../include/pages/account/edit.inc.php:36
 msgid "You can currently "
-msgstr ""
+msgstr "你现在可以 "
 
 #: ../include/pages/account/edit.inc.php:38
 msgid "edit your account details"
@@ -2901,7 +2980,7 @@ msgstr "编辑您的账户信息"
 
 #: ../include/pages/account/edit.inc.php:39
 msgid "withdraw funds"
-msgstr ""
+msgstr "提现"
 
 #: ../include/pages/account/edit.inc.php:40
 msgid "change your password"
@@ -2909,31 +2988,31 @@ msgstr "修改您的密码"
 
 #: ../include/pages/account/edit.inc.php:56
 msgid "and "
-msgstr ""
+msgstr "和 "
 
 #: ../include/pages/account/edit.inc.php:68
 msgid "Your PIN # has been sent to your email."
-msgstr ""
+msgstr "您的PIN码已发送到您的电子邮箱。"
 
 #: ../include/pages/account/edit.inc.php:78
 msgid "Invalid PIN."
-msgstr ""
+msgstr "PIN码无效。"
 
 #: ../include/pages/account/edit.inc.php:78
 msgid " attempts remaining."
-msgstr ""
+msgstr " 其余的尝试。"
 
 #: ../include/pages/account/edit.inc.php:88
 msgid "A confirmation was sent to your e-mail, follow that link to continue"
-msgstr ""
+msgstr "确认已发送到您的电子邮箱，请点击该链接继续"
 
 #: ../include/pages/account/edit.inc.php:102
 msgid "Manual payouts are disabled."
-msgstr ""
+msgstr "手动付款被禁用。"
 
 #: ../include/pages/account/edit.inc.php:104
 msgid "You have not yet unlocked account withdrawls."
-msgstr ""
+msgstr "您还没有解锁帐户提款。"
 
 #: ../include/pages/account/edit.inc.php:106
 msgid "Account balance must be >= "
@@ -2941,39 +3020,39 @@ msgstr "用户余额必须 >= "
 
 #: ../include/pages/account/edit.inc.php:106
 msgid " to do a Manual Payout."
-msgstr ""
+msgstr " 做一个手动支付."
 
 #: ../include/pages/account/edit.inc.php:121
 msgid "Created new manual payout request with ID #"
-msgstr ""
+msgstr "使用ID#创建一个新的手动付款请求#"
 
 #: ../include/pages/account/edit.inc.php:129
 msgid "You already have one active manual payout request."
-msgstr ""
+msgstr "您已经有一个有效的人工付款请求。"
 
 #: ../include/pages/account/edit.inc.php:132
 msgid "Insufficient funds, you need more than "
-msgstr ""
+msgstr "资金不足，你需要更多资金. "
 
 #: ../include/pages/account/edit.inc.php:132
 msgid " to cover transaction fees"
-msgstr ""
+msgstr " 支付交易费用"
 
 #: ../include/pages/account/edit.inc.php:139
 msgid "You have not yet unlocked account updates."
-msgstr ""
+msgstr "您尚未解锁帐户更新。"
 
 #: ../include/pages/account/edit.inc.php:143
 msgid "Account details updated"
-msgstr ""
+msgstr "账户详细信息已更新"
 
 #: ../include/pages/account/edit.inc.php:145
 msgid "Failed to update your account: "
-msgstr ""
+msgstr "更新用户信息失败 "
 
 #: ../include/pages/account/edit.inc.php:154
 msgid "You have not yet unlocked password updates."
-msgstr ""
+msgstr "您尚未解锁密码更新."
 
 #: ../include/pages/account/edit.inc.php:157
 msgid "Password updated"
@@ -2981,15 +3060,15 @@ msgstr "密码已更新"
 
 #: ../include/pages/account/notifications.inc.php:6
 msgid "Notification system disabled by admin."
-msgstr ""
+msgstr "管理员禁用通知系统."
 
 #: ../include/pages/account/notifications.inc.php:30
 msgid "Updated notification settings"
-msgstr ""
+msgstr "已更新通知设置"
 
 #: ../include/pages/account/notifications.inc.php:41
 msgid "Could not find any notifications"
-msgstr ""
+msgstr "没有发现任何通知"
 
 #: ../public/index.php:127 ../public/index.php:129
 msgid "You last logged in from"
@@ -2997,4 +3076,4 @@ msgstr "您最近登录"
 
 #: ../public/index.php:127 ../public/index.php:129
 msgid "on"
-msgstr ""
+msgstr "在"
