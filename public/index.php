@@ -89,14 +89,18 @@ if ($config['memcache']['enabled'] && $config['mc_antidos']['enabled']) {
 // Set User Language
 if ( !$userLanguage && (!isset($_REQUEST['lang']) or (isset($_REQUEST['lang']) && !in_array(substr($_REQUEST['lang'], 0, 2), array_keys($languages))))) {
   // Try to find a compatible one
-  $userLanguages = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
-   
-  foreach($userLanguages as $lang) {
-    if ( in_array(substr($lang, 0, 2), array_keys($languages)) ) {
-      $userLanguage = substr($lang, 0, 2);
-      break;
-    } else {
-      $userLanguage = 'en';
+  if(!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+    $userLanguage = 'en';
+  } else {
+    $userLanguages = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    
+    foreach($userLanguages as $lang) {
+      if ( in_array(substr($lang, 0, 2), array_keys($languages)) ) {
+        $userLanguage = substr($lang, 0, 2);
+        break;
+      } else {
+        $userLanguage = 'en';
+      }
     }
   }
 }
@@ -119,7 +123,7 @@ textdomain($domain);
 
 // show last logged in popup if it's still set
 if (@$_GET['clp'] == 1 && @$_SESSION['last_ip_pop']) unset($_SESSION['last_ip_pop']);
-if (count(@$_SESSION['last_ip_pop']) == 2) {
+if (isset($_SESSION['last_ip_pop']) && count(@$_SESSION['last_ip_pop']) == 2) {
   $data = $_SESSION['last_ip_pop'];
   $ip = filter_var($data[0], FILTER_VALIDATE_IP);
   $time = strftime("%c", $data[1]);
