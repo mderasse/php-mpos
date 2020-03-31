@@ -96,6 +96,7 @@ $aGlobal = array(
     'targetdiff' => $config['difficulty'],
     'currency' => $config['currency'],
     'exchangeurl' => $config['price']['url'],
+    'coindiffchangetarget' => $config['coindiffchangetarget'],
     'txfee_manual' => $config['txfee_manual'],
     'txfee_auto' => $config['txfee_auto'],
     'txfee_auto_dynamic' => array(
