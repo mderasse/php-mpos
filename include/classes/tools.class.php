@@ -115,6 +115,8 @@ class Tools extends Base {
       return 'mercatox';
     } else if (preg_match('/tradeogre.com/', $url)) {
       return 'tradeogre';
+    } else if (preg_match('/api.coingecko.com/', $url)) {
+      return 'coingecko';
     }
     $this->setErrorMessage("API URL unknown");
     return false;
@@ -144,10 +146,13 @@ class Tools extends Base {
       	  break;
         case 'cryptopia':
       	  return @$aData['Data']['LastPrice'];
-      	  break;
+          break;
+        case 'coingecko':
+          return reset($aData)[strtolower($strQuote)];
+          break;   
       	case 'cryptorush':
       	  return @$aData["{$strBase}/{$strQuote}"]['last_trade'];
-      	  break;
+          break;
       	case 'mintpal':
       	  return @$aData['0']['last_price'];
       	  break;
