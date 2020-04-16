@@ -48,12 +48,6 @@
             <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
             <input type="text" class="form-control" name="email2" placeholder="{t}Repeat Email{/t}" value="{$smarty.post.email2|escape|default:""}" size="15" required>
           </div>
-          <label>{t}PIN{/t}</label>
-          <font size="1">{t}Four digit number.{/t} <b>{t}Remember this pin!{/t}</b></font>
-          <div class="input-group input-group-sm">
-            <span class="input-group-addon"><i class="fa fa-shield fa-fw"></i></span>
-            <input type="password" class="form-control" name="pin" placeholder="{t}PIN{/t}" value="" size="4" maxlength="4" required>
-          </div>
           <div class="input-group input-group-sm">
             <label>
               <input type="checkbox" value="1" name="tac" id="tac"> {t escape=no}I Accept The <a data-toggle="modal" data-target="#TAC">Terms and Conditions</a>{/t}

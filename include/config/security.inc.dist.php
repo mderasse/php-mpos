@@ -1,4 +1,4 @@
-<?php 
+<?php
 $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
 
 /**
@@ -18,7 +18,7 @@ $config['protect_session_state'] = false;
  */
 $config['logging']['enabled'] = true;
 $config['logging']['level'] = 6;
-$config['logging']['path'] = realpath(BASEPATH.'../logs');
+$config['logging']['path'] = realpath(BASEPATH . '../logs');
 
 /**
  * Memcache Rate Limiting
@@ -43,19 +43,7 @@ $config['mc_antidos']['error_push_page'] = array('page' => 'error', 'action' => 
 $config['csrf']['enabled'] = true;
 
 /**
- * E-mail confirmations for user actions
- *  Two-factor confirmation for user actions
- *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#e-mail-confirmations
- */
-$config['twofactor']['enabled'] = true;
-$config['twofactor']['options']['details'] = true;
-$config['twofactor']['options']['withdraw'] = true;
-$config['twofactor']['options']['changepw'] = true;
-
-/**
  * Lock account after X
- *  Lock accounts after X invalid logins or pins
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#lock-accounts-after-failed-logins
  **/
 $config['maxfailed']['login'] = 3;
-$config['maxfailed']['pin'] = 3;
