@@ -25,11 +25,20 @@ define('SECHASH_CHECK', false);
 
 // change SECHASH every second, we allow up to 3 sec back for slow servers
 if (SECHASH_CHECK) {
-  function fip($tr=0) { return md5(SECURITY.(time()-$tr).SECURITY); }
+  function fip($tr = 0)
+  {
+    return md5(SECURITY . (time() - $tr) . SECURITY);
+  }
   define('SECHASH', fip());
-  function cfip() { return (fip()==SECHASH||fip(1)==SECHASH||fip(2)==SECHASH) ? 1 : 0; }
+  function cfip()
+  {
+    return (fip() == SECHASH || fip(1) == SECHASH || fip(2) == SECHASH) ? 1 : 0;
+  }
 } else {
-  function cfip() { return (@defined('SECURITY')) ? 1 : 0; }
+  function cfip()
+  {
+    return (@defined('SECURITY')) ? 1 : 0;
+  }
 }
 
 // This should be okay
@@ -40,8 +49,8 @@ define("BASEPATH", dirname(__FILE__) . "/");
 include_once(BASEPATH . '../include/bootstrap.php');
 
 // switch to https if config option is enabled
-$hts = ($config['https_only'] && (!empty($_SERVER['QUERY_STRING']))) ? "https://".$_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME']."?".$_SERVER['QUERY_STRING'] : "https://".$_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'];
-($config['https_only'] && @!$_SERVER['HTTPS']) ? exit(header("Location: ".$hts)):0;
+$hts = ($config['https_only'] && (!empty($_SERVER['QUERY_STRING']))) ? "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] . "?" . $_SERVER['QUERY_STRING'] : "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'];
+($config['https_only'] && @!$_SERVER['HTTPS']) ? exit(header("Location: " . $hts)) : 0;
 
 // Rate limiting, we use our initilized memcache from bootstrap/autoloader
 if ($config['memcache']['enabled'] && $config['mc_antidos']['enabled']) {
@@ -57,7 +66,7 @@ if ($config['memcache']['enabled'] && $config['mc_antidos']['enabled']) {
   );
   $iac = 0;
   foreach ($ajax_calls as $ac) {
-    $iac = (@$_REQUEST['page'] == $ac[0] && @$_REQUEST['action'] == $ac[1]) ? $iac+=1 : $iac;
+    $iac = (@$_REQUEST['page'] == $ac[0] && @$_REQUEST['action'] == $ac[1]) ? $iac += 1 : $iac;
   }
   $is_ajax_call = ($iac > 0) ? true : false;
   if ($is_ajax_call && $config['mc_antidos']['protect_ajax']) {
@@ -87,15 +96,15 @@ if ($config['memcache']['enabled'] && $config['mc_antidos']['enabled']) {
 
 // Got past rate limiter and session manager
 // Set User Language
-if ( !$userLanguage && (!isset($_REQUEST['lang']) or (isset($_REQUEST['lang']) && !in_array(substr($_REQUEST['lang'], 0, 2), array_keys($languages))))) {
+if (!$userLanguage && (!isset($_REQUEST['lang']) or (isset($_REQUEST['lang']) && !in_array(substr($_REQUEST['lang'], 0, 2), array_keys($languages))))) {
   // Try to find a compatible one
-  if(!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+  if (!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
     $userLanguage = 'en';
   } else {
-    $userLanguages = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
-    
-    foreach($userLanguages as $lang) {
-      if ( in_array(substr($lang, 0, 2), array_keys($languages)) ) {
+    $userLanguages = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+
+    foreach ($userLanguages as $lang) {
+      if (in_array(substr($lang, 0, 2), array_keys($languages))) {
         $userLanguage = substr($lang, 0, 2);
         break;
       } else {
@@ -103,10 +112,12 @@ if ( !$userLanguage && (!isset($_REQUEST['lang']) or (isset($_REQUEST['lang']) &
       }
     }
   }
-}
-else if(isset($_REQUEST['lang']) && in_array(substr($_REQUEST['lang'], 0, 2), array_keys($languages)))
-{
+} else if (isset($_REQUEST['lang']) && in_array(substr($_REQUEST['lang'], 0, 2), array_keys($languages))) {
   $userLanguage = substr($_REQUEST['lang'], 0, 2);
+} else if (isset($_SESSION['USERDATA']['language'])) {
+  $userLanguage = $_SESSION['USERDATA']['language'];
+} else {
+  $userLanguage = 'en';
 }
 $_SESSION['USERDATA']['language'] = $userLanguage;
 putenv("LC_ALL=" . $languages[$userLanguage]);
@@ -148,7 +159,7 @@ if (is_dir(INCLUDE_DIR . '/pages/')) {
 @$_REQUEST['page'] = (is_array($_REQUEST['page']) || !isset($_REQUEST['page'])) ? 'home' : $_REQUEST['page'];
 if (isset($_REQUEST['page']) && isset($arrPages[$_REQUEST['page']])) {
   $page = $_REQUEST['page'];
-} else if (isset($_REQUEST['page']) && ! isset($arrPages[$_REQUEST['page']])) {
+} else if (isset($_REQUEST['page']) && !isset($arrPages[$_REQUEST['page']])) {
   $page = 'error';
 } else {
   $page = 'home';

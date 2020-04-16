@@ -15,8 +15,8 @@ $smarty = new Smarty;
 $debug->append('Define Smarty Paths', 3);
 $smarty->template_dir = TEMPLATE_DIR . '/' . THEME . '/';
 $smarty->compile_dir = TEMPLATE_DIR . '/compile/' . THEME . '/';
-if(isset($_SESSION['USERDATA'])) {
-  $smarty_cache_key = md5(serialize($_REQUEST) . $_SESSION['USERDATA']['language'] . serialize(@$_SESSION['USERDATA']['id']));
+if (isset($_SESSION['USERDATA'])) {
+  $smarty_cache_key = md5(serialize($_REQUEST) . (isset($_SESSION['USERDATA']['language']) ? $_SESSION['USERDATA']['language'] : 'en') . serialize(@$_SESSION['USERDATA']['id']));
 } else {
   $smarty_cache_key = md5(serialize($_REQUEST));
 }
