@@ -6,8 +6,8 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
  * Also the URL to check for the most recent upstream versions available
  *  https://github.com/MPOS/php-mpos/wiki/Config-Setup#config-version
  **/
-$config['version'] = '1.0.1';
-$config['version_url'] = 'https://raw.githubusercontent.com/MPOS/php-mpos/master/include/version.inc.php';
+$config['version'] = '1.0.4';
+$config['version_url'] = 'https://raw.githubusercontent.com/mderasse/php-mpos/master/include/version.inc.php';
 
 /**
  * Unless you disable this, we'll do a quick check on your config first.
@@ -31,17 +31,17 @@ $config['SALT'] = 'PLEASEMAKEMESOMETHINGRANDOM';
 $config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
 
 /**
-  * Coin Algorithm
-  *  Algorithm used by this coin, sha256d or scrypt
-  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#algorithm
-  **/
+ * Coin Algorithm
+ *  Algorithm used by this coin, sha256d or scrypt
+ *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#algorithm
+ **/
 $config['algorithm'] = 'scrypt';
 
 /**
-  * Getbalance API Calls
-  *  System used for getting actual Balance from Wallet
-  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#getbalance-api-calls
-  **/
+ * Getbalance API Calls
+ *  System used for getting actual Balance from Wallet
+ *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#getbalance-api-calls
+ **/
 $config['getbalancewithunconfirmed'] = true;
 
 /**
@@ -63,7 +63,7 @@ $config['db']['name'] = 'mpos';
 
 /**
  * Setup read-only/slave database server for selects (read queries)
-**/
+ **/
 $config['db-ro']['enabled'] = false;
 $config['db-ro']['host'] = 'localhost';
 $config['db-ro']['user'] = 'someuser';
@@ -71,7 +71,7 @@ $config['db-ro']['pass'] = 'somepass';
 $config['db-ro']['port'] = 3306;
 $config['db-ro']['name'] = 'mpos';
 
- 
+
 /**
  * Local wallet RPC
  *  RPC configuration for your daemon/wallet
@@ -225,8 +225,8 @@ $config['purge']['shares'] = 25000;
  *  Share archiving configuration details
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#archiving
  **/
-$config['archive']['maxrounds'] = 10; 
-$config['archive']['maxage'] = 60 * 24; 
+$config['archive']['maxrounds'] = 10;
+$config['archive']['maxage'] = 60 * 24;
 
 
 /**

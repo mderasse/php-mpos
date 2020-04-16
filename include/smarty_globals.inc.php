@@ -22,15 +22,15 @@ if ($bitcoin->can_connect() === true) {
 }
 
 // Baseline pool hashrate for templates
-if ( ! $dPoolHashrateModifier = $setting->getValue('statistics_pool_hashrate_modifier') ) $dPoolHashrateModifier = 1;
+if (!$dPoolHashrateModifier = $setting->getValue('statistics_pool_hashrate_modifier')) $dPoolHashrateModifier = 1;
 $iCurrentPoolHashrate =  $statistics->getCurrentHashrate();
 
 // Avoid confusion, ensure our nethash isn't higher than poolhash
 if ($iCurrentPoolHashrate > $dNetworkHashrate / 1000) $dNetworkHashrate = $iCurrentPoolHashrate * 1000;
 
 // Baseline network hashrate for templates
-if ( ! $dPersonalHashrateModifier = $setting->getValue('statistics_personal_hashrate_modifier') ) $dPersonalHashrateModifier = 1;
-if ( ! $dNetworkHashrateModifier = $setting->getValue('statistics_network_hashrate_modifier') ) $dNetworkHashrateModifier = 1;
+if (!$dPersonalHashrateModifier = $setting->getValue('statistics_personal_hashrate_modifier')) $dPersonalHashrateModifier = 1;
+if (!$dNetworkHashrateModifier = $setting->getValue('statistics_network_hashrate_modifier')) $dNetworkHashrateModifier = 1;
 
 // Apply modifier now
 $dNetworkHashrate = $dNetworkHashrate / 1000 * $dNetworkHashrateModifier;
@@ -43,16 +43,16 @@ $iCurrentPoolShareRate = $statistics->getCurrentShareRate();
 if (!$iCurrentActiveWorkers = $worker->getCountAllActiveWorkers()) $iCurrentActiveWorkers = 0;
 
 // Some settings to propagate to template
-if (! $statistics_ajax_refresh_interval = $setting->getValue('statistics_ajax_refresh_interval')) $statistics_ajax_refresh_interval = 10;
-if (! $statistics_ajax_long_refresh_interval = $setting->getValue('statistics_ajax_long_refresh_interval')) $statistics_ajax_long_refresh_interval = 10;
+if (!$statistics_ajax_refresh_interval = $setting->getValue('statistics_ajax_refresh_interval')) $statistics_ajax_refresh_interval = 10;
+if (!$statistics_ajax_long_refresh_interval = $setting->getValue('statistics_ajax_long_refresh_interval')) $statistics_ajax_long_refresh_interval = 10;
 
 // Small helper array
-$aHashunits = array( '1' => 'KH/s', '0.001' => 'MH/s', '0.000001' => 'GH/s', '0.000000001' => 'TH/s', '0.000000000001' => 'PH/s', '0.000000000000001' => 'EH/s' );
+$aHashunits = array('1' => 'KH/s', '0.001' => 'MH/s', '0.000001' => 'GH/s', '0.000000001' => 'TH/s', '0.000000000001' => 'PH/s', '0.000000000000001' => 'EH/s');
 
 // Global data for Smarty
 $aGlobal = array(
-  'hashunits' => array( 'pool' => $aHashunits[$dPoolHashrateModifier], 'network' => $aHashunits[$dNetworkHashrateModifier], 'personal' => $aHashunits[$dPersonalHashrateModifier]),
-  'hashmods' => array( 'personal' => $dPersonalHashrateModifier ),
+  'hashunits' => array('pool' => $aHashunits[$dPoolHashrateModifier], 'network' => $aHashunits[$dNetworkHashrateModifier], 'personal' => $aHashunits[$dPersonalHashrateModifier]),
+  'hashmods' => array('personal' => $dPersonalHashrateModifier),
   'hashrate' => $iCurrentPoolHashrate,
   'nethashrate' => $dNetworkHashrate,
   'sharerate' => $iCurrentPoolShareRate,
@@ -63,7 +63,6 @@ $aGlobal = array(
   'confirmations' => $config['confirmations'],
   'reward' => $config['reward_type'] == 'fixed' ? $config['reward'] : $block->getAverageAmount(),
   'price' => $setting->getValue('price'),
-  'twofactor' => $config['twofactor'],
   'coinaddresscheck' => $config['check_valid_coinaddress'],
   'csrf' => $config['csrf'],
   'config' => array(
@@ -100,12 +99,12 @@ $aGlobal = array(
     'txfee_manual' => $config['txfee_manual'],
     'txfee_auto' => $config['txfee_auto'],
     'txfee_auto_dynamic' => array(
-        'enabled' => $config['txfee_auto_dynamic']['enabled'],
-        'coefficient' => $config['txfee_auto_dynamic']['coefficient'],
+      'enabled' => $config['txfee_auto_dynamic']['enabled'],
+      'coefficient' => $config['txfee_auto_dynamic']['coefficient'],
     ),
     'txfee_manual_dynamic' => array(
-        'enabled' => $config['txfee_manual_dynamic']['enabled'],
-        'coefficient' => $config['txfee_manual_dynamic']['coefficient'],
+      'enabled' => $config['txfee_manual_dynamic']['enabled'],
+      'coefficient' => $config['txfee_manual_dynamic']['coefficient'],
     ),
     'payout_system' => $config['payout_system'],
     'mp_threshold' => $config['mp_threshold'],
@@ -173,28 +172,28 @@ if (@$_SESSION['USERDATA']['id']) {
   $aGlobal['userdata']['sharedifficulty'] = $aUserMiningStats['avgsharediff'];
 
   switch ($config['payout_system']) {
-  case 'prop':
-    // Some estimations
-    $aEstimates = $statistics->getUserEstimates($aRoundShares, $aGlobal['userdata']['shares'], $aGlobal['userdata']['donate_percent'], $aGlobal['userdata']['no_fees']);
-    $aGlobal['userdata']['estimates'] = $aEstimates;
-    break;
-  case 'pplns':
-    $aGlobal['pplns']['target'] = $config['pplns']['shares']['default'];
-    if ($aLastBlock = $block->getLast()) {
-      if ($iAvgBlockShares = round($block->getAvgBlockShares($aLastBlock['height'], $config['pplns']['blockavg']['blockcount']))) {
-        $aGlobal['pplns']['target'] = $iAvgBlockShares;
+    case 'prop':
+      // Some estimations
+      $aEstimates = $statistics->getUserEstimates($aRoundShares, $aGlobal['userdata']['shares'], $aGlobal['userdata']['donate_percent'], $aGlobal['userdata']['no_fees']);
+      $aGlobal['userdata']['estimates'] = $aEstimates;
+      break;
+    case 'pplns':
+      $aGlobal['pplns']['target'] = $config['pplns']['shares']['default'];
+      if ($aLastBlock = $block->getLast()) {
+        if ($iAvgBlockShares = round($block->getAvgBlockShares($aLastBlock['height'], $config['pplns']['blockavg']['blockcount']))) {
+          $aGlobal['pplns']['target'] = $iAvgBlockShares;
+        }
       }
-    }
-    $aEstimates = $statistics->getUserEstimates($aRoundShares, $aGlobal['userdata']['shares'], $aGlobal['userdata']['donate_percent'], $aGlobal['userdata']['no_fees']);
-    $aGlobal['userdata']['estimates'] = $aEstimates;
-    break;
-  case 'pps':
-    $aGlobal['userdata']['pps']['unpaidshares'] = $statistics->getUserUnpaidPPSShares($_SESSION['USERDATA']['username'], $_SESSION['USERDATA']['id'], $setting->getValue('pps_last_share_id'));
-    // We use coin precision + 8 to display PPS value
-    $aGlobal['ppsvalue'] = number_format($statistics->getPPSValue(), $coin->getCoinValuePrevision() + 8);
-    $aGlobal['poolppsvalue'] = $aGlobal['ppsvalue'] * pow(2, $config['difficulty'] - 16);
-    $aGlobal['userdata']['estimates'] = $statistics->getUserEstimates($aGlobal['userdata']['sharerate'], $aGlobal['userdata']['sharedifficulty'], $aGlobal['userdata']['donate_percent'], $aGlobal['userdata']['no_fees'], $aGlobal['ppsvalue']);
-    break;
+      $aEstimates = $statistics->getUserEstimates($aRoundShares, $aGlobal['userdata']['shares'], $aGlobal['userdata']['donate_percent'], $aGlobal['userdata']['no_fees']);
+      $aGlobal['userdata']['estimates'] = $aEstimates;
+      break;
+    case 'pps':
+      $aGlobal['userdata']['pps']['unpaidshares'] = $statistics->getUserUnpaidPPSShares($_SESSION['USERDATA']['username'], $_SESSION['USERDATA']['id'], $setting->getValue('pps_last_share_id'));
+      // We use coin precision + 8 to display PPS value
+      $aGlobal['ppsvalue'] = number_format($statistics->getPPSValue(), $coin->getCoinValuePrevision() + 8);
+      $aGlobal['poolppsvalue'] = $aGlobal['ppsvalue'] * pow(2, $config['difficulty'] - 16);
+      $aGlobal['userdata']['estimates'] = $statistics->getUserEstimates($aGlobal['userdata']['sharerate'], $aGlobal['userdata']['sharedifficulty'], $aGlobal['userdata']['donate_percent'], $aGlobal['userdata']['no_fees'], $aGlobal['ppsvalue']);
+      break;
   }
 
   // Site-wide notifications, based on user events
@@ -214,19 +213,19 @@ if ($motd = $setting->getValue('system_motd')) {
   }
   switch ($setting->getValue('system_motd_style', 0)) {
     case 0:
-        $motd_style = "alert-success";
-        break;
+      $motd_style = "alert-success";
+      break;
     case 1:
-        $motd_style = "alert-info";
-        break;
+      $motd_style = "alert-info";
+      break;
     case 2:
-        $motd_style = "alert-warning";
-        break;
+      $motd_style = "alert-warning";
+      break;
     case 3:
-        $motd_style = "alert-danger";
-        break;
+      $motd_style = "alert-danger";
+      break;
     default:
-       $motd_style = "alert-info";
+      $motd_style = "alert-info";
   }
   $_SESSION['POPUP'][] = array('CONTENT' => $motd, 'DISMISS' => $motd_dismiss, 'ID' => 'motd', 'TYPE' => 'alert ' . $motd_style . '');
 }
@@ -236,7 +235,7 @@ if ($setting->getValue('website_theme') == "mpos")
   $_SESSION['POPUP'][] = array('CONTENT' => _('You are using an old Theme that will not be maintained in the future.'), 'TYPE' => 'alert alert-warning');
 
 // Check we can load the theme at all
-if ( !in_array($setting->getValue('website_theme', 'bootstrap'), $template->getThemes()))
+if (!in_array($setting->getValue('website_theme', 'bootstrap'), $template->getThemes()))
   die('Unable to find your selected theme `' . $setting->getValue('website_theme') . '` in the list of available themes. Please reset your `website_theme` setting in your database.');
 
 // So we can display additional info
@@ -250,24 +249,24 @@ foreach ($aMonitorCrons as $strCron) {
   if ($monitoring->isDisabled($strCron) == 1) {
     $bMessage = true;
     switch ($strCron) {
-    case 'payouts':
-      $aCronMessage[] = '<li> ' . _('Payouts disabled, you will not receive any coins to your offline wallet for the time being') . '</li>';
-      break;
-    case 'findblock':
-      $aCronMessage[] = '<li>' . _('Findblocks disabled, new blocks will currently not show up in the frontend') . '</li>';
-      break;
-    case 'blockupdate':
-      $aCronMessage[] = '<li>' . _('Blockupdate disabled, blocks and transactions confirmations are delayed') . '</li>';
-      break;
-    case 'pplns_payout':
-      $aCronMessage[] = '<li>' . _('PPLNS payout disabled, round credit transactions are delayed') . '</li>';
-      break;
-    case 'prop_payout':
-      $aCronMessage[] = '<li> '. _('Proportional payout disabled, round credit transactions are delayed') . '</li>';
-      break;
-    case 'pps_payout':
-      $aCronMessage[] = '<li>' . _('PPS payout disabled, share credit transactions are delayed') . '</li>';
-      break;
+      case 'payouts':
+        $aCronMessage[] = '<li> ' . _('Payouts disabled, you will not receive any coins to your offline wallet for the time being') . '</li>';
+        break;
+      case 'findblock':
+        $aCronMessage[] = '<li>' . _('Findblocks disabled, new blocks will currently not show up in the frontend') . '</li>';
+        break;
+      case 'blockupdate':
+        $aCronMessage[] = '<li>' . _('Blockupdate disabled, blocks and transactions confirmations are delayed') . '</li>';
+        break;
+      case 'pplns_payout':
+        $aCronMessage[] = '<li>' . _('PPLNS payout disabled, round credit transactions are delayed') . '</li>';
+        break;
+      case 'prop_payout':
+        $aCronMessage[] = '<li> ' . _('Proportional payout disabled, round credit transactions are delayed') . '</li>';
+        break;
+      case 'pps_payout':
+        $aCronMessage[] = '<li>' . _('PPS payout disabled, share credit transactions are delayed') . '</li>';
+        break;
     }
   }
 }
