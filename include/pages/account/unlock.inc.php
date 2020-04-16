@@ -7,7 +7,7 @@ if (!isset($_GET['token']) || empty($_GET['token'])) {
 } else if (!$aToken = $oToken->getToken($_GET['token'], 'account_unlock')) {
   $_SESSION['POPUP'][] = array('CONTENT' => _('Unable to re-activate your account. Invalid token.'), 'TYPE' => 'alert alert-danger');
 } else {
-  if ($user->setUserFailed($aToken['account_id'], 0) && $user->setUserPinFailed($aToken['account_id'], 0) && $user->setLocked($aToken['account_id'], 0)) {
+  if ($user->setUserFailed($aToken['account_id'], 0) && $user->setLocked($aToken['account_id'], 0)) {
     $oToken->deleteToken($aToken['token']);
     $_SESSION['POPUP'][] = array('CONTENT' => _('Account re-activated. Please login.'));
   } else {

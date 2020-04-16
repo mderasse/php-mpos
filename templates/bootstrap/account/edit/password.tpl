@@ -18,23 +18,18 @@
             </div>
             <div class="form-group">
               <label>{t}Current Password{/t}</label>
-              {nocache}<input class="form-control" type="password" name="currentPassword" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw && !$CHANGEPASSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
+              {nocache}<input class="form-control" type="password" name="currentPassword" />{/nocache}
             </div>
             <div class="form-group">
               <label>{t}New Password{/t}</label>
               <p style="padding-right:10px;display:block;margin-top:0px;float:right;color:#999;" id="pw_strength"></p>
-              {nocache}<input class="form-control" type="password" name="newPassword" id="pw_field"{if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw && !$CHANGEPASSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
+              {nocache}<input class="form-control" type="password" name="newPassword" id="pw_field"/>{/nocache}
             </div>
             <div class="form-group">
               <label>{t}Repeat New Password{/t}</label>
               <p style="padding-right:10px;display:block;margin-top:0px;float:right;" id="pw_match"></p>
-              {nocache}<input class="form-control" type="password" name="newPassword2" id="pw_field2"{if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw && !$CHANGEPASSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
+              {nocache}<input class="form-control" type="password" name="newPassword2" id="pw_field2"/>{/nocache}
             </div>
-            <div class="form-group">
-              <label>{t}4 Digit PIN{/t}</label>
-              <input class="form-control" type="password" name="authPin" size="4" maxlength="4" />
-            </div>
-
           </div>
         </div>
       </div>
@@ -43,17 +38,7 @@
         <input type="hidden" name="cp_token" value="{$smarty.request.cp_token|escape|default:""}">
         <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}" />
         <input type="hidden" name="utype" value="change_pw">
-        {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw}
-        {if $CHANGEPASSSENT == 1 && $CHANGEPASSUNLOCKED == 1}
         <input type="submit" value="{t}Change Password{/t}" class="btn btn-success btn-sm">
-        {elseif $CHANGEPASSSENT == 0 && $CHANGEPASSUNLOCKED == 1 || $CHANGEPASSSENT == 1 && $CHANGEPASSUNLOCKED == 0}
-        <input type="submit" value="{t}Change Password{/t}" class="btn btn-danger btn-sm" disabled>
-        {elseif $CHANGEPASSSENT == 0 && $CHANGEPASSUNLOCKED == 0}
-        <input type="submit" value="{t}Unlock{/t}" class="btn btn-warning btn-sm" name="unlock">
-        {/if}
-        {else}
-        <input type="submit" value="{t}Change Password{/t}" class="btn btn-success btn-sm">
-        {/if}
         {/nocache}
       </div>
     </div>
