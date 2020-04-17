@@ -7,7 +7,7 @@
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3>Feature already enabled on your account</h3>
+            <h3>{t}Feature already enabled on your account{/t}</h3>
           </div>
         </div>
       </div>
