@@ -7,13 +7,13 @@
       <div class="panel-body">
         <div class="row" style="margin-top: 20px;">
           <div class="col-md-12 text-center">
-            <h4><b>AUTHORIZATION SECRET CODE</b></h4>
+            <h4><b>{t}AUTHORIZATION SECRET CODE{/t}</b></h4>
             <p style="font-size: 15px;">
               <b>
                 {nocache}<span style="color: red;">{$SECRET}</span>{/nocache}
               </b>
             </p>
-            <h4 style="margin-top: 25px;"><b>QR CODE</b></h4>
+            <h4 style="margin-top: 25px;"><b>{t}QR CODE{/t}</b></h4>
             <p">
               <b>
                 {nocache}<img src="{$QRCODE}" alt="2FA QrCode"/>{/nocache}
@@ -23,19 +23,19 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center" style="margin-bottom: 15px;">
-            <h4><b>PROCEDURES</b></h4>
+            <h4><b>{t}PROCEDURES{/t}</b></h4>
           </div>
           <div class="col-md-6" style="margin: 0 auto; float: none; font-weight: bold;">
-            <p style="font-size: 15px;">1. Install a Two-Factor Authentication application on your smartphone.</p>
-            <p style="font-size: 15px;">2. Scan the QR Code above or type in the authorization secret code manually on your mobile device.</p>
-            <p style="font-size: 15px;">3. Write down or save the authorization secret code in case you lose your device.</p>
-            <p style="font-size: 15px;">4. DO NOT EVER share your secret code with anyone. We will never ask for your secret code.</p>
+            <p style="font-size: 15px;">1. {t}Install a Two-Factor Authentication application on your smartphone.{/t}</p>
+            <p style="font-size: 15px;">2. {t}Scan the QR Code above or type in the authorization secret code manually on your mobile device.{/t}</p>
+            <p style="font-size: 15px;">3. {t}Write down or save the authorization secret code in case you lose your device.{/t}</p>
+            <p style="font-size: 15px;">4. {t}DO NOT EVER share your secret code with anyone. We will never ask for your secret code.{/t}</p>
           </div>
         </div>
         <div class="row" style="margin-top: 30px;">
           <div class="col-md-4 text-center" style="margin: 0 auto; float: none; padding: 10px;font-weight: bold; background-color: #f1f1fd; border-radius: 15px;">
             <div class="text-center" style="font-weight: bold; font-size: 14px; color:blue">
-              Enter the code given by Authenticator App
+              {t}Enter the code given by Authenticator App{/t}
             </div>
             <div class="text-center" style="font-weight: bold; font-size: 14px; color:blue">
               <form action="{$smarty.server.SCRIPT_NAME}" method="post" role="form">

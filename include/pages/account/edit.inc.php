@@ -8,7 +8,7 @@ $oldtoken_wf = (isset($_POST['wf_token']) && $_POST['wf_token'] !== '') ? $_POST
 $updating = (@$_POST['do']) ? 1 : 0;
 
 if ($user->isAuthenticated()) {
-  if ($updating && $_SESSION['USERDATA']['has_twofa'] && (!empty($_POST['otp']) || !$user->isValidTwofa($_POST['otp']))) {
+  if ($updating && $_SESSION['USERDATA']['has_twofa'] && (empty($_POST['otp']) || !$user->isValidTwofa($_POST['otp']))) {
     $_SESSION['POPUP'][] = array('CONTENT' => $twofa->getErrorWithDescriptionHTML("edit account"), 'TYPE' => 'alert alert-warning');
   } else {
     switch (@$_POST['do']) {
