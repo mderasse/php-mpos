@@ -47,3 +47,4 @@ $config['csrf']['enabled'] = true;
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#lock-accounts-after-failed-logins
  **/
 $config['maxfailed']['login'] = 3;
+$config['maxfailed']['twofa'] = 3;
