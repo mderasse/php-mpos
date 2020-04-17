@@ -28,17 +28,7 @@
         {nocache}
           <input type="hidden" name="cp_token" value="{$smarty.request.cp_token|escape|default:""}">
           <input type="hidden" name="utype" value="change_pw">
-          {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw}
-            {if $CHANGEPASSSENT == 1 && $CHANGEPASSUNLOCKED == 1}
-              <input type="submit" value="{t}Change Password{/t}" class="btn btn-warning btn-sm">
-            {elseif $CHANGEPASSSENT == 0 && $CHANGEPASSUNLOCKED == 1 || $CHANGEPASSSENT == 1 && $CHANGEPASSUNLOCKED == 0}
-              <input type="submit" value="{t}Change Password{/t}" class="btn btn-warning btn-sm" disabled="disabled">
-            {elseif $CHANGEPASSSENT == 0 && $CHANGEPASSUNLOCKED == 0}
-              <input type="submit" value="{t}Unlock{/t}" class="btn btn-warning btn-sm" name="unlock">
-            {/if}
-          {else}
-            <input type="submit" value="{t}Change Password{/t}" class="btn btn-warning btn-sm">
-          {/if}
+          <input type="submit" value="{t}Change Password{/t}" class="btn btn-warning btn-sm">
         {/nocache}
       </div>
     </div>
