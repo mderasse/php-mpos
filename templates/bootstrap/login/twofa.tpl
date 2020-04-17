@@ -7,7 +7,7 @@
       </div>
       <div class="panel-body">
         <div class="text-center" style="font-weight: bold; font-size: 14px;">
-            {t}Enter the code given by Authenticator App{t}
+            {t}Enter the code given by Authenticator App{/t}
         </div>
         <div class="text-center">
             <div style="margin: auto; width: 100px; margin-top: 15px;">
