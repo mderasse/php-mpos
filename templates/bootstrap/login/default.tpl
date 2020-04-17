@@ -1,5 +1,5 @@
 <div class="row">
-  <form class="col-md-4" role="form" action="{$smarty.server.SCRIPT_NAME}?page=login" method="post" id="loginForm">
+  <form class="col-md-4" style="margin: 0 auto; float: none;" role="form" action="{$smarty.server.SCRIPT_NAME}?page=login" method="post" id="loginForm">
     <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}">
     <div class="panel panel-info">
       <div class="panel-heading">
