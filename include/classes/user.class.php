@@ -803,7 +803,7 @@ class User extends Base
     $username_clean = strip_tags($username);
     $signup_time = time();
 
-    if ($this->checkStmt($stmt) && $stmt->bind_param('sssissi', $username_clean, $password_hash, $email1, $signup_time, $apikey_hash, $is_locked) && $stmt->execute()) {
+    if ($this->checkStmt($stmt) && $stmt->bind_param('sssisi', $username_clean, $password_hash, $email1, $signup_time, $apikey_hash, $is_locked) && $stmt->execute()) {
       $new_account_id = $this->mysqli->lastused->insert_id;
       if (!is_null($coinaddress)) $this->coin_address->add($new_account_id, $coinaddress);
       if (!$this->setting->getValue('accounts_confirm_email_disabled') && $is_admin != 1) {
