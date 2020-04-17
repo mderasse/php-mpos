@@ -7,7 +7,7 @@
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12 text-center" style="font-size:14px;">
-          Two-Factor Authentication is now enable on your account.<br/<br/>Please login again.
+          {t}Two-Factor Authentication is now enable on your account.{t}<br/<br/>{t}Please login again.{/t}
           </div>
         </div>
     </div>
