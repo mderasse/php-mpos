@@ -7,121 +7,157 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
  * It supplies some basic features as cross-linking with other classes
  * after loading a newly created class.
  **/
-class Base {
+class Base
+{
   private $sError = '';
   private $sCronError = '';
   protected $table = '';
-  private $values = array(), $types = ''; 
+  private $values = array(), $types = '';
 
-  public function getTableName() {
+  public function getTableName()
+  {
     return $this->table;
   }
-  
+
   protected $debug;
-  public function setDebug($debug) {
+  public function setDebug($debug)
+  {
     $this->debug = $debug;
   }
-  public function setCoin($coin) {
+  public function setCoin($coin)
+  {
     $this->coin = $coin;
   }
-  public function setCoinAddress($coin_address) {
+  public function setCoinAddress($coin_address)
+  {
     $this->coin_address = $coin_address;
   }
-  
+
   public $log;
-  public function setLog($log) {
+  public function setLog($log)
+  {
     $this->log = $log;
   }
-  
+
   protected $mysqli;
-  public function setMysql($mysqli) {
+  public function setMysql($mysqli)
+  {
     $this->mysqli = $mysqli;
   }
-  public function setMail($mail) {
+  public function setMail($mail)
+  {
     $this->mail = $mail;
   }
-  public function setSalt($salt) {
+  public function setSalt($salt)
+  {
     $this->salt = $salt;
   }
-  public function setSalty($salt) {
+  public function setSalty($salt)
+  {
     $this->salty = $salt;
   }
   /**
    * @var Smarty
    */
   var $smarty;
-  public function setSmarty($smarty) {
+  public function setSmarty($smarty)
+  {
     $this->smarty = $smarty;
   }
-  public function setUser($user) {
+  public function setUser($user)
+  {
     $this->user = $user;
   }
-  public function setSessionManager($session) {
+  public function setSessionManager($session)
+  {
     $this->session = $session;
   }
-  public function setConfig($config) {
+  public function setConfig($config)
+  {
     $this->config = $config;
   }
-  
+
   protected $aErrorCodes;
-  public function setErrorCodes(&$aErrorCodes) {
-    $this->aErrorCodes =& $aErrorCodes;
+  public function setErrorCodes(&$aErrorCodes)
+  {
+    $this->aErrorCodes = &$aErrorCodes;
   }
-  public function setToken($token) {
+  public function setTwofa($twofa)
+  {
+    $this->twofa = $twofa;
+  }
+  public function setToken($token)
+  {
     $this->token = $token;
   }
-  public function setBlock($block) {
+  public function setBlock($block)
+  {
     $this->block = $block;
   }
-  public function setPayout($payout) {
+  public function setPayout($payout)
+  {
     $this->payout = $payout;
   }
-  public function setNotification($notification) {
+  public function setNotification($notification)
+  {
     $this->notification = $notification;
   }
-  public function setTransaction($transaction) {
+  public function setTransaction($transaction)
+  {
     $this->transaction = $transaction;
   }
-  public function setMemcache($memcache) {
+  public function setMemcache($memcache)
+  {
     $this->memcache = $memcache;
   }
-  public function setStatistics($statistics) {
+  public function setStatistics($statistics)
+  {
     $this->statistics = $statistics;
   }
-  public function setSetting($setting) {
+  public function setSetting($setting)
+  {
     $this->setting = $setting;
   }
-  public function setTools($tools) {
+  public function setTools($tools)
+  {
     $this->tools = $tools;
   }
-  public function setBitcoin($bitcoin) {
+  public function setBitcoin($bitcoin)
+  {
     $this->bitcoin = $bitcoin;
   }
-  public function setTokenType($tokentype) {
+  public function setTokenType($tokentype)
+  {
     $this->tokentype = $tokentype;
   }
-  public function setCSRFToken($token) {
+  public function setCSRFToken($token)
+  {
     $this->CSRFToken = $token;
   }
-  public function setShare($share) {
+  public function setShare($share)
+  {
     $this->share = $share;
   }
-  public function setErrorMessage($msg) {
+  public function setErrorMessage($msg)
+  {
     $this->sError = $msg;
     // Default to same error for crons
     $this->sCronError = $msg;
   }
-  public function setCronMessage($msg) {
+  public function setCronMessage($msg)
+  {
     // Used to overwrite any errors with a custom cron one
     $this->sCronError = $msg;
   }
-  public function getError() {
+  public function getError()
+  {
     return $this->sError;
   }
   /**
    * Additional information in error string for cronjobs logging
    **/
-  public function getCronError() {
+  public function getCronError()
+  {
     return $this->sCronError;
   }
 
@@ -131,7 +167,8 @@ class Base {
    * @param optional string Optional addtitional error strings to append
    * @retrun string Error Message
    **/
-  public function getErrorMsg($errCode='') {
+  public function getErrorMsg($errCode = '')
+  {
     if (!is_array($this->aErrorCodes)) return 'Error codes not loaded';
     if (!array_key_exists($errCode, $this->aErrorCodes)) return 'Unknown Error Code: ' . $errCode;
     if (func_num_args() > 1) {
@@ -153,7 +190,8 @@ class Base {
    * @param none
    * @param data mixed Count or false
    **/
-  public function getCount() {
+  public function getCount()
+  {
     $this->debug->append("STA " . __METHOD__, 4);
     $stmt = $this->mysqli->prepare("SELECT COUNT(id) AS count FROM $this->table");
     if ($this->checkStmt($stmt) && $stmt->execute() && $result = $stmt->get_result())
@@ -166,7 +204,8 @@ class Base {
    * @param none
    * @param data mixed Count or false
    **/
-  public function getCountFiltered($column='id', $value=NULL, $type='i', $operator = '=') {
+  public function getCountFiltered($column = 'id', $value = NULL, $type = 'i', $operator = '=')
+  {
     $this->debug->append("STA " . __METHOD__, 4);
     $stmt = $this->mysqli->prepare("SELECT COUNT(id) AS count FROM $this->table WHERE $column $operator ?");
     if ($this->checkStmt($stmt) && $stmt->bind_param($type, $value) && $stmt->execute() && $result = $stmt->get_result())
@@ -180,7 +219,8 @@ class Base {
    * @param none
    * @return array Assoc array of all rows found in table
    **/
-  public function getAllAssoc() {
+  public function getAllAssoc()
+  {
     $this->debug->append("STA " . __METHOD__, 4);
     $stmt = $this->mysqli->prepare("SELECT * FROM $this->table");
     if ($this->checkStmt($stmt) && $stmt->execute() && $result = $stmt->get_result())
@@ -195,7 +235,8 @@ class Base {
    * @param type string Type of value
    * @return array Resulting row
    **/
-  protected function getSingleAssoc($value, $field='id', $type='i') {
+  protected function getSingleAssoc($value, $field = 'id', $type = 'i')
+  {
     $this->debug->append("STA " . __METHOD__, 4);
     $stmt = $this->mysqli->prepare("SELECT * FROM $this->table WHERE $field = ? LIMIT 1");
     if ($this->checkStmt($stmt) && $stmt->bind_param($type, $value) && $stmt->execute() && $result = $stmt->get_result())
@@ -212,8 +253,9 @@ class Base {
    * @param lower bool try with LOWER comparision
    * @return array Return result
    **/
-  protected function getSingle($value, $search='id', $field='id', $type="i", $lower=false) {
-    $this->debug->append("STA " . __METHOD__, 4); 
+  protected function getSingle($value, $search = 'id', $field = 'id', $type = "i", $lower = false)
+  {
+    $this->debug->append("STA " . __METHOD__, 4);
     $sql = "SELECT $search FROM $this->table WHERE";
     $lower ? $sql .= " LOWER($field) = LOWER(?)" : $sql .= " $field = ?";
     $sql .= " LIMIT 1";
@@ -234,9 +276,10 @@ class Base {
    * @param $bState Statement return value
    * @return bool true or false
    **/
-  function checkStmt($bState) {
+  function checkStmt($bState)
+  {
     $this->debug->append("STA " . __METHOD__, 4);
-    if ($bState ===! true)
+    if ($bState === !true)
       return $this->sqlError();
     return true;
   }
@@ -245,7 +288,8 @@ class Base {
    * Catch SQL errors with this method
    * @param error_code string Error code to read
    **/
-  protected function sqlError($error_code='E0020') {
+  protected function sqlError($error_code = 'E0020')
+  {
     // More human-readable error for UI
     if (func_num_args() == 0) {
       $this->setErrorMessage($this->getErrorMsg($error_code));
@@ -255,7 +299,7 @@ class Base {
     // Default to SQL error for debug and cron errors
     $this->debug->append($this->getErrorMsg('E0019', $this->mysqli->lastused->errno));
     $this->setCronMessage($this->getErrorMsg('E0019', $this->mysqli->lastused->errno));
-    
+
     return false;
   }
 
@@ -265,11 +309,12 @@ class Base {
    * @param field string Field to update
    * @return bool
    **/
-  protected function updateSingle($id, $field, $table='') {
+  protected function updateSingle($id, $field, $table = '')
+  {
     if (empty($table)) $table = $this->table;
     $this->debug->append("STA " . __METHOD__, 4);
     $stmt = $this->mysqli->prepare("UPDATE $table SET " . $field['name'] . " = ? WHERE id = ? LIMIT 1");
-    if ($this->checkStmt($stmt) && $stmt->bind_param($field['type'].'i', $field['value'], $id) && $stmt->execute())
+    if ($this->checkStmt($stmt) && $stmt->bind_param($field['type'] . 'i', $field['value'], $id) && $stmt->execute())
       return true;
     $this->debug->append("Unable to update " . $field['name'] . " with " . $field['value'] . " for ID $id");
     return $this->sqlError();
@@ -278,19 +323,21 @@ class Base {
   /**
    * We may need to generate our bind_param list
    **/
-  public function addParam($type, &$value) {
+  public function addParam($type, &$value)
+  {
     $this->values[] = $value;
     $this->types .= $type;
   }
-  public function getParam() {
+  public function getParam()
+  {
     $array = array_merge(array($this->types), $this->values);
     // Clear the data
     $this->values = NULL;
     $this->types = NULL;
     // See here why we need this: http://stackoverflow.com/questions/16120822/mysqli-bind-param-expected-to-be-a-reference-value-given
-    if (strnatcmp(phpversion(),'5.3') >= 0) {
+    if (strnatcmp(phpversion(), '5.3') >= 0) {
       $refs = array();
-      foreach($array as $key => $value)
+      foreach ($array as $key => $value)
         $refs[$key] = &$array[$key];
       return $refs;
     }
