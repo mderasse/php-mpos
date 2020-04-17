@@ -38,24 +38,24 @@
             {/if}
             <div class="form-group">
               <label>{t}E-Mail{/t}</label>
-              {nocache}<input class="form-control" type="text" name="email" value="hidden" size="20" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
+              {nocache}<input class="form-control" type="text" name="email" value="hidden" size="20" />{/nocache}
             </div>
             <div class="form-group">
               <label>{t}Timezone{/t}</label>
               {nocache}
-              <select class="form-control select-mini" name="timezone" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}>
+              <select class="form-control select-mini" name="timezone" >
                 {html_options options=$TIMEZONES selected=$GLOBAL.userdata.timezone}
               </select>
               {/nocache}
             </div>
             <div class="form-group">
               <label>{t}Payment Address{/t}</label>
-              {nocache}<input class="form-control" type="text" name="paymentAddress" value="{$smarty.request.paymentAddress|default:$GLOBAL.userdata.coin_address|escape}" size="40" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
+              {nocache}<input class="form-control" type="text" name="paymentAddress" value="{$smarty.request.paymentAddress|default:$GLOBAL.userdata.coin_address|escape}" size="40" />{/nocache}
             </div>
             <div class="form-group">
               <label>{t}Donation Percentage{/t}</label>
               <font size="1"> {t min_donate=$DONATE_THRESHOLD.min}Donation amount in percent (%1 - 100%){/t}</font>
-              {nocache}<input class="form-control" type="text" name="donatePercent" value="{$smarty.request.donatePercent|default:$GLOBAL.userdata.donate_percent|escape|number_format:"2"}" size="4" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
+              {nocache}<input class="form-control" type="text" name="donatePercent" value="{$smarty.request.donatePercent|default:$GLOBAL.userdata.donate_percent|escape|number_format:"2"}" size="4" />{/nocache}
             </div>
             <div class="form-group">
               <label>{t}Automatic Payout Threshold{/t}</label>
@@ -65,20 +65,21 @@
               {capture assign=tx_fee_auto_formatted}{if $txfee_auto > 0.00001}{$txfee_auto}{else}{$txfee_auto|number_format:"8"}{/if}{/capture}
               <font size="1">{t ap_threshold_min=$ap_threshold_min ap_threshold_max=$ap_threshold_max currency=$GLOBAL.config.currency}%1 - %2 %3. Set to '0' for no auto payout.{/t}{if $txfee_auto > 0} {t tx_fee_auto_formatted=$tx_fee_auto_formatted currency=$GLOBAL.config.currency}%1 %2 TX fee will apply {/t}{if $GLOBAL.config.txfee_auto_dynamic.enabled} ({t}High Estimation{/t}){/if} <span id="tt"><img width="15px" height="15px" title="{t tx_fee_auto_formatted=$tx_fee_auto_formatted}This %1 automatic payment transaction fee is a network fee and goes back into the network not the pool.{/t}" src="site_assets/bootstrap/images/questionmark.png"></span>{/if}</font>
               </br>
-              <input class="form-control" type="text" name="payoutThreshold" value="{nocache}{$smarty.request.payoutThreshold|default:$GLOBAL.userdata.ap_threshold|escape}{/nocache}" size="{$GLOBAL.config.ap_threshold.max|strlen+4}" maxlength="{if $GLOBAL.config.ap_threshold.max < 1}10{else}{$GLOBAL.config.ap_threshold.max|strlen}{/if}" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>
+              <input class="form-control" type="text" name="payoutThreshold" value="{nocache}{$smarty.request.payoutThreshold|default:$GLOBAL.userdata.ap_threshold|escape}{/nocache}" size="{$GLOBAL.config.ap_threshold.max|strlen+4}" maxlength="{if $GLOBAL.config.ap_threshold.max < 1}10{else}{$GLOBAL.config.ap_threshold.max|strlen}{/if}" />
             </div>
             <div class="form-group">
               <label>{t}Anonymous Account{/t}</label>
               <input type="hidden" name="is_anonymous" value="0" />
-              <input type="checkbox" class="switch" data-size="mini"  name="is_anonymous" id="is_anonymous" value="1" {if $GLOBAL.userdata.is_anonymous}checked{/if} {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>
+              <input type="checkbox" class="switch" data-size="mini"  name="is_anonymous" id="is_anonymous" value="1" {if $GLOBAL.userdata.is_anonymous}checked{/if} />
               </br>
               <font size="1">{t}Hide username on website from others. Admins can still get your user information.{/t}</font>
             </div>
+            {if $GLOBAL.userdata.has_twofa }
             <div class="form-group">
-              <label>{t}4 Digit PIN{/t}</label>
-              <font size="1">{t}The 4 digit PIN you chose when registering{/t}</font>
-              <input class="form-control" type="password" name="authPin" size="4" maxlength="4">
+              <label>{t}Two-Factor Authentication Code{/t}</label>
+              {nocache}<input class="form-control" type="text" pattern="\d*" placeholder="000000"  maxlength="6" name="otp" id="otp"/>{/nocache}
             </div>
+            {/if}
           </div>
         </div>
       </div>
@@ -87,17 +88,7 @@
       <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}" />
       <input type="hidden" name="ea_token" value="{$smarty.request.ea_token|escape|default:""}">
       <input type="hidden" name="utype" value="account_edit">
-      {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details}
-      {if $DETAILSSENT == 1 && $DETAILSUNLOCKED == 1}
       <input type="submit" value="{t}Update Account{/t}" class="btn btn-success btn-sm">
-      {elseif $DETAILSSENT == 0 && $DETAILSUNLOCKED == 1 || $DETAILSSENT == 1 && $DETAILSUNLOCKED == 0}
-      <input type="submit" value="{t}Update Account{/t}" class="btn btn-danger btn-sm" disabled>
-      {elseif $DETAILSSENT == 0 && $DETAILSUNLOCKED == 0}
-      <input type="submit" value="{t}Unlock{/t}" class="btn btn-warning btn-sm" name="unlock">
-      {/if}
-      {else}
-      <input type="submit" value="{t}Update Account{/t}" class="btn btn-success btn-sm">
-      {/if}
       {/nocache}
       </div>
     </div>

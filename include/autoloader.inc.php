@@ -46,7 +46,7 @@ $detect = new Mobile_Detect;
 
 if ($detect->isMobile()) {
   $theme = $setting->getValue('website_mobile_theme', 'bootstrap');
-} else if ( PHP_SAPI == 'cli') {
+} else if (PHP_SAPI == 'cli') {
   // Create a new compile folder just for crons
   // We call mail templates directly anyway
   $theme = 'cron';
@@ -68,6 +68,7 @@ require_once(CLASS_DIR . '/token.class.php');
 require_once(CLASS_DIR . '/payout.class.php');
 require_once(CLASS_DIR . '/block.class.php');
 
+require_once(INCLUDE_DIR . '/lib/BaconQrcodeProvider.php');
 // We require the block class to properly grab the round ID
 require_once(CLASS_DIR . '/statscache.class.php');
 
@@ -75,8 +76,10 @@ require_once(CLASS_DIR . '/bitcoin.class.php');
 require_once(CLASS_DIR . '/bitcoinwrapper.class.php');
 require_once(CLASS_DIR . '/monitoring.class.php');
 require_once(CLASS_DIR . '/notification.class.php');
+require_once(CLASS_DIR . '/twofa.class.php');
 require_once(CLASS_DIR . '/user.class.php');
 require_once(CLASS_DIR . '/csrftoken.class.php');
+
 require_once(CLASS_DIR . '/invitation.class.php');
 require_once(CLASS_DIR . '/share.class.php');
 require_once(CLASS_DIR . '/worker.class.php');
