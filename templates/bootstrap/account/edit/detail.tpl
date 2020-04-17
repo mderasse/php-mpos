@@ -74,6 +74,12 @@
               </br>
               <font size="1">{t}Hide username on website from others. Admins can still get your user information.{/t}</font>
             </div>
+            {if $GLOBAL.userdata.has_twofa }
+            <div class="form-group">
+              <label>{t}Two-Factor Authentication Code{/t}</label>
+              {nocache}<input class="form-control" type="text" pattern="\d*" placeholder="000000"  maxlength="6" name="otp" id="otp"/>{/nocache}
+            </div>
+            {/if}
           </div>
         </div>
       </div>

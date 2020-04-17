@@ -30,6 +30,12 @@
               <p style="padding-right:10px;display:block;margin-top:0px;float:right;" id="pw_match"></p>
               {nocache}<input class="form-control" type="password" name="newPassword2" id="pw_field2"/>{/nocache}
             </div>
+            {if $GLOBAL.userdata.has_twofa }
+            <div class="form-group">
+              <label>{t}Two-Factor Authentication Code{/t}</label>
+              {nocache}<input class="form-control" type="text" pattern="\d*" placeholder="000000"  maxlength="6" name="otp" id="otp"/>{/nocache}
+            </div>
+            {/if}
           </div>
         </div>
       </div>

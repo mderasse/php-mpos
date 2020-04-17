@@ -154,7 +154,7 @@ $aGlobal['acl']['moot']['forum'] = $setting->getValue('acl_moot_forum', 2);
 $aGlobal['acl']['qrcode'] = $setting->getValue('acl_qrcode');
 
 // We don't want these session infos cached
-if (@$_SESSION['USERDATA']['id']) {
+if (@$_SESSION['USERDATA']['id'] && (!$_SESSION['USERDATA']['has_twofa'] || $_SESSION['USERDATA']['validate_twofa'])) {
   $aGlobal['userdata'] = $_SESSION['USERDATA']['id'] ? $user->getUserData($_SESSION['USERDATA']['id']) : array();
   $aGlobal['userdata']['balance'] = $transaction->getBalance($_SESSION['USERDATA']['id']);
 
@@ -200,6 +200,8 @@ if (@$_SESSION['USERDATA']['id']) {
     $_SESSION['POPUP'][] = array('CONTENT' => _('You have exceeded the pools configured ') . $config['currency'] . _(' warning threshold. Please initiate a transfer!'), 'TYPE' => 'alert alert-danger');
   if ($user->getUserFailed($_SESSION['USERDATA']['id']) > 0)
     $_SESSION['POPUP'][] = array('CONTENT' => _('You have ') . $user->getUserFailed($_SESSION['USERDATA']['id']) . _(' failed login attempts! <a href="?page=account&action=reset_failed">Reset Counter</a>'), 'TYPE' => 'alert alert-danger');
+  if ($user->getUserTwofaFailed($_SESSION['USERDATA']['id']) > 0)
+    $_SESSION['POPUP'][] = array('CONTENT' => _('You have ') . $user->getUserTwofaFailed($_SESSION['USERDATA']['id']) . _(' failed Two-Factor attempts! <a href="?page=account&action=reset_twofa_failed">Reset Counter</a>'), 'TYPE' => 'alert alert-danger');
 }
 
 if ($setting->getValue('maintenance'))

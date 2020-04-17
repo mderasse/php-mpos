@@ -38,6 +38,12 @@
               <label>{t}Payout to{/t}</label>
               {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.coin_address|escape}" disabled />{/nocache}
             </div>
+            {if $GLOBAL.userdata.has_twofa }
+            <div class="form-group">
+              <label>{t}Two-Factor Authentication Code{/t}</label>
+              {nocache}<input class="form-control" type="text" pattern="\d*" placeholder="000000"  maxlength="6" name="otp" id="otp"/>{/nocache}
+            </div>
+            {/if}
           </div>
         </div>
       </div>
