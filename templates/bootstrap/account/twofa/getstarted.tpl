@@ -7,35 +7,35 @@
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12">
-            <h3>1. Protect your account with Two-Factor Authentication</h3>
+            <h3>1. {t}Protect your account with Two-Factor Authentication{/t}</h3>
             <p style="margin-top:15px;">
-                By enabling the Two-Factor Authentication you will greatly increase the security of your account.
-                That feature will prevent anyone that got access to your password from executing dangerous action on your acocunt
+                {t}By enabling the Two-Factor Authentication you will greatly increase the security of your account.
+                That feature will prevent anyone that got access to your password from executing dangerous action on your account.{/t}
                 <br />
                 <br />
-                Your Two-Factor Authentication will be request for all main action on your account such as :
+                {t}Your Two-Factor Authentication will be request for all main action on your account such as :{/t}
                 <ul>
-                    <li>Login into your account</li>
-                    <li>Change your account information</li>
-                    <li>Request a payout</li>
-                    <li>Change your password</li>
+                    <li>{t}Login into your account{/t}</li>
+                    <li>{t}Change your account information{/t}</li>
+                    <li>{t}Request a payout{/t}</li>
+                    <li>{t}Change your password{/t}</li>
                 </ul>
             </p>
             <p style="margin-top:30px;">
-                <b>That feature cannot be disable !</b>
+                <b>{t}That feature cannot be disable!{/t}</b>
             </p>
-            <h3 style="margin-top:30px;">2. Prerequisite</h3>
+            <h3 style="margin-top:30px;">{t}2. Prerequisite{/t}</h3>
             <p style="margin-top:15px;">
-                In order to be able to configure and use the Two-Factor Authentication you will need a Smartphone or an OTP compatible device.
+                {t}In order to be able to configure and use the Two-Factor Authentication you will need a Smartphone or an OTP compatible device.{/t}
                 <br />
                 <br />
-                If you decide to use a smartphone you will need to install an 2FA-compatible application such as:
+                {t}If you decide to use a smartphone you will need to install an 2FA-compatible application such as:{/t}
                 <ul>
-                    <li><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en" target="_blank">Google Authenticator for Android</a></li>
-                    <li><a href="https://apps.apple.com/us/app/google-authenticator/id388497605" target="_blank">Google Authenticator for Iphone / Ipad</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en" target="_blank">{t}Google Authenticator for Android{/t}</a></li>
+                    <li><a href="https://apps.apple.com/us/app/google-authenticator/id388497605" target="_blank">{t}Google Authenticator for Iphone / Ipad{/t}</a></li>
                 </ul>
                 <br />
-                You are free to use any other 2FA-compatible application
+                {t}You are free to use any other 2FA-compatible application.{/t}
             </p>
           </div>
         </div>
