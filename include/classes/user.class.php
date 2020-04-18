@@ -927,21 +927,24 @@ class User extends Base
   {
     $this->debug->append("STA " . __METHOD__, 4);
 
-    $isLocked = $this->isLocked($_SESSION['USERDATA']['id']);
     if (
       @$_SESSION['AUTHENTICATED'] == true &&
       (!$_SESSION['USERDATA']['has_twofa'] || $_SESSION['USERDATA']['validate_twofa']) &&
-      !$isLocked &&
+      !$this->isLocked($_SESSION['USERDATA']['id']) &&
       $this->getUserIp($_SESSION['USERDATA']['id']) == $_SERVER['REMOTE_ADDR'] &&
       (!$this->config['protect_session_state'] ||
         ($this->config['protect_session_state'] && $_SESSION['STATE'] == md5($_SESSION['USERDATA']['username'] . $_SESSION['USERDATA']['id'] . @$_SERVER['HTTP_USER_AGENT'])))
     ) return true;
     // Catchall
 
-    if ($logout == true or $isLocked) {
+    if (isset($_SESSION['USERDATA']['id']) && $this->isLocked($_SESSION['USERDATA']['id']))
+      $logout = true;
+
+    if ($logout == true) {
       $this->log->log('warn', 'Forcing logout, user is locked or IP changed mid session [hijack attempt?]');
       $this->logoutUser();
     }
+
     return false;
   }
 
