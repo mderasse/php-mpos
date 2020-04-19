@@ -75,6 +75,7 @@ class Mail extends Base
     $this->smarty->clearCache(TEMPLATE_DIR . '/mail/subject.tpl');
 
     $this->smarty->assign('WEBSITENAME', $this->setting->getValue('website_name'));
+    $this->smarty->assign('WEBSITEURL', $this->setting->getValue('website_url'));
     $this->smarty->assign('SUBJECT', $aData['subject']);
     $this->smarty->assign('DATA', $aData);
 
