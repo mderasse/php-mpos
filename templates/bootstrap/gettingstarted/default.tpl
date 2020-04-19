@@ -45,6 +45,9 @@
               <br />
               <p> {t escape=no server_url=$smarty.server.SCRIPT_NAME}You then need to change "-u Weblogin.Worker -p Worker password" to reflect your own account. Eg, "-u Kevin.KevinWorker -p KevinWorkerPassword" then go to "File > Save as" and save the file as "RunMe.bat" in the same folder containing your miners application files. You are now ready to mine, double click on "RunMe.bat" to start mining. If you want, you can create additional workers with usernames and passwords of your choice <a href="%1?page=account&action=workers">here</a>{/t}</p>
             </ul>
+            <p>
+              <br />
+              <b>{t}You can also find more documentation on the{/t} <a href="https://wiki.vericoin.info/" target="_blank">Vericoin/Verium Wiki</a>.</b>
         </div>
       </div>
     </div>

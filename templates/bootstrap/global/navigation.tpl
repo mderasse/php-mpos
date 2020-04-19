@@ -116,6 +116,7 @@
                           {capture assign="nav_other_contact"}<i class="fa fa-envelope fa-fw"></i> {t}Contact{/t}{/capture}
                           {acl_check page='contactform' action='' name=$nav_other_contact acl=$GLOBAL.acl.contactform}
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=tac"><i class="fa fa-book fa-fw"></i> {t}Terms and Conditions{/t}</a></li>
+                           <li><a href="https://wiki.vericoin.info/" target="_blank"><i class="fa fa-book fa-fw"></i> Verium/Vericoin Wiki</a></li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
