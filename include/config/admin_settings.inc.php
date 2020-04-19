@@ -7,7 +7,7 @@ $aDesigns = $template->getDesigns();
 // Load the settings available in this system
 $aSettings['website'][] = array(
   'display' => 'Maintenance Mode', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'maintenance', 'value' => $setting->getValue('maintenance'),
   'tooltip' => 'Enable or Disable maintenance mode. Only admins can still login.'
@@ -22,14 +22,14 @@ $aSettings['website'][] = array(
 );
 $aSettings['website'][] = array(
   'display' => 'MOTD Style', 'type' => 'select',
-  'options' => array( 0 => 'Success', 1 => 'Information', 2 => 'Warning', 3 => 'Danger' ),
+  'options' => array(0 => 'Success', 1 => 'Information', 2 => 'Warning', 3 => 'Danger'),
   'default' => 0,
   'name' => 'system_motd_style', 'value' => $setting->getValue('system_motd_style'),
   'tooltip' => 'Set the Style what MOTD looks like.'
 );
 $aSettings['website'][] = array(
   'display' => 'MOTD Dismiss', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'system_motd_dismiss', 'value' => $setting->getValue('system_motd_dismiss'),
   'tooltip' => 'Set if users can hide MOTD.'
@@ -39,7 +39,14 @@ $aSettings['website'][] = array(
   'size' => 25,
   'default' => 'The Pool',
   'name' => 'website_name', 'value' => $setting->getValue('website_name'),
-  'tooltip' => 'The name of you pool page, displayed in the header of the page.'
+  'tooltip' => 'The name of your pool page, displayed in the header of the page.'
+);
+$aSettings['website'][] = array(
+  'display' => 'Website URL', 'type' => 'text',
+  'size' => 25,
+  'default' => 'http://example.com',
+  'name' => 'website_url', 'value' => $setting->getValue('website_url'),
+  'tooltip' => 'The url of your pool.'
 );
 $aSettings['website'][] = array(
   'display' => 'Website Title', 'type' => 'text',
@@ -85,28 +92,28 @@ $aSettings['website'][] = array(
 );
 $aSettings['website'][] = array(
   'display' => 'Website News Style', 'type' => 'select',
-  'options' => array( 0 => 'Show all news in one Page', 1 => 'Show Responsive News Table' ),
+  'options' => array(0 => 'Show all news in one Page', 1 => 'Show Responsive News Table'),
   'default' => 0,
   'name' => 'website_news_style', 'value' => $setting->getValue('website_news_style'),
   'tooltip' => 'How News are displayed on Main Page.'
 );
 $aSettings['website'][] = array(
   'display' => 'Auto Hide Notifications', 'type' => 'select',
-  'options' => array( 0 => 'Notifications always visible', 1 => 'Hide Notifications automatically' ),
+  'options' => array(0 => 'Notifications always visible', 1 => 'Hide Notifications automatically'),
   'default' => 0,
   'name' => 'website_notification_autohide', 'value' => $setting->getValue('website_notification_autohide'),
   'tooltip' => 'Hides Notifications after 5 seconds.'
 );
 $aSettings['website'][] = array(
   'display' => 'Disable Block Notification Sound', 'type' => 'select',
-  'options' => array( 0 => 'Do not notify', 1 => 'Notify when Block is found' ),
+  'options' => array(0 => 'Do not notify', 1 => 'Notify when Block is found'),
   'default' => 0,
   'name' => 'website_blockfinder_notification', 'value' => $setting->getValue('website_blockfinder_notification'),
   'tooltip' => 'Enable/Disable Blockfinder Sound.'
 );
 $aSettings['blockchain'][] = array(
   'display' => 'Disable Blockexplorer', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'website_blockexplorer_disabled', 'value' => $setting->getValue('website_blockexplorer_disabled'),
   'tooltip' => 'Enabled or disable the blockexplorer URL feature. Will remove any links using the blockexplorer URL.'
@@ -120,7 +127,7 @@ $aSettings['blockchain'][] = array(
 );
 $aSettings['blockchain'][] = array(
   'display' => 'Disable Transactionexplorer', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'website_transactionexplorer_disabled', 'value' => $setting->getValue('website_transactionexplorer_disabled'),
   'tooltip' => 'Enabled or disable the transactionexplorer URL feature. Will remove any links using the transactionexplorer URL.'
@@ -134,7 +141,7 @@ $aSettings['blockchain'][] = array(
 );
 $aSettings['blockchain'][] = array(
   'display' => 'Disable Chaininfo', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'website_chaininfo_disabled', 'value' => $setting->getValue('website_chaininfo_disabled'),
   'tooltip' => 'Enabled or disable the chainfo URL feature. Will remove any links using the chaininfo URL.'
@@ -162,14 +169,14 @@ $aSettings['wallet'][] = array(
 );
 $aSettings['statistics'][] = array(
   'display' => 'Ajax Refresh Interval', 'type' => 'select',
-  'options' => array('5' => '5', '10' => '10', '15' => '15', '30' => '30', '60' => '60' ),
+  'options' => array('5' => '5', '10' => '10', '15' => '15', '30' => '30', '60' => '60'),
   'default' => 10,
   'name' => 'statistics_ajax_refresh_interval', 'value' => $setting->getValue('statistics_ajax_refresh_interval'),
   'tooltip' => 'How often to refresh data via ajax in seconds.'
 );
 $aSettings['statistics'][] = array(
   'display' => 'Ajax Long Refresh Interval', 'type' => 'select',
-  'options' => array('5' => '5', '10' => '10', '15' => '15', '30' => '30', '60' => '60', '600' => '600', '1800' => '1800', '3600' => '3600' ),
+  'options' => array('5' => '5', '10' => '10', '15' => '15', '30' => '30', '60' => '60', '600' => '600', '1800' => '1800', '3600' => '3600'),
   'default' => 10,
   'name' => 'statistics_ajax_long_refresh_interval', 'value' => $setting->getValue('statistics_ajax_long_refresh_interval'),
   'tooltip' => 'How often to refresh data via ajax in seconds. User for SQL costly queries like getBalance and getWorkers.'
@@ -197,35 +204,35 @@ $aSettings['statistics'][] = array(
 );
 $aSettings['statistics'][] = array(
   'display' => 'Show block average', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'statistics_show_block_average', 'value' => $setting->getValue('statistics_show_block_average'),
   'tooltip' => 'Show block average in block statistics page.'
 );
 $aSettings['statistics'][] = array(
   'display' => 'Pool Hashrate Modifier', 'type' => 'select',
-  'options' => array( '1' => 'KH/s', '0.001' => 'MH/s', '0.000001' => 'GH/s', '0.000000001' => 'TH/s', '0.000000000001' => 'PH/s', '0.000000000000001' => 'EH/s' ),
+  'options' => array('1' => 'KH/s', '0.001' => 'MH/s', '0.000001' => 'GH/s', '0.000000001' => 'TH/s', '0.000000000001' => 'PH/s', '0.000000000000001' => 'EH/s'),
   'default' => '1',
   'name' => 'statistics_pool_hashrate_modifier', 'value' => $setting->getValue('statistics_pool_hashrate_modifier'),
   'tooltip' => 'Auto-adjust displayed pool hashrates to a certain limit.'
 );
 $aSettings['statistics'][] = array(
   'display' => 'Network Hashrate Modifier', 'type' => 'select',
-  'options' => array( '1' => 'KH/s', '0.001' => 'MH/s', '0.000001' => 'GH/s', '0.000000001' => 'TH/s', '0.000000000001' => 'PH/s', '0.000000000000001' => 'EH/s' ),
+  'options' => array('1' => 'KH/s', '0.001' => 'MH/s', '0.000001' => 'GH/s', '0.000000001' => 'TH/s', '0.000000000001' => 'PH/s', '0.000000000000001' => 'EH/s'),
   'default' => '1',
   'name' => 'statistics_network_hashrate_modifier', 'value' => $setting->getValue('statistics_network_hashrate_modifier'),
   'tooltip' => 'Auto-adjust displayed network hashrates to a certain limit.'
 );
 $aSettings['statistics'][] = array(
   'display' => 'Personal Hashrate Modifier', 'type' => 'select',
-  'options' => array( '1' => 'KH/s', '0.001' => 'MH/s', '0.000001' => 'GH/s', '0.000000001' => 'TH/s', '0.000000000001' => 'PH/s', '0.000000000000001' => 'EH/s' ),
+  'options' => array('1' => 'KH/s', '0.001' => 'MH/s', '0.000001' => 'GH/s', '0.000000001' => 'TH/s', '0.000000000001' => 'PH/s', '0.000000000000001' => 'EH/s'),
   'default' => '1',
   'name' => 'statistics_personal_hashrate_modifier', 'value' => $setting->getValue('statistics_personal_hashrate_modifier'),
   'tooltip' => 'Auto-adjust displayed personal hashrates to a certain limit.'
 );
 $aSettings['statistics'][] = array(
   'display' => 'Enable Google analytics', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'statistics_analytics_enabled', 'value' => $setting->getValue('statistics_analytics_enabled'),
   'tooltip' => 'Enable or Disable Google Analytics.'
@@ -240,105 +247,105 @@ $aSettings['statistics'][] = array(
 );
 $aSettings['acl'][] = array(
   'display' => 'Show Stats for logged in users only', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'acl_show_stats_loggedin', 'value' => $setting->getValue('acl_show_stats_loggedin'),
   'tooltip' => 'Should statistics be visible for logged in users only.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Show Help for logged in users only', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'acl_show_help_loggedin', 'value' => $setting->getValue('acl_show_help_loggedin'),
   'tooltip' => 'Should Help Page be visible for logged in users only.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Hide news post author', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'acl_hide_news_author', 'value' => $setting->getValue('acl_hide_news_author'),
   'tooltip' => 'Should the news author username be hidden.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Pool Statistics', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_pool_statistics', 'value' => $setting->getValue('acl_pool_statistics'),
   'tooltip' => 'Make the pool statistics page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Block Statistics', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_block_statistics', 'value' => $setting->getValue('acl_block_statistics'),
   'tooltip' => 'Make the block statistics page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Round Statistics', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_round_statistics', 'value' => $setting->getValue('acl_round_statistics'),
   'tooltip' => 'Make the round statistics page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Block Finder Statistics', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_blockfinder_statistics', 'value' => $setting->getValue('acl_blockfinder_statistics'),
   'tooltip' => 'Make the Block Finder Statistics page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Uptime Statistics', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_uptime_statistics', 'value' => $setting->getValue('acl_uptime_statistics'),
   'tooltip' => 'Make the uptime statistics page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Graphs', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_graphs_statistics', 'value' => $setting->getValue('acl_graphs_statistics'),
   'tooltip' => 'Make the graphs statistics page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Donors Page', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_donors_page', 'value' => $setting->getValue('acl_donors_page'),
   'tooltip' => 'Make the donors page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'About Page', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_about_page', 'value' => $setting->getValue('acl_about_page'),
   'tooltip' => 'Make the about page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Contactform', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 1,
   'name' => 'acl_contactform', 'value' => $setting->getValue('acl_contactform'),
   'tooltip' => 'Make the contactform private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'Live Chat Page', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 2,
   'name' => 'acl_chat_page', 'value' => $setting->getValue('acl_chat_page'),
   'tooltip' => 'Make the chat page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'MOOT Forum Page', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
+  'options' => array(0 => 'Private', 1 => 'Public', 2 => 'Disabled'),
   'default' => 2,
   'name' => 'acl_moot_forum', 'value' => $setting->getValue('acl_moot_forum'),
   'tooltip' => 'Make the forum page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'QRCode', 'type' => 'select',
-  'options' => array( 0 => 'Enabled', 1 => 'Disabled' ),
+  'options' => array(0 => 'Enabled', 1 => 'Disabled'),
   'default' => 0,
   'name' => 'acl_qrcode', 'value' => $setting->getValue('acl_qrcode'),
   'tooltip' => 'Hide or Show the QRCode Page.'
@@ -359,77 +366,77 @@ $aSettings['system'][] = array(
 );
 $aSettings['system'][] = array(
   'display' => 'Disable e-mail confirmations', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'accounts_confirm_email_disabled', 'value' => $setting->getValue('accounts_confirm_email_disabled'),
   'tooltip' => 'Should users supply a valid e-mail address upon registration. Requires them to confirm the address before accounts are activated.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable registrations', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'lock_registration', 'value' => $setting->getValue('lock_registration'),
   'tooltip' => 'Enable or Disable registrations. Useful to create an invitation only pool.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable Invitations', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_invitations', 'value' => $setting->getValue('disable_invitations'),
   'tooltip' => 'Enable or Disable invitations. Users will not be able to invite new users via email if disabled.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable Payout Cron', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_payouts', 'value' => $setting->getValue('disable_payouts'),
   'tooltip' => 'Enable or Disable the payout cronjob. Users will not be able to withdraw any funds if disabled. Will be logged in monitoring page.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable Manual Payouts', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_manual_payouts', 'value' => $setting->getValue('disable_manual_payouts'),
   'tooltip' => 'Enable or Disable manual payouts. Users will not be able to withdraw any funds manually if disabled. Will NOT be logged in monitoring page.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable Auto Payout', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_auto_payouts', 'value' => $setting->getValue('disable_auto_payouts'),
   'tooltip' => 'Enable or Disable the payout cronjob. Users will not be able to withdraw any funds automatically if disabled. Will NOT be logged in monitoring page.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable API', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_api', 'value' => $setting->getValue('disable_api'),
   'tooltip' => 'Enable or Disable the pool wide API functions. See API reference on Github for details.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable Live Dashboard', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes'),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_dashboard', 'value' => $setting->getValue('disable_dashboard'),
   'tooltip' => 'Disable live updates on the dashboard to reduce server load.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable Dashboard API', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes'),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_dashboard_api', 'value' => $setting->getValue('disable_dashboard_api'),
   'tooltip' => 'Disable dashboard API entirely to reduce server load.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable TX Summaries', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes'),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_transactionsummary', 'value' => $setting->getValue('disable_transactionsummary'),
   'tooltip' => 'Disable transaction summaries. Helpful with large transaction tables.'
 );
 $aSettings['system'][] = array(
   'display' => 'Disable Worker Edit without valid Coin Address', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes'),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_worker_edit', 'value' => $setting->getValue('disable_worker_edit'),
   'tooltip' => 'No worker editing without valid Payout Address set in Account Settings.'
@@ -450,28 +457,28 @@ $aSettings['system'][] = array(
 );
 $aSettings['recaptcha'][] = array(
   'display' => 'Enable re-Captcha', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'recaptcha_enabled', 'value' => $setting->getValue('recaptcha_enabled'),
   'tooltip' => 'Enable or Disable re-Captcha globally.'
 );
 $aSettings['recaptcha'][] = array(
   'display' => 'Enable re-Captcha Registration', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'recaptcha_enabled_registrations', 'value' => $setting->getValue('recaptcha_enabled_registrations'),
   'tooltip' => 'Enable or Disable re-Captcha. Adds a re-Captcha to the registration form.'
 );
 $aSettings['recaptcha'][] = array(
   'display' => 'Enable re-Captcha Contactform', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'recaptcha_enabled_contactform', 'value' => $setting->getValue('recaptcha_enabled_contactform'),
   'tooltip' => 'Enable or Disable re-Captcha. Adds a re-Captcha to the contact form.'
 );
 $aSettings['recaptcha'][] = array(
   'display' => 'Enable re-Captcha Logins', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'recaptcha_enabled_logins', 'value' => $setting->getValue('recaptcha_enabled_logins'),
   'tooltip' => 'Enable or Disable re-Captcha. Adds a re-Captcha to the login form.'
@@ -506,35 +513,35 @@ $aSettings['notifications'][] = array(
 );
 $aSettings['notifications'][] = array(
   'display' => 'Disable notifications', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'disable_notifications', 'value' => $setting->getValue('disable_notifications'),
   'tooltip' => 'Enable or Disable system notifications. This includes new found blocks, monitoring and all other notifications.'
 );
 $aSettings['notifications'][] = array(
   'display' => 'Disable Block Notifications', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes'),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'notifications_disable_block', 'value' => $setting->getValue('notifications_disable_block'),
   'tooltip' => 'Enable/Disable block notifications globally. Will remove the user option too.'
 );
 $aSettings['notifications'][] = array(
   'display' => 'Disable IDLE Worker Notifications', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes'),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'notifications_disable_idle_worker', 'value' => $setting->getValue('notifications_disable_idle_worker'),
   'tooltip' => 'Enable/Disable IDLE worker notifications globally. Will remove the user option too.'
 );
 $aSettings['notifications'][] = array(
   'display' => 'Disable Pool Newsletter', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes'),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'notifications_disable_pool_newsletter', 'value' => $setting->getValue('notifications_disable_pool_newsletter'),
   'tooltip' => 'Enable/Disable pool newsletter globally. Will remove the user option too.'
 );
 $aSettings['pools'][] = array(
   'display' => 'Enable Pool Navigation', 'type' => 'select',
-  'options' => array( 0 => 'No', 1 => 'Yes' ),
+  'options' => array(0 => 'No', 1 => 'Yes'),
   'default' => 0,
   'name' => 'poolnav_enabled', 'value' => $setting->getValue('poolnav_enabled'),
   'tooltip' => 'Enable or Disable Pool Navigation for multiple Pools in Header.'
