@@ -25,13 +25,13 @@ chdir(dirname(__FILE__));
 // Include all settings and classes
 require_once('shared.inc.php');
 
-if ( $bitcoin->can_connect() !== true ) {
+if ($bitcoin->can_connect() !== true) {
   $log->logFatal("Failed to connect to RPC server\n");
   $monitoring->endCronjob($cron_name, 'E0006', 1, true);
 }
 
 // Fetch all unconfirmed blocks
-$aAllBlocks = $block->getAllUnconfirmed(max($config['network_confirmations'],$config['confirmations']));
+$aAllBlocks = $block->getAllUnconfirmed(max($config['network_confirmations'], $config['confirmations']));
 
 $header = false;
 foreach ($aAllBlocks as $iIndex => $aBlock) {
@@ -39,7 +39,7 @@ foreach ($aAllBlocks as $iIndex => $aBlock) {
   $aBlockInfo = $bitcoin->getblock($aBlock['blockhash']);
   // Fetch this blocks transaction details to find orphan blocks
   $aTxDetails = $bitcoin->gettransaction($aBlockInfo['tx'][0]);
-  if ($aTxDetails['details'][0]['category'] == 'orphan') {
+  if (isset($aTxDetails['details'][0]['category']) && $aTxDetails['details'][0]['category'] == 'orphan') {
     // We have an orphaned block, we need to invalidate all transactions for this one
     if ($block->setConfirmations($aBlock['id'], -1)) {
       $status = 'ORPHAN';
