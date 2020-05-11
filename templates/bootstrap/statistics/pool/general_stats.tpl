@@ -9,10 +9,10 @@
             <tr>
               <th width="50%">{t}Pool Hash Rate{/t}</th>
               <td width="25%">
-                <span id="b-hashrate">{math equation="hashrate * 60" hashrate=$GLOBAL.hashrate|number_format:"3"}</span> KH/m
+                <span id="b-hashrate">{$GLOBAL.hashrate|number_format:"3"}</span> {$GLOBAL.hashunits.pool}
               </td>
               <td width="25%">
-                <span id="b-hashrate">{$GLOBAL.hashrate|number_format:"3"}</span> {$GLOBAL.hashunits.pool}
+                <span id="b-hashrate">{math equation="hashrate * 60" hashrate=$GLOBAL.hashrate|number_format:"3"}</span> KH/m
               </td>
             </tr>
             <tr>
