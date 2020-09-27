@@ -42,5 +42,9 @@ tests/_output/*
 # NetBeans Project Directory
 /nbproject/*
 
+# VSCode Project files
+.favorites.json
+.vscode
+
 # No need for composer.lock
 /composer.lock

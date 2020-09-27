@@ -91,8 +91,8 @@ msgid "Here's a great <a href=\"https://docs.google.com/document/d/1Gw7YPYgMgNNU
 msgstr "Vous pouvez suivre ce <a href=\"https://docs.google.com/document/d/1Gw7YPYgMgNNU42skibULbJJUx_suP_CpjSEdSi8_z9U/preview?sle=true\" target=\"_blank\">guide</a pour configurer et miner sur Xubuntu."
 
 #: ../templates/bootstrap//global/footer.tpl:5
-msgid "Powered by <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank\">MPOS</a>"
-msgstr "Propulsé par <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank\">MPOS</a>"
+msgid "Powered by <a href=\"https://github.com/mderasse/php-mpos\" target=\"_blank\">MPOS</a>"
+msgstr "Propulsé par <a href=\"https://github.com/mderasse/php-mpos\" target=\"_blank\">MPOS</a>"
 
 #: ../templates/bootstrap//global/header.tpl:4
 msgid "Toggle navigation"
