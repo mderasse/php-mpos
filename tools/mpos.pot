@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../templates/bootstrap//global/footer.tpl:5
 msgid ""
-"Powered by <a href=\"https://github.com/MPOS/php-mpos\" target=\"_blank"
+"Powered by <a href=\"https://github.com/mderasse/php-mpos\" target=\"_blank"
 "\">MPOS</a>"
 msgstr ""
 
