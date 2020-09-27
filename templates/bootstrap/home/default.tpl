@@ -7,20 +7,20 @@
       <div class="panel-body">
           <p>
             <div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-		{t escape=no server_url=$smarty.server.SCRIPT_NAME}To join the pool you can follow the <a href="%1?page=gettingstarted">Getting Started Guide</a>.{/t} {t}Feel free to click on the right-bottom Button if you have any question.{/t}
+		{t escape=no server_url=$smarty.server.SCRIPT_NAME}To join the pool you can follow the <a href="%1?page=gettingstarted">Getting Started Guide</a>.{/t}
             </div>
             <div style="margin-top: 15px; font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;">
                 <span style="font-weight: bold;">{t}Pool Features :{/t}</span>
                 <br />
                 <ul>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                        {t}Normal Fees : 0.9%{/t}
+                        {t}Normal Fees : 1.9%{/t}({t}1% are given to a vericonomy fund to help exchange registration, development, ...{/t})
                     </li>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
                         {t}Fully Redundant Infrastructure{/t}
                     </li>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                        {t}Servers in a professional Datacenter in Europe, North America and Asia{/t}
+                        {t}Servers in professional Datacenter in Europe, North America and Asia{/t}
                     </li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
                     <th style="padding: 10px;">{t}Status{/t}</th>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">{t}North Amercia - USA - Virginia{/t}</td>
+                    <td style="padding: 10px;">{t}North America - USA - Virginia{/t}</td>
                     <td style="padding: 10px;">{t}1Gbps - DDos Protection{/t}</td>
                     <td style="padding: 10px;">stratum+tcp://us.vrm.mining-pool.ovh:PORT</td>
                     <td style="padding: 10px;">{t}UP{/t}</td>
