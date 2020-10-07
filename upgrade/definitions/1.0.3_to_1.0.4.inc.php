@@ -14,6 +14,7 @@ function run_104()
   $aSql[] = "ALTER TABLE `accounts` ADD COLUMN `failed_twofa` INT(5) unsigned NOT NULL DEFAULT '0';";
   $aSql[] = "ALTER TABLE `accounts` DROP COLUMN `failed_pins`;";
   $aSql[] = "ALTER TABLE `accounts` DROP COLUMN `pin`;";
+  $aSql[] = "UPDATE " . $setting->getTableName() . " SET value = '" . $db_version_new . "' WHERE name = 'DB_VERSION';";
 
   echo $db_version_now;
   if ($db_version_now == $db_version_old && version_compare(DB_VERSION, $db_version_new, '<')) {
@@ -31,3 +32,4 @@ function run_104()
     }
   }
 }
+?>
