@@ -17,7 +17,7 @@ function run_104()
   $aSql[] = "UPDATE " . $setting->getTableName() . " SET value = '" . $db_version_new . "' WHERE name = 'DB_VERSION';";
 
   echo $db_version_now;
-  if ($db_version_now == $db_version_old && version_compare(DB_VERSION, $db_version_new, '<')) {
+  if ($db_version_now == $db_version_old && version_compare($db_version_now, DB_VERSION, '<')) {
     // Run the upgrade
     echo '- Starting database migration to version ' . $db_version_new . PHP_EOL;
     foreach ($aSql as $sql) {
