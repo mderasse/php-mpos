@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `failed_logins` int(5) unsigned DEFAULT '0',
   `signup_timestamp` int(10) DEFAULT '0',
   `last_login` int(10) DEFAULT NULL,
-  `pin` varchar(255) NOT NULL COMMENT 'four digit pin to allow account changes',
   `api_key` varchar(255) DEFAULT NULL,
   `token` varchar(65) DEFAULT NULL,
   `donate_percent` float DEFAULT '0',
@@ -143,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `settings` (
   UNIQUE KEY `setting` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `settings` (`name`, `value`) VALUES ('DB_VERSION', '1.0.3');
+INSERT INTO `settings` (`name`, `value`) VALUES ('DB_VERSION', '1.0.4');
 
 CREATE TABLE IF NOT EXISTS `shares` (
   `id` bigint(30) NOT NULL AUTO_INCREMENT,
