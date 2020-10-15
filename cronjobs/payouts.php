@@ -91,13 +91,17 @@ if ($setting->getValue('disable_manual_payouts') != 1 && $aManualPayouts) {
           $txfee_manual = round($config['txfee_manual_dynamic']['coefficient'] * $aUserData['confirmed'], 1, PHP_ROUND_HALF_UP);
         }
       }
+      if( $aUserData['confirmed'] - $txfee_manual <= 0 ) {
+          $log->logInfo('Fail to pay due to negative amount for user : ' . $aUserData['username']);
+          continue;
+      }
       if (!$transaction_id = $transaction->createDebitMPRecord($aUserData['id'], $aUserData['coin_address'], $aUserData['confirmed'])) {
         $log->logFatal('    failed to fullt debit user ' . $aUserData['username'] . ': ' . $transaction->getCronError());
         $monitoring->endCronjob($cron_name, 'E0064', 1, true);
       } else if (!$config['sendmany']['enabled'] || !$sendmanyAvailable) {
         // Run the payouts from RPC now that the user is fully debited
         try {
-          $rpc_txid = $bitcoin->sendtoaddress($aUserData['coin_address'], $aUserData['confirmed'] - $txfee_manual);
+          $rpc_txid = $bitcoin->sendtoaddress($aUserData['coin_address'], number_format($aUserData['confirmed'] - $txfee_manual, 7, '.', ''));
         } catch (Exception $e) {
           $log->logError('E0078: RPC method did not return 200 OK: Address: ' . $aUserData['coin_address'] . ' ERROR: ' . $e->getMessage());
           // Remove this line below if RPC calls are failing but transactions are still added to it
@@ -119,7 +123,7 @@ if ($setting->getValue('disable_manual_payouts') != 1 && $aManualPayouts) {
             // Don't blame MPOS if you run into issues after commenting this out!
             $monitoring->endCronjob($cron_name, 'E0080', 1, true);
           }
-         
+
           if( $txfee_manual != $txfee_amount ) {
             if( !$txfee_amount || !$transaction->changeTXFeeAmount($transaction_id, $txfee_amount))
               $log->logError('Unable to change TXFee amount of RPC Transaction ' . $rpc_txid . ' and transaction record ' . $transaction_id . ': ' . $transaction->getCronError());
@@ -198,13 +202,17 @@ if ($setting->getValue('disable_auto_payouts') != 1 && $aAutoPayouts) {
           $txfee_auto = round($config['txfee_auto_dynamic']['coefficient'] * $aUserData['confirmed'], 1, PHP_ROUND_HALF_UP);
         }
       }
+      if( $aUserData['confirmed'] - $txfee_auto <= 0 ) {
+          $log->logInfo('Fail to pay due to negative amount for user : ' . $aUserData['username']);
+          continue;
+      }
       if (!$transaction_id = $transaction->createDebitAPRecord($aUserData['id'], $aUserData['coin_address'], $aUserData['confirmed'])) {
         $log->logFatal('    failed to fully debit user ' . $aUserData['username'] . ': ' . $transaction->getCronError());
         $monitoring->endCronjob($cron_name, 'E0064', 1, true);
       } else if (!$config['sendmany']['enabled'] || !$sendmanyAvailable) {
         // Run the payouts from RPC now that the user is fully debited
         try {
-          $rpc_txid = $bitcoin->sendtoaddress($aUserData['coin_address'], $aUserData['confirmed'] - $txfee_auto);
+          $rpc_txid = $bitcoin->sendtoaddress($aUserData['coin_address'], number_format($aUserData['confirmed'] - $txfee_auto, 7, '.', ''));
         } catch (Exception $e) {
           $log->logError('E0078: RPC method did not return 200 OK: Address: ' . $aUserData['coin_address'] . ' ERROR: ' . $e->getMessage());
           // Remove this line below if RPC calls are failing but transactions are still added to it
@@ -226,7 +234,7 @@ if ($setting->getValue('disable_auto_payouts') != 1 && $aAutoPayouts) {
             // Don't blame MPOS if you run into issues after commenting this out!
             $monitoring->endCronjob($cron_name, 'E0080', 1, true);
           }
-         
+
           if( $txfee_auto != $txfee_amount ) {
             if( !$txfee_amount || !$transaction->changeTXFeeAmount($transaction_id, $txfee_amount))
               $log->logError('Unable to change TXFee amount of RPC Transaction ' . $rpc_txid . ' and transaction record ' . $transaction_id . ': ' . $transaction->getCronError());
