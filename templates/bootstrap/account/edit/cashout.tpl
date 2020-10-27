@@ -1,7 +1,7 @@
 {if !$GLOBAL.config.disable_payouts && !$GLOBAL.config.disable_manual_payouts}
 {if $GLOBAL.config.txfee_manual }
     {if $GLOBAL.config.txfee_manual_dynamic.enabled }
-        {math assign="txfee_manual" equation="ceil((x * y)*10)/10" x=$GLOBAL.config.txfee_manual_dynamic.coefficient y=$GLOBAL.userdata.balance.confirmed}
+        {math assign="txfee_manual" equation="x * y" x=$GLOBAL.config.txfee_manual_dynamic.coefficient y=$GLOBAL.userdata.balance.confirmed format="%.3f"}
         {if $txfee_manual <= $GLOBAL.config.txfee_manual}
             {assign var="txfee_manual" value=$GLOBAL.config.txfee_manual}
         {/if}

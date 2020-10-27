@@ -176,10 +176,10 @@ $config['txfee_auto'] = 0.2;
 $config['txfee_manual'] = 0.2;
 
 $config['txfee_auto_dynamic']['enabled'] = true;
-$config['txfee_auto_dynamic']['coefficient'] = 0.040357227;
+$config['txfee_auto_dynamic']['coefficient'] = 0.000208623;
 
 $config['txfee_manual_dynamic']['enabled'] = false;
-$config['txfee_manual_dynamic']['coefficient'] = 0.040357227;
+$config['txfee_manual_dynamic']['coefficient'] = 0.000208623;
 
 /**
  * Block & Pool Bonus

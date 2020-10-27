@@ -1,6 +1,6 @@
 {if $GLOBAL.config.txfee_auto}
     {if $GLOBAL.config.txfee_auto_dynamic.enabled }
-        {math assign="txfee_auto" equation="ceil((x * y)*10)/10" x=$GLOBAL.config.txfee_auto_dynamic.coefficient y=$GLOBAL.userdata.ap_threshold}
+        {math assign="txfee_auto" equation="x * y" x=$GLOBAL.config.txfee_auto_dynamic.coefficient y=$GLOBAL.userdata.ap_threshold format="%.3f"}
         {if $txfee_auto <= $GLOBAL.config.txfee_auto}
             {assign var="txfee_auto" value=$GLOBAL.config.txfee_auto}
         {/if}
